@@ -1,0 +1,249 @@
+@import "../../main/style.scss";
+
+.course {
+	width: 100%;
+	height: auto;
+	@include display-center(flex-start, center);
+	flex-direction: column;	
+	padding: 0 100px;
+	margin-bottom: 140px;
+	background-image: url(../img/bg.svg);
+	background-size: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&__title {
+		@include font($black, 48px, 700, normal, normal);
+	}
+
+	&__box {
+		width: 100%;
+		height: auto;
+		@include display-center(center, center);
+		flex-wrap: wrap;
+
+		&-card {
+			width: 450px;
+			height: 250px;
+			background-color: #fff;
+			filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.25));
+			border-radius: 5px;
+			margin: 20px;
+			display: flex;
+			padding-top: 20px;
+			padding-left: 25px;
+			overflow: hidden;
+			cursor: pointer;
+
+			.course__left {
+				width: 60%;
+				height: 100%;
+
+
+				&-button {
+					border: none;
+					padding: 8px 34px;
+					@include font($white, 16px, 600, normal, normal);
+
+				}
+
+				&-subtitle {
+					@include font($black, 16px, 500, normal, normal);
+					margin-top: 20px;
+				}
+
+				&-title {
+					@include font($black, 24px, 600, normal, normal);
+					margin-top: 10px;
+					padding-bottom: 10px
+				}
+
+				&-box {
+					@include display-center(flex-start, center);
+					margin-top: 5px;
+					.course__description {
+						@include font($black, 16px, 500, normal, normal);
+						margin-left: 5px;
+					}
+				}
+			}
+ 
+			.course__rigth {
+				width: 40%;
+				height: 100%;
+				@include display-center(flex-end, center);
+
+				&-img {
+					width: 200px;
+					height: 200px;
+					background-size: cover;
+					position: relative;
+					left: 10px;
+				}
+
+				&-img1 {
+					background-image: url(../img/img1.png);
+				}
+
+				&-img2 {
+					background-image: url(../img/img2.png);
+					position: absolute;
+					left: 65%;
+				}
+
+				&-img3 {
+					background-image: url(../img/img3.png);
+				}
+
+				&-img4 {
+					background-image: url(../img/img4.png);
+				}
+
+				&-img5 {
+					background-image: url(../img/img5.png);
+				}
+				
+				&-img6 {
+					background-image: url(../img/img6.png);
+				}
+
+				&-img7 {
+					background-image: url(../img/img7.png);
+				}
+
+				&-img8 {
+					background-image: url(../img/img8.png);
+				}
+				
+				&-img9 {
+					background-image: url(../img/img9.png);
+				}
+
+				&-img10 {
+					background-image: url(../img/img10.png);
+				}
+
+				&-img11 {
+					background-image: url(../img/img11.png);
+				}
+
+			}
+
+
+		}
+	}
+
+}
+
+@media screen and (max-width: 1350px) {
+	.course {
+		padding: 0 60px;
+		&__title {
+			@include font($black, 42px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.course {
+		padding: 0 80px;
+		&__title {
+			@include font($black, 36px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.course {
+		padding: 0 60px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.course {
+		padding: 0 30px;
+	
+		&__title {
+			@include font($black, 32px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	.course {
+		&__title {
+			@include font($black, 28px, 700, normal, normal);
+		}
+
+		&__box {
+			width: 100%;
+			height: auto;
+			@include display-center(center, center);
+			flex-wrap: wrap;
+	
+			&-card {
+				width: 100%;
+				height: auto;
+				margin: 20px;
+				padding: 20px;
+				cursor: pointer;
+				flex-direction: column;
+	
+				.course__left {
+					width: 100%;
+					height: auto;
+					@include display-center(flex-start, center);
+					flex-direction: column;
+	
+					&-button {
+						@include font($white, 14px, 600, normal, normal);
+	
+					}
+	
+					&-subtitle {
+						@include font($black, 14px, 500, normal, normal);
+					}
+	
+					&-title {
+						@include font($black, 20px, 600, normal, normal);
+					}
+	
+					&-box {
+						margin-top: 5px;
+						.course__description {
+							@include font($black, 14px, 500, normal, normal);
+							margin-left: 3px;
+							text-align: center;
+						}
+					}
+				}
+	 
+				.course__rigth {
+					width: 100%;
+					height: auto;
+					@include display-center(center, center);
+
+					&-img {
+						width: 180px;
+						height: 180px;
+					}
+
+					&-img2 {
+						background-image: url(../img/img2.png);
+						position: static;
+					}
+					
+					&-img4 {
+						background-image: url(../img/img4.png);
+						height: 185px ;
+					}
+				}
+			}
+		}
+	}
+
+}

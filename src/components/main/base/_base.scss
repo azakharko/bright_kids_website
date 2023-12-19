@@ -2,3 +2,13 @@
 @import "./variables";
 
 
+.body-hidden {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+}

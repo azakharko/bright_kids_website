@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.benefits__box-subtitle2 {
+  width: 40px !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.benefits {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+  position: relative;
+  margin-bottom: 140px; }
+  .benefits__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; }
+  .benefits__box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px; }
+    .benefits__box-cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      margin: 20px; }
+    .benefits__box-title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .benefits__box-chart {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .benefits__box-chart .chart__title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333;
+        position: absolute; }
+    .benefits__box-subtitle {
+      width: 330px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+  .benefits__buttons {
+    display: flex;
+    gap: 30px; }
+    .benefits__buttons-button {
+      margin-top: 50px; }
+
+@media screen and (max-width: 1700px) {
+  .benefits__box {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .benefits__box-cart {
+      margin: 40px; } }
+@media screen and (max-width: 1350px) {
+  .benefits {
+    padding: 120px 60px; }
+    .benefits__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 1200px) {
+  .benefits {
+    padding: 120px 80px; }
+    .benefits__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 1000px) {
+  .benefits {
+    padding: 120px 60px; }
+    .benefits__box {
+      width: 100%;
+      margin-top: 15px; }
+      .benefits__box-cart {
+        margin: 25px; } }
+@media screen and (max-width: 700px) {
+  .benefits {
+    padding: 120px 30px; }
+    .benefits__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .benefits__buttons {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 50px; }
+      .benefits__buttons-button {
+        margin-top: 0px; } }
+@media screen and (max-width: 530px) {
+  .benefits__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; }
+  .benefits__box-subtitle {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; }
+  .benefits__buttons {
+    width: 100%; }
+    .benefits__buttons-button {
+      width: 100% !important; } }
+
+/*# sourceMappingURL=Benefits.css.map */

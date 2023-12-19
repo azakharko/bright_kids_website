@@ -1,0 +1,160 @@
+@import "../../main/style.scss";
+
+.benefits__box-subtitle2 {
+	width: 40px !important;
+	text-align: center;
+	@include display-center (center, center);
+
+}
+.benefits {
+	width: 100%;
+	height: 100%;
+	@include display-center (center, center);
+	flex-direction: column;
+	padding: 0 100px;
+	position: relative;
+	margin-bottom: 140px;
+
+
+	&__title {
+		@include font($black, 48px, 700, normal, normal);
+	}
+
+	&__box {
+	  width: 100%;
+	  height: auto;
+	  @include display-center (space-between, center);
+	  flex-wrap: wrap;
+	  margin-top: 35px;
+  
+	  &-cart{
+		@include display-center (center, center);
+		flex-direction: column;
+		gap: 25px;
+		margin: 20px;
+	  }
+  
+	  &-title {
+		@include font($black, 32px, 700, normal, normal);
+	  }
+  
+	  &-chart {
+		width: 250px;
+		height: 250px;
+		@include display-center (center, center);
+		.chart__title {
+		  @include font($black, 36px, 700, normal, normal);  
+		  position: absolute;
+		}
+	  }
+  
+	  &-subtitle{
+		width: 330px;
+		text-align: center;
+		@include font($black, 24px, 700, normal, normal);
+	  }
+
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 30px;
+		&-button {
+			margin-top: 50px;
+		}
+	}
+
+  }
+
+
+
+@media screen and (max-width: 1700px) {
+.benefits {
+	&__box {
+	  @include display-center (center, center);
+  
+	  &-cart{
+		margin: 40px;
+	  }
+  	}
+}
+
+
+}
+@media screen and (max-width: 1350px) {
+	.benefits {
+		padding: 120px 60px;
+		&__title {
+			@include font($black, 42px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.benefits {
+		padding: 120px 80px;
+		&__title {
+			@include font($black, 36px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.benefits {
+		padding: 120px 60px;
+		&__box {
+			width: 100%;
+			margin-top: 15px;
+			&-cart{
+				margin: 25px;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.benefits {
+		padding: 120px 30px;
+		
+		&__title {
+			@include font($black, 32px, 700, normal, normal);
+		}
+
+		&__buttons {
+			flex-direction: column;
+			gap: 20px;
+			margin-top: 50px;
+
+			&-button {
+				margin-top: 0px;
+			}
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	.benefits {
+		&__title {
+			@include font($black, 28px, 700, normal, normal);
+		}
+		&__box {
+			&-subtitle{
+			  width: 100%;
+ 			  @include font($black, 24px, 700, normal, normal);
+			}
+		  }
+		&__buttons {
+			width: 100%;
+			&-button {
+				width: 100% !important;
+			}
+		}
+
+		
+	}
+}

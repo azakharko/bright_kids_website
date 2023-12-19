@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.faq__card {
+  border-radius: 5px;
+  background: #fff;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  padding: 0 25px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 120px;
+  transition: height .6s; }
+  .faq__card._open {
+    transition: height .6s; }
+  .faq__card-question {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+    .faq__card-question-text {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 44px;
+      line-height: normal;
+      letter-spacing: 0;
+      color: #333333; }
+    .faq__card-question .faq__card-btn {
+      width: 70px;
+      height: 70px;
+      background-color: #B41D8A;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: .4s; }
+      .faq__card-question .faq__card-btn svg {
+        width: 70px;
+        height: 70px; }
+      .faq__card-question .faq__card-btn._active {
+        transform: rotate(135deg); }
+  .faq__card-dropdown-text {
+    transition: height 0.6s;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: #333333; }
+
+@media screen and (max-width: 2000px) {
+  .faq__card {
+    height: 110px; }
+    .faq__card-question {
+      height: 110px; }
+      .faq__card-question-text {
+        font-size: 40px; }
+      .faq__card-question .faq__card-btn {
+        width: 66px;
+        height: 66px; }
+        .faq__card-question .faq__card-btn svg {
+          width: 66px;
+          height: 66px; }
+    .faq__card-dropdown-text {
+      font-size: 28px; } }
+@media screen and (max-width: 1700px) {
+  .faq__card {
+    padding: 0 25px;
+    height: 100px; }
+    .faq__card-question {
+      width: 100%;
+      height: 100px; }
+      .faq__card-question-text {
+        font-size: 32px; }
+      .faq__card-question .faq__card-btn {
+        width: 60px;
+        height: 60px; }
+        .faq__card-question .faq__card-btn svg {
+          width: 52px;
+          height: 52px; }
+    .faq__card-dropdown-text {
+      font-size: 24px; } }
+@media screen and (max-width: 1200px) {
+  .faq__card-question-text {
+    font-size: 28px; }
+  .faq__card-dropdown-text {
+    font-size: 18px; } }
+@media screen and (max-width: 800px) {
+  .faq__card {
+    padding: 0 20px;
+    height: 90px; }
+    .faq__card-question {
+      margin-bottom: 10px;
+      height: 90px; }
+      .faq__card-question-text {
+        font-size: 24px; }
+    .faq__card-dropdown-text {
+      font-size: 18px; } }
+@media screen and (max-width: 500px) {
+  .faq__card {
+    padding: 0 15px; }
+    .faq__card-question {
+      column-gap: 10px; }
+      .faq__card-question-text {
+        font-size: 20px;
+        max-width: 70%; }
+      .faq__card-question .faq__card-btn {
+        width: 48px;
+        height: 48px; }
+        .faq__card-question .faq__card-btn svg {
+          height: 40px;
+          width: 40px; }
+        .faq__card-question .faq__card-btn._active {
+          transform: rotate(135deg); } }
+
+/*# sourceMappingURL=QuestionCard.css.map */

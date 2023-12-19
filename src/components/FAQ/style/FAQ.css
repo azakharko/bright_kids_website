@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.faq {
+  padding: 0px 100px;
+  padding-top: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 140px; }
+  .faq__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    z-index: 1;
+    margin-bottom: 50px;
+    text-align: center; }
+  .faq__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px; }
+
+@media screen and (max-width: 1350px) {
+  .faq {
+    padding: 0 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .faq__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 1200px) {
+  .faq {
+    padding: 0 80px; }
+    .faq__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 1000px) {
+  .faq {
+    padding: 0 60px; } }
+@media screen and (max-width: 700px) {
+  .faq {
+    padding: 0 30px; }
+    .faq__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 530px) {
+  .faq__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; } }
+
+/*# sourceMappingURL=FAQ.css.map */

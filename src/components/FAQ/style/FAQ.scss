@@ -1,0 +1,68 @@
+@import "../../main/style.scss";
+
+.faq {
+    padding: 0px 100px;
+    padding-top: 140px;
+	@include display-center(flex-start, center);
+    flex-direction: column;
+    margin-bottom: 140px;
+
+	&__title {
+		@include font($black, 48px, 700, normal, normal);
+		z-index: 1;	
+        margin-bottom: 50px;
+        text-align: center;
+	}
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 50px; // 35
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+	.faq {
+		padding: 0 60px;
+		@include display-center(flex-start, center);
+		flex-direction: column;
+		&__title {
+			@include font($black, 42px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.faq {
+		padding: 0 80px;
+		&__title {
+			@include font($black, 36px, 700, normal, normal);
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.faq {
+		padding: 0 60px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.faq {
+		padding: 0 30px;
+		&__title {
+			@include font($black, 32px, 700, normal, normal);
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.faq {
+		&__title {
+			@include font($black, 28px, 700, normal, normal);
+		}
+	}
+}

@@ -1,0 +1,296 @@
+@import "../../main/style.scss";
+
+.footer {
+	width: 100%;
+	height: 100%;
+	padding: 0 100px;
+	background-color: $main;
+	padding-top: 30px;
+	&__box {
+		width: 100%;
+		height: auto;
+		@include display-center(space-between, flex-start);
+		gap: 50px;
+		margin-top: 100px;
+
+		&-title {
+			width: 520px;
+			@include font($white, 30px, 400, normal, normal);
+
+			span {
+				font-weight: 700;
+			}
+		}
+		&-container {
+			.footer__text {
+				gap: 40px;
+				display: flex;
+	
+				p {
+					@include font($white, 20px, 600, normal, normal);
+					cursor: pointer;
+				}
+			}
+
+			.footer__input {
+				width: 578px;
+				height: 70px;
+				background-color: $white;
+				border-radius: 5px;
+				margin-top: 40px;
+				@include display-center(space-between, center);
+				cursor: pointer;
+
+				&-input {
+					width: 60%;
+					height: 100%;
+					outline: none;
+					border: none;
+					background: none;
+					padding: 0 20px;
+					@include font($main, 20px, 700, normal, normal);
+					cursor: pointer;
+
+				}
+
+				&-button {
+					width: 40%;
+					height: 100%;
+					background-color: $green;
+					box-shadow: none;
+					border: none;
+					border-radius: 5px;
+					cursor: pointer;
+					
+				}
+			}
+			
+		}
+	}
+
+
+	&__sociable {
+		margin-top: 80px;
+		&--link {
+			@include display-center(flex-start, center);
+			gap: 15px;
+			cursor: pointer;
+			margin: 15px 0;
+
+			div {
+				width: 56px;
+				height: 56px;
+				border-radius: 50%;
+				background-color: $green;
+				@include display-center(center, center);
+			}
+
+			a {
+				@include font($white, 20px, 600, normal, normal);
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__bottom {
+		width: 100%;
+		margin-top: 120px;
+		&-line {
+			width: 100%;
+			height: 1px;
+			background: $white;
+		}
+
+		&-box {
+			height: 100px;
+			@include display-center(space-between, center);
+			p {
+				@include font($white, 20px, 600, normal, normal);
+			}
+
+			.footer__sociable-link {
+				cursor: pointer;
+				display: flex;
+				gap: 15px;
+
+				&--icon {
+					width: 55px;
+					height: 55px;
+					background-color: $green;
+					border-radius: 50%;
+					@include display-center(center, center);
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1350px) {
+	.footer {
+		padding: 0 60px;
+		padding-top: 30px;
+		&__box {
+			&-title {
+				@include font($white, 28px, 400, normal, normal);
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.footer {
+		padding: 0 80px;
+		padding-top: 30px;
+		&__box {
+			&-container {
+				@include display-center(flex-start, flex-end);
+				flex-direction: column;
+				.footer__text {
+					width: 480px;
+					gap: 20px;
+					@include display-center(flex-end, center);
+				
+				}
+	
+				.footer__input {
+					width: 400px;
+					height: 70px;
+					background-color: $white;
+					border-radius: 5px;
+					margin-top: 40px;
+					@include display-center(space-between, center);
+					cursor: pointer;
+				}
+				
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.footer {
+		padding: 0 60px;
+		padding-top: 30px;
+		&__box {
+			&-title {
+				width: 100%;
+				@include font($white, 28px, 400, normal, normal);
+			}
+			flex-direction: column;
+			&-container {
+				@include display-center(flex-start, flex-end);
+				flex-direction: column;
+				.footer__text {
+					width: 100%;
+					gap: 20px;
+					@include display-center(flex-start, flex-start);
+					display: flex;
+					flex-wrap: wrap;
+				}
+	
+				.footer__input {
+					width: 100%;
+					height: 70px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.footer__sociable--link div {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background-color: $green;
+		@include display-center(center, center);
+		svg {
+			width: 30px;
+		}
+	}
+
+	.footer__sociable--link a {
+		font-size: 18px;
+	}
+
+	.footer {
+		padding: 0 30px;
+		padding-top: 30px;
+		&__bottom {
+			width: 100%;
+			margin-top: 120px;
+			&-line {
+				width: 100%;
+				height: 1px;
+				background: $white;
+			}
+
+			&-box {
+				height: 160px;
+				@include display-center(center, center);
+				gap: 30px;
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.footer__sociable--link div {
+		display: none
+	}
+	
+	.footer__sociable--link a {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer {
+
+		&__input {
+			flex-direction: column;
+			height: auto !important;
+		}
+		.footer__input-input {
+			width: 100%;
+			height: 80px;
+
+		}
+
+		.footer__input-button {
+			width: 100%;
+			height: 80px;
+			
+		}
+		&__box {
+			&-title {
+				@include font($white, 24px, 400, normal, normal);
+				text-align: center;
+			}
+
+			&-container {
+				.footer__text {
+					gap: 40px;
+					@include display-center(center, flex-end);
+					p {
+						@include font($white, 20px, 600, normal, normal);
+						cursor: pointer;
+					}
+				}	
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 380px) {
+	.footer__sociable--link a {
+		font-size: 16px;
+	}
+}

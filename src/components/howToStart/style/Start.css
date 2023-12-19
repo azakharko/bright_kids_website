@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.start {
+  width: 100%;
+  height: 100%;
+  padding: 0 100px;
+  margin-bottom: 140px; }
+  .start__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    text-align: center; }
+  .start__box {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #868C8C;
+    text-align: center; }
+    .start__box-elipce {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      .start__box-elipce .start__round {
+        width: 120px;
+        height: 120px;
+        background-color: #B41D8A;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .start__box-elipce p {
+        margin-top: 10px; }
+  .start__payment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px; }
+    .start__payment-img {
+      width: 800px;
+      height: 72px;
+      background-image: url(../img/playent.png);
+      background-size: cover; }
+  .start__buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px; }
+
+@media screen and (max-width: 1350px) {
+  .start {
+    padding: 0 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; }
+    .start__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .start__box {
+      width: 800px;
+      height: auto;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #868C8C;
+      text-align: center;
+      flex-wrap: wrap; }
+      .start__box-arrow {
+        display: none; }
+      .start__box-elipce {
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        margin-top: 0px; }
+        .start__box-elipce .start__round {
+          width: 120px;
+          height: 120px;
+          background-color: #B41D8A;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .start__box-elipce p {
+          margin-top: 10px; } }
+@media screen and (max-width: 1200px) {
+  .start {
+    padding: 0 80px; }
+    .start__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; } }
+@media screen and (max-width: 1000px) {
+  .start {
+    padding: 0 60px; }
+    .start__box {
+      width: auto;
+      margin-top: 35px;
+      flex-direction: column; }
+      .start__box .arrow {
+        transform: rotate(90deg); }
+      .start__box-elipce {
+        margin: 20px; }
+      .start__box-arrow {
+        display: block; }
+    .start__payment-img {
+      width: 650px;
+      height: 45px;
+      background-image: url(../img/playent.png);
+      background-size: cover; } }
+@media screen and (max-width: 700px) {
+  .start {
+    padding: 0 30px; }
+    .start__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .start__box {
+      width: 100%;
+      height: auto;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #868C8C;
+      text-align: center; }
+      .start__box-elipce {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; }
+        .start__box-elipce .start__round {
+          width: 80px;
+          height: 80px;
+          background-color: #B41D8A;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .start__box-elipce .start__round svg {
+            width: 50px;
+            height: 50px; }
+        .start__box-elipce p {
+          margin-top: 10px; }
+    .start .arrow {
+      width: 100px; }
+    .start__payment-img {
+      width: 450px;
+      height: 30px;
+      background-image: url(../img/playent.png);
+      background-size: cover; }
+    .start__buttons {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+      flex-direction: column; } }
+@media screen and (max-width: 530px) {
+  .start__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; }
+  .start__box {
+    margin-top: 10px; }
+  .start__payment-img {
+    width: 300px;
+    height: 20px;
+    background-image: url(../img/playent.png);
+    background-size: cover; }
+  .start__buttons a {
+    width: 100%; }
+  .start__buttons div {
+    width: 100%; }
+  .start__buttons-button {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=Start.css.map */

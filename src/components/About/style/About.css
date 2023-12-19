@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.about-us {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/bg.svg);
+  background-size: cover;
+  padding: 100px 100px;
+  margin-bottom: 140px;
+  position: relative;
+  overflow: hidden; }
+  .about-us__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    z-index: 1; }
+  .about-us__description {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+    z-index: 1; }
+  .about-us__video {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; }
+    .about-us__video iframe {
+      width: 100%;
+      height: 100vh; }
+  .about-us::after {
+    content: "";
+    width: 140%;
+    height: 140%;
+    background-image: url(../img/bg__line.svg);
+    background-size: cover;
+    position: absolute;
+    z-index: 0; }
+
+@media screen and (max-width: 1350px) {
+  .about-us {
+    padding: 100px 60px; }
+    .about-us__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; } }
+@media screen and (max-width: 1200px) {
+  .about-us {
+    padding: 100px 80px; }
+    .about-us__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; } }
+@media screen and (max-width: 1000px) {
+  .about-us {
+    padding: 100px 60px; }
+    .about-us__video iframe {
+      width: 100%;
+      height: 80vh; } }
+@media screen and (max-width: 700px) {
+  .about-us {
+    padding: 100px 30px; }
+    .about-us__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .about-us__description {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .about-us__video iframe {
+      width: 100%;
+      height: 50vh; } }
+@media screen and (max-width: 530px) {
+  .about-us {
+    padding: 100px 0; }
+    .about-us__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .about-us__description {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      padding: 0 30px; }
+    .about-us__video iframe {
+      width: 330px;
+      height: 187px; } }
+
+/*# sourceMappingURL=About.css.map */
