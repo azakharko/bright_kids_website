@@ -1,30 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import Chart from 'chart.js/auto';
 import "./style/Benefits.css";
 import Button from '../UI/Button/Button';
 
-const Benefits = ({urrentTranslations}) => {
+const Benefits = ({ urrentTranslations }) => {
 
-  useEffect(() => {
-    chartAnimation('myChart1', 'animatedNumber', 600, 400, 1000, 70, 30);
-    chartAnimation('myChart2', 'animatedNumber2', 0, 20, 1000, 90, 10);
-    chartAnimation('myChart3', 'animatedNumber3', 0, 18, 1000, 50, 50);
-    chartAnimation('myChart4', 'animatedNumber4', 0, 7, 1000, 65, 35);
-  }, []);
 
-  const handleScrollToSection = (sectionId) => {
-		if (!sectionId || sectionId === 'top') {
-		  window.scrollTo({ top: 0, behavior: 'smooth' });
-		  return;
-		}
-	  
-		const sectionRef = document.getElementById(sectionId);
-		if (sectionRef) {
-		  sectionRef.scrollIntoView({ behavior: 'smooth' });
-		}
-	  };
-
-  function chartAnimation(chartId, animatedNumberId, fromValue, toValue, time, data1, data2) {
+  const chartAnimationCallback = useCallback((chartId, animatedNumberId, fromValue, toValue, time, data1, data2) => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -61,7 +43,26 @@ const Benefits = ({urrentTranslations}) => {
     });
 
     observer.observe(document.querySelector(`#${chartId}`));
-  }
+  }, []);
+
+  useEffect(() => {
+    chartAnimationCallback('myChart1', 'animatedNumber', 600, 400, 1000, 70, 30);
+    chartAnimationCallback('myChart2', 'animatedNumber2', 0, 20, 1000, 90, 10);
+    chartAnimationCallback('myChart3', 'animatedNumber3', 0, 18, 1000, 50, 50);
+    chartAnimationCallback('myChart4', 'animatedNumber4', 0, 7, 1000, 65, 35);
+  }, [chartAnimationCallback]);
+
+  const handleScrollToSection = (sectionId) => {
+    if (!sectionId || sectionId === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const sectionRef = document.getElementById(sectionId);
+    if (sectionRef) {
+      sectionRef.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   function animateValue(id, start, end, duration) {
     const element = document.getElementById(id);
@@ -125,14 +126,14 @@ const Benefits = ({urrentTranslations}) => {
         </div>
       </div>
 
-	  <div className="benefits__buttons">
-	  	<Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button1} />
-      
+      <div className="benefits__buttons">
+        <Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button1} />
 
-       <div onClick={() => handleScrollToSection('firstLesson')}>
-        <Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button2} />
-       </div>
-	  </div>
+
+        <div onClick={() => handleScrollToSection('firstLesson')}>
+          <Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button2} />
+        </div>
+      </div>
 
 
     </div>

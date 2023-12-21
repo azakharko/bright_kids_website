@@ -12,9 +12,6 @@ import { useEffect, useState } from "react";
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("us");
 
-
-
-  
   const translations = {
     us: {
       HomePage: {
@@ -152,7 +149,7 @@ function App() {
         subTite3: "Refund policy",
         emailTitle: "Email",
         button: "Sumbit"
- 
+
       },
     },
     ua: {
@@ -266,34 +263,34 @@ function App() {
         title: "Наші клієнти часто запитують",
         faqTitle1: "Яка ціна за урок?",
         faqDescirption1: "Навчання в групах - від $11 за годину (тривалість уроку - 60 хв), індивідуальне навчання - від $20 (тривалість уроку - 45 хв)",
-      
+
         faqTitle2: "Який графік занять?",
         faqDescirption2: "У нас гнучкий графік. Зазвичай заняття проводяться один або два рази на тиждень в післяшкільний час чи в вихідні (за часовим поясом CST)",
-      
+
         faqTitle3: "Яка тривалість курсу?",
         faqDescirption3: "Мінімальна кількість занять, яку ви повинні оплатити після пробного уроку - 10",
-      
+
         faqTitle4: "Хто викладає моїх дітей?",
         faqDescirption4: "Наші вчителі всі з України, вони активно викладають дітей в школах Львова, Києва та Івано-Франківська",
-      
+
         faqTitle5: "Як подати заявку?",
         faqDescirption5: "У вас є багато варіантів: подати заявку через веб-сайт, заповнивши аплікаційну форму, напишіть нам на електронну пошту або зв'яжіться з нами в будь-якій з соціальних мереж, таких як Facebook, TikTok, Instagram або YouTube",
-      
+
         faqTitle6: "Як оплатити?",
         faqDescirption6: "Ми приймаємо PayPal, Venmo, Zelle, Privat24, кредитні / дебетові картки або прямий депозит (ACH)",
-      
+
         faqTitle7: "Є які-небудь програми знижок/лояльності?",
         faqDescirption7: "1) Знижка для сім'ї. 2 чи більше дітей з однієї сім'ї в одній групі - щомісячна знижка $10 на сім'ю. Застосовується лише до групових занять. 2) Знижка за кілька курсів. Оберіть 3 або більше курсів і отримайте знижку $10 щомісяця. Застосовується лише до третього курсу. 3) Бонус за рекомендацію. Запросіть друга і отримайте одноразову знижку $15",
       },
 
       Footer: {
-      title: "Bright Kids Ukrainian Online School - Школа, де ваші діти можуть вивчати мову весело, швидко і якісно",
-      subTite1: "Конфіденційності",
-      subTite2: "Використання",
-      subTite3: "Повернення коштів",
-      emailTitle: "Пошта",
-      button: "Відправити"
-    },
+        title: "Bright Kids Ukrainian Online School - Школа, де ваші діти можуть вивчати мову весело, швидко і якісно",
+        subTite1: "Конфіденційності",
+        subTite2: "Використання",
+        subTite3: "Повернення коштів",
+        emailTitle: "Пошта",
+        button: "Відправити"
+      },
     },
   };
   const currentTranslations = translations[selectedLanguage];
@@ -310,36 +307,34 @@ function App() {
       { question: currentTranslations.FAQ.faqTitle7, answer: currentTranslations.FAQ.faqDescirption7, isOpen: false },
 
     ]);
-  }, [selectedLanguage])
+  }, [selectedLanguage, currentTranslations])
 
   useEffect(() => {
     const path = window.location.pathname.toLowerCase();
-    console.log("Current Path:", path);
-  
+
     if (path === '/' || path.startsWith('/us')) {
       setSelectedLanguage('us');
     } else if (path.startsWith('/ua')) {
       setSelectedLanguage('ua');
     } else {
-      console.log("Setting default language to 'us'");
-      setSelectedLanguage('us'); 
+      setSelectedLanguage('us');
       window.history.replaceState({}, '', "/us");
     }
   }, [setSelectedLanguage]);
-  
-  
+
+
 
   return (
     <div className="App">
-      <Home translations={translations} selectedLanguag={selectedLanguage} setSelectedLanguage={setSelectedLanguage} currentTranslations={currentTranslations}/>
+      <Home translations={translations} selectedLanguag={selectedLanguage} setSelectedLanguage={setSelectedLanguage} currentTranslations={currentTranslations} />
       <Course urrentTranslations={currentTranslations} />
       <FirstLesson urrentTranslations={currentTranslations} />
-      <Start urrentTranslations={currentTranslations}/>
-      <About urrentTranslations={currentTranslations}/>
-      <Benefits urrentTranslations={currentTranslations}/>
-      <Feedback urrentTranslations={currentTranslations}/>
-      <FAQ setCards={setCards} cards={cards} urrentTranslations={currentTranslations}/>
-      <Footer urrentTranslations={currentTranslations}/>
+      <Start urrentTranslations={currentTranslations} />
+      <About urrentTranslations={currentTranslations} />
+      <Benefits urrentTranslations={currentTranslations} />
+      <Feedback urrentTranslations={currentTranslations} />
+      <FAQ setCards={setCards} cards={cards} urrentTranslations={currentTranslations} />
+      <Footer urrentTranslations={currentTranslations} />
 
     </div>
   );
