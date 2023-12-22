@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import HomeCard from "./components/HomeCard/HomeCard";
+import Media from "./components/Media/Media";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("us");
@@ -128,6 +129,9 @@ function App() {
         button1: "Learning materials",
         button2: "Try free trial lesson",
       },
+      Feedback: {
+        title: "What our clients say",
+      },      
       FAQ: {
         title: "Our clients often ask us",
         faqTitle1: "What is the price per lesson?",
@@ -150,6 +154,9 @@ function App() {
 
         faqTitle7: "Any discount/loyalty programs?",
         faqDescirption7: "1) Family discount. 2 or more kids from one family in the same group - monthly discount of $10 per family. Applies to group classes only 2)Multiple cources discount. Take 3 or more cources and get $10 less every month. Applies for 3rd course only 3) Reference bonus. Invite a friend and get one-time $15 discount",
+      },
+      MediaPage: {
+        title: "Media about us",
       },
       Footer: {
         title: "Bright Kids Ukrainian Online School -  A school where your children can learn the language in a fun, fast and high-quality way",
@@ -276,6 +283,9 @@ function App() {
         button1: "Навчальні матеріали",
         button2: "Спробувати безкоштовно",
       },
+      Feedback: {
+        title: "Що говорять наші клієнти",
+      },      
       FAQ: {
         title: "Наші клієнти часто запитують",
         faqTitle1: "Яка ціна за урок?",
@@ -299,7 +309,9 @@ function App() {
         faqTitle7: "Є які-небудь програми знижок/лояльності?",
         faqDescirption7: "1) Знижка для сім'ї. 2 чи більше дітей з однієї сім'ї в одній групі - щомісячна знижка $10 на сім'ю. Застосовується лише до групових занять. 2) Знижка за кілька курсів. Оберіть 3 або більше курсів і отримайте знижку $10 щомісяця. Застосовується лише до третього курсу. 3) Бонус за рекомендацію. Запросіть друга і отримайте одноразову знижку $15",
       },
-
+      MediaPage: {
+        title: "ЗМІ про нас",
+      },
       Footer: {
         title: "Bright Kids Ukrainian Online School - Школа, де ваші діти можуть вивчати мову весело, швидко і якісно",
         subTite1: "Конфіденційності",
@@ -354,6 +366,7 @@ function App() {
       <Benefits urrentTranslations={currentTranslations} />
       <Feedback urrentTranslations={currentTranslations} />
       <FAQ setCards={setCards} cards={cards} urrentTranslations={currentTranslations} />
+      <Media  urrentTranslations={currentTranslations}/>
       <Footer urrentTranslations={currentTranslations} />
 
     </div>

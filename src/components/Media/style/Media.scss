@@ -1,0 +1,120 @@
+@import "../../main/style.scss";
+
+.media {
+	width: 100%;
+	height: auto;
+	background-color: $main;
+	padding: 0px 100px;
+	padding-top: 60px;
+	margin-bottom: 140px;
+
+	&__title {
+		@include font($white, 48px, 700, normal, normal);
+		z-index: 1;	
+		text-align: center;
+	}
+
+	&__box {
+		@include display-center(space-between, center);
+		&-img1 {
+			width: 500px;
+			height: 500px;
+			background-image: url(../img/media-img1.svg);
+			background-size: cover;
+		}
+
+		&-img2 {
+			width: 500px;
+			height: 80px;
+			background-image: url(../img/media-img2.svg);
+			background-size: cover;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1350px) {
+	.media {
+		padding: 0 60px;
+		padding-top: 60px;
+		&__box {
+			&-img1 {
+				width: 350px;
+				height: 350px;
+			}
+	
+			&-img2 {
+				width: 350px;
+				height: 55px;
+			}
+		}
+		&__title {
+			@include font($white, 42px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.media {
+		padding: 0 80px;
+		padding-top: 60px;
+
+		&__title {
+			@include font($white, 36px, 700, normal, normal);
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.media {
+		padding: 0 60px;
+		padding-top: 60px;
+		&__box {
+			&-img1 {
+				width: 250px;
+				height: 250px;
+			}
+	
+			&-img2 {
+				width: 250px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.media {
+		padding: 60px 30px;
+
+		&__title {
+			@include font($white, 32px, 700, normal, normal);
+		}
+
+		&__box {
+			@include display-center(flex-start, center);
+			flex-direction: column;
+			&-img1 {
+				width: 250px;
+				height: 250px;
+			}
+	
+			&-img2 {
+				width: 250px;
+				height: 40px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.media {
+		padding-top: 60px;
+
+		&__title {
+			@include font($white, 28px, 700, normal, normal);
+		}
+	}
+}

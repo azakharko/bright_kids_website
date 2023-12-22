@@ -1,10 +1,10 @@
 import React from 'react'
 import "./style/Feedback.css"
 
-const Feedback = () => {
+const Feedback = ({urrentTranslations}) => {
   return (
 	<div className='feedback'>
-	  <p className='feedback__title'>What our clients say</p>
+	  <p className='feedback__title'>{urrentTranslations.Feedback.title}</p>
 
 	  <div className="feedback__box">
 		<div className="feedback__box-cart feedback__box-cart1"></div>
