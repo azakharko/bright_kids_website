@@ -46,10 +46,10 @@ const Benefits = ({ urrentTranslations }) => {
   }, []);
 
   useEffect(() => {
-    chartAnimationCallback('myChart1', 'animatedNumber', 600, 400, 1000, 70, 30);
+    chartAnimationCallback('myChart1', 'animatedNumber', 450, 600, 1000, 70, 30);
     chartAnimationCallback('myChart2', 'animatedNumber2', 0, 20, 1000, 90, 10);
-    chartAnimationCallback('myChart3', 'animatedNumber3', 0, 18, 1000, 50, 50);
-    chartAnimationCallback('myChart4', 'animatedNumber4', 0, 7, 1000, 65, 35);
+    chartAnimationCallback('myChart3', 'animatedNumber3', 0, 22, 1000, 80, 20);
+    chartAnimationCallback('myChart4', 'animatedNumber4', 0, 10, 1000, 65, 35);
   }, [chartAnimationCallback]);
 
   const handleScrollToSection = (sectionId) => {
