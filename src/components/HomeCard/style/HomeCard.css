@@ -65,7 +65,8 @@ body {
     letter-spacing: normal;
     color: #fff;
     box-sizing: border-box;
-    text-align: center; }
+    text-align: center;
+    border-radius: 10px; }
 
 @media screen and (max-width: 1350px) {
   .home-cards {

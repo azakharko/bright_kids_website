@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.ready {
+  width: 100%;
+  height: auto;
+  padding: 0 100px;
+  margin-bottom: 140px; }
+  .ready__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333; }
+  .ready__description {
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #868C8C;
+    margin-top: 25px; }
+  .ready__buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px; }
+    .ready__buttons-button {
+      padding: 0 30px; }
+  .ready__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px; }
+    .ready__box-img {
+      width: 450px;
+      height: 450px;
+      background-image: url(../img/ready__img.jpg);
+      background-size: cover;
+      border-radius: 10px; }
+    .ready__box-container {
+      width: auto;
+      height: auto; }
+
+@media screen and (max-width: 1350px) {
+  .ready {
+    padding: 0 60px; }
+    .ready__box-img {
+      width: 400px;
+      height: 400px; } }
+@media screen and (max-width: 1200px) {
+  .ready {
+    padding: 0 80px; }
+    .ready__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .ready__description {
+      color: #333333; }
+    .ready__box-img {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      z-index: 0;
+      opacity: 0.5; }
+    .ready__box-container {
+      z-index: 1;
+      padding-left: 20px; } }
+@media screen and (max-width: 1000px) {
+  .ready {
+    padding: 60px 60px; }
+    .ready__description {
+      text-align: center; }
+    .ready__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .ready__box-img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.5; }
+      .ready__box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; } }
+@media screen and (max-width: 700px) {
+  .ready {
+    padding: 0px 30px; }
+    .ready__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .ready__buttons {
+      flex-direction: column; }
+    .ready__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .ready__box-img {
+        width: 450px;
+        height: 450px; } }
+@media screen and (max-width: 530px) {
+  .ready__title {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px; }
+  .ready__description {
+    width: 100%; }
+  .ready__buttons {
+    width: 100%; }
+    .ready__buttons div {
+      width: 100%; }
+    .ready__buttons a {
+      width: 100%; }
+    .ready__buttons-button {
+      width: 100% !important; }
+  .ready__box-img {
+    width: 320px;
+    height: 320px; } }
+
+/*# sourceMappingURL=Ready.css.map */

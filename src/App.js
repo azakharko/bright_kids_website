@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import HomeCard from "./components/HomeCard/HomeCard";
 import Media from "./components/Media/Media";
+import Ready from "./components/Ready/Ready";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("us");
@@ -157,6 +158,12 @@ function App() {
       },
       MediaPage: {
         title: "Media about us",
+      },
+      ReadyPage: {
+        title: "Ready to start learning?",
+        description: "Then call us, and we will arrange everything for you!",
+        callUsButton: "Call us",
+        trialLessonButton: "Try a free trial lesson",
       },
       Footer: {
         title: "Bright Kids Ukrainian Online School -  A school where your children can learn the language in a fun, fast and high-quality way",
@@ -312,6 +319,12 @@ function App() {
       MediaPage: {
         title: "ЗМІ про нас",
       },
+      ReadyPage: {
+        title: "Готові до навчання?",
+        description: "Тоді зателефонуйте нам, і ми все для вас організуємо!",
+        callUsButton: "Подзвоніть нам",
+        trialLessonButton: "Спробувати безкоштовний урок",
+      },
       Footer: {
         title: "Bright Kids Ukrainian Online School - Школа, де ваші діти можуть вивчати мову весело, швидко і якісно",
         subTite1: "Конфіденційності",
@@ -367,6 +380,7 @@ function App() {
       <Feedback urrentTranslations={currentTranslations} />
       <FAQ setCards={setCards} cards={cards} urrentTranslations={currentTranslations} />
       <Media  urrentTranslations={currentTranslations}/>
+      <Ready urrentTranslations={currentTranslations}/>
       <Footer urrentTranslations={currentTranslations} />
 
     </div>

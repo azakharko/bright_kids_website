@@ -70,7 +70,10 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 						<option value="us">us</option>
 						<option value="ua">ua</option>
 					</select>
-					<Button width={200} height={60} className="home__header-button" text="+1 (512) 786-8874" />
+
+					<a target='_blank' rel="noreferrer"href="tel:+15127868874">
+						<Button width={200} height={60} className="home__header-button" text="+1 (512) 786-8874" />
+					</a>
 
 					<div className="box__burger" onClick={hadleOpenBurger}>
 						<span className={burgerRow1}></span>
