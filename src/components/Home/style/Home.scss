@@ -7,7 +7,7 @@
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	margin-bottom: 280px;
+	margin-bottom: 140px;
 
 	&__popup {
 		width: 100%;
@@ -164,16 +164,6 @@
 
 
 		}
-	}
-
-	&::after {
-		content: "";
-		width: 100%;
-		height: 34%;
-		background-image: url(../img/line.svg);
-		background-size: cover;
-		position: absolute;
-
 	}
 
 }
@@ -457,14 +447,6 @@
 				}
 			}
 		}
-		&::after {
-			content: "";
-			width: 100%;
-			height: 170px;
-			background-image: url(../img/small-line.svg);
-			margin-top: 40px;
-	
-		}
 	
 	}
 	
@@ -510,11 +492,6 @@
 				.home__elipes {
 					width: 270px;
 					height: 309px;
-					&::after {
-						width: 100px;
-						height: 100px;
-						margin-top: 10px;
-					}
 				}
 			}
 		}

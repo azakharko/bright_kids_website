@@ -1,0 +1,65 @@
+@import "../../main/style.scss";
+
+
+.home-cards {
+	width: 100%;
+	height: auto;
+	padding: 0 100px;
+	margin-bottom: 140px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__card {
+		width: calc(33.33% - 20px); 
+		margin-bottom: 20px; 
+		padding: 20px;
+		background-color: $main;
+		@include display-center(center, center);
+		@include font($white, 20px, 600, normal, normal);
+		box-sizing: border-box;
+		text-align: center;
+	}
+}
+
+
+
+@media screen and (max-width: 1350px) {
+	.home-cards {
+		padding: 0 60px;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.home-cards {
+		padding: 0 80px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.home-cards {
+		padding: 0 60px;
+		&__card {
+			width: calc(50% - 20px); 
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.home-cards {
+		padding: 0 30px;
+		&__card {
+			width: calc(100% - 20px); 
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.home-cards {
+		&__card {
+			padding: 15px;
+			font-size: 18px;
+		}
+	}
+}

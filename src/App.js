@@ -8,6 +8,7 @@ import Start from "./components/howToStart/Start";
 import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
+import HomeCard from "./components/HomeCard/HomeCard";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("us");
@@ -307,7 +308,9 @@ function App() {
       { question: currentTranslations.FAQ.faqTitle7, answer: currentTranslations.FAQ.faqDescirption7, isOpen: false },
 
     ]);
-  }, [selectedLanguage, currentTranslations])
+  }, [selectedLanguage]) 
+  // If we use currentTranslations, then there is an endless loop of calling useEffect
+
 
   useEffect(() => {
     const path = window.location.pathname.toLowerCase();
@@ -327,6 +330,7 @@ function App() {
   return (
     <div className="App">
       <Home translations={translations} selectedLanguag={selectedLanguage} setSelectedLanguage={setSelectedLanguage} currentTranslations={currentTranslations} />
+      <HomeCard />
       <Course urrentTranslations={currentTranslations} />
       <FirstLesson urrentTranslations={currentTranslations} />
       <Start urrentTranslations={currentTranslations} />
