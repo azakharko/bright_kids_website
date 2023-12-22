@@ -1,31 +1,31 @@
 import React from 'react'
 import "./style/HomeCard.css"
 
-const HomeCard = () => {
+const HomeCard = ({urrentTranslations}) => {
   return (
 	<div className='home-cards'>
 	  <div className="home-cards__card">
-	  	Courses for kids and adults
+	  	{urrentTranslations.HomeCardPage.card1}
 	  </div>
 
 	  <div className="home-cards__card">
-		Online learning
+	  	{urrentTranslations.HomeCardPage.card2}
 	  </div>
 
 	  <div className="home-cards__card">
-	 	American and Ukrainian approach
+		  {urrentTranslations.HomeCardPage.card3}
 	  </div>
 
 	  <div className="home-cards__card">
-		  Soft skills development
+		  {urrentTranslations.HomeCardPage.card4}
 	  </div>
 
 	  <div className="home-cards__card">
-	 	Preserving Ukrainian identity
+		  {urrentTranslations.HomeCardPage.card5}
 	  </div>
 
 	  <div className="home-cards__card">
-	 	Affordable prices
+	  	{urrentTranslations.HomeCardPage.card6}
 	  </div>
 
 

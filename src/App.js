@@ -23,6 +23,14 @@ function App() {
         description: "Preserve national identity with courses for children and adults",
         signUp: "Sign up for a free trial class",
       },
+      HomeCardPage: {
+        card1: "Courses for kids and adults",
+        card2: "Online learning",
+        card3: "American and Ukrainian approach",
+        card4: "Soft skills development",
+        card5: "Preserving Ukrainian identity",
+        card6: "Affordable prices",
+      },
       CoursePage: {
         title: "Course",
         subTitle: "Course",
@@ -161,6 +169,14 @@ function App() {
         title: "Найкращі онлайн-курси української мови з вчителями з України",
         description: "Зберігайте національну ідентичність за допомогою курсів для дітей та дорослих",
         signUp: "Записатися пробний урок",
+      },
+      HomeCardPage: {
+        card1: "Курси для дітей та дорослих",
+        card2: "Онлайн навчання",
+        card3: "Американський та український підхід",
+        card4: "Розвиток м'яких навичок",
+        card5: "Збереження української ідентичності",
+        card6: "Доступні ціни",
       },
       CoursePage: {
         title: "Курси",
@@ -330,7 +346,7 @@ function App() {
   return (
     <div className="App">
       <Home translations={translations} selectedLanguag={selectedLanguage} setSelectedLanguage={setSelectedLanguage} currentTranslations={currentTranslations} />
-      <HomeCard />
+      <HomeCard  urrentTranslations={currentTranslations}/>
       <Course urrentTranslations={currentTranslations} />
       <FirstLesson urrentTranslations={currentTranslations} />
       <Start urrentTranslations={currentTranslations} />
