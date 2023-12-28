@@ -63,8 +63,8 @@ body {
     justify-content: space-between;
     align-items: center; }
     .media__box-img1 {
-      width: 500px;
-      height: 500px;
+      width: 300px;
+      height: 300px;
       background-image: url(../img/media-img1.svg);
       background-size: cover; }
     .media__box-img2 {
@@ -130,11 +130,11 @@ body {
       align-items: center;
       flex-direction: column; }
       .media__box-img1 {
-        width: 250px;
-        height: 250px; }
+        width: 200px;
+        height: 200px; }
       .media__box-img2 {
-        width: 250px;
-        height: 40px; } }
+        width: 200px;
+        height: 32px; } }
 @media screen and (max-width: 530px) {
   .media {
     padding-top: 60px; }
