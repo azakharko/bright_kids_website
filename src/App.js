@@ -36,63 +36,73 @@ function App() {
       CoursePage: {
         title: "Course",
         subTitle: "Course",
-        price: "Price: 0$ / course",
         age1: "Age of children:",
         age2: "years",
         course1: {
           title: "Ukrainian Language",
           subTitle: "Subject",
-          age: "6-9"
+          age: "6-9",
+          category: "group"
         },
         course2: {
           title: "Chess",
           subTitle: "Brain",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course3: {
           title: "Painting",
           subTitle: "Art",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course4: {
           title: "Roblox",
           subTitle: "Programing",
-          age: "12-15"
+          age: "12-15",
+          category: "group"
         },
         course5: {
           title: "Scratch",
           subTitle: "Programing",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course6: {
           title: "Python",
-          subTitle: "Programing",
-          age: "12-15"
+          subTitle: "group",
+          age: "12-15",
+          category: "individual"
         },
         course7: {
           title: "Sing",
           subTitle: "Music",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course8: {
           title: "Piano",
           subTitle: "Music",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course9: {
           title: "Math",
           subTitle: "Brain",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course10: {
           title: "Logic",
           subTitle: "Brain",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
         course11: {
           title: "History of Ukraine",
           subTitle: "Subject",
-          age: "12-15"
+          age: "12-15",
+          category: "individual"
         },
       },
       FirstLesson: {
@@ -202,42 +212,50 @@ function App() {
         course1: {
           title: "Українська мова",
           subTitle: "Предмет",
-          age: "6-9"
+          age: "6-9",
+          category: "індувідуальні"
         },
         course2: {
           title: "Шахи",
           subTitle: "Мишлення",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course3: {
           title: "Живопис",
           subTitle: "Мистецтво",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course4: {
           title: "Roblox",
           subTitle: "Програмування",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course5: {
           title: "Scratch",
           subTitle: "Програмування",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course6: {
           title: "Python",
           subTitle: "Програмування",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course7: {
           title: "Спів",
           subTitle: "Музика",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course8: {
           title: "Фортепіано",
           subTitle: "Музика",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course9: {
           title: "Математика",
@@ -247,12 +265,14 @@ function App() {
         course10: {
           title: "Логіка",
           subTitle: "Мишлення",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
         course11: {
           title: "Історія України",
           subTitle: "Предмет",
-          age: "12-15"
+          age: "12-15",
+          category: "індувідуальні"
         },
       },
       FirstLesson: {
@@ -337,6 +357,7 @@ function App() {
   };
   const currentTranslations = translations[selectedLanguage];
   const [cards, setCards] = useState([]);
+  const [courseArr, setCourseArr] = useState([]);
 
   useEffect(() => {
     setCards([
@@ -349,6 +370,86 @@ function App() {
       { question: currentTranslations.FAQ.faqTitle7, answer: currentTranslations.FAQ.faqDescirption7, isOpen: false },
 
     ]);
+    setCourseArr([
+      {
+        id: 0,
+        title: `${currentTranslations.CoursePage.course1.title}`,
+        subTitle: `${currentTranslations.CoursePage.course1.subTitle}`,
+        age: `${currentTranslations.CoursePage.course1.age}`,
+        category: `${currentTranslations.CoursePage.course1.category}`
+      },
+      {
+        id: 1,
+        title: `${currentTranslations.CoursePage.course2.title}`,
+        subTitle: `${currentTranslations.CoursePage.course2.subTitle}`,
+        age: `${currentTranslations.CoursePage.course2.age}`,
+        category: `${currentTranslations.CoursePage.course2.category}`
+      },
+      {
+        id: 2,
+        title: `${currentTranslations.CoursePage.course3.title}`,
+        subTitle: `${currentTranslations.CoursePage.course3.subTitle}`,
+        age: `${currentTranslations.CoursePage.course3.age}`,
+        category: `${currentTranslations.CoursePage.course3.category}`
+      },
+      {
+        id: 3,
+        title: `${currentTranslations.CoursePage.course4.title}`,
+        subTitle: `${currentTranslations.CoursePage.course4.subTitle}`,
+        age: `${currentTranslations.CoursePage.course4.age}`,
+        category: `${currentTranslations.CoursePage.course4.category}`
+      },
+      {
+        id: 4,
+        title: `${currentTranslations.CoursePage.course5.title}`,
+        subTitle: `${currentTranslations.CoursePage.course5.subTitle}`,
+        age: `${currentTranslations.CoursePage.course5.age}`,
+        category: `${currentTranslations.CoursePage.course5.category}`
+      },
+      {
+        id: 5,
+        title: `${currentTranslations.CoursePage.course6.title}`,
+        subTitle: `${currentTranslations.CoursePage.course6.subTitle}`,
+        age: `${currentTranslations.CoursePage.course6.age}`,
+        category: `${currentTranslations.CoursePage.course6.category}`
+      },
+      {
+        id: 6,
+        title: `${currentTranslations.CoursePage.course7.title}`,
+        subTitle: `${currentTranslations.CoursePage.course7.subTitle}`,
+        age: `${currentTranslations.CoursePage.course7.age}`,
+        category: `${currentTranslations.CoursePage.course7.category}`
+      },
+      {
+        id: 7,
+        title: `${currentTranslations.CoursePage.course8.title}`,
+        subTitle: `${currentTranslations.CoursePage.course8.subTitle}`,
+        age: `${currentTranslations.CoursePage.course8.age}`,
+        category: `${currentTranslations.CoursePage.course8.category}`
+      },
+      {
+        id: 8,
+        title: `${currentTranslations.CoursePage.course9.title}`,
+        subTitle: `${currentTranslations.CoursePage.course9.subTitle}`,
+        age: `${currentTranslations.CoursePage.course9.age}`,
+        category: `${currentTranslations.CoursePage.course9.category}`
+      },
+      {
+        id: 9,
+        title: `${currentTranslations.CoursePage.course10.title}`,
+        subTitle: `${currentTranslations.CoursePage.course10.subTitle}`,
+        age: `${currentTranslations.CoursePage.course10.age}`,
+        category: `${currentTranslations.CoursePage.course10.category}`
+      },
+      {
+        id: 10,
+        title: `${currentTranslations.CoursePage.course11.title}`,
+        subTitle: `${currentTranslations.CoursePage.course11.subTitle}`,
+        age: `${currentTranslations.CoursePage.course11.age}`,
+        category: `${currentTranslations.CoursePage.course11.category}`
+      },
+  
+    ])
   }, [selectedLanguage]) 
   // If we use currentTranslations, then there is an endless loop of calling useEffect
 
@@ -371,17 +472,17 @@ function App() {
   return (
     <div className="App">
       <Home translations={translations} selectedLanguag={selectedLanguage} setSelectedLanguage={setSelectedLanguage} currentTranslations={currentTranslations} />
-      <HomeCard  urrentTranslations={currentTranslations}/>
-      <Course urrentTranslations={currentTranslations} />
-      <FirstLesson urrentTranslations={currentTranslations} />
-      <Start urrentTranslations={currentTranslations} />
-      <About urrentTranslations={currentTranslations} />
-      <Benefits urrentTranslations={currentTranslations} />
-      <Feedback urrentTranslations={currentTranslations} />
-      <FAQ setCards={setCards} cards={cards} urrentTranslations={currentTranslations} />
-      <Media  urrentTranslations={currentTranslations}/>
-      <Ready urrentTranslations={currentTranslations}/>
-      <Footer urrentTranslations={currentTranslations} />
+      <HomeCard  currentTranslations={currentTranslations}/>
+      <Course courseArr={courseArr} currentTranslations={currentTranslations} />
+      <FirstLesson currentTranslations={currentTranslations} />
+      <Start currentTranslations={currentTranslations} />
+      <About currentTranslations={currentTranslations} />
+      <Benefits currentTranslations={currentTranslations} />
+      <Feedback currentTranslations={currentTranslations} />
+      <FAQ setCards={setCards} cards={cards} currentTranslations={currentTranslations} />
+      <Media  currentTranslations={currentTranslations}/>
+      <Ready currentTranslations={currentTranslations}/>
+      <Footer currentTranslations={currentTranslations} />
 
     </div>
   );

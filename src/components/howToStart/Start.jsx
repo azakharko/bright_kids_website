@@ -2,7 +2,7 @@ import React from 'react'
 import "./style/Start.css"
 import Button from '../UI/Button/Button';
 
-const Start = ({ urrentTranslations }) => {
+const Start = ({ currentTranslations }) => {
 
 	const handleScrollToSection = (sectionId) => {
 		if (!sectionId || sectionId === 'top') {
@@ -17,7 +17,7 @@ const Start = ({ urrentTranslations }) => {
 	};
 	return (
 		<div className='start'>
-			<p className='start__title'>{urrentTranslations.StartPage.title}</p>
+			<p className='start__title'>{currentTranslations.StartPage.title}</p>
 
 			<div className="start__box">
 				<div className="start__box-elipce">
@@ -27,7 +27,7 @@ const Start = ({ urrentTranslations }) => {
 							<path opacity="0.5" d="M47.8768 52.4255C47.2686 54.2874 46.1995 55.9717 44.762 57.318C42.6291 59.3157 39.3404 60.1969 32.7631 61.9593C26.1858 63.7217 22.8971 64.6029 20.0511 63.9393C17.8039 63.4153 15.7626 62.2368 14.1853 60.5527C12.1876 58.4197 11.3064 55.1311 9.54398 48.5538L8.0342 42.9192C6.27181 36.3419 5.39062 33.0532 6.05422 30.2072C6.57818 27.96 7.75675 25.9187 9.44087 24.3413C11.5738 22.3437 14.8624 21.4625 21.4398 19.7001C22.6841 19.3667 23.8108 19.0648 24.839 18.7989C24.8389 18.7992 24.839 18.7986 24.839 18.7989C24.6161 19.615 24.3807 20.4942 24.1273 21.4398L22.6175 27.0744C20.8551 33.6517 19.974 36.9404 20.6375 39.7864C21.1615 42.0336 22.3401 44.0749 24.0242 45.6523C26.1571 47.65 29.4458 48.5312 36.0231 50.2935C41.9513 51.882 45.2079 52.7546 47.8768 52.4255Z" fill="white" />
 						</svg>
 					</div>
-					<p>{urrentTranslations.StartPage.subtitle1}</p>
+					<p>{currentTranslations.StartPage.subtitle1}</p>
 				</div>
 
 				<svg className='arrow' xmlns="http://www.w3.org/2000/svg" width="135" height="135" viewBox="0 0 135 135" fill="none">
@@ -42,7 +42,7 @@ const Start = ({ urrentTranslations }) => {
 							<path d="M29.2283 30.0216C31.5064 27.7435 31.5064 24.0501 29.2283 21.772C26.9503 19.494 23.2568 19.494 20.9788 21.772C18.7007 24.0501 18.7007 27.7435 20.9788 30.0216C23.2568 32.2997 26.9503 32.2997 29.2283 30.0216Z" fill="white" />
 						</svg>
 					</div>
-					<p>{urrentTranslations.StartPage.subtitle2}</p>
+					<p>{currentTranslations.StartPage.subtitle2}</p>
 				</div>
 
 
@@ -59,7 +59,7 @@ const Start = ({ urrentTranslations }) => {
 							<path d="M17.5 44.479C16.2919 44.479 15.3125 45.4584 15.3125 46.6665C15.3125 47.8746 16.2919 48.854 17.5 48.854H29.1667C30.3748 48.854 31.3542 47.8746 31.3542 46.6665C31.3542 45.4584 30.3748 44.479 29.1667 44.479H17.5Z" fill="white" />
 						</svg>
 					</div>
-					<p>{urrentTranslations.StartPage.subtitle3}</p>
+					<p>{currentTranslations.StartPage.subtitle3}</p>
 				</div>
 
 				<svg className='arrow' xmlns="http://www.w3.org/2000/svg" width="135" height="135" viewBox="0 0 135 135" fill="none">
@@ -73,7 +73,7 @@ const Start = ({ urrentTranslations }) => {
 							<path opacity="0.5" d="M26.6967 15.7746L25.7409 17.4892C24.6911 19.3725 24.1662 20.3141 23.3477 20.9354C23.4626 20.8482 23.5717 20.7548 23.6772 20.6532C23.4511 21.9991 23.3333 23.3817 23.3333 24.7918C23.3333 38.4839 34.4329 49.5835 48.125 49.5835C50.1169 49.5835 52.0539 49.3486 53.9099 48.905L53.8563 48.3514C53.6462 46.183 53.5411 45.0988 53.8537 44.0935C54.1663 43.0882 54.8612 42.2756 56.2511 40.6504L57.5164 39.1708C62.4072 33.4516 64.8526 30.592 63.9992 27.8477C63.1458 25.1034 59.5587 24.2918 52.3847 22.6686L50.5287 22.2486C48.49 21.7874 47.4707 21.5567 46.6522 20.9354C45.8338 20.3141 45.3089 19.3725 44.2591 17.4892L43.3033 15.7746C39.6089 9.14719 37.7617 5.8335 35 5.8335C32.2383 5.8335 30.3911 9.1472 26.6967 15.7746Z" fill="white" />
 						</svg>
 					</div>
-					<p>{urrentTranslations.StartPage.subtitle4}</p>
+					<p>{currentTranslations.StartPage.subtitle4}</p>
 				</div>
 			</div>
 
@@ -83,11 +83,11 @@ const Start = ({ urrentTranslations }) => {
 
 			<div className="start__buttons">
 				<a target='_blank' rel="noreferrer" href="https://calendar.google.com/calendar/u/0/embed?bgcolor=%23B39DDB&color=%23039BE5&ctz=America%2FChicago&height=600&mode=WEEK&src=YnJpZ2h0a2lkc3NjaG9vbDIwMjBAZ21haWwuY29t&wkst=1">
-					<Button text={urrentTranslations.StartPage.button1} width={300} height={85} className="start__buttons-button" />
+					<Button text={currentTranslations.StartPage.button1} width={300} height={85} className="start__buttons-button" />
 				</a>
 
 				<div onClick={() => handleScrollToSection('firstLesson')}>
-					<Button text={urrentTranslations.StartPage.button2} width={300} height={85} className="start__buttons-button" />
+					<Button text={currentTranslations.StartPage.button2} width={300} height={85} className="start__buttons-button" />
 				</div>
 
 			</div>

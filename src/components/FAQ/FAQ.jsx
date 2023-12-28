@@ -2,7 +2,7 @@ import React from 'react'
 import "./style/FAQ.css"
 import QuestionCard from '../UI/QuestionCard/QuestionCard'
 
-const FAQ = ({ urrentTranslations, cards, setCards }) => {
+const FAQ = ({ currentTranslations, cards, setCards }) => {
 
   const toggleCard = (clickedQuestion) => {
     const updatedCards = cards.map((card) => {
@@ -19,7 +19,7 @@ const FAQ = ({ urrentTranslations, cards, setCards }) => {
   return (
     <section className="faq" id='faq'>
       <h2 className="faq__title">
-        {urrentTranslations.FAQ.title}
+        {currentTranslations.FAQ.title}
       </h2>
 
       <div className="faq__content">

@@ -1,23 +1,23 @@
 import React from 'react'
 import "./style/Footer.css"
 
-const Footer = ({ urrentTranslations }) => {
+const Footer = ({ currentTranslations }) => {
 	return (
 		<div className='footer'>
 			<div className="footer__box">
-				<p className='footer__box-title'>{urrentTranslations.Footer.title}</p>
+				<p className='footer__box-title'>{currentTranslations.Footer.title}</p>
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<p>{urrentTranslations.Footer.subTite1}</p>
-						<p>{urrentTranslations.Footer.subTite2}e</p>
-						<p>{urrentTranslations.Footer.subTite3}</p>
+						<p>{currentTranslations.Footer.subTite1}</p>
+						<p>{currentTranslations.Footer.subTite2}e</p>
+						<p>{currentTranslations.Footer.subTite3}</p>
 					</div>
 
 					<div className="footer__input">
-						<input className='footer__input-input' placeholder={urrentTranslations.Footer.emailTitle} type="email" />
+						<input className='footer__input-input' placeholder={currentTranslations.Footer.emailTitle} type="email" />
 
-						<button className='footer__input-button'>{urrentTranslations.Footer.button}</button>
+						<button className='footer__input-button'>{currentTranslations.Footer.button}</button>
 					</div>
 				</div>
 			</div>

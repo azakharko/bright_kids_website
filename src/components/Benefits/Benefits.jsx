@@ -3,7 +3,7 @@ import Chart from 'chart.js/auto';
 import "./style/Benefits.css";
 import Button from '../UI/Button/Button';
 
-const Benefits = ({ urrentTranslations }) => {
+const Benefits = ({ currentTranslations }) => {
 
 
   const chartAnimationCallback = useCallback((chartId, animatedNumberId, fromValue, toValue, time, data1, data2) => {
@@ -85,53 +85,53 @@ const Benefits = ({ urrentTranslations }) => {
   return (
     <div className="benefits">
       <h2 className="benefits__title secondary-title">
-        <span className="title-slash"></span>{urrentTranslations.Benefits.title}
+        <span className="title-slash"></span>{currentTranslations.Benefits.title}
       </h2>
 
       <div className="benefits__box">
         <div className="benefits__box-cart">
-          <p className="benefits__box-title">{urrentTranslations.Benefits.subTiteSmall}</p>
+          <p className="benefits__box-title">{currentTranslations.Benefits.subTiteSmall}</p>
           <div className="benefits__box-chart">
             <canvas className="chart" id="myChart1"></canvas>
             <p className="chart__title"><span id="animatedNumber">0</span></p>
           </div>
-          <p className="benefits__box-subtitle">{urrentTranslations.Benefits.subTite1}</p>
+          <p className="benefits__box-subtitle">{currentTranslations.Benefits.subTite1}</p>
         </div>
 
         <div className="benefits__box-cart">
-          <p className="benefits__box-title">{urrentTranslations.Benefits.subTiteSmall}</p>
+          <p className="benefits__box-title">{currentTranslations.Benefits.subTiteSmall}</p>
           <div className="benefits__box-chart">
             <canvas className="chart" id="myChart2"></canvas>
             <p className="chart__title"><span id="animatedNumber2">0</span></p>
           </div>
-          <p className="benefits__box-subtitle">{urrentTranslations.Benefits.subTite2}</p>
+          <p className="benefits__box-subtitle">{currentTranslations.Benefits.subTite2}</p>
         </div>
 
         <div className="benefits__box-cart" >
-          <p className="benefits__box-title">{urrentTranslations.Benefits.subTiteSmall}</p>
+          <p className="benefits__box-title">{currentTranslations.Benefits.subTiteSmall}</p>
           <div className="benefits__box-chart">
             <canvas className="chart" id="myChart3"></canvas>
             <p className="chart__title"><span id="animatedNumber3">0</span></p>
           </div>
-          <p className="benefits__box-subtitle  benefits__box-subtitle2">{urrentTranslations.Benefits.subTite3}</p>
+          <p className="benefits__box-subtitle  benefits__box-subtitle2">{currentTranslations.Benefits.subTite3}</p>
         </div>
 
         <div className="benefits__box-cart"  >
-          <p className="benefits__box-title">{urrentTranslations.Benefits.subTiteSmall}</p>
+          <p className="benefits__box-title">{currentTranslations.Benefits.subTiteSmall}</p>
           <div className="benefits__box-chart">
             <canvas className="chart" id="myChart4"></canvas>
             <p className="chart__title"><span id="animatedNumber4">0</span></p>
           </div>
-          <p className="benefits__box-subtitle">{urrentTranslations.Benefits.subTite4}</p>
+          <p className="benefits__box-subtitle">{currentTranslations.Benefits.subTite4}</p>
         </div>
       </div>
 
       <div className="benefits__buttons">
-        <Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button1} />
+        <Button width={300} height={70} className="benefits__buttons-button" text={currentTranslations.Benefits.button1} />
 
 
         <div onClick={() => handleScrollToSection('firstLesson')}>
-          <Button width={300} height={70} className="benefits__buttons-button" text={urrentTranslations.Benefits.button2} />
+          <Button width={300} height={70} className="benefits__buttons-button" text={currentTranslations.Benefits.button2} />
         </div>
       </div>
 

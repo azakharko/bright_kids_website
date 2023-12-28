@@ -1,12 +1,12 @@
 import React from 'react';
 import "./style/About.css";
 
-const About = ({ urrentTranslations }) => {
+const About = ({ currentTranslations }) => {
 
   return (
     <div className='about-us' id='about-us'>
-      <div className="about-us__title">{urrentTranslations.About.title}</div>
-      <div className="about-us__description">{urrentTranslations.About.description}</div>
+      <div className="about-us__title">{currentTranslations.About.title}</div>
+      <div className="about-us__description">{currentTranslations.About.description}</div>
 
       <div className="about-us__video">
 

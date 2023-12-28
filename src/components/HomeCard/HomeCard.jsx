@@ -1,31 +1,31 @@
 import React from 'react'
 import "./style/HomeCard.css"
 
-const HomeCard = ({urrentTranslations}) => {
+const HomeCard = ({currentTranslations}) => {
   return (
 	<div className='home-cards'>
 	  <div className="home-cards__card">
-	  	{urrentTranslations.HomeCardPage.card1}
+	  	{currentTranslations.HomeCardPage.card1}
 	  </div>
 
 	  <div className="home-cards__card">
-	  	{urrentTranslations.HomeCardPage.card2}
+	  	{currentTranslations.HomeCardPage.card2}
 	  </div>
 
 	  <div className="home-cards__card">
-		  {urrentTranslations.HomeCardPage.card3}
+		  {currentTranslations.HomeCardPage.card3}
 	  </div>
 
 	  <div className="home-cards__card">
-		  {urrentTranslations.HomeCardPage.card4}
+		  {currentTranslations.HomeCardPage.card4}
 	  </div>
 
 	  <div className="home-cards__card">
-		  {urrentTranslations.HomeCardPage.card5}
+		  {currentTranslations.HomeCardPage.card5}
 	  </div>
 
 	  <div className="home-cards__card">
-	  	{urrentTranslations.HomeCardPage.card6}
+	  	{currentTranslations.HomeCardPage.card6}
 	  </div>
 
 

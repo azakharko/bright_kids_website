@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./style/Home.css"
 import Button from '../UI/Button/Button';
 
