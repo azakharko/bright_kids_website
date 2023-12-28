@@ -4,7 +4,7 @@ import Button from '../UI/Button/Button';
 
 const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTranslations }) => {
 	const [burgerOpen, setBurgerOpen] = useState(false);
-
+	const [animationPopupOpen, setAnimationPopupOpen] = useState(false);
 	const myRef = useRef(null);
 
 	let burgerRow1 = burgerOpen ? "box__burger-row box__burger-row1 box__burger-row1Show" : "box__burger-row box__burger-row1";
@@ -13,6 +13,9 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
 	let burgerNavigation = burgerOpen ? "home__header-nav home__header-nav--open" : "home__header-nav";
+	let animationPopup = animationPopupOpen ? "home__crossing home__crossing-open" : "home__crossing";
+	let animationPopup1 = animationPopupOpen ? "home__crossing-popup1 home__crossing-popup1--open" : "home__crossing-popup1";
+	let animationPopup2 = animationPopupOpen ? "home__crossing-popup2 home__crossing-popup2--open" : "home__crossing-popup2";
 
 
 	const hadleOpenBurger = () => {
@@ -23,6 +26,7 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 	}
 
 	const handleScrollToSection = (sectionId) => {
+		
 		setBurgerOpen(false);
 		document.body.classList.remove("body-hidden", false);
 
@@ -37,7 +41,15 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 		}
 	};
 
+	let timerId;
 	const handleChangeLanguage = (e) => {
+		clearTimeout(timerId);
+		setAnimationPopupOpen(true);
+
+		timerId = setTimeout(() => {
+			setAnimationPopupOpen(false);
+		}, 1600);
+
 		const thisLanguage = e.target.value;
 		setSelectedLanguage(thisLanguage);
 
@@ -47,10 +59,17 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 		window.history.replaceState({}, '', url.toString());
 	}
 
+
 	return (
 		<div ref={myRef} className='home'>
 
 			<div className={burgerPopup}></div>
+
+			<div className={animationPopup}>
+				<div className={animationPopup1}></div>
+				<div className={animationPopup2}></div>
+
+			</div>
 
 			<header className="home__header">
 				<div className="home__header-logo">
