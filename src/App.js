@@ -361,13 +361,13 @@ function App() {
 
   useEffect(() => {
     setCards([
-      { question: currentTranslations.FAQ.faqTitle1, answer: currentTranslations.FAQ.faqDescirption1, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle2, answer: currentTranslations.FAQ.faqDescirption2, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle3, answer: currentTranslations.FAQ.faqDescirption3, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle4, answer: currentTranslations.FAQ.faqDescirption4, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle5, answer: currentTranslations.FAQ.faqDescirption5, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle6, answer: currentTranslations.FAQ.faqDescirption6, isOpen: false },
-      { question: currentTranslations.FAQ.faqTitle7, answer: currentTranslations.FAQ.faqDescirption7, isOpen: false },
+      { question: currentTranslations.FAQ.faqTitle1, answer: currentTranslations.FAQ.faqDescirption1, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle2, answer: currentTranslations.FAQ.faqDescirption2, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle3, answer: currentTranslations.FAQ.faqDescirption3, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle4, answer: currentTranslations.FAQ.faqDescirption4, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle5, answer: currentTranslations.FAQ.faqDescirption5, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle6, answer: currentTranslations.FAQ.faqDescirption6, isOpen: true },
+      { question: currentTranslations.FAQ.faqTitle7, answer: currentTranslations.FAQ.faqDescirption7, isOpen: true },
 
     ]);
     setCourseArr([

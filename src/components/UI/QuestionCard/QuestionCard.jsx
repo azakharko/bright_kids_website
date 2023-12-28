@@ -16,7 +16,7 @@ const QuestionCard = ({ question, answer, isOpen, toggleCard }) => {
     const handleResize = () => {
       if (cardRef.current && dropdownTextRef.current) {
         const cardHeights = [
-          120, 110, 100, 90, // Add other heights from media queries here
+          100, 80, 70, 60, // Add other heights from media queries here
         ];
 
         const maxHeight = Math.max(...cardHeights);
@@ -42,7 +42,7 @@ const QuestionCard = ({ question, answer, isOpen, toggleCard }) => {
       className={`faq__card ${isOpen ? '_open' : ''}`}
       onClick={handleClick}
       style={{
-        height: isOpen ? `${cardHeight + dropdownTextHeight}px` : '',
+        height: isOpen ? `${cardHeight + dropdownTextHeight - 50}px` : '',
       }}
       ref={cardRef}
     >
