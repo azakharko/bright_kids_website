@@ -1,23 +1,27 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import "./style/Footer.css"
 
-const Footer = ({ currentTranslations }) => {
+const Footer = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className='footer'>
 			<div className="footer__box">
-				<p className='footer__box-title'>{currentTranslations.Footer.title}</p>
+				<p className='footer__box-title'>{t("Footer.title")}</p>
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<p>{currentTranslations.Footer.subTite1}</p>
-						<p>{currentTranslations.Footer.subTite2}e</p>
-						<p>{currentTranslations.Footer.subTite3}</p>
+						<p>{t("Footer.subTite1")}</p>
+						<p>{t("Footer.subTite2")}</p>
+						<p>{t("Footer.subTite3")}</p>
+						
 					</div>
 
 					<div className="footer__input">
-						<input className='footer__input-input' placeholder={currentTranslations.Footer.emailTitle} type="email" />
+						<input className='footer__input-input' placeholder={t("Footer.emailTitle")} type="email" />
 
-						<button className='footer__input-button'>{currentTranslations.Footer.button}</button>
+						<button className='footer__input-button'>{t("Footer.button")}</button>
 					</div>
 				</div>
 			</div>

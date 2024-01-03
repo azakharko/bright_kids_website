@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const CourseCard = ({courseArr, currentTranslations, index}) => {
-	index = index + 1;
+const CourseCard = ({ courseArr, index }) => {
+  const { t } = useTranslation();
+  index = index + 1;
+
   return (
-		
-	  <div className="course__box-card">
-		<div className="course__left">
-			<button className='course__left-button'>{courseArr.subTitle}</button>
-			<p className='course__left-subtitle'>{currentTranslations.CoursePage.subTitle}</p>
-			<p className='course__left-title'>«{courseArr.title}» </p>
+    <div className="course__box-card">
+      <div className="course__left">
+        <button className='course__left-button'>{courseArr.subTitle}</button>
+        <p className='course__left-subtitle'>{t("CoursePage.subTitle")}</p>
+        <p className='course__left-title'>«{courseArr.title}» </p>
 
 			<div className="course__left-box">
 
@@ -36,7 +38,7 @@ const CourseCard = ({courseArr, currentTranslations, index}) => {
 					<path fillRule="evenodd" clipPath="evenodd" d="M5.26549 3.29918C5.86905 2 7.94016 2 12.0824 2C16.2246 2 18.2957 2 18.8993 3.29918C18.9512 3.41086 18.9949 3.52686 19.0302 3.6461C19.4402 5.0333 17.9757 6.64111 15.0467 9.85674L13.0846 12L15.0467 14.1433C17.9757 17.3589 19.4402 18.9667 19.0302 20.3539C18.9949 20.4731 18.9512 20.5891 18.8993 20.7008C18.2957 22 16.2246 22 12.0824 22C7.94016 22 5.86905 22 5.26549 20.7008C5.21361 20.5891 5.16985 20.4731 5.13461 20.3539C4.72461 18.9667 6.18911 17.3589 9.11811 14.1433L11.0802 12L9.11811 9.85674C6.18911 6.64111 4.72461 5.0333 5.13461 3.6461C5.16985 3.52686 5.21361 3.41086 5.26549 3.29918ZM10.0779 17.75C9.6628 17.75 9.32627 18.0858 9.32627 18.5C9.32627 18.9142 9.6628 19.25 10.0779 19.25H14.0868C14.502 19.25 14.8385 18.9142 14.8385 18.5C14.8385 18.0858 14.502 17.75 14.0868 17.75H10.0779ZM9.32627 5.5C9.32627 5.08579 9.6628 4.75 10.0779 4.75H14.0868C14.502 4.75 14.8385 5.08579 14.8385 5.5C14.8385 5.91421 14.502 6.25 14.0868 6.25H10.0779C9.6628 6.25 9.32627 5.91421 9.32627 5.5Z" fill="#B41D8A"/>
 				</svg>
 
-				<p className='course__description'>{currentTranslations.CoursePage.age1} <span>{courseArr.age}</span> {currentTranslations.CoursePage.age2}</p>
+				<p className='course__description'>{t("CoursePage.age1")} <span>{courseArr.age}</span> {t("CoursePage.age2")}</p>
 			</div>
 		</div>
 

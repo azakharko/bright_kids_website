@@ -1,8 +1,10 @@
 import React from 'react'
-import "./style/FAQ.css"
+import { useTranslation } from 'react-i18next';
 import QuestionCard from '../UI/QuestionCard/QuestionCard'
+import "./style/FAQ.css"
 
-const FAQ = ({ currentTranslations, cards, setCards }) => {
+const FAQ = ({ cards, setCards }) => {
+  const { t } = useTranslation(); // useTranslation hook
 
   const toggleCard = (clickedQuestion) => {
     const updatedCards = cards.map((card) => {
@@ -19,7 +21,7 @@ const FAQ = ({ currentTranslations, cards, setCards }) => {
   return (
     <section className="faq" id='faq'>
       <h2 className="faq__title">
-        {currentTranslations.FAQ.title}
+        {t('FAQ.title')}
       </h2>
 
       <div className="faq__content">

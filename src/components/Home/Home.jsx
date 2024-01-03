@@ -1,8 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import "./style/Home.css"
 import Button from '../UI/Button/Button';
 
-const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTranslations }) => {
+
+const Home = ({setCourseArr, setCards}) => {
+	const { t, i18n } = useTranslation();
+	let navigate = useNavigate();
+
 	const [burgerOpen, setBurgerOpen] = useState(false);
 	const [animationPopupOpen, setAnimationPopupOpen] = useState(false);
 	const myRef = useRef(null);
@@ -26,7 +32,6 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 	}
 
 	const handleScrollToSection = (sectionId) => {
-		
 		setBurgerOpen(false);
 		document.body.classList.remove("body-hidden", false);
 
@@ -51,13 +56,117 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 		}, 1600);
 
 		const thisLanguage = e.target.value;
-		setSelectedLanguage(thisLanguage);
-
-		const url = new URL(window.location.href);
-		url.pathname = `/${thisLanguage}${url.pathname.replace(/\/(ua|us)/, '')}`;
-		url.pathname = url.pathname.replace(/\/$/, '');
-		window.history.replaceState({}, '', url.toString());
+		i18n.changeLanguage(thisLanguage);
+		localStorage.setItem('selectedLanguage', thisLanguage);
+		navigate(`/${thisLanguage}`);
 	}
+
+	useEffect(() => {
+		const pathSegments = window.location.pathname.split('/');
+		const languageFromPath = pathSegments[1];
+	
+		if (['en', 'ua'].includes(languageFromPath)) {
+		  i18n.changeLanguage(languageFromPath);
+		  localStorage.setItem('selectedLanguage', languageFromPath);
+		} else {
+		  // If the language code is not valid, redirect to English
+		  navigate('/en');
+		}
+	  }, [i18n]);
+
+
+	  useEffect(() => {
+		setCards([
+		  { question: `${t("FAQ.faqTitle1")}`, answer: `${t("FAQ.faqDescirption1")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle2")}`, answer: `${t("FAQ.faqDescirption2")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle3")}`, answer: `${t("FAQ.faqDescirption3")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle4")}`, answer: `${t("FAQ.faqDescirption4")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle5")}`, answer: `${t("FAQ.faqDescirption5")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle6")}`, answer: `${t("FAQ.faqDescirption6")}`, isOpen: true },
+		  { question: `${t("FAQ.faqTitle7")}`, answer: `${t("FAQ.faqDescirption7")}`, isOpen: true },
+	
+		]);
+		setCourseArr([
+		  {
+			id: 0,
+			title: `${t("CoursePage.course1.title")}`,
+			subTitle: `${t("CoursePage.course1.subTitle")}`,
+			age: `${t("CoursePage.course1.age")}`,
+			category: `${t("CoursePage.course1.category")}`
+		  },
+		  {
+			id: 1,
+			title: `${t("CoursePage.course2.title")}`,
+			subTitle: `${t("CoursePage.course2.subTitle")}`,
+			age: `${t("CoursePage.course2.age")}`,
+			category: `${t("CoursePage.course2.category")}`
+		  },
+		  {
+			id: 2,
+			title: `${t("CoursePage.course3.title")}`,
+			subTitle: `${t("CoursePage.course3.subTitle")}`,
+			age: `${t("CoursePage.course3.age")}`,
+			category: `${t("CoursePage.course3.category")}`
+		  },
+		  {
+			id: 3,
+			title: `${t("CoursePage.course4.title")}`,
+			subTitle: `${t("CoursePage.course4.subTitle")}`,
+			age: `${t("CoursePage.course4.age")}`,
+			category: `${t("CoursePage.course4.category")}`
+		  },
+		  {
+			id: 4,
+			title: `${t("CoursePage.course5.title")}`,
+			subTitle: `${t("CoursePage.course5.subTitle")}`,
+			age: `${t("CoursePage.course5.age")}`,
+			category: `${t("CoursePage.course5.category")}`
+		  },
+		  {
+			id: 5,
+			title: `${t("CoursePage.course6.title")}`,
+			subTitle: `${t("CoursePage.course6.subTitle")}`,
+			age: `${t("CoursePage.course6.age")}`,
+			category: `${t("CoursePage.course6.category")}`
+		  },
+		  {
+			id: 6,
+			title: `${t("CoursePage.course7.title")}`,
+			subTitle: `${t("CoursePage.course7.subTitle")}`,
+			age: `${t("CoursePage.course7.age")}`,
+			category: `${t("CoursePage.course7.category")}`
+		  },
+		  {
+			id: 7,
+			title: `${t("CoursePage.course8.title")}`,
+			subTitle: `${t("CoursePage.course8.subTitle")}`,
+			age: `${t("CoursePage.course8.age")}`,
+			category: `${t("CoursePage.course8.category")}`
+		  },
+		  {
+			id: 8,
+			title: `${t("CoursePage.course9.title")}`,
+			subTitle: `${t("CoursePage.course9.subTitle")}`,
+			age: `${t("CoursePage.course9.age")}`,
+			category: `${t("CoursePage.course9.category")}`
+		  },
+		  {
+			id: 9,
+			title: `${t("CoursePage.course10.title")}`,
+			subTitle: `${t("CoursePage.course10.subTitle")}`,
+			age: `${t("CoursePage.course10.age")}`,
+			category: `${t("CoursePage.course10.category")}`
+		  },
+		  {
+			id: 10,
+			title: `${t("CoursePage.course11.title")}`,
+			subTitle: `${t("CoursePage.course11.subTitle")}`,
+			age: `${t("CoursePage.course11.age")}`,
+			category: `${t("CoursePage.course11.category")}`
+		  },
+	  
+		])
+	  }, [t]) 
 
 
 	return (
@@ -78,16 +187,16 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 
 				<nav className={burgerNavigation}>
 					<ul>
-						<li onClick={() => handleScrollToSection('about-us')}>{currentTranslations.HomePage.aboutUs}</li>
-						<li onClick={() => handleScrollToSection('course')}>{currentTranslations.HomePage.courses}</li>
-						<li>{currentTranslations.HomePage.learningMaterials}</li>
+						<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>
+						<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>
+						<li>{t("HomePage.learningMaterials")}</li>
 					</ul>
 				</nav>
 
 				<div className="home__header-box">
-					<select defaultValue={selectedLanguage} onChange={handleChangeLanguage}>
-						<option value="us">us</option>
-						<option value="ua">ua</option>
+					<select value={localStorage.getItem('selectedLanguage')} onChange={handleChangeLanguage}>
+						<option value="en">en</option>
+					<option value="ua">ua</option>
 					</select>
 
 					<a target='_blank' rel="noreferrer"href="tel:+15127868874">
@@ -106,11 +215,11 @@ const Home = ({ translations, selectedLanguage, setSelectedLanguage, currentTran
 
 			<main className="home__main">
 				<div className="home__main-left">
-					<p className='home__title'>{currentTranslations.HomePage.title}</p>
-					<p className='home__description'>{currentTranslations.HomePage.description}</p>
+					<p className='home__title'>{t("HomePage.title")}</p>
+					<p className='home__description'>{t("HomePage.description")}</p>
 
 					<div onClick={() => handleScrollToSection('firstLesson')}>
-						<Button width={320} height={80} className="home__button" text={currentTranslations.HomePage.signUp} />
+						<Button width={320} height={80} className="home__button" text={t("HomePage.signUp")} />
 					</div>
 
 					<svg className='home__star' xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">

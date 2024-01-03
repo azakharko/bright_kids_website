@@ -1,8 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import "./style/Ready.css"
 import Button from '../UI/Button/Button';
 
-const Ready = ({currentTranslations}) => {
+const Ready = () => {
+	const { t } = useTranslation();
+
 	const handleScrollToSection = (sectionId) => {
 		if (!sectionId || sectionId === 'top') {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -22,15 +25,15 @@ const Ready = ({currentTranslations}) => {
 		<div className="ready__box-img"></div>
 
 		<div className="ready__box-container">
-			<p className='ready__title'>{currentTranslations.ReadyPage.title}</p>
-			<p className='ready__description'>{currentTranslations.ReadyPage.description}</p>
+			<p className='ready__title'>{t("ReadyPage.title")}</p>
+			<p className='ready__description'>{t("ReadyPage.description")}</p>
 			<div className="ready__buttons">
 				<a target='_blank' rel="noreferrer"href="tel:+15127868874">
-					<Button text={currentTranslations.ReadyPage.callUsButton} width={300} height={85} className="ready__buttons-button" />
+					<Button text={t("ReadyPage.callUsButton")} width={300} height={85} className="ready__buttons-button" />
 				</a>
 
 				<div onClick={() => handleScrollToSection('firstLesson')}>
-					<Button text={currentTranslations.ReadyPage.trialLessonButton} width={300} height={85} className="ready__buttons-button" />
+					<Button text={t("ReadyPage.trialLessonButton")} width={300} height={85} className="ready__buttons-button" />
 				</div>
 
 			</div>

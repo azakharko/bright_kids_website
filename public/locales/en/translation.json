@@ -1,0 +1,162 @@
+{
+	"HomePage": {
+		"aboutUs": "About us",
+		"courses": "Courses",
+		"learningMaterials": "Learning materials",
+		"title": "Best online Ukraine language courses with teachers from Ukraine",
+		"description": "Preserve national identity with courses for children and adults",
+		"signUp": "Sign up for a free trial class"
+	},
+	"HomeCardPage": {
+		"card1": "Courses for kids and adults",
+		"card2": "Online learning",
+		"card3": "American and Ukrainian approach",
+		"card4": "Soft skills development",
+		"card5": "Preserving Ukrainian identity",
+		"card6": "Affordable prices"
+	},
+	"CoursePage": {
+		"title": "Course",
+		"subTitle": "Course",
+		"age1": "Age of children:",
+		"age2": "years",
+		"course1": {
+			"title": "Ukrainian Language",
+			"subTitle": "Subject",
+			"age": "6-9",
+			"category": "group"
+		},
+		"course2": {
+			"title": "Chess",
+			"subTitle": "Brain",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course3": {
+			"title": "Painting",
+			"subTitle": "Art",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course4": {
+			"title": "Roblox",
+			"subTitle": "Programing",
+			"age": "12-15",
+			"category": "group"
+		},
+		"course5": {
+			"title": "Scratch",
+			"subTitle": "Programing",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course6": {
+			"title": "Python",
+			"subTitle": "group",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course7": {
+			"title": "Sing",
+			"subTitle": "Music",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course8": {
+			"title": "Piano",
+			"subTitle": "Music",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course9": {
+			"title": "Math",
+			"subTitle": "Brain",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course10": {
+			"title": "Logic",
+			"subTitle": "Brain",
+			"age": "12-15",
+			"category": "individual"
+		},
+		"course11": {
+			"title": "History of Ukraine",
+			"subTitle": "Subject",
+			"age": "12-15",
+			"category": "individual"
+		}
+	},
+	"FirstLesson": {
+		"title": "Get the first one free class",
+		"inputName": "Write your first name",
+		"inputNamePlacholder": "Name",
+		"inputLastName": "Write your last name",
+		"inputLaseNamePlacholder": "Surname",
+		"inputAddress": "Write your email address",
+		"inputAddressPlacholder": "Email",
+		"inputMessage": "Write your message",
+		"inputMessagePlacholder": "Message",
+		"buttonTitle": "Submit"
+	},
+	"StartPage": {
+		"title": "How to start?",
+		"subtitle1": "Choose course",
+		"subtitle2": "Free trial lesson",
+		"subtitle3": "Payment",
+		"subtitle4": "Start learning",
+		"button1": "Schedule",
+		"button2": "Sign up"
+	},
+	"About": {
+		"title": "About us",
+		"description": "Welcome to Bright Kids Ukrainian Online School, a visionary educational platform founded by Nadiya Zhurba. Our mission is to bridge the linguistic and cultural gap for English-speaking children learning Ukrainian and Ukrainian children residing in the USA who may have lost touch with their native language"
+	},
+	"Benefits": {
+		"title": "Our benefits",
+		"subTiteSmall": "More",
+		"subTite1": "students from 11 countries over last two years",
+		"subTite2": "highly qualified teachers from Ukraine",
+		"subTite3": "learning courses",
+		"subTite4": "own methodological developments",
+		"button1": "Learning materials",
+		"button2": "Try free trial lesson"
+	},
+	"Feedback": {
+		"title": "What our clients say"
+	},
+	"FAQ": {
+		"title": "Our clients often ask us",
+		"faqTitle1": "What is the price per lesson?",
+		"faqDescirption1": "Learning in groups - from $11 per hour (lesson duration - 60 min), individual learning - from $20 (lesson duration - 45 min)",
+		"faqTitle2": "What is classes schedule?",
+		"faqDescirption2": "We have flexible schedule. Typically classes are held once or twice a week in afterschool hours or at the weekends (CST timezone)",
+		"faqTitle3": "What is the course duration?",
+		"faqDescirption3": "10 is a minimal number of lessons you have to pre-pay after free trial class",
+		"faqTitle4": "Who is teaching my kids?",
+		"faqDescirption4": "Our teachers all are from Ukraine, they are actively teaching kids at schools in Lviv, Kyiv and Ivano-Frankivsk",
+		"faqTitle5": "How to apply?",
+		"faqDescirption5": "You have many options here: apply over web-site by filling in an application form, email us or alternatively contact us in any of social networks like facebook, tik-tok, instagram or youtube",
+		"faqTitle6": "How to pay?",
+		"faqDescirption6": "We accept PayPal, Venmo, Zelle, Privat24, Credit/Debit cards or Direct Deposit (ACH)",
+		"faqTitle7": "Any discount/loyalty programs?",
+		"faqDescirption7": "1) Family discount. 2 or more kids from one family in the same group - monthly discount of $10 per family. Applies to group classes only 2) Multiple cources discount. Take 3 or more cources and get $10 less every month. Applies for 3rd course only 3) Reference bonus. Invite a friend and get one-time $15 discount"
+	},
+	"MediaPage": {
+		"title": "Media about us"
+	},
+	"ReadyPage": {
+		"title": "Ready to start learning?",
+		"description": "Then call us, and we will arrange everything for you!",
+		"callUsButton": "Call us",
+		"trialLessonButton": "Try a free trial lesson"
+	},
+	"Footer": {
+		"title": "Bright Kids Ukrainian Online School - A school where your children can learn the language in a fun, fast and high-quality way",
+		"subTite1": "Privacy policy",
+		"subTite2": "Terms of use",
+		"subTite3": "Refund policy",
+		"emailTitle": "Email",
+		"button": "Submit"
+	}
+}

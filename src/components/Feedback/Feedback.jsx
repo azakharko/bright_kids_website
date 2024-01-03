@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import "./style/Feedback.css"
 
-const Feedback = ({currentTranslations}) => {
+const Feedback = () => {
+	const { t } = useTranslation(); // useTranslation hook
   return (
 	<div className='feedback'>
-	  <p className='feedback__title'>{currentTranslations.Feedback.title}</p>
+	  <p className='feedback__title'>{t('Feedback.title')}</p>
 
 	  <div className="feedback__box">
 		<div className="feedback__box-cart feedback__box-cart1"></div>
