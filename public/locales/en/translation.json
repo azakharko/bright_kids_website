@@ -22,43 +22,43 @@
 		"age2": "years",
 		"course1": {
 			"title": "Ukrainian Language",
-			"subTitle": "Subject",
+			"subTitle": "Ukrainian",
 			"age": "6-9",
 			"category": "group"
 		},
 		"course2": {
 			"title": "Chess",
-			"subTitle": "Brain",
+			"subTitle": "Chess",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course3": {
 			"title": "Painting",
-			"subTitle": "Art",
+			"subTitle": "Painting",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course4": {
 			"title": "Roblox",
-			"subTitle": "Programing",
+			"subTitle": "Roblox",
 			"age": "12-15",
 			"category": "group"
 		},
 		"course5": {
 			"title": "Scratch",
-			"subTitle": "Programing",
+			"subTitle": "Scratch",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course6": {
 			"title": "Python",
-			"subTitle": "Programing",
+			"subTitle": "Python",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course7": {
 			"title": "Sing",
-			"subTitle": "Music",
+			"subTitle": "Sing",
 			"age": "12-15",
 			"category": "individual"
 		},
@@ -70,19 +70,19 @@
 		},
 		"course9": {
 			"title": "Math",
-			"subTitle": "Brain",
+			"subTitle": "Math",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course10": {
 			"title": "Logic",
-			"subTitle": "Brain",
+			"subTitle": "Logic",
 			"age": "12-15",
 			"category": "individual"
 		},
 		"course11": {
 			"title": "History of Ukraine",
-			"subTitle": "Subject",
+			"subTitle": "History",
 			"age": "12-15",
 			"category": "individual"
 		}

@@ -31,6 +31,7 @@ const Course = ({ courseArr }) => {
           pagination={{
             clickable: true,
           }}
+
     
           navigation={true}
           modules={[Keyboard, Pagination, Navigation]}

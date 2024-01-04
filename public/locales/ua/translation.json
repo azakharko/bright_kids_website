@@ -24,68 +24,68 @@
 
 		"course1": {
 			"title": "Українська мова",
-			"subTitle": "Предмет",
+			"subTitle": "Українська",
 			"age": "6-9",
 			"category": "індувідуальні"
 		},
 		"course2": {
 			"title": "Шахи",
-			"subTitle": "Мишлення",
+			"subTitle": "Шахи",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course3": {
 			"title": "Живопис",
-			"subTitle": "Мистецтво",
+			"subTitle": "Живопис",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course4": {
 			"title": "Roblox",
-			"subTitle": "Програмування",
+			"subTitle": "Roblox",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course5": {
 			"title": "Scratch",
-			"subTitle": "Програмування",
+			"subTitle": "Scratch",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course6": {
 			"title": "Python",
-			"subTitle": "Програмування",
+			"subTitle": "Python",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course7": {
 			"title": "Спів",
-			"subTitle": "Музика",
+			"subTitle": "Спів",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course8": {
 			"title": "Фортепіано",
-			"subTitle": "Музика",
+			"subTitle": "Фортепіано",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course9": {
 			"title": "Математика",
-			"subTitle": "Мишлення",
+			"subTitle": "Математика",
 			"age": "12-15",
 			"category": "індувідуальні"
 
 		},
 		"course10": {
 			"title": "Логіка",
-			"subTitle": "Мишлення",
+			"subTitle": "Логіка",
 			"age": "12-15",
 			"category": "індувідуальні"
 		},
 		"course11": {
 			"title": "Історія України",
-			"subTitle": "Предмет",
+			"subTitle": "Історія",
 			"age": "12-15",
 			"category": "індувідуальні"
 		}
