@@ -9,7 +9,7 @@ const CourseCard = ({ courseArr, index }) => {
     <div className="course__box-card">
 	  <div className="course-hover">
 		<div className="course-hover__button">
-			<button>hello world</button>
+			<button>Details of the course</button>
 		</div>
 	  </div>
 
