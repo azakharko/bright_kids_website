@@ -31,6 +31,7 @@ const Course = ({ courseArr }) => {
           pagination={{
             clickable: true,
           }}
+    
           navigation={true}
           modules={[Keyboard, Pagination, Navigation]}
           className="mySwiper"
@@ -59,7 +60,7 @@ const Course = ({ courseArr }) => {
             <p>Loading...</p>
           )}
         </Swiper>
-   
+
       </div>
     </div>
   );

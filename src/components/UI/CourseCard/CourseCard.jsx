@@ -7,6 +7,13 @@ const CourseCard = ({ courseArr, index }) => {
 
   return (
     <div className="course__box-card">
+	  <div className="course-hover">
+		<div className="course-hover__button">
+			<button>hello world</button>
+		</div>
+	  </div>
+
+
       <div className="course__left">
         <button className='course__left-button'>{courseArr.subTitle}</button>
         <p className='course__left-subtitle'>{t("CoursePage.subTitle")}</p>
