@@ -81,8 +81,8 @@ const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
 
       <div className="home__header-box">
         <select value={localStorage.getItem('selectedLanguage')} onChange={handleChangeLanguage}>
-          <option value="en">en</option>
-          <option value="ua">ua</option>
+          <option value="en">English</option>
+          <option value="ua">Українська</option>
         </select>
 
         <a target='_blank' rel="noreferrer" href="tel:+15127868874">
