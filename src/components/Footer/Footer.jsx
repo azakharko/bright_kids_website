@@ -6,7 +6,7 @@ const Footer = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div className='footer'>
+		<div className='footer' id='footer'>
 			<div className="footer__box">
 				<p className='footer__box-title'>{t("Footer.title")}</p>
 

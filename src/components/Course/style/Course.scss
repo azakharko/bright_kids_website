@@ -4,6 +4,7 @@
 	width: 100%;
 	height: auto;
 	@include display-center(flex-start, center);
+	background-color: #b41d893a;
 	flex-direction: column;	
 	padding: 100px 100px;
 	margin-bottom: 140px;

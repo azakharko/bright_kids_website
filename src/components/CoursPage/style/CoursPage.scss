@@ -1,0 +1,176 @@
+@import "../../main/style.scss";
+
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+.CoursePage {
+	width: 100%;
+	height: auto;
+	padding: 100px 100px;
+	@include display-center(space-between, center);
+
+	&__left {
+		width: 60%;
+		padding-right: 35px;
+		&-title {
+			@include font($main, calc(10px + 2vw), 600, normal, normal); // Початковий розмір шрифта + 2% ширини видимого вікна
+		}
+		  
+
+		&-description {
+			@include font($black, 24px, 500, normal, normal);
+			margin-top: 25px;
+		}
+
+		&-box {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 50px;
+			gap: 30px;
+			
+			.CoursePage__item {
+				@include display-center(flex-start, center);
+				gap: 15px;
+				svg {
+					position: relative;
+					top: 3px
+				}
+
+				p {
+					@include font($main, 20px, 600, normal, normal);
+				}
+			}
+		}
+	}
+
+	&__rigth {
+		width: 40%;
+		height: 100%;
+		@include display-center(center, center);
+
+		&-img {
+			img {
+				width: 400px;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 1350px) {
+	.CoursePage {
+		padding: 100px 80px;
+	}
+}
+
+@media screen and(max-width: 1250px) {
+	.CoursePage {
+		&__left {
+			width: 60%;
+			padding-right: 35px;
+			
+			&-description {
+				@include font($black, 20px, 500, normal, normal);
+			}
+
+			&-box {
+				gap: 20px;
+			}
+		}
+		&__rigth {
+			&-img {
+				img {
+					width: 300px;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	
+.CoursePage {
+	padding: 100px 60px;
+	flex-direction: column-reverse;
+	&__left {
+		width: 100%;
+		padding-right: 0px;
+		&-title {
+			font-size: 36px;
+			text-align: center;	
+			margin-top: 25px;
+		}
+
+		&-description {
+			width: 100%;
+			text-align: center;	
+		}
+
+		&-box {
+			gap: 15px;
+			@include display-center(center, flex-start);
+
+			
+			.CoursePage__item {
+				gap: 10px;
+				p {
+					@include font($main, 18px, 600, normal, normal);
+				}
+			}
+		}
+	}
+
+	&__rigth {
+		&-img {
+			img {
+				width: 250px;
+			}
+		}
+	}
+
+}
+
+}
+
+@media screen and (max-width: 700px) {
+	.CoursePage {
+		padding: 60px 30px;
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	.CoursePage {
+		&__left {
+			&-title {
+				font-size: 32px;
+			}
+	
+			&-description {
+				font-size: 18px;		
+			}
+			&-box {
+				.CoursePage__item {
+					p {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		
+	
+		&__rigth {
+			&-img {
+				img {
+					width: 200px;
+				}
+		}
+	
+	}
+	}
+
+}

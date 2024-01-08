@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
-const Course = ({ courseArr }) => {
+const Course = ({ courseArr, setCourseIndex }) => {
 	const { t,} = useTranslation();
   return (
     <div id='course' className='course'>
@@ -54,7 +54,7 @@ const Course = ({ courseArr }) => {
           {courseArr ? (
           courseArr.map((course, index) => (
             <SwiperSlide key={index}>
-              <CourseCard index={index} courseArr={course} />
+              <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
             </SwiperSlide>
           ))
           ) : (

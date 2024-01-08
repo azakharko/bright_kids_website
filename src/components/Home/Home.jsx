@@ -3,33 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import "./style/Home.css"
 import Button from '../UI/Button/Button';
+import Header from '../UI/Header/Header';
 
 
-const Home = ({setCourseArr, setCards}) => {
+const Home = ({setCourseArr, setCards, burgerOpen, setBurgerOpen}) => {
 	const { t, i18n } = useTranslation();
 	let navigate = useNavigate();
 
-	const [burgerOpen, setBurgerOpen] = useState(false);
-	const [animationPopupOpen, setAnimationPopupOpen] = useState(false);
 	const myRef = useRef(null);
-
-	let burgerRow1 = burgerOpen ? "box__burger-row box__burger-row1 box__burger-row1Show" : "box__burger-row box__burger-row1";
-	let burgerRow2 = burgerOpen ? "box__burger-row box__burger-row2 box__burger-row2Show" : "box__burger-row box__burger-row2";
-	let burgerRow3 = burgerOpen ? "box__burger-row box__burger-row3 box__burger-row3Show" : "box__burger-row box__burger-row3";
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
-	let burgerNavigation = burgerOpen ? "home__header-nav home__header-nav--open" : "home__header-nav";
-	let animationPopup = animationPopupOpen ? "home__crossing home__crossing-open" : "home__crossing";
-	let animationPopup1 = animationPopupOpen ? "home__crossing-popup1 home__crossing-popup1--open" : "home__crossing-popup1";
-	let animationPopup2 = animationPopupOpen ? "home__crossing-popup2 home__crossing-popup2--open" : "home__crossing-popup2";
-
-
-	const hadleOpenBurger = () => {
-		setBurgerOpen(!burgerOpen);
-
-		document.body.classList.toggle("body-hidden", !burgerOpen);
-		myRef.current.scrollIntoView();
-	}
 
 	const handleScrollToSection = (sectionId) => {
 		setBurgerOpen(false);
@@ -46,20 +29,6 @@ const Home = ({setCourseArr, setCards}) => {
 		}
 	};
 
-	let timerId;
-	const handleChangeLanguage = (e) => {
-		clearTimeout(timerId);
-		setAnimationPopupOpen(true);
-
-		timerId = setTimeout(() => {
-			setAnimationPopupOpen(false);
-		}, 1600);
-
-		const thisLanguage = e.target.value;
-		i18n.changeLanguage(thisLanguage);
-		localStorage.setItem('selectedLanguage', thisLanguage);
-		navigate(`/${thisLanguage}`);
-	}
 
 	useEffect(() => {
 		const pathSegments = window.location.pathname.split('/');
@@ -68,10 +37,7 @@ const Home = ({setCourseArr, setCards}) => {
 		if (['en', 'ua'].includes(languageFromPath)) {
 		  i18n.changeLanguage(languageFromPath);
 		  localStorage.setItem('selectedLanguage', languageFromPath);
-		} else {
-		  // If the language code is not valid, redirect to English
-		  navigate('/en');
-		}
+		} 
 	  }, [i18n]);
 
 
@@ -169,49 +135,20 @@ const Home = ({setCourseArr, setCards}) => {
 	  }, [t]) 
 
 
+
 	return (
-		<div ref={myRef} className='home'>
+		<div ref={myRef} className='home' id='home'>
 
 			<div className={burgerPopup}></div>
 
-			<div className={animationPopup}>
-				<div className={animationPopup1}></div>
-				<div className={animationPopup2}></div>
-
-			</div>
-
-			<header className="home__header">
-				<div className="home__header-logo">
-					<div className="logo"></div>
-				</div>
-
-				<nav className={burgerNavigation}>
-					<ul>
-						<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>
-						<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>
-						<li>{t("HomePage.learningMaterials")}</li>
-					</ul>
-				</nav>
-
-				<div className="home__header-box">
-					<select value={localStorage.getItem('selectedLanguage')} onChange={handleChangeLanguage}>
-						<option value="en">en</option>
-					<option value="ua">ua</option>
-					</select>
-
-					<a target='_blank' rel="noreferrer"href="tel:+15127868874">
-						<Button width={200} height={60} className="home__header-button" text="+1 (512) 786-8874" />
-					</a>
-
-					<div className="box__burger" onClick={hadleOpenBurger}>
-						<span className={burgerRow1}></span>
-						<span className={burgerRow2}></span>
-						<span className={burgerRow3}></span>
-					</div>
-
-				</div>
-
-			</header>
+			<Header
+				burgerOpen={burgerOpen}
+				setBurgerOpen={setBurgerOpen}
+				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
+				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
+				nav3={<li>{t("HomePage.learningMaterials")}</li>
+			}
+			/>
 
 			<main className="home__main">
 				<div className="home__main-left">

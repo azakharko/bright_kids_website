@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat'; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+.CoursePage {
+  width: 100%;
+  height: auto;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .CoursePage__left {
+    width: 60%;
+    padding-right: 35px; }
+    .CoursePage__left-title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: calc(10px + 2vw);
+      line-height: normal;
+      letter-spacing: normal;
+      color: #B41D8A; }
+    .CoursePage__left-description {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333;
+      margin-top: 25px; }
+    .CoursePage__left-box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 30px; }
+      .CoursePage__left-box .CoursePage__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px; }
+        .CoursePage__left-box .CoursePage__item svg {
+          position: relative;
+          top: 3px; }
+        .CoursePage__left-box .CoursePage__item p {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #B41D8A; }
+  .CoursePage__rigth {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .CoursePage__rigth-img img {
+      width: 400px; }
+
+@media screen and (max-width: 1350px) {
+  .CoursePage {
+    padding: 100px 80px; } }
+@media screen and (max-width: 1250px) {
+  .CoursePage__left {
+    width: 60%;
+    padding-right: 35px; }
+    .CoursePage__left-description {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .CoursePage__left-box {
+      gap: 20px; }
+  .CoursePage__rigth-img img {
+    width: 300px; } }
+@media screen and (max-width: 1000px) {
+  .CoursePage {
+    padding: 100px 60px;
+    flex-direction: column-reverse; }
+    .CoursePage__left {
+      width: 100%;
+      padding-right: 0px; }
+      .CoursePage__left-title {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 25px; }
+      .CoursePage__left-description {
+        width: 100%;
+        text-align: center; }
+      .CoursePage__left-box {
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .CoursePage__left-box .CoursePage__item {
+          gap: 10px; }
+          .CoursePage__left-box .CoursePage__item p {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #B41D8A; }
+    .CoursePage__rigth-img img {
+      width: 250px; } }
+@media screen and (max-width: 700px) {
+  .CoursePage {
+    padding: 60px 30px; } }
+@media screen and (max-width: 530px) {
+  .CoursePage__left-title {
+    font-size: 32px; }
+  .CoursePage__left-description {
+    font-size: 18px; }
+  .CoursePage__left-box .CoursePage__item p {
+    font-size: 16px; }
+  .CoursePage__rigth-img img {
+    width: 200px; } }
+
+/*# sourceMappingURL=CoursPage.css.map */
