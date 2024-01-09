@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Footer.css"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	const { t } = useTranslation();
@@ -12,7 +13,9 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<p>{t("Footer.subTite1")}</p>
+						<Link to={"privacy-policy"}>
+							<p>{t("Footer.subTite1")}</p>
+						</Link>
 						<p>{t("Footer.subTite2")}</p>
 						<p>{t("Footer.subTite3")}</p>
 						

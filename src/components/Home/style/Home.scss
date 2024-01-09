@@ -1,8 +1,6 @@
 @import "../../main/style.scss";
 
 
-
-
 .home {
 	width: 100%;
 	height: 100vh;
@@ -151,7 +149,7 @@
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-				padding: 0 30px;
+				padding: 0 10px;
 			}
 		}
 
@@ -227,14 +225,8 @@
 					transform: translateZ(-1px);
 					margin-top: 50px;
 					margin-right: 20px;
-
 				}
-
-
-				
 			}
-
-
 		}
 	}
 
@@ -299,9 +291,9 @@
 				gap: 20px;
 	
 				select {
-					width: 70px;
+					width: 110px;
 					height: 50px;
-					background-image: url(../img/arrow.svg);
+					font-size: 14px;
 					background-position: 40px;
 				}
 
