@@ -16,7 +16,10 @@ const Footer = () => {
 						<Link to={"privacy-policy"}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
-						<p>{t("Footer.subTite2")}</p>
+
+						<Link to={"terms"}>
+							<p>{t("Footer.subTite2")}</p>
+						</Link>
 						<p>{t("Footer.subTite3")}</p>
 						
 					</div>

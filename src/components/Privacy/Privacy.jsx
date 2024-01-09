@@ -55,7 +55,7 @@ const Privacy = ({ setBurgerOpen, burgerOpen }) => {
 		<p className='privacy__main-title'>Changes to this Privacy Policy</p>
 		<p className='privacy__main-description'>We may update this privacy policy from time to time. If we make any changes, we will post the new policy on our website and update the "Effective Date" at the top of the policy.</p>
 
-		<p className='privacy__main-email'>Contact Us: <a className='privacy__main-link' href="">BrightKidsSchool2020@gmail.com</a></p>
+    <p className='privacy__main-email'>Contact Us: <a className='privacy__main-link' href="mailto:BrightKidsSchool2020@gmail.com">BrightKidsSchool2020@gmail.com</a></p>
 
 		<p className='privacy__main-description'>If you have any questions about this privacy policy or the collection and use of personal information on our website, please contact us by email.</p>
 

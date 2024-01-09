@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Page from "./Page";
 import CoursPage from "./components/CoursPage/CoursPage";
 import Privacy from "./components/Privacy/Privacy";
+import Terms from "./components/Terms/Terms";
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -21,6 +22,8 @@ function App() {
         <Route path="/*" element={<Page setCourseIndex={setCourseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
         <Route path={`course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
         <Route path={`privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+
       </Routes>
     </Router>
       
