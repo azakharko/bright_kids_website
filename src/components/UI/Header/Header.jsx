@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 
 const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
@@ -61,14 +61,16 @@ const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
 
 
   return (
-    <header className="home__header"  ref={myRef}>
+    <header className="home__header" ref={myRef}>
 		<div className={animationPopup}>
 				<div className={animationPopup1}></div>
 				<div className={animationPopup2}></div>
 		</div>
 
       <div className="home__header-logo">
-        <div className="logo"></div>
+        <Link to={"/"}>
+         <div className="logo"></div>
+        </Link>
       </div>
 
       <nav className={burgerNavigation}>

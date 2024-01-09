@@ -22,6 +22,10 @@
 		"subTitle": "Course",
 		"age1": "Age of children:",
 		"age2": "years",
+		"ageTitle": "Student’s age:",
+		"ageTitle2": "years old",
+		"durationTitle": "Lesson duration:",
+		
 		"course1": {
 			"title": "Ukrainian Language",
 			"subTitle": "Ukrainian",
@@ -97,20 +101,29 @@
 		"course9": {
 			"title": "Math",
 			"subTitle": "Math",
-			"age": "12-15",
-			"category": "individual"
+			"description": "Our online math courses are designed to help your child learn math in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our individual lessons per person take 45 min because of the higher intensity. Our experienced instructors have backgrounds in computer science and engineering from top Ukrainian universities. We offer courses that are aligned with the most rigorous standards in order to supplement, reinforce, and prepare for the math skills your child is learning in school. Our courses are taught live online, so your child can learn from the comfort of your own home. We use interactive tools like virtual whiteboards and chat rooms to make sure your child is engaged and learning. We believe that every child can learn math and we’re here to help them do it. Sign up today and give your child the gift of math!",
+			"age": "7-14",
+			"category": "individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
 		},
 		"course10": {
 			"title": "Logic",
 			"subTitle": "Logic",
-			"age": "12-15",
-			"category": "individual"
+			"description": "Our online logic courses are designed to help your child learn logic in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our experienced instructors have exclusive programs created in the best Ukrainian private schools, ready to deliver to bring you the best Our courses teach out-of-the-box thinking and analytical reasoning. We believe that every child can learn logic and we’re here to help them do it. Sign up today and give your child the gift of logic!",
+			"age": "7-14",
+			"category": "individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
 		},
 		"course11": {
 			"title": "History of Ukraine",
 			"subTitle": "History",
+			"description": "Embark on a fascinating journey through the rich tapestry of Ukraine's history. Uncover the stories of ancient civilizations, pivotal moments, and the resilient spirit of its people. This course goes beyond dates and events, weaving a narrative that brings history to life.",
 			"age": "12-15",
-			"category": "individual"
+			"category": "individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
 		}
 	},
 	"FirstLesson": {

@@ -103,6 +103,8 @@
 		border-bottom: 1px solid #B41D8A;
 		background: rgba(255, 255, 255, 0.10);
 		padding: 0 100px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		@include display-center(space-between, center);
 
 
@@ -135,7 +137,7 @@
 			gap: 20px;
 
 			select {
-				width: 85px;
+				width: auto;
 				height: 60px;
 				@include display-center(flex-end, center);
 				background-color: $main;
@@ -144,13 +146,12 @@
 				box-shadow: 0px 4px 7px 0px $main;
 				@include font($white, 18px, 700, normal, normal);
 				padding: 10px;
-				background-image: url(../img/arrow.svg);
 				background-position: 46px;
 				background-repeat: no-repeat;
 				-webkit-appearance: none;
 				-moz-appearance: none;
 				appearance: none;
-				
+				padding: 0 30px;
 			}
 		}
 

@@ -66,7 +66,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 						</svg>
 					</div>
 
-					<p className="CoursePage__item-text">Student’s age: {t(`CoursePage.course${courseIndex}.age`)} years old</p>
+					<p className="CoursePage__item-text">{t(`CoursePage.ageTitle`)} {t(`CoursePage.course${courseIndex}.age`)} {t(`CoursePage.ageTitle2`)}</p>
 				</div>
 
 				<div className="CoursePage__item">
@@ -83,7 +83,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 						</svg>
 					</div>
 
-					<p className="CoursePage__item-text">Lesson duration: {t(`CoursePage.course${courseIndex}.duration`)}</p>
+					<p className="CoursePage__item-text">{t(`CoursePage.durationTitle`)} {t(`CoursePage.course${courseIndex}.duration`)}</p>
 				</div>
 
 				<div className="CoursePage__item">
