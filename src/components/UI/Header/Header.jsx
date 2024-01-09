@@ -61,7 +61,7 @@ const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
 
 
   return (
-    <header className="home__header" ref={myRef}>
+    <header className="home__header" id='header' ref={myRef}>
 		<div className={animationPopup}>
 				<div className={animationPopup1}></div>
 				<div className={animationPopup2}></div>

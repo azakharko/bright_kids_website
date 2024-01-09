@@ -4,6 +4,8 @@ import Page from "./Page";
 import CoursPage from "./components/CoursPage/CoursPage";
 import Privacy from "./components/Privacy/Privacy";
 import Terms from "./components/Terms/Terms";
+import Refund from "./components/Refund/Refund";
+
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -23,10 +25,10 @@ function App() {
         <Route path={`course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
         <Route path={`privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
         <Route path={`terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
 
       </Routes>
     </Router>
-      
   );
 }
 

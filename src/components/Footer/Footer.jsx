@@ -6,6 +6,19 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 	const { t } = useTranslation();
 
+	const handleScrollToSection = (sectionId) => {
+		if (!sectionId || sectionId === 'top') {
+		  window.scrollTo({ top: 0 });
+		  return;
+		}
+	  
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+		  sectionRef.scrollIntoView();
+		}
+	  };
+	  
+
 	return (
 		<div className='footer' id='footer'>
 			<div className="footer__box">
@@ -13,14 +26,17 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<Link to={"privacy-policy"}>
+						<Link onClick={() => handleScrollToSection('top')} to={"privacy-policy"}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
 
-						<Link to={"terms"}>
+						<Link onClick={() => handleScrollToSection('top')} to={"terms"}>
 							<p>{t("Footer.subTite2")}</p>
 						</Link>
-						<p>{t("Footer.subTite3")}</p>
+
+						<Link onClick={() => handleScrollToSection('top')} to={"refund"}>
+							<p>{t("Footer.subTite3")}</p>
+						</Link>
 						
 					</div>
 
