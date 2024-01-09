@@ -75,9 +75,9 @@ const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
 
       <nav className={burgerNavigation}>
         <ul>
-		  {nav1}	
-		  {nav2}
-		  {nav3}
+          {nav1}	
+          {nav2}
+          {nav3}
         </ul>
       </nav>
 
