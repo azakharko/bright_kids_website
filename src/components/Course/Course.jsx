@@ -20,7 +20,6 @@ const Course = ({ courseArr, setCourseIndex }) => {
       <p className='course__title'>{t("CoursePage.title")}</p>
       <div className="course__bg"></div>
 
-
       <div className="course__box">
         
         <Swiper

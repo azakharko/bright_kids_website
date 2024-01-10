@@ -70,9 +70,10 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 0px;
     margin-top: 35px; }
     .benefits__box-cart {
       display: flex;

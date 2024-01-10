@@ -13,7 +13,7 @@
     border-radius: 5px;
 
     overflow: hidden;
-    height: 100px;
+    height: 90px;
 
     transition: height .6s; 
 
@@ -95,7 +95,7 @@
 @media screen and (max-width: 1700px) {
     .faq__card {
         padding: 0 25px;
-        height: 100px;
+        height: 85px;
 
     
         &-question {
@@ -142,7 +142,7 @@
 @media screen and (max-width: 800px) {
     .faq__card {
         padding: 0 20px;
-        height: 90px;
+        height: 80px;
 
         &-question {
             margin-bottom: 10px;

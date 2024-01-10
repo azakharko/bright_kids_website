@@ -31,7 +31,7 @@
 			"subTitle": "Ukrainian",
 			"description": "All Ukrainian language classes are designed according to the level of language proficiency and age of the child. There are classes for those who are just beginning to learn Ukrainian, as well as for those who already know a little Ukrainian and want to deepen their knowledge, expand their vocabulary, and learn the basics of grammar. In the classes, you will be able to immerse yourself in the whirlpool of folk traditions and learn more about famous Ukrainians. Each lesson is based on four components of language competence: reading, writing, speaking, and listening. Children will also do various creative projects. For those who are just starting to learn the language, and if it is early school age - we will learn letters and words on various topics, playing and singing. In each lesson we will study a new lexical topic and, of course, read interesting books.",
 			"age": "4+",
-			"category": "group",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: a notebook and a pencil"
 		},
@@ -40,34 +40,32 @@
 			"subTitle": "Chess",
 			"description": "Game development is easy with Roblox Studio. Launch your own game to share with family, friends, and the world in as little as one class. Students will learnm game designing and development on Roblox Studio including a basic introduction to Roblox Studio, building, and Lua code. We offer small group classes as well as individual classes at a time that works best for you.",
 			"age": "5+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What students need: laptop with pre-installed Roblox Studio"
 		},
 		"course3": {
-			"title": "Painting",
-			"subTitle": "Painting",
+			"title": "Art",
+			"subTitle": "Art",
 			"description": "Ukrainian-language drawing classes are conducted by experienced art teachers who have their own creative studios. They gently and unobtrusively help children feel the basics of composition, work with colors and, most importantly, help to formulate an idea, reflect on it, and put it into practice. Children will work with different techniques and materials (pencils, markers, watercolors, gouache, plasticine) Each time a specific topic will be asked with examples of works by world-famous artists. Therefore, children will be able to get acquainted with the works of various artists, including Ukrainian ones.",
 			"age": "5+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: paint, paper for painting"
 		},
 		"course4": {
-			"title": "Roblox",
 			"subTitle": "Roblox",
 			"description": "Roblox Coding Classes for Kids and Teens Game development is easy with Roblox Studio. Launch your own game to share with family, friends, and the world in as little as one class. Students will learn game designing and development on Roblox Studio including a basic introduction to Roblox Studio, building, and Lua code. We offer small group classes as well as individual classes at a time that works best for you. ",
 			"age": "10+",
-			"category": "group",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What students need: laptop with pre-installed Roblox Studio"
 		},
 		"course5": {
-			"title": "Scratch",
 			"subTitle": "Scratch",
 			"description": "Learn to program, create games, and have fun in Scratch! What you'll learn: Create intelligent and fun gamesCreate animations and astonishing visual effects. Code - one of the most essential skills to learn! Understand complex computer science concepts by intuitively applying them in games. Learn text-based programming languages 2x - 10x faster",
 			"age": "6+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: a laptop with pre-installed Scratch IDE (https://scratch.mit.edu/download)"
 		},
@@ -76,16 +74,16 @@
 			"subTitle": "Python",
 			"description": "Why should children learn to program? The world is changing. And it is changing at a breakneck pace. And the basic set of skills that are embedded in the school curriculum does not always keep up with these changes. Let's face it - being able to program in the near future stack is as necessary a skill as reading and writing. We teach Python and Scratch in Ukrainian. What will we do on the course? Study the basic elements of the Python language. Get acquainted with computer graphics and additional Turtle and Tkinter modules. Write our own mini-games Have fun and a good time",
 			"age": "8+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: laptop with pre-installed Python3 and Python IDS (PyCharm or VS Code)"
 		},
 		"course7": {
-			"title": "Sing",
-			"subTitle": "Sing",
+			"title": "Voice",
+			"subTitle": "Voice",
 			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own. Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
 			"age": "4+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: good mood"
 		},
@@ -94,7 +92,7 @@
 			"subTitle": "Music",
 			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own. Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
 			"age": "5+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: good mood"
 		},
@@ -103,7 +101,7 @@
 			"subTitle": "Math",
 			"description": "Our online math courses are designed to help your child learn math in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our individual lessons per person take 45 min because of the higher intensity. Our experienced instructors have backgrounds in computer science and engineering from top Ukrainian universities. We offer courses that are aligned with the most rigorous standards in order to supplement, reinforce, and prepare for the math skills your child is learning in school. Our courses are taught live online, so your child can learn from the comfort of your own home. We use interactive tools like virtual whiteboards and chat rooms to make sure your child is engaged and learning. We believe that every child can learn math and we’re here to help them do it. Sign up today and give your child the gift of math!",
 			"age": "6+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"
 		},
@@ -112,7 +110,7 @@
 			"subTitle": "Logic",
 			"description": "Our online logic courses are designed to help your child learn logic in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our experienced instructors have exclusive programs created in the best Ukrainian private schools, ready to deliver to bring you the best Our courses teach out-of-the-box thinking and analytical reasoning. We believe that every child can learn logic and we’re here to help them do it. Sign up today and give your child the gift of logic!",
 			"age": "6+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"
 		},
@@ -121,13 +119,13 @@
 			"subTitle": "History",
 			"description": "Embark on a fascinating journey through the rich tapestry of Ukraine's history. Uncover the stories of ancient civilizations, pivotal moments, and the resilient spirit of its people. This course goes beyond dates and events, weaving a narrative that brings history to life.",
 			"age": "8+",
-			"category": "individual",
+			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"
 		}
 	},
 	"FirstLesson": {
-		"title": "Get the first one free class",
+		"title": "Get the first group class for free",
 		"inputName": "Write your first name",
 		"inputNamePlacholder": "Name",
 		"inputLastName": "Write your last name",

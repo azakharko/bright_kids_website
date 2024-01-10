@@ -23,8 +23,9 @@
 	&__box {
 	  width: 100%;
 	  height: auto;
-	  @include display-center (space-between, center);
+	  @include display-center (center, center);
 	  flex-wrap: wrap;
+	  gap: 	0px;
 	  margin-top: 35px;
   
 	  &-cart{

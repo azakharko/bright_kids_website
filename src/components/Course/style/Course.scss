@@ -123,8 +123,9 @@
 				&-button {
 					border: none;
 					padding: 8px 34px;
-					@include font($white, 16px, 600, normal, normal);
-
+					@include font($white, 20px, 600, normal, normal);
+					margin-top: 10px;
+					margin-bottom: 20px;
 				}
 
 				&-subtitle {

@@ -42,7 +42,7 @@ const QuestionCard = ({ question, answer, isOpen, toggleCard }) => {
       className={`faq__card ${isOpen ? '_open' : ''}`}
       onClick={handleClick}
       style={{
-        height: isOpen ? `${cardHeight + dropdownTextHeight - 50}px` : '',
+        height: isOpen ? `${cardHeight + dropdownTextHeight - 85}px` : '',
       }}
       ref={cardRef}
     >

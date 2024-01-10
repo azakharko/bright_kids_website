@@ -36,9 +36,8 @@
 
 
 		<div className="course__left">
-			<button className='course__left-button'>{courseArr.subTitle}</button>
 			<p className='course__left-subtitle'>{t("CoursePage.subTitle")}</p>
-			<p className='course__left-title'>«{courseArr.title}» </p>
+			<button className='course__left-button'>{courseArr.subTitle}</button>
 
 				<div className="course__left-box">
 
