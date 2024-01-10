@@ -49,7 +49,7 @@ body {
   align-items: center;
   background-color: #b41d893a;
   flex-direction: column;
-  padding: 100px 100px;
+  padding: 40px 100px;
   margin-bottom: 140px;
   background-image: url(../img/bg.svg);
   background-size: 600px;
@@ -229,7 +229,7 @@ body {
 
 @media screen and (max-width: 1350px) {
   .course {
-    padding: 100px 60px; }
+    padding: 60px 60px; }
     .course__title {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -240,7 +240,7 @@ body {
       color: #333333; } }
 @media screen and (max-width: 1200px) {
   .course {
-    padding: 100px 80px; }
+    padding: 60px 80px; }
     .course__title {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -254,7 +254,7 @@ body {
     padding: 100px 60px; } }
 @media screen and (max-width: 700px) {
   .course {
-    padding: 100px 30px; }
+    padding: 60px 30px; }
     .course__title {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -264,94 +264,96 @@ body {
       letter-spacing: normal;
       color: #333333; } }
 @media screen and (max-width: 530px) {
-  .course__title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #333333; }
-  .course .swiper {
-    width: 100%;
-    height: 600px; }
-  .course__box {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .course__box-card {
+  .course {
+    padding: 40px 30px; }
+    .course__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .course .swiper {
+      width: 100%;
+      height: 600px; }
+    .course__box {
       width: 100%;
       height: auto;
-      margin: 20px;
-      padding: 20px;
-      cursor: pointer;
-      flex-direction: column; }
-      .course__box-card .course-hover button {
-        width: 100% !important;
-        padding: 15px;
-        background-color: #fff;
-        font-size: 16px;
-        color: #B41D8A; }
-      .course__box-card .course__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .course__box-card {
         width: 100%;
         height: auto;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        cursor: pointer;
         flex-direction: column; }
-        .course__box-card .course__left-button {
-          font-family: 'Montserrat', sans-serif;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: normal;
-          letter-spacing: normal;
-          color: #fff; }
-        .course__box-card .course__left-subtitle {
-          font-family: 'Montserrat', sans-serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: normal;
-          letter-spacing: normal;
-          color: #333333; }
-        .course__box-card .course__left-title {
-          font-family: 'Montserrat', sans-serif;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 20px;
-          line-height: normal;
-          letter-spacing: normal;
-          color: #333333; }
-        .course__box-card .course__left-box {
-          margin-top: 5px; }
-          .course__box-card .course__left-box .course__description {
+        .course__box-card .course-hover button {
+          width: 100% !important;
+          padding: 15px;
+          background-color: #fff;
+          font-size: 16px;
+          color: #B41D8A; }
+        .course__box-card .course__left {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column; }
+          .course__box-card .course__left-button {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #fff; }
+          .course__box-card .course__left-subtitle {
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: normal;
             letter-spacing: normal;
-            color: #333333;
-            margin-left: 3px;
-            text-align: center; }
-      .course__box-card .course__rigth {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .course__box-card .course__rigth-img {
-          width: 180px;
-          height: 180px; }
-        .course__box-card .course__rigth-img2 {
-          background-image: url(../img/img2.png);
-          position: static; }
-        .course__box-card .course__rigth-img4 {
-          background-image: url(../img/img4.png);
-          height: 185px; } }
+            color: #333333; }
+          .course__box-card .course__left-title {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #333333; }
+          .course__box-card .course__left-box {
+            margin-top: 5px; }
+            .course__box-card .course__left-box .course__description {
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: normal;
+              letter-spacing: normal;
+              color: #333333;
+              margin-left: 3px;
+              text-align: center; }
+        .course__box-card .course__rigth {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .course__box-card .course__rigth-img {
+            width: 180px;
+            height: 180px; }
+          .course__box-card .course__rigth-img2 {
+            background-image: url(../img/img2.png);
+            position: static; }
+          .course__box-card .course__rigth-img4 {
+            background-image: url(../img/img4.png);
+            height: 185px; } }
 
 /*# sourceMappingURL=Course.css.map */

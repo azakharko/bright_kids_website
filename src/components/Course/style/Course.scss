@@ -6,7 +6,7 @@
 	@include display-center(flex-start, center);
 	background-color: #b41d893a;
 	flex-direction: column;	
-	padding: 100px 100px;
+	padding: 40px 100px;
 	margin-bottom: 140px;
 	background-image: url(../img/bg.svg);
 	background-size: 600px;
@@ -217,7 +217,7 @@
 
 @media screen and (max-width: 1350px) {
 	.course {
-		padding: 100px 60px;
+		padding: 60px 60px;
 		&__title {
 			@include font($black, 42px, 700, normal, normal);
 		}
@@ -227,7 +227,7 @@
 
 @media screen and (max-width: 1200px) {
 	.course {
-		padding: 100px 80px;
+		padding: 60px 80px;
 		&__title {
 			@include font($black, 36px, 700, normal, normal);
 		}
@@ -244,7 +244,7 @@
 
 @media screen and (max-width: 700px) {
 	.course {
-		padding: 100px 30px;
+		padding: 60px 30px;
 	
 		&__title {
 			@include font($black, 32px, 700, normal, normal);
@@ -258,6 +258,7 @@
 	
 
 	.course {
+		padding: 40px 30px;
 		&__title {
 			@include font($black, 28px, 700, normal, normal);
 		}
