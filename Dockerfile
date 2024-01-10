@@ -1,19 +1,17 @@
-FROM node:18 as build
-
-WORKDIR /app
-
-COPY package*.json .
-RUN apt-get update
-RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
-RUN apt-get install nodejs
-RUN apt-get install npm
-RUN npm install
-COPY . .
+# build environment
+FROM node:latest as builder
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+COPY package.json /usr/src/app/package.json
+RUN npm install --silent
+RUN npm install react-scripts -g --silent
+COPY . /usr/src/app
 RUN npm run build
 
-FROM nginx:1.19
 
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/build /usr/share/nginx/html
-
+# production environment
+FROM nginx:latest
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 EXPOSE 3000
+CMD ["nginx", "-g", "daemon off;"]
