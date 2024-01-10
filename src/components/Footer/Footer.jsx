@@ -26,15 +26,15 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<Link onClick={() => handleScrollToSection('top')} to={"privacy-policy"}>
+						<Link onClick={() => handleScrollToSection('top')} to={"/privacy-policy"}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={"terms"}>
+						<Link onClick={() => handleScrollToSection('top')} to={"/terms"}>
 							<p>{t("Footer.subTite2")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={"refund"}>
+						<Link onClick={() => handleScrollToSection('top')} to={"/refund"}>
 							<p>{t("Footer.subTite3")}</p>
 						</Link>
 						

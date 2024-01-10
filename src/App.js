@@ -22,10 +22,10 @@ function App() {
       <Router>
       <Routes>
         <Route path="/*" element={<Page setCourseIndex={setCourseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
 
       </Routes>
     </Router>
