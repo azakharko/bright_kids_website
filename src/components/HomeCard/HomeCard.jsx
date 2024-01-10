@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import "./style/HomeCard.css";
 
 const HomeCard = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className='home-cards'>

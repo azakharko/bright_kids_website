@@ -1,17 +1,14 @@
-// Header.js
-
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 
-const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
+const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
   let timerId;
-  let navigate = useNavigate();
   const myRef = useRef(null);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
-  
+
   const [animationPopupOpen, setAnimationPopupOpen] = useState(false);
   let burgerRow1 = burgerOpen ? "box__burger-row box__burger-row1 box__burger-row1Show" : "box__burger-row box__burger-row1";
   let burgerRow2 = burgerOpen ? "box__burger-row box__burger-row2 box__burger-row2Show" : "box__burger-row box__burger-row2";
@@ -23,59 +20,41 @@ const Header = ({nav1, nav2, nav3, burgerOpen, setBurgerOpen}) => {
 
 
   const hadleOpenBurger = () => {
-	setBurgerOpen(!burgerOpen);
+    setBurgerOpen(!burgerOpen);
 
-	document.body.classList.toggle("body-hidden", !burgerOpen);
-	myRef.current.scrollIntoView();
-	}
+    document.body.classList.toggle("body-hidden", !burgerOpen);
+    myRef.current.scrollIntoView();
+  }
 
-	const handleScrollToSection = (sectionId) => {
-		setBurgerOpen(false);
-		document.body.classList.remove("body-hidden", false);
+  const handleChangeLanguage = (e) => {
+    clearTimeout(timerId);
+    setAnimationPopupOpen(true);
 
-		if (!sectionId || sectionId === 'top') {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-			return;
-		}
+    timerId = setTimeout(() => {
+      setAnimationPopupOpen(false);
+    }, 1600);
 
-		const sectionRef = document.getElementById(sectionId);
-		if (sectionRef) {
-			sectionRef.scrollIntoView({ behavior: 'smooth' });
-		}
-	};
-
-	const handleChangeLanguage = (e) => {
-		clearTimeout(timerId);
-		setAnimationPopupOpen(true);
-
-		timerId = setTimeout(() => {
-			setAnimationPopupOpen(false);
-		}, 1600);
-
-		const thisLanguage = e.target.value;
-		i18n.changeLanguage(thisLanguage);
-		localStorage.setItem('selectedLanguage', thisLanguage);
-
-		
-	}
-
+    const thisLanguage = e.target.value;
+    i18n.changeLanguage(thisLanguage);
+    localStorage.setItem('selectedLanguage', thisLanguage);
+  }
 
   return (
     <header className="home__header" id='header' ref={myRef}>
-		<div className={animationPopup}>
-				<div className={animationPopup1}></div>
-				<div className={animationPopup2}></div>
-		</div>
+      <div className={animationPopup}>
+        <div className={animationPopup1}></div>
+        <div className={animationPopup2}></div>
+      </div>
 
       <div className="home__header-logo">
         <Link to={"/"}>
-         <div className="logo"></div>
+          <div className="logo"></div>
         </Link>
       </div>
 
       <nav className={burgerNavigation}>
         <ul>
-          {nav1}	
+          {nav1}
           {nav2}
           {nav3}
         </ul>

@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import "./style/Home.css"
 import Button from '../UI/Button/Button';
 import Header from '../UI/Header/Header';
 
 
-const Home = ({setCourseArr, setCards, burgerOpen, setBurgerOpen}) => {
+const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 	const { t, i18n } = useTranslation();
-	let navigate = useNavigate();
 
 	const myRef = useRef(null);
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
@@ -32,106 +30,106 @@ const Home = ({setCourseArr, setCards, burgerOpen, setBurgerOpen}) => {
 	useEffect(() => {
 		const pathSegments = window.location.pathname.split('/');
 		const languageFromPath = pathSegments[1];
-	
+
 		if (['en', 'ua'].includes(languageFromPath)) {
-		  i18n.changeLanguage(languageFromPath);
-		  localStorage.setItem('selectedLanguage', languageFromPath);
-		} 
-	  }, [i18n]);
+			i18n.changeLanguage(languageFromPath);
+			localStorage.setItem('selectedLanguage', languageFromPath);
+		}
+	}, [i18n]);
 
 
-	  useEffect(() => {
+	useEffect(() => {
 		setCards([
-		  { question: `${t("FAQ.faqTitle1")}`, answer: `${t("FAQ.faqDescirption1")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle2")}`, answer: `${t("FAQ.faqDescirption2")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle3")}`, answer: `${t("FAQ.faqDescirption3")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle4")}`, answer: `${t("FAQ.faqDescirption4")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle5")}`, answer: `${t("FAQ.faqDescirption5")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle6")}`, answer: `${t("FAQ.faqDescirption6")}`, isOpen: true },
-		  { question: `${t("FAQ.faqTitle7")}`, answer: `${t("FAQ.faqDescirption7")}`, isOpen: true },
-	
+			{ question: `${t("FAQ.faqTitle1")}`, answer: `${t("FAQ.faqDescirption1")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle2")}`, answer: `${t("FAQ.faqDescirption2")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle3")}`, answer: `${t("FAQ.faqDescirption3")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle4")}`, answer: `${t("FAQ.faqDescirption4")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle5")}`, answer: `${t("FAQ.faqDescirption5")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle6")}`, answer: `${t("FAQ.faqDescirption6")}`, isOpen: true },
+			{ question: `${t("FAQ.faqTitle7")}`, answer: `${t("FAQ.faqDescirption7")}`, isOpen: true },
+
 		]);
 		setCourseArr([
-		  {
-			id: 0,
-			title: `${t("CoursePage.course1.title")}`,
-			subTitle: `${t("CoursePage.course1.subTitle")}`,
-			age: `${t("CoursePage.course1.age")}`,
-			category: `${t("CoursePage.course1.category")}`
-		  },
-		  {
-			id: 1,
-			title: `${t("CoursePage.course2.title")}`,
-			subTitle: `${t("CoursePage.course2.subTitle")}`,
-			age: `${t("CoursePage.course2.age")}`,
-			category: `${t("CoursePage.course2.category")}`
-		  },
-		  {
-			id: 2,
-			title: `${t("CoursePage.course3.title")}`,
-			subTitle: `${t("CoursePage.course3.subTitle")}`,
-			age: `${t("CoursePage.course3.age")}`,
-			category: `${t("CoursePage.course3.category")}`
-		  },
-		  {
-			id: 3,
-			title: `${t("CoursePage.course4.title")}`,
-			subTitle: `${t("CoursePage.course4.subTitle")}`,
-			age: `${t("CoursePage.course4.age")}`,
-			category: `${t("CoursePage.course4.category")}`
-		  },
-		  {
-			id: 4,
-			title: `${t("CoursePage.course5.title")}`,
-			subTitle: `${t("CoursePage.course5.subTitle")}`,
-			age: `${t("CoursePage.course5.age")}`,
-			category: `${t("CoursePage.course5.category")}`
-		  },
-		  {
-			id: 5,
-			title: `${t("CoursePage.course6.title")}`,
-			subTitle: `${t("CoursePage.course6.subTitle")}`,
-			age: `${t("CoursePage.course6.age")}`,
-			category: `${t("CoursePage.course6.category")}`
-		  },
-		  {
-			id: 6,
-			title: `${t("CoursePage.course7.title")}`,
-			subTitle: `${t("CoursePage.course7.subTitle")}`,
-			age: `${t("CoursePage.course7.age")}`,
-			category: `${t("CoursePage.course7.category")}`
-		  },
-		  {
-			id: 7,
-			title: `${t("CoursePage.course8.title")}`,
-			subTitle: `${t("CoursePage.course8.subTitle")}`,
-			age: `${t("CoursePage.course8.age")}`,
-			category: `${t("CoursePage.course8.category")}`
-		  },
-		  {
-			id: 8,
-			title: `${t("CoursePage.course9.title")}`,
-			subTitle: `${t("CoursePage.course9.subTitle")}`,
-			age: `${t("CoursePage.course9.age")}`,
-			category: `${t("CoursePage.course9.category")}`
-		  },
-		  {
-			id: 9,
-			title: `${t("CoursePage.course10.title")}`,
-			subTitle: `${t("CoursePage.course10.subTitle")}`,
-			age: `${t("CoursePage.course10.age")}`,
-			category: `${t("CoursePage.course10.category")}`
-		  },
-		  {
-			id: 10,
-			title: `${t("CoursePage.course11.title")}`,
-			subTitle: `${t("CoursePage.course11.subTitle")}`,
-			age: `${t("CoursePage.course11.age")}`,
-			category: `${t("CoursePage.course11.category")}`
-		  },
-	  
+			{
+				id: 0,
+				title: `${t("CoursePage.course1.title")}`,
+				subTitle: `${t("CoursePage.course1.subTitle")}`,
+				age: `${t("CoursePage.course1.age")}`,
+				category: `${t("CoursePage.course1.category")}`
+			},
+			{
+				id: 1,
+				title: `${t("CoursePage.course2.title")}`,
+				subTitle: `${t("CoursePage.course2.subTitle")}`,
+				age: `${t("CoursePage.course2.age")}`,
+				category: `${t("CoursePage.course2.category")}`
+			},
+			{
+				id: 2,
+				title: `${t("CoursePage.course3.title")}`,
+				subTitle: `${t("CoursePage.course3.subTitle")}`,
+				age: `${t("CoursePage.course3.age")}`,
+				category: `${t("CoursePage.course3.category")}`
+			},
+			{
+				id: 3,
+				title: `${t("CoursePage.course4.title")}`,
+				subTitle: `${t("CoursePage.course4.subTitle")}`,
+				age: `${t("CoursePage.course4.age")}`,
+				category: `${t("CoursePage.course4.category")}`
+			},
+			{
+				id: 4,
+				title: `${t("CoursePage.course5.title")}`,
+				subTitle: `${t("CoursePage.course5.subTitle")}`,
+				age: `${t("CoursePage.course5.age")}`,
+				category: `${t("CoursePage.course5.category")}`
+			},
+			{
+				id: 5,
+				title: `${t("CoursePage.course6.title")}`,
+				subTitle: `${t("CoursePage.course6.subTitle")}`,
+				age: `${t("CoursePage.course6.age")}`,
+				category: `${t("CoursePage.course6.category")}`
+			},
+			{
+				id: 6,
+				title: `${t("CoursePage.course7.title")}`,
+				subTitle: `${t("CoursePage.course7.subTitle")}`,
+				age: `${t("CoursePage.course7.age")}`,
+				category: `${t("CoursePage.course7.category")}`
+			},
+			{
+				id: 7,
+				title: `${t("CoursePage.course8.title")}`,
+				subTitle: `${t("CoursePage.course8.subTitle")}`,
+				age: `${t("CoursePage.course8.age")}`,
+				category: `${t("CoursePage.course8.category")}`
+			},
+			{
+				id: 8,
+				title: `${t("CoursePage.course9.title")}`,
+				subTitle: `${t("CoursePage.course9.subTitle")}`,
+				age: `${t("CoursePage.course9.age")}`,
+				category: `${t("CoursePage.course9.category")}`
+			},
+			{
+				id: 9,
+				title: `${t("CoursePage.course10.title")}`,
+				subTitle: `${t("CoursePage.course10.subTitle")}`,
+				age: `${t("CoursePage.course10.age")}`,
+				category: `${t("CoursePage.course10.category")}`
+			},
+			{
+				id: 10,
+				title: `${t("CoursePage.course11.title")}`,
+				subTitle: `${t("CoursePage.course11.subTitle")}`,
+				age: `${t("CoursePage.course11.age")}`,
+				category: `${t("CoursePage.course11.category")}`
+			},
+
 		])
-	  }, [t]) 
+	}, [t])
 
 
 
@@ -146,7 +144,7 @@ const Home = ({setCourseArr, setCards, burgerOpen, setBurgerOpen}) => {
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
 				nav3={<li>{t("HomePage.learningMaterials")}</li>
-			}
+				}
 			/>
 
 			<main className="home__main">

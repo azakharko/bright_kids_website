@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./style/Course.css";
 import CourseCard from '../UI/CourseCard/CourseCard';
@@ -14,14 +14,14 @@ import 'swiper/css/navigation';
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 
 const Course = ({ courseArr, setCourseIndex }) => {
-	const { t,} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div id='course' className='course'>
       <p className='course__title'>{t("CoursePage.title")}</p>
       <div className="course__bg"></div>
 
       <div className="course__box">
-        
+
         <Swiper
           slidesPerView={3}
           keyboard={{
@@ -31,7 +31,7 @@ const Course = ({ courseArr, setCourseIndex }) => {
             clickable: true,
           }}
 
-    
+
           navigation={true}
           modules={[Keyboard, Pagination, Navigation]}
           className="mySwiper"
@@ -51,11 +51,11 @@ const Course = ({ courseArr, setCourseIndex }) => {
           }}
         >
           {courseArr ? (
-          courseArr.map((course, index) => (
-            <SwiperSlide key={index}>
-              <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
-            </SwiperSlide>
-          ))
+            courseArr.map((course, index) => (
+              <SwiperSlide key={index}>
+                <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
+              </SwiperSlide>
+            ))
           ) : (
             <p>Loading...</p>
           )}
