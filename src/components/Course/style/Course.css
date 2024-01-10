@@ -50,7 +50,11 @@ body {
   background-color: #b41d893a;
   flex-direction: column;
   padding: 100px 100px;
-  margin-bottom: 140px; }
+  margin-bottom: 140px;
+  background-image: url(../img/bg.svg);
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat; }
   .course__title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -63,10 +67,10 @@ body {
     background-color: #B41D8A !important; }
   .course .mySwiper .swiper-button-next,
   .course .mySwiper .swiper-button-prev {
-    width: 160px;
+    width: 60px;
     height: 60px;
     background-color: #B41D8A;
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,11 +81,19 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #fff;
-    top: 430px; }
+    top: 50px; }
   .course .mySwiper .swiper-button-prev::after {
-    content: '<<<<<'; }
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/arrow__left.svg);
+    background-size: cover; }
   .course .mySwiper .swiper-button-next::after {
-    content: '>>>>>'; }
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/arrow__rigth.svg);
+    background-size: cover; }
   .course .swiper {
     width: 100%;
     height: 500px; }
@@ -263,17 +275,6 @@ body {
   .course .swiper {
     width: 100%;
     height: 600px; }
-  .course .mySwiper .swiper-button-next,
-  .course .mySwiper .swiper-button-prev {
-    width: 100px;
-    height: 50px;
-    top: 530px; }
-  .course .mySwiper .swiper-button-prev::after {
-    content: '<<<<<';
-    font-size: 20px; }
-  .course .mySwiper .swiper-button-next::after {
-    content: '>>>>>';
-    font-size: 20px; }
   .course__box {
     width: 100%;
     height: auto;

@@ -24,24 +24,33 @@
 
 	.mySwiper .swiper-button-next,
 	.mySwiper .swiper-button-prev {
-	  width: 160px; 
+	  width: 60px; 
 	  height: 60px; 
 	  background-color: $main; 
-	  border-radius: 10px; 
+	  border-radius: 50%; 
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
 	  @include font($white, 24px, 700, normal, normal);
-	  top: 430px; 
+	  top: 50px; 
 	}
 	
 	
 	.mySwiper .swiper-button-prev::after {
-		content: '<<<<<';
+		content: '';
+		width: 50px;
+		height: 50px;
+		background-image: url(../img/arrow__left.svg);
+		background-size: cover;
+
 	}
 
 	.mySwiper .swiper-button-next::after {
-		content: '>>>>>'; 
+		content: '';
+		width: 50px;
+		height: 50px;
+		background-image: url(../img/arrow__rigth.svg);
+		background-size: cover;
 	}
 	
 	.swiper {
@@ -258,22 +267,6 @@
 			height: 600px;
 		}
 	
-		.mySwiper .swiper-button-next,
-		.mySwiper .swiper-button-prev {
-		  width: 100px; 
-		  height: 50px; 
-		  top: 530px ; 
-		}
-		.mySwiper .swiper-button-prev::after {
-			content: '<<<<<';
-			font-size: 20px;
-		}
-	
-		.mySwiper .swiper-button-next::after {
-			content: '>>>>>';
-			font-size: 20px;
-	
-		}
 
 		&__box {
 			width: 100%;

@@ -11,11 +11,24 @@
 		console.log(index)
 	}
 
+	const handleScrollToSection = (sectionId) => {
+		if (!sectionId || sectionId === 'top') {
+		  window.scrollTo({ top: 0 });
+		  return;
+		}
+	  
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+		  sectionRef.scrollIntoView();
+		}
+	};
+
+
 	return (
 		<div className="course__box-card" id={index}>
 		<div className="course-hover">
 			<div className="course-hover__button">
-				<Link to={"/course"}>
+				<Link onClick={() => handleScrollToSection('top')} to={"/course"}>
 					<button onClick={courseOpen}>Details of the course</button>
 				</Link>
 			</div>
