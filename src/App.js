@@ -5,7 +5,7 @@ import CoursPage from "./components/CoursPage/CoursPage";
 import Privacy from "./components/Privacy/Privacy";
 import Terms from "./components/Terms/Terms";
 import Refund from "./components/Refund/Refund";
-
+import ReactGA from "react-ga4";
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -19,17 +19,19 @@ function App() {
   }, [courseIndex]);
 
   return (
-      <Router>
+    <Router>
       <Routes>
-        <Route path="/*" element={<Page setCourseIndex={setCourseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
-        <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}/>} />
+        <Route path="/*" element={<Page setCourseIndex={setCourseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
 
       </Routes>
     </Router>
   );
 }
+
+ReactGA.initialize("G-NYV7WT0BV3");
 
 export default App;
