@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 
 const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
@@ -41,6 +41,10 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
 
   return (
     <header className="home__header" id='header' ref={myRef}>
+      <noscript>
+        <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-KMWP45N2' height='0' width='0' style='display:none;visibility:hidden'></iframe>
+      </noscript>
+      
       <div className={animationPopup}>
         <div className={animationPopup1}></div>
         <div className={animationPopup2}></div>
