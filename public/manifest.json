@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Bright Kids",
+  "name": "Bright Kids Ukrainian Online School",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,12 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Ukrainian online school BrightKids helps parents and their kids to find awesome and fun learning courses, guided by professional teachers online in small groups",
+  "keywords": "Bright Kids, Ukrainian, Online School, Learning Courses",
+  "author": "Your Name",
+  "lang": "en",
+  "ogSiteName": "Bright Kids Ukrainian Online School",
+  "ogDescription": "Ukrainian online school BrightKids helps parents and their kids to find awesome and fun learning courses, guided by professional teachers online in small groups",
+  "ogTitle": "Bright Kids Ukrainian Online School"
 }
