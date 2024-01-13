@@ -52,7 +52,24 @@
 		padding: 0 30px;
 		&__card {
 			width: calc(100% - 20px); 
+			margin-bottom: 0px; 
+			padding: 20px;
+			background-color: $main;
+			@include display-center(center, center);
+			@include font($white, 20px, 600, normal, normal);
+			box-sizing: border-box;
+			text-align: center;
+			border-radius: 0px;
 		}
+	
+		&__first {
+			border-radius: 10px 10px 0 0;
+		}
+	
+		&__last {
+			border-radius: 0 0 10px 10px;
+		}
+
 	}
 }
 

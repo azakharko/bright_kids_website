@@ -55,7 +55,6 @@ body {
   position: relative;
   margin-bottom: 140px; }
   .benefits__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -79,7 +78,6 @@ body {
       gap: 25px;
       margin: 20px; }
     .benefits__box-title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -93,7 +91,6 @@ body {
       justify-content: center;
       align-items: center; }
       .benefits__box-chart .chart__title {
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -104,7 +101,6 @@ body {
     .benefits__box-subtitle {
       width: 330px;
       text-align: center;
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -128,7 +124,6 @@ body {
   .benefits {
     padding: 120px 60px; }
     .benefits__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 42px;
@@ -139,7 +134,6 @@ body {
   .benefits {
     padding: 120px 80px; }
     .benefits__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -158,7 +152,6 @@ body {
   .benefits {
     padding: 120px 30px; }
     .benefits__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -173,7 +166,6 @@ body {
         margin-top: 0px; } }
 @media screen and (max-width: 530px) {
   .benefits__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -182,7 +174,6 @@ body {
     color: #333333; }
   .benefits__box-subtitle {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

@@ -43,7 +43,6 @@ body {
   padding: 0 100px;
   margin-bottom: 140px; }
   .ready__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -52,7 +51,6 @@ body {
     color: #333333; }
   .ready__description {
     width: 500px;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -95,7 +93,6 @@ body {
   .ready {
     padding: 0 80px; }
     .ready__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -138,7 +135,6 @@ body {
   .ready {
     padding: 0px 30px; }
     .ready__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -158,7 +154,6 @@ body {
 @media screen and (max-width: 530px) {
   .ready__title {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;

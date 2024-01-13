@@ -42,7 +42,6 @@ body {
   height: auto;
   padding: 100px 100px; }
   .privacy__main-title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -51,7 +50,6 @@ body {
     color: #333333;
     margin-top: 35px; }
   .privacy__main-description {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -60,7 +58,6 @@ body {
     color: #333333;
     margin: 25px 0; }
   .privacy__main-email {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -82,7 +79,6 @@ body {
   .privacy__main {
     padding: 80px 60px; }
     .privacy__main-title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
@@ -91,7 +87,6 @@ body {
       color: #333333;
       margin-top: 30px; }
     .privacy__main-description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -100,7 +95,6 @@ body {
       color: #333333;
       margin: 20px 0; }
     .privacy__main-email {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -112,7 +106,6 @@ body {
   .privacy__main {
     padding: 60px 30px; }
     .privacy__main-title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -121,7 +114,6 @@ body {
       color: #333333;
       margin-top: 30px; }
     .privacy__main-description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
@@ -130,7 +122,6 @@ body {
       color: #333333;
       margin: 15px 0; }
     .privacy__main-email {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;

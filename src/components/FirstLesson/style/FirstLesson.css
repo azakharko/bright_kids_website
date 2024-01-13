@@ -51,7 +51,6 @@ body {
   position: relative;
   margin-bottom: 140px; }
   .first-lesson__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -71,7 +70,6 @@ body {
       width: 50%;
       margin-top: 30px; }
       .first-lesson__box .first-lesson-input--first p {
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -86,7 +84,6 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -111,7 +108,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -140,7 +136,6 @@ body {
   .first-lesson {
     padding: 120px 60px; }
     .first-lesson__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 42px;
@@ -151,7 +146,6 @@ body {
   .first-lesson {
     padding: 120px 80px; }
     .first-lesson__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -168,7 +162,6 @@ body {
   .first-lesson {
     padding: 120px 30px; }
     .first-lesson__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -188,7 +181,6 @@ body {
           width: 100%; } }
 @media screen and (max-width: 530px) {
   .first-lesson__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;

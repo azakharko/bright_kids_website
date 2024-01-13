@@ -53,7 +53,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -79,7 +78,26 @@ body {
   .home-cards {
     padding: 0 30px; }
     .home-cards__card {
-      width: calc(100% - 20px); } }
+      width: calc(100% - 20px);
+      margin-bottom: 0px;
+      padding: 20px;
+      background-color: #B41D8A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      box-sizing: border-box;
+      text-align: center;
+      border-radius: 0px; }
+    .home-cards__first {
+      border-radius: 10px 10px 0 0; }
+    .home-cards__last {
+      border-radius: 0 0 10px 10px; } }
 @media screen and (max-width: 530px) {
   .home-cards__card {
     padding: 15px;

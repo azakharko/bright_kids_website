@@ -52,7 +52,6 @@ a {
     width: 60%;
     padding-right: 35px; }
     .CoursePage__left-title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: calc(10px + 2vw);
@@ -60,7 +59,6 @@ a {
       letter-spacing: normal;
       color: #B41D8A; }
     .CoursePage__left-description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
@@ -83,7 +81,6 @@ a {
           position: relative;
           top: 3px; }
         .CoursePage__left-box .CoursePage__item p {
-          font-family: 'Montserrat', sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
@@ -107,7 +104,6 @@ a {
     width: 60%;
     padding-right: 35px; }
     .CoursePage__left-description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 20px;
@@ -140,7 +136,6 @@ a {
         .CoursePage__left-box .CoursePage__item {
           gap: 10px; }
           .CoursePage__left-box .CoursePage__item p {
-            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 18px;

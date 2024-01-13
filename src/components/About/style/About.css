@@ -51,7 +51,6 @@ body {
   position: relative;
   overflow: hidden; }
   .about-us__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -60,7 +59,6 @@ body {
     color: #fff;
     z-index: 1; }
   .about-us__description {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -98,7 +96,6 @@ body {
   .about-us {
     padding: 100px 60px; }
     .about-us__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 42px;
@@ -109,7 +106,6 @@ body {
   .about-us {
     padding: 100px 80px; }
     .about-us__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -126,7 +122,6 @@ body {
   .about-us {
     padding: 100px 30px; }
     .about-us__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -134,7 +129,6 @@ body {
       letter-spacing: normal;
       color: #fff; }
     .about-us__description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -148,7 +142,6 @@ body {
   .about-us {
     padding: 100px 0; }
     .about-us__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 28px;
@@ -156,7 +149,6 @@ body {
       letter-spacing: normal;
       color: #fff; }
     .about-us__description {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;

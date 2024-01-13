@@ -7,7 +7,7 @@ const HomeCard = () => {
 
   return (
     <div className='home-cards'>
-      <div className="home-cards__card">
+      <div className="home-cards__card home-cards__first">
         {t("HomeCardPage.card1")}
       </div>
 
@@ -27,7 +27,7 @@ const HomeCard = () => {
         {t("HomeCardPage.card5")}
       </div>
 
-      <div className="home-cards__card">
+      <div className="home-cards__card home-cards__last">
         {t("HomeCardPage.card6")}
       </div>
     </div>

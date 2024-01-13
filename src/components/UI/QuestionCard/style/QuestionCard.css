@@ -58,7 +58,6 @@ body {
     justify-content: space-between;
     cursor: pointer; }
     .faq__card-question-text {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 44px;
@@ -82,7 +81,6 @@ body {
         transform: rotate(135deg); }
   .faq__card-dropdown-text {
     transition: height 0.6s;
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;

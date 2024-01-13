@@ -176,7 +176,7 @@
 
 			.home__title {
 				width: 95%;
-				@include font($black, 48px, 700, normal, normal);
+				@include font($black, 42px, 700, normal, normal);
 			}
 
 			.home__description {
@@ -245,7 +245,7 @@
 	&__main {
 		&-left {
 			.home__title {
-				@include font($black, 42px, 700, normal, normal);
+				@include font($black, 36px, 700, normal, normal);
 			}
 		}
 
@@ -305,7 +305,7 @@
 			padding: 60px 80px;
 			&-left {
 				.home__title {
-					@include font($black, 36px, 700, normal, normal);
+					@include font($black, 32px, 700, normal, normal);
 				}
 				.home__description {
 					@include font($grey, 24px, 400, normal, normal);
@@ -494,7 +494,7 @@
 				padding-top: 80px;
 				.home__title {
 					width: 100%;
-					@include font($black, 32px, 700, normal, normal);
+					@include font($black, 28px, 700, normal, normal);
 					text-align: center;
 				}
 
@@ -525,7 +525,7 @@
 				padding-top: 80px;
 				.home__title {
 					width: 100%;
-					@include font($black, 28px, 700, normal, normal);
+					@include font($black, 24px, 700, normal, normal);
 					text-align: center;
 					z-index: 4;
 				}

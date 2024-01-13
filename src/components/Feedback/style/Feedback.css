@@ -51,7 +51,6 @@ body {
   position: relative;
   overflow: hidden; }
   .feedback__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -101,7 +100,6 @@ body {
   .feedback {
     padding: 100px 60px; }
     .feedback__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 42px;
@@ -117,7 +115,6 @@ body {
   .feedback {
     padding: 100px 80px; }
     .feedback__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -136,7 +133,6 @@ body {
   .feedback {
     padding: 100px 30px; }
     .feedback__title {
-      font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
@@ -158,7 +154,6 @@ body {
       z-index: 0; } }
 @media screen and (max-width: 530px) {
   .feedback__title {
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;

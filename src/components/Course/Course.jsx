@@ -21,45 +21,13 @@ const Course = ({ courseArr, setCourseIndex }) => {
       <div className="course__bg"></div>
 
       <div className="course__box">
-
-        <Swiper
-          slidesPerView={3}
-          keyboard={{
-            enabled: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-
-
-          navigation={true}
-          modules={[Keyboard, Pagination, Navigation]}
-          className="mySwiper"
-          breakpoints={{
-            1350: {
-              slidesPerView: 3,
-            },
-            1000: {
-              slidesPerView: 2,
-            },
-            500: {
-              slidesPerView: 1,
-            },
-            100: {
-              slidesPerView: 1,
-            },
-          }}
-        >
           {courseArr ? (
             courseArr.map((course, index) => (
-              <SwiperSlide key={index}>
-                <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
-              </SwiperSlide>
+              <CourseCard  key={index} setCourseIndex={setCourseIndex} index={index} courseArr={course} />
             ))
           ) : (
             <p>Loading...</p>
           )}
-        </Swiper>
 
       </div>
     </div>
