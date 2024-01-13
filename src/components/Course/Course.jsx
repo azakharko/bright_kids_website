@@ -1,17 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./style/Course.css";
-import CourseCard from '../UI/CourseCard/CourseCard';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Keyboard, Pagination, Navigation } from 'swiper/modules';
+import CourseCard from '../UI/CourseCard/CourseCard.jsx';
 
 const Course = ({ courseArr, setCourseIndex }) => {
   const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import "./i18n";
-import Loading from "./components/UI/Popup/Popup";
+import App from './App.js';
+import "./i18n.js";
+import Loading from "./components/UI/Popup/Popup.jsx";
 
 const LoadingDelay = ({ delay, children }) => {
   const [showContent, setShowContent] = useState(false);

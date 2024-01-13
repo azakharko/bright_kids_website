@@ -154,29 +154,29 @@ body {
           position: relative;
           left: 10px; }
         .course__box-card .course__rigth-img1 {
-          background-image: url(../img/img1.png); }
+          background-image: url(../img/img1.webp); }
         .course__box-card .course__rigth-img2 {
-          background-image: url(../img/img2.png);
+          background-image: url(../img/img2.webp);
           position: absolute;
           left: 65%; }
         .course__box-card .course__rigth-img3 {
-          background-image: url(../img/img3.png); }
+          background-image: url(../img/img3.webp); }
         .course__box-card .course__rigth-img4 {
-          background-image: url(../img/img4.png); }
+          background-image: url(../img/img4.webp); }
         .course__box-card .course__rigth-img5 {
-          background-image: url(../img/img5.png); }
+          background-image: url(../img/img5.webp); }
         .course__box-card .course__rigth-img6 {
-          background-image: url(../img/img6.png); }
+          background-image: url(../img/img6.webp); }
         .course__box-card .course__rigth-img7 {
-          background-image: url(../img/img7.png); }
+          background-image: url(../img/img7.webp); }
         .course__box-card .course__rigth-img8 {
-          background-image: url(../img/img8.png); }
+          background-image: url(../img/img8.webp); }
         .course__box-card .course__rigth-img9 {
-          background-image: url(../img/img9.png); }
+          background-image: url(../img/img9.webp); }
         .course__box-card .course__rigth-img10 {
-          background-image: url(../img/img10.png); }
+          background-image: url(../img/img10.webp); }
         .course__box-card .course__rigth-img11 {
-          background-image: url(../img/img11.png); }
+          background-image: url(../img/img11.webp); }
 
 @media screen and (max-width: 1350px) {
   .course {
@@ -293,10 +293,10 @@ body {
             width: 180px;
             height: 180px; }
           .course__box-card .course__rigth-img2 {
-            background-image: url(../img/img2.png);
+            background-image: url(../img/img2.webp);
             position: static; }
           .course__box-card .course__rigth-img4 {
-            background-image: url(../img/img4.png);
+            background-image: url(../img/img4.webp);
             height: 185px; } }
 
 /*# sourceMappingURL=Course.css.map */

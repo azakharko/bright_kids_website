@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Home.css"
-import Button from '../UI/Button/Button';
-import Header from '../UI/Header/Header';
+import Button from '../UI/Button/Button.jsx';
+import Header from '../UI/Header/Header.jsx';
 
 
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Page from "./Page";
-import CoursPage from "./components/CoursPage/CoursPage";
-import Privacy from "./components/Privacy/Privacy";
-import Terms from "./components/Terms/Terms";
-import Refund from "./components/Refund/Refund";
-import ReactGA from "react-ga4";
+import Page from "./Page.jsx";
+import CoursPage from "./components/CoursPage/CoursPage.jsx";
+import Privacy from "./components/Privacy/Privacy.jsx";
+import Terms from "./components/Terms/Terms.jsx";
+import Refund from "./components/Refund/Refund.jsx";
+import { GA4React } from 'ga-4-react';
+
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
   );
 }
 
-ReactGA.initialize("G-NYV7WT0BV3");
+const ga4react = new GA4React("G-NYV7WT0BV3");
+ga4react.initialize();
 
 export default App;

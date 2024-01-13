@@ -2,7 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import Chart from 'chart.js/auto';
 import "./style/Benefits.css";
-import Button from '../UI/Button/Button';
+import Button from '../UI/Button/Button.jsx';
 
 const Benefits = () => {
 	const { t } = useTranslation();

@@ -31,7 +31,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	useEffect(() => {
 	  const loadImage = async () => {
 		try {
-		  const image = await import(`../Course/img/img${imageNumber}.png`);
+		  const image = await import(`../Course/img/img${imageNumber}.webp`);
 		  setImagePath(image.default);
 		} catch (error) {
 		  console.error('Error loading image:', error);

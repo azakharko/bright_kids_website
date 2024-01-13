@@ -78,13 +78,13 @@ body {
         transform: scale(1.5);
         transition: 0.3s; }
     .feedback__box-cart1 {
-      background-image: url(../img/feedback1.jpg); }
+      background-image: url(../img/feedback1.webp); }
     .feedback__box-cart2 {
-      background-image: url(../img/feedback2.jpg); }
+      background-image: url(../img/feedback2.webp); }
     .feedback__box-cart3 {
-      background-image: url(../img/feedback3.jpg); }
+      background-image: url(../img/feedback3.webp); }
     .feedback__box-cart4 {
-      background-image: url(../img/feedback4.jpg); }
+      background-image: url(../img/feedback4.webp); }
   .feedback::after {
     content: "";
     width: 100%;
