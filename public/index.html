@@ -12,9 +12,22 @@
     <link rel="apple-touch-icon" href="./logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="apple-touch-icon" href="./logo.png" />
-   
+    <link rel="font" href="./font/font.ttf">
+
     <title>Bright Kids Ukrainian Online School</title>
   </head>
+  <style>
+    @font-face {
+      font-family: 'Montserrat' !important;
+      src: local('Montserrat'), url('./font/font.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      font-family: 'Montserrat' !important;
+    }
+  </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

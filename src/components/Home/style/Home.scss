@@ -100,7 +100,7 @@
 		height: 15%;
 		border-bottom: 1px solid #B41D8A;
 		background: rgba(255, 255, 255, 0.10);
-		padding: 0 100px;
+		padding: 30px 100px;
 		padding-top: 20px;
 		padding-bottom: 20px;
 		@include display-center(space-between, center);
@@ -237,7 +237,7 @@
 @media screen and (max-width: 1350px) {
 .home {
 	&__header {
-		padding: 0 80px;
+		padding: 30px 80px;
 		&-logo {
 			width: 100px;
 		}
@@ -266,7 +266,7 @@
 @media screen and (max-width: 1200px) {
 	.home {
 		&__header {
-			padding: 0 80px;
+			padding: 30px 80px;
 			&-logo {
 				width: 100px;
 				.logo {
@@ -334,7 +334,7 @@
 	.home {
 		height: auto;
 		&__header {
-			padding: 10px 60px;
+			padding: 20px 60px;
 	
 			&-button {
 			display: none;
@@ -485,7 +485,7 @@
 	.home {
 		height: auto;
 		&__header {
-			padding: 10px 30px;
+			padding: 20px 30px;
 		}
 	
 		&__main {
