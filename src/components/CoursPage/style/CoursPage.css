@@ -152,8 +152,12 @@ a {
     font-size: 32px; }
   .CoursePage__left-description {
     font-size: 18px; }
-  .CoursePage__left-box .CoursePage__item p {
-    font-size: 16px; }
+  .CoursePage__left-box .CoursePage__item {
+    flex-direction: column; }
+    .CoursePage__left-box .CoursePage__item p {
+      width: 80%;
+      font-size: 16px;
+      text-align: center; }
   .CoursePage__rigth-img img {
     width: 200px; } }
 
