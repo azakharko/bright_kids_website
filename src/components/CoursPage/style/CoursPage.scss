@@ -155,8 +155,11 @@ a {
 			}
 			&-box {
 				.CoursePage__item {
+					flex-direction: column;
 					p {
+						width: 80%;
 						font-size: 16px;
+						text-align: center;
 					}
 				}
 			}
