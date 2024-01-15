@@ -58,6 +58,7 @@
 			"needs": "What a student needs: paint, paper for painting"
 		},
 		"course4": {
+			"title": "Roblox",
 			"subTitle": "Roblox",
 			"description": "Roblox Coding Classes for Kids and Teens Game development is easy with Roblox Studio. Launch your own game to share with family, friends, and the world in as little as one class. Students will learn game designing and development on Roblox Studio including a basic introduction to Roblox Studio, building, and Lua code. We offer small group classes as well as individual classes at a time that works best for you. ",
 			"age": "10+",
