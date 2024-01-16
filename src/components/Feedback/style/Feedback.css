@@ -47,7 +47,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   position: relative;
   overflow: hidden; }
   .feedback__title {

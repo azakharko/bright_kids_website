@@ -4,7 +4,7 @@
 	&__main {
 		width: 100%;
 		height: auto;
-		padding: 100px 100px;
+		padding: 80px 100px;
 		&-title {
 			@include font($black, 32px, 700, normal, normal);	
 			margin-top: 35px

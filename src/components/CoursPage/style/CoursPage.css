@@ -44,7 +44,7 @@ a {
 .CoursePage {
   width: 100%;
   height: auto;
-  padding: 100px 100px;
+  padding: 80px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
