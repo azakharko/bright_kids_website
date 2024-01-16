@@ -60,7 +60,6 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
         <ul>
           {nav1}
           {nav2}
-          {nav3}
         </ul>
       </nav>
 

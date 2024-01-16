@@ -49,8 +49,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	  	burgerOpen={burgerOpen}
 		setBurgerOpen={setBurgerOpen}
 		nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-		nav2={<li>{t("HomePage.learningMaterials")}</li>}
-		nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
+		nav2={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 	  />
 
 	  <div className="CoursePage">

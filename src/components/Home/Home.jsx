@@ -142,8 +142,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				burgerOpen={burgerOpen}
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
-				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<li>{t("HomePage.learningMaterials")}</li>
+				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>
 				}
 			/>
 
