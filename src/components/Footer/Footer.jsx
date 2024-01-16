@@ -73,7 +73,7 @@ const Footer = () => {
 				<div className="footer__bottom-line"></div>
 
 				<div className="footer__bottom-box">
-					<p>© 2023 Brigth Kids Ukrainan Online School</p>
+					<p>© 2023 Bright Kids Ukrainan Online School</p>
 
 					<div className="footer__sociable-link">
 						<a target='_blank' rel="noreferrer" href="https://www.facebook.com/brightkids.ukrainian.online.school/">
