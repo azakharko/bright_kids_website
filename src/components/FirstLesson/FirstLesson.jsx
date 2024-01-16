@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './style/FirstLesson.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 
 const FirstLesson = () => {
-  const { t } = useTranslation(); // useTranslation hook
+  const { t } = useTranslation(); 
+  const [state, handleSubmits] = useForm("mayrnlqg");
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -18,13 +20,37 @@ const FirstLesson = () => {
   };
 
   const handleSubmit = async () => {
-    console.log('Form Data:', formData);
+    let titleElement = document.querySelector('.first-lesson__title');
+    let titleElement2 = document.querySelector('.first-lesson__button');
 
  
+    console.log('Form Data:', formData);
+    setTimeout(() => {
+      setFormData({
+        firstName: '',
+        lastName: '',
+        address: '',
+        message: '',
+      });
+      if (titleElement) {
+        titleElement.style.color = '#6ECFA0';
+      }
+
+      if (titleElement2) {
+        titleElement2.style.color = '#6ECFA0';
+      }
+    }, 400);
+
+    setTimeout(() => {
+      titleElement.style.color = '#fff';
+      titleElement2.style.color = '#fff';
+    }, 5000);
   };
+
+  
   
   return (
-    <div className="first-lesson" id="firstLesson">
+    <form onSubmit={handleSubmits} className="first-lesson" id="firstLesson">
       <p className="first-lesson__title">{t('FirstLesson.title')}</p>
 
       <div className="first-lesson__box">
@@ -78,9 +104,9 @@ const FirstLesson = () => {
           />
         </div>
 
-        <button onClick={handleSubmit}>{t('FirstLesson.buttonTitle')}</button>
+        <button className='first-lesson__button' type="submit" onClick={handleSubmit}>{t('FirstLesson.buttonTitle')}</button>
       </div>
-    </div>
+    </form>
   );
 };
 

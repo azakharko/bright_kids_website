@@ -11,15 +11,21 @@
 	justify-content: space-between;
 
 	&__card {
-		width: calc(33.33% - 20px); 
-		margin-bottom: 20px; 
+		width: calc(33.33%); 
 		padding: 20px;
 		background-color: $main;
 		@include display-center(center, center);
 		@include font($white, 20px, 600, normal, normal);
 		box-sizing: border-box;
 		text-align: center;
-		border-radius: 10px;
+	}
+
+	&__first {
+		border-radius: 10px 0 0 0;
+	}
+
+	&__last {
+		border-radius: 0 0 10px 0;
 	}
 }
 
