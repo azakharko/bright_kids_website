@@ -40,11 +40,7 @@ const Footer = () => {
 						
 					</div>
 
-					<div className="footer__input">
-						<input className='footer__input-input' placeholder={t("Footer.emailTitle")} type="email" />
-
-						<button className='footer__input-button'>{t("Footer.button")}</button>
-					</div>
+	
 				</div>
 			</div>
 

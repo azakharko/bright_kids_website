@@ -1,0 +1,99 @@
+@import "../../main/style.scss";
+
+.gallery {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	@include display-center(flex-start, center);
+	flex-direction: column;
+
+	&__box {
+	width: 100%;
+
+	padding: 100px 100px;
+
+		&-title {
+			@include font($main, 48px, 700, normal, normal);
+
+		}
+
+		.gallery__container {
+			width: 100%;
+			margin-top: 50px;
+
+
+			&-img1 {
+				background-image: url(../img/img1.png);
+			}
+
+			&-img2 {
+				background-image: url(../img/img2.png);
+			}
+
+			&-img3 {
+				background-image: url(../img/img3.png);
+			}
+
+			&-img4 {
+				background-image: url(../img/img4.png);
+			}
+
+			&-img5 {
+				background-image: url(../img/img5.png);
+			}
+
+			&-img6 {
+				background-image: url(../img/img6.png);
+			}
+			
+			&-img7 {
+				background-image: url(../img/img7.png);
+			}
+
+			&-img8 {
+				background-image: url(../img/img8.png);
+			}
+
+		}
+	}
+}
+
+
+@media screen and (max-width: 1350px) {
+	.privacy {
+		&__main {
+			padding: 100px 80px;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.gallery {
+		&__box {
+			padding: 80px 60px;
+			&-title {
+				font-size: 36px;
+				text-align: center;	
+				margin-top: 25px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 700px) {
+	.gallery {
+		&__box {
+			padding: 60px 30px;
+			&-title {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.gallery {
+		img {
+			width: 100%;
+		}
+	}
+}

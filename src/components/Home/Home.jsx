@@ -142,8 +142,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				burgerOpen={burgerOpen}
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
-				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>
-				}
+				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
+				nav3={<li><a href="/gallery">{t("HomePage.gallery")}</a></li>}
 			/>
 
 			<main className="home__main">
@@ -152,7 +152,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 					<p className='home__description'>{t("HomePage.description")}</p>
 
 					<div onClick={() => handleScrollToSection('firstLesson')}>
-						<Button width={320} height={80} className="home__button" text={t("HomePage.signUp")} />
+						<Button width={350} height={80} className="home__button" text={t("HomePage.signUp")} />
 					</div>
 
 					<svg className='home__star' xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">

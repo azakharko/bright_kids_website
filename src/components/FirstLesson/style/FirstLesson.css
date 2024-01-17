@@ -45,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 120px 100px;
+  padding: 0 100px;
   overflow: hidden;
   position: relative;
   margin-bottom: 100px;
@@ -66,7 +66,7 @@ body {
     align-items: center; }
   .first-lesson iframe {
     width: 100% !important;
-    height: 1100px;
+    height: 800px;
     z-index: 10; }
   .first-lesson::after {
     content: "";
@@ -79,7 +79,7 @@ body {
 
 @media screen and (max-width: 1350px) {
   .first-lesson {
-    padding: 120px 60px; }
+    padding: 0 60px; }
     .first-lesson__title {
       font-style: normal;
       font-weight: 700;
@@ -89,7 +89,7 @@ body {
       color: #fff; } }
 @media screen and (max-width: 1200px) {
   .first-lesson {
-    padding: 120px 80px; }
+    padding: 0 80px; }
     .first-lesson__title {
       font-style: normal;
       font-weight: 700;
@@ -99,13 +99,15 @@ body {
       color: #fff; } }
 @media screen and (max-width: 1000px) {
   .first-lesson {
-    padding: 120px 60px; }
+    padding: 0 60px; }
     .first-lesson__box {
       width: 100%;
       margin-top: 15px; } }
 @media screen and (max-width: 700px) {
   .first-lesson {
-    padding: 120px 0px; }
+    padding: 0 0px; }
+    .first-lesson iframe {
+      height: 900px; }
     .first-lesson__title {
       font-style: normal;
       font-weight: 700;
@@ -125,6 +127,8 @@ body {
         .first-lesson__box-input .first-lesson-input--first {
           width: 100%; } }
 @media screen and (max-width: 530px) {
+  .first-lesson iframe {
+    height: 1000px; }
   .first-lesson__title {
     font-style: normal;
     font-weight: 700;

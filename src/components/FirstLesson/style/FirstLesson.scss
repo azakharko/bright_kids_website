@@ -9,7 +9,7 @@
 	background-size: cover;
 	@include display-center(center, center);
 	flex-direction: column;
-	padding: 120px 100px;
+	padding: 0 100px;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 100px;
@@ -29,7 +29,7 @@
 
 	iframe {
 		width: 100% !important;
-		height: 1100px;
+		height: 800px;
 		z-index: 10;
 	}
 	
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 1350px) {
 	.first-lesson {
-		padding: 120px 60px;
+		padding: 0 60px;
 		&__title {
 			@include font($white, 42px, 700, normal, normal);
 		}
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 1200px) {
 	.first-lesson {
-		padding: 120px 80px;
+		padding: 0 80px;
 		&__title {
 			@include font($white, 36px, 700, normal, normal);
 		}
@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 1000px) {
 	.first-lesson {
-		padding: 120px 60px;
+		padding: 0 60px;
 		&__box {
 			width: 100%;
 			margin-top: 15px;
@@ -78,7 +78,11 @@
 
 @media screen and (max-width: 700px) {
 	.first-lesson {
-		padding: 120px 0px;
+		padding: 0 0px;
+
+		iframe {
+			height: 900px;
+		}
 		
 		&__title {
 			@include font($white, 32px, 700, normal, normal);
@@ -106,6 +110,10 @@
 
 @media screen and (max-width: 530px) {
 	.first-lesson {
+		iframe {
+			height: 1000px;
+		}
+		
 		&__title {
 			@include font($white, 28px, 700, normal, normal);
 		}

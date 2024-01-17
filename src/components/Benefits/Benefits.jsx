@@ -129,15 +129,12 @@ const Benefits = () => {
       </div>
 
       <div className="benefits__buttons">
-        <Button width={300} height={70} className="benefits__buttons-button" text={t('Benefits.button1')} />
 
 
         <div onClick={() => handleScrollToSection('firstLesson')}>
           <Button width={300} height={70} className="benefits__buttons-button" text={t('Benefits.button2')} />
         </div>
       </div>
-
-
     </div>
   );
 }

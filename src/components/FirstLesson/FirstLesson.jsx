@@ -16,12 +16,12 @@ const FirstLesson = () => {
   console.log(thisLanguage === 'en');
 
   return (
-    <div className="first-lesson">
+    <div id='firstLesson' className="first-lesson">
       {thisLanguage === 'en' ? (
         <div className="reg-form">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSd0Mk8ADhkSLtBibTR7fut-q3IpJxGzTHqVvYZ4b9twn0ukRA/viewform?embedded=true"
-            height="auto"
+            height="600"
             frameBorder="0"
             marginHeight="0"
             marginWidth="0"
