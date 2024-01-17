@@ -3,7 +3,6 @@ import './style/Gallery.css'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import Footer from '../Footer/Footer';
-import Gallery from "react-photo-gallery";
 
 import img1 from "./img/img1.png";
 import img2 from "./img/img2.png";
@@ -140,7 +139,22 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
 			</div>
 
 			<div className="gallery__container">
-				<Gallery margin={10} photos={photos} direction={"column"} />
+				<img src={img1} alt="img" />
+				<img src={img2} alt="img" />
+				<img src={img3} alt="img" />
+				<img src={img4} alt="img" />
+				<img src={img5} alt="img" />
+				<img src={img6} alt="img" />
+				<img src={img7} alt="img" />
+				<img src={img8} alt="img" />
+				<img src={img9} alt="img" />
+				<img src={img10} alt="img" />
+				<img src={img12} alt="img" />
+				<img src={img13} alt="img" />
+				<img src={img14} alt="img" />
+				npm uninstall react-photo-gallery
+
+
 			</div>
 		</div>
 
