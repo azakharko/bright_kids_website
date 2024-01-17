@@ -33,8 +33,6 @@ const FirstLesson = () => {
         <div className="reg-form">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScu0ZZYKcZ88nUBAfeWWHXBeprZb-o1Le7KhrU4H-z8V3Fxxw/viewform?embedded=true"
-            width="640"
-            height="686"
             frameBorder="0"
             marginHeight="0"
             marginWidth="0"

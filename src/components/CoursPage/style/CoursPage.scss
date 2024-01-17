@@ -12,6 +12,26 @@ a {
 	padding: 80px 100px;
 	@include display-center(space-between, center);
 
+	.reg-form {
+		width: 100% !important;
+		height: auto;
+		z-index: 10;
+		overflow: hidden;
+		@include display-center(center, center);
+
+	}
+
+
+	iframe {
+		width: 100% !important;
+		height: 1100px;
+		z-index: 10;
+	}
+
+	&__buttons {
+		width: 100%;
+	}
+
 	&__left {
 		width: 60%;
 		padding-right: 35px;

@@ -3,11 +3,22 @@ import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import "./style/CoursPage.css"
 import Footer from '../Footer/Footer';
+import Button from '../UI/Button/Button';
 
 
 const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	const [thisLanguage, setThisLanguage] = useState('en');
 	const [imagePath, setImagePath] = useState('');
+	const [showForm, setShowForm] = useState(false);
+
+	useEffect(() => {
+		setThisLanguage(i18n.language)
+	  }, [t])
+	
+	
+
+
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
 
@@ -26,6 +37,20 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 		}
 	};
 
+
+	const handleScrollToSection2 = (sectionId) => {
+		if (!sectionId || sectionId === 'top') {
+		  window.scrollTo({ top: 0 });
+		  return;
+		}
+	  
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+		  sectionRef.scrollIntoView();
+		}
+	  };
+
+
 	const imageNumber = courseIndex; 
 
 	useEffect(() => {
@@ -41,6 +66,12 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	  loadImage();
 	}, [imageNumber]);
 
+	const hanldeShow = () => {
+		console.log("g")
+		handleScrollToSection2('top')
+		setShowForm(true);
+	}
+
 	return (
 	<div className='Course'>
 	<div className={burgerPopup}></div>
@@ -53,7 +84,27 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	  />
 
 	  <div className="CoursePage">
-		<div className="CoursePage__left">
+
+
+	  {showForm ? (
+		<div className="reg-form">
+			<iframe
+			src={
+				thisLanguage === 'en'
+				? 'https://docs.google.com/forms/d/e/1FAIpQLSd0Mk8ADhkSLtBibTR7fut-q3IpJxGzTHqVvYZ4b9twn0ukRA/viewform?embedded=true'
+				: 'https://docs.google.com/forms/d/e/1FAIpQLScu0ZZYKcZ88nUBAfeWWHXBeprZb-o1Le7KhrU4H-z8V3Fxxw/viewform?embedded=true'
+			}
+			height="auto"
+			frameBorder="0"
+			marginHeight="0"
+			marginWidth="0"
+			>
+			Loading…
+			</iframe>
+		</div>
+		) : (
+			<>
+					<div className="CoursePage__left">
 			<p className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</p>
 			<p className='CoursePage__left-description'>{t(`CoursePage.course${courseIndex}.description`)}</p>
 
@@ -124,7 +175,14 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 					</div>
 
 					<p className="CoursePage__item-text">{t(`CoursePage.price2`)}</p>
+
+	
+	
 				</div>
+				
+			</div>
+			<div onClick={hanldeShow} className="CoursePage__buttons">
+				<Button  width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
 			</div>
 
 		</div>
@@ -134,7 +192,17 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
             	<img src={imagePath} alt={`brigth-kids-${imageNumber}`} />
 			</div>
 		</div>
+			</>
+		)}
+
+
+
+
+
+      
 	  </div>
+
+	
 
 	  <Footer />
 

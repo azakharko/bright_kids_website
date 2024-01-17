@@ -48,6 +48,20 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .CoursePage .reg-form {
+    width: 100% !important;
+    height: auto;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .CoursePage iframe {
+    width: 100% !important;
+    height: 1100px;
+    z-index: 10; }
+  .CoursePage__buttons {
+    width: 100%; }
   .CoursePage__left {
     width: 60%;
     padding-right: 35px; }
