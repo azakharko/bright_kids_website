@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.catalog {
+  width: 100%;
+  height: auto; }
+  .catalog__box {
+    width: 100%;
+    padding: 100px 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+
+@media screen and (max-width: 1350px) {
+  .catalog__box {
+    padding: 60px 60px; } }
+@media screen and (max-width: 1200px) {
+  .catalog__box {
+    padding: 60px 80px; } }
+@media screen and (max-width: 1000px) {
+  .catalog__box {
+    padding: 100px 60px; } }
+@media screen and (max-width: 700px) {
+  .catalog__box {
+    padding: 60px 30px; } }
+
+/*# sourceMappingURL=Catalog.css.map */

@@ -1,0 +1,52 @@
+@import "../../main/style.scss";
+
+.catalog {
+	width: 100%;
+	height: auto;
+
+	&__box {
+		width: 100%;
+		padding: 100px 100px;
+		height: auto;
+		@include display-center(center, center);
+		flex-wrap: wrap;
+	}
+}
+
+
+
+
+@media screen and (max-width: 1350px) {
+	.catalog {
+		&__box {
+		padding: 60px 60px;
+	}
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.catalog {
+		&__box {
+		padding: 60px 80px;
+	}
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.catalog {
+		&__box {
+		padding: 100px 60px;
+	}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.catalog {
+		&__box {
+		padding: 60px 30px;
+	}
+	}
+
+}

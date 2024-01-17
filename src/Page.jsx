@@ -13,9 +13,8 @@ import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 
-const Page = ({burgerOpen, setBurgerOpen, setCourseIndex}) => {
+const Page = ({courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex}) => {
 	const [cards, setCards] = useState([]);
-	const [courseArr, setCourseArr] = useState([]);
   return (
 	<div className='App'>
 		<Home setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr}/>
@@ -30,9 +29,6 @@ const Page = ({burgerOpen, setBurgerOpen, setCourseIndex}) => {
 		<Media />
 		<Ready />
 		<Footer />
-
-
-
 	</div>
   )
 }

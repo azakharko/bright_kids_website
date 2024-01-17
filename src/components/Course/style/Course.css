@@ -54,6 +54,8 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #333333; }
+  .course__buttons {
+    margin-top: 50px; }
   .course .swiper {
     width: 100%;
     height: 450px; }

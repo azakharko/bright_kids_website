@@ -13,6 +13,11 @@
 	&__title {
 		@include font($black, 48px, 700, normal, normal);
 	}
+
+	&__buttons {
+		margin-top: 50px;
+	}
+	
 	.swiper {
 		width: 100%;
 		height: 450px;

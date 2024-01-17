@@ -12,10 +12,25 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
+import Button from '../UI/Button/Button.jsx';
+import { Link } from 'react-router-dom';
 
 
 const Course = ({ courseArr, setCourseIndex }) => {
   const { t } = useTranslation();
+
+  const handleScrollToSection = (sectionId) => {
+		if (!sectionId || sectionId === 'top') {
+		  window.scrollTo({ top: 0 });
+		  return;
+		}
+	  
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+		  sectionRef.scrollIntoView();
+		}
+	  };
+    
   return (
     <div id='course' className='course'>
       <p className='course__title'>{t("CoursePage.title")}</p>
@@ -60,6 +75,10 @@ const Course = ({ courseArr, setCourseIndex }) => {
       </Swiper>
    
       </div>
+      <Link onClick={() => handleScrollToSection('top')} to={"catalog"}>
+        <Button width={300} height={70} className="course__buttons" text={t('CoursePage.button')} />
+      </Link>
+
     </div>
   );
 };
