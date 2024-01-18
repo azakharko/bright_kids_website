@@ -126,7 +126,7 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
 
 
   return (
-	<div className='gallery'>
+	<div id="gallery" className='gallery'>
 		  <Header 
 			burgerOpen={burgerOpen}
 			setBurgerOpen={setBurgerOpen}
@@ -152,8 +152,6 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
 				<img src={img12} alt="img" />
 				<img src={img13} alt="img" />
 				<img src={img14} alt="img" />
-				npm uninstall react-photo-gallery
-
 
 			</div>
 		</div>
