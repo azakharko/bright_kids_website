@@ -7,7 +7,7 @@ import Terms from "./components/Terms/Terms.jsx";
 import Refund from "./components/Refund/Refund.jsx";
 import { GA4React } from 'ga-4-react';
 import Catalog from "./components/Catalog/Catalog.jsx";
-import Gallerys from "./components/Gallerys/Gallerys.jsx";
+// import Gallerys from "./components/Gallerys/Gallerys.jsx";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/catalog`} element={<Catalog etCourseIndex={setCourseIndex} courseArr={courseArr} />} />
-        <Route path={`/gallery`} element={<Gallerys  burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        {/* <Route path={`/gallery`} element={<Gallerys  burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} /> */}
       </Routes>
     </Router>
   );
