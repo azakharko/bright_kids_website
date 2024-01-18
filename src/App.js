@@ -7,7 +7,7 @@ import Terms from "./components/Terms/Terms.jsx";
 import Refund from "./components/Refund/Refund.jsx";
 import { GA4React } from 'ga-4-react';
 import Catalog from "./components/Catalog/Catalog.jsx";
-import Gallerys from "./components/Gallerys/Gallerys.js";
+import Gallerys from "./components/Gallerys/Gallery.jsx";
 
 
 function App() {
