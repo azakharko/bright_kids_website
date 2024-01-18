@@ -25,6 +25,7 @@ const Privacy = ({ setBurgerOpen, burgerOpen }) => {
   return (
     <div className='privacy'>
       <Header 
+      
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
