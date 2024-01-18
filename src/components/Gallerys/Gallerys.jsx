@@ -24,8 +24,6 @@ import img14 from "./img/img14.png";
 const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
 
 	const { t } = useTranslation();
-  
-
 
   const handleScrollToSection = (sectionId) => {
     setBurgerOpen(false);
