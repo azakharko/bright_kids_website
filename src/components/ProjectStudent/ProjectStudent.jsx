@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/Gallery.css'
+import './style/ProjectStudent.css'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import Footer from '../Footer/Footer';
@@ -19,7 +19,7 @@ import img13 from "./img/img13.png";
 import img14 from "./img/img14.png";
 
 
-const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
+const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 
 	const { t } = useTranslation();
 
@@ -74,4 +74,4 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
   )
 }
 
-export default Gallerys;
+export default ProjectStudent;
