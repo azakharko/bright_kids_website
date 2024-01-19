@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '../UI/Header/Header';
 import Footer from '../Footer/Footer';
 import "./style/Privacy.css"
+import { Link } from 'react-router-dom';
 
 const Privacy = ({ setBurgerOpen, burgerOpen }) => {
   const { t } = useTranslation();
@@ -29,8 +30,8 @@ const Privacy = ({ setBurgerOpen, burgerOpen }) => {
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<a href={"/gallery"}>
-				<p>{t("HomePage.gallery")}</p></a>}
+        nav2={<Link to={"/projects"}>
+				<p>{t("HomePage.gallery")}</p></Link>}
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />
 
