@@ -28,11 +28,11 @@ function App() {
       <Routes>
         <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        {/* <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} /> */}
+        <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/catalog`} element={<Catalog etCourseIndex={setCourseIndex} courseArr={courseArr} />} />
-        <Route path={`/privacy-policy`} element={<ProjectStudent etCourseIndex={setCourseIndex} courseArr={courseArr} />} />
+        <Route path={`/projects`} element={<ProjectStudent etCourseIndex={setCourseIndex} courseArr={courseArr} />} />
         
       </Routes>
     </Router>
