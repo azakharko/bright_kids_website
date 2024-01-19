@@ -172,6 +172,13 @@ a {
       width: 80%;
       font-size: 16px;
       text-align: center; }
+  .CoursePage__left .CoursePage__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .CoursePage__left .CoursePage__buttons .course__buttons {
+      width: 100%; }
   .CoursePage__rigth-img img {
     width: 200px; } }
 

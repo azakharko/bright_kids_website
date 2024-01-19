@@ -65,6 +65,8 @@ a {
 				}
 			}
 		}
+
+		
 	}
 
 	&__rigth {
@@ -181,6 +183,14 @@ a {
 						font-size: 16px;
 						text-align: center;
 					}
+				}
+			}
+
+			.CoursePage__buttons {
+				width: 100%;
+				@include display-center(center, center);
+				.course__buttons {
+					width: 100%;
 				}
 			}
 		}
