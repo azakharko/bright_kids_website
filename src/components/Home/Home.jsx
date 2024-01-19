@@ -27,6 +27,12 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 		}
 	};
 
+	const hadnleBurger = () => {
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
+
+	}
+
 
 	useEffect(() => {
 		const pathSegments = window.location.pathname.split('/');
@@ -144,7 +150,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<Link onClick={() => setBurgerOpen(false)} to={"/projects"}>
+				nav3={<Link onClick={hadnleBurger} to={"/projects"}>
 				<li>{t("HomePage.gallery")}</li></Link>}
 			/>
 

@@ -68,9 +68,14 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	}, [imageNumber]);
 
 	const hanldeShow = () => {
-		console.log("g")
 		handleScrollToSection2('top')
 		setShowForm(true);
+	}
+
+	const hadnleBurger = () => {
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
+
 	}
 
 	return (
@@ -81,7 +86,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 	  	burgerOpen={burgerOpen}
 		setBurgerOpen={setBurgerOpen}
 		nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-		nav2={<Link onClick={() => setBurgerOpen(false)} to={"/projects"}>
+		nav2={<Link onClick={hadnleBurger} to={"/projects"}>
 		<li>{t("HomePage.gallery")}</li></Link>}		
 		nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 	  />

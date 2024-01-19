@@ -25,6 +25,12 @@ const Refund = ({ setBurgerOpen, burgerOpen }) => {
     }
   };
 
+  const hadnleBurger = () => {
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
+
+	}
+
   return (
     <div className='refund'>
       <div className={burgerPopup}></div>
@@ -33,7 +39,7 @@ const Refund = ({ setBurgerOpen, burgerOpen }) => {
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link onClick={() => setBurgerOpen(false)} to={"/projects"}>
+        nav2={<Link onClick={hadnleBurger} to={"/projects"}>
 				<li>{t("HomePage.gallery")}</li></Link>}
 	    	nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />
