@@ -21,6 +21,8 @@ import img14 from "./img/img14.png";
 
 const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 
+	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
+
 	const { t } = useTranslation();
 
   const handleScrollToSection = (sectionId) => {
@@ -40,6 +42,8 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 
   return (
 	<div id="gallery" className='gallery'>
+			<div className={burgerPopup}></div>
+
 		  <Header 
 			burgerOpen={burgerOpen}
 			setBurgerOpen={setBurgerOpen}

@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 const Terms = ({ setBurgerOpen, burgerOpen }) => {
   const { t } = useTranslation();
 
+	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
+
+
   const handleScrollToSection = (sectionId) => {
     setBurgerOpen(false);
     document.body.classList.remove("body-hidden", false);
@@ -25,12 +28,14 @@ const Terms = ({ setBurgerOpen, burgerOpen }) => {
 
   return (
     <div className='terms'>
+	  <div className={burgerPopup}></div>
+
       <Header 
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link to={"/projects"}>
-				<p>{t("HomePage.gallery")}</p></Link>}   	
+        nav2={<Link onClick={() => setBurgerOpen(false)} to={"/projects"}>
+				<li>{t("HomePage.gallery")}</li></Link>}   	
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />
 

@@ -144,8 +144,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<Link to={"/projects"}>
-				<p>{t("HomePage.gallery")}</p></Link>}
+				nav3={<Link onClick={() => setBurgerOpen(false)} to={"/projects"}>
+				<li>{t("HomePage.gallery")}</li></Link>}
 			/>
 
 			<main className="home__main">
