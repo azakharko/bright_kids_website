@@ -1,13 +1,14 @@
-import React, { useTransition } from 'react'
+import React from 'react'
 import CourseCard from '../UI/CourseCard/CourseCard';
 import Header from '../UI/Header/Header';
 import Footer from '../Footer/Footer';
 import "./style/Catalog.css";
+import { useTranslation } from 'react-i18next';
 
 const Catalog = ({ courseArr, setCourseIndex, burgerOpen, setBurgerOpen }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
-	const { t } = useTransition();
+	const { t } = useTranslation();
 
   const handleScrollToSection = (sectionId) => {
     setBurgerOpen(false);
