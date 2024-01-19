@@ -37,6 +37,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden; }
 
+a p {
+  color: #fff !important; }
+
 .faq {
   padding: 0px 100px;
   display: flex;

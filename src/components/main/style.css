@@ -37,4 +37,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden; }
 
+a p {
+  color: #fff !important; }
+
 /*# sourceMappingURL=style.css.map */

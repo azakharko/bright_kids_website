@@ -14,11 +14,9 @@ import img7 from "./img/img7.png";
 import img8 from "./img/img8.png";
 import img9 from "./img/img9.png";
 import img10 from "./img/img10.png";
-import img11 from "./img/img11.png";
 import img12 from "./img/img12.png";
 import img13 from "./img/img13.png";
 import img14 from "./img/img14.png";
-
 
 
 const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
@@ -39,89 +37,6 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
       sectionRef.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  const photos = [
-	{
-		src: `${img1}`,
-		width: 2,
-		height: 2.5
-	},
-
-	{
-		src: `${img2}`,
-		width: 2,
-		height: 2.5
-	},
-
-	{
-		src: `${img3}`,
-		width: 2,
-		height: 2.5
-	},
-
-	{
-		src: `${img4}`,
-		width: 2,
-		height: 2.5
-	},
-
-	{
-		src: `${img5}`,
-		width: 2,
-		height: 1.5,
-
-	},
-
-	{
-		src: `${img6}`,
-		width: 2,
-		height: 1
-	},
-
-	{
-		src: `${img7}`,
-		width: 2,
-		height: 1.5,
-	},
-
-	{
-		src: `${img8}`,
-		width: 1,
-		height: 1
-	},
-	{
-		src: `${img9}`,
-		width: 1,
-		height: 1.5
-	},
-	{
-		src: `${img10}`,
-		width: 1,
-		height: 1
-	},
-	{
-		src: `${img11}`,
-		width: 1,
-		height: 1
-	},
-	{
-		src: `${img12}`,
-		width: 1,
-		height: 1.5
-	},
-	{
-		src: `${img13}`,
-		width: 1,
-		height: 1
-	},
-	{
-		src: `${img14}`,
-		width: 1,
-		height: 1
-	},
-
-  ]
-
 
   return (
 	<div id="gallery" className='gallery'>
@@ -150,10 +65,8 @@ const Gallerys = ({ setBurgerOpen, burgerOpen }) => {
 				<img src={img12} alt="img" />
 				<img src={img13} alt="img" />
 				<img src={img14} alt="img" />
-
 			</div>
 		</div>
-
 
 		<Footer />
 

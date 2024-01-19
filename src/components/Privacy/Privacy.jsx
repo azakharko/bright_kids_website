@@ -29,8 +29,9 @@ const Privacy = ({ setBurgerOpen, burgerOpen }) => {
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-				nav2={<li><a href="/gallery">{t("HomePage.gallery")}</a></li>}
-	    	nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
+        nav2={<a href={"/gallery"}>
+				<p>{t("HomePage.gallery")}</p></a>}
+        nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />
 
 	  <div className="privacy__main">
