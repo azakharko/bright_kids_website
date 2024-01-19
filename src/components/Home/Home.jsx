@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import "./style/Home.css"
 import Button from '../UI/Button/Button.jsx';
 import Header from '../UI/Header/Header.jsx';
+import { Link } from 'react-router-dom';
 
 
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
@@ -143,8 +144,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<a href={"/projects"}>
-				<p>{t("HomePage.gallery")}</p></a>}
+				nav3={<Link to={"/projects"}>
+				<p>{t("HomePage.gallery")}</p></Link>}
 			/>
 
 			<main className="home__main">
