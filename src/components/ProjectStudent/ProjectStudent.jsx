@@ -32,6 +32,7 @@ import python11 from "./img/python/python11.png";
 import python12 from "./img/python/python12.png";
 import python13 from "./img/python/python13.png";
 import python14 from "./img/python/python14.png";
+import Button from '../UI/Button/Button';
 
 
 const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
@@ -54,6 +55,10 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
       sectionRef.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const handleButton = () => {
+	window.open("https://www.youtube.com/@BrightKidsUkrainianSchool", '_blank');
+}
 
   return (
 	<div id="gallery" className='gallery'>
@@ -107,6 +112,11 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 
 			</div>
 		</div>
+
+		<a onClick={handleButton} href='/www.youtube.com/@BrightKidsUkrainianSchool' target="_blank" className="gallery__buttons">
+			<Button width={350} height={80} className="gallery__buttons-button" text={t("CoursePage.button")} />
+		</a>
+
 
 		<Footer />
 

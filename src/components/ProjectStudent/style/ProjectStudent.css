@@ -45,6 +45,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column; }
+  .gallery__buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px; }
   .gallery__box {
     width: 100%;
     padding: 100px 100px; }
@@ -84,6 +91,12 @@ body {
       text-align: center;
       margin-top: 25px; } }
 @media screen and (max-width: 700px) {
+  .gallery__buttons {
+    padding: 0 30px; }
+
+  .gallery__buttons-button {
+    width: 100% !important; }
+
   .gallery__box {
     padding: 60px 30px; }
     .gallery__box-title {
