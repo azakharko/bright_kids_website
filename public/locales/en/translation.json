@@ -19,7 +19,8 @@
 		"card6": "Affordable prices"
 	},
 	"GalleryPage": {
-		"title": "Our students project"
+		"title": "Art projects",
+		"title2": "Python projects"
 	},
 	"CoursePage": {
 		"title": "Courses",

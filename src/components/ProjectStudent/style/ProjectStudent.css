@@ -54,7 +54,8 @@ body {
       font-size: 48px;
       line-height: normal;
       letter-spacing: normal;
-      color: #B41D8A; }
+      color: #B41D8A;
+      margin-top: 50px; }
     .gallery__box .gallery__container {
       width: 100%;
       margin-top: 50px;
@@ -65,6 +66,9 @@ body {
       .gallery__box .gallery__container img {
         width: 400px;
         height: 550px; }
+      .gallery__box .gallery__container .img-python {
+        width: 400px;
+        height: 260px; }
       .gallery__box .gallery__container .img11 {
         width: 300px;
         height: 200px; }
@@ -90,6 +94,9 @@ body {
       align-items: center; }
       .gallery__box .gallery__container img {
         width: 80vw;
-        height: 85vw; } }
+        height: 85vw; }
+      .gallery__box .gallery__container .img-python {
+        width: 80vw;
+        height: 55vw; } }
 
 /*# sourceMappingURL=ProjectStudent.css.map */

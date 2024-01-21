@@ -14,7 +14,7 @@
 
 		&-title {
 			@include font($main, 48px, 700, normal, normal);
-
+			margin-top: 50px;
 		}
 
 		.gallery__container {
@@ -29,6 +29,13 @@
 				width: 400px;
 				height: 550px;
 			}
+
+			.img-python {
+				width: 400px;
+				height: 260px;
+			}
+
+
 
 			.img11 {
 				width: 300px;
@@ -76,6 +83,11 @@
 					width: 80vw;
 					height: 85vw;
 
+				}
+
+				.img-python {
+					width: 80vw;
+					height: 55vw;
 				}
 			}
 		}
