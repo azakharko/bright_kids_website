@@ -228,6 +228,14 @@ body {
           background-image: url(../img/img10.webp); }
         .course__box-card .course__rigth-img11 {
           background-image: url(../img/img11.webp); }
+        .course__box-card .course__rigth-img12 {
+          background-image: url(../img/img12.webp); }
+        .course__box-card .course__rigth-img13 {
+          background-image: url(../img/img13.webp); }
+        .course__box-card .course__rigth-img14 {
+          background-image: url(../img/img14.webp); }
+        .course__box-card .course__rigth-img15 {
+          background-image: url(../img/img1.webp); }
 
 @media screen and (max-width: 1350px) {
   .course {

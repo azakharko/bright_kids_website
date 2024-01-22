@@ -117,7 +117,6 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 			<Button width={350} height={80} className="gallery__buttons-button" text={t("CoursePage.button")} />
 		</a>
 
-
 		<Footer />
 
 	</div>
@@ -125,3 +124,4 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 }
 
 export default ProjectStudent;
+

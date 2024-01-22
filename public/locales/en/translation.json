@@ -48,7 +48,7 @@
 		"course2": {
 			"title": "Chess",
 			"subTitle": "Chess",
-			"description": "Learning to play chess offers numerous benefits for children, both academically and developmentally. Here are some reasons why it's important for kids to learn how to play chess: Cognitive Development: Chess requires critical thinking, problem-solving, and strategic planning. Academic Performance: Studies have suggested that children who play chess tend to perform better academically. Patience and Concentration: Chess is a slow-paced, thoughtful game that encourages patience and concentration. Decision-Making Skills: Chess involves making decisions based on evaluating different options and predicting potential outcomes. Emotional Resilience: Chess involves both wins and losses. Children learn to cope with success and failure, developing emotional resilience. In summary, chess is not only a game but also a valuable educational tool that promotes cognitive, social, and emotional development in children. It offers a unique blend of entertainment and learning, making it a beneficial activity for kids of all ages.",
+			"description": "Chess is one of the oldest games of human civilization. Despite the common myth that in order to play chess you need to have innate abilities - you can successfully learn to play chess under the guidance of an experienced mentor. Chess develops strategic planning in a given system of rules. At Ukrainian Online School Bright Kids you can join one of the groups and start classes immediately. The initial course contains: • The basics of the game itself, its goals, and logic • How to start a party • How not to start a party • How to put a king mat • Typical mistakes in the debut of the party • A wide range of interesting chess problems and more",
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -130,6 +130,42 @@
 			"subTitle": "History",
 			"description": "Embark on a fascinating journey through the rich tapestry of Ukraine's history. Uncover the stories of ancient civilizations, pivotal moments, and the resilient spirit of its people. This course goes beyond dates and events, weaving a narrative that brings history to life.",
 			"age": "8+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
+		},
+		"course12": {
+			"title": "Improv",
+			"subTitle": "Improv",
+			"description": "The Improvisation course is based on the methodology and philosophy of the Improvis Theater. All training takes place in the form of games. You'll be amazed at how easily the tools and rules of the Improvis Theater can help improve and develop soft skills. With the help of impromptu games in ten lessons of the course, children will learn: 1. how interesting it is to tell about yourself and make acquaintances 2. how to develop your creativity or a million ways to invent a bike 3. how to tell the story or art of storytelling 4. how to ingeniously come out of unexpected situations or 'whatever happens, I know what to do' 5. how not just to listen, but also to hear and feel EVERYTHING! 6. how to recognize different emotions and learn about emotional intelligence; 7. how not to be afraid to speak in public and look good in the frame (for youtube) 8. how to be responsible", 
+			"age": "5+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
+		},
+		"course13": {
+			"title": "Web Programming",
+			"subTitle": "Web Programming",
+			"description": "Learn the basics of web programming with our online courses. Our courses are designed for adults who want to learn HTML, CSS, and JavaScript from scratch. You will learn how to create responsive websites that look great on any device. Our courses are taught by experienced instructors who will guide you through the process of building your own website. You will learn how to use HTML to structure your content, CSS to style your website, and JavaScript to add interactivity. Whether you are a complete beginner or have some experience with web development, our courses will help you take your skills to the next level.", 
+			"age": "8+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
+		},
+		"course14": {
+			"title": "Speaking Club",
+			"subTitle": "Speaking Club",
+			"description": "This course is designed for russian-speaking Ukrainians who would like to switch to the Ukrainian language in everyday communication. These classes are held in small groups and they are based on Improv method with tons of funny conversational games. So here you will have the opportunity not only to improve your Ukrainian language speaking skills but also to have a great time and a good mood",
+			"age": "8+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
+		},
+		"course15": {
+			"title": "Ukrainian For Adults",
+			"subTitle": "Ukrainian For Adults",
+			"description": "Ukrainian Language Course for adults is designed for those who would like to study from the comfort of their home or office. We have individual classes as well as group classes for students with different levels of Ukrainian, starting from the beginner level. These classes can have any focus – conversation, vocabulary training, grammar, preparation for a special occasion, or additional speaking practice. Instructors also focus on correct pronunciation during real-time online courses with each student.",
+			"age": "18+",
 			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"

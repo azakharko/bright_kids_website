@@ -134,6 +134,37 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				age: `${t("CoursePage.course11.age")}`,
 				category: `${t("CoursePage.course11.category")}`
 			},
+			{
+				id: 11,
+				title: `${t("CoursePage.course12.title")}`,
+				subTitle: `${t("CoursePage.course12.subTitle")}`,
+				age: `${t("CoursePage.course12.age")}`,
+				category: `${t("CoursePage.course12.category")}`
+			},
+			{
+				id: 12,
+				title: `${t("CoursePage.course13.title")}`,
+				subTitle: `${t("CoursePage.course13.subTitle")}`,
+				age: `${t("CoursePage.course13.age")}`,
+				category: `${t("CoursePage.course13.category")}`
+			},
+			{
+				id: 13,
+				title: `${t("CoursePage.course14.title")}`,
+				subTitle: `${t("CoursePage.course14.subTitle")}`,
+				age: `${t("CoursePage.course14.age")}`,
+				category: `${t("CoursePage.course14.category")}`
+			},
+
+			{
+				id: 14,
+				title: `${t("CoursePage.course15.title")}`,
+				subTitle: `${t("CoursePage.course15.subTitle")}`,
+				age: `${t("CoursePage.course15.age")}`,
+				category: `${t("CoursePage.course15.category")}`
+			},
+
+			
 
 		])
 	}, [t])
