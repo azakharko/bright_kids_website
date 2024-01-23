@@ -45,34 +45,34 @@ const Refund = ({ setBurgerOpen, burgerOpen }) => {
       />
 
 	  <div className="refund__main">
-		<p className='refund__main-title'>Refund policy</p>
+		<p className='refund__main-title'>{t(`RefundPolice.titile`)}</p>
 
-		<div className='refund__main-title'>Trial Lesson: <span className='refund__main-description'>We offer a free trial lesson for group classes and a half-price trial lesson for individual classes. This allows prospective students to experience our teaching style and determine if our classes are right for them before committing to a paid subscription.</span></div>
+		<div className='refund__main-title'>{t(`RefundPolice.subTitle1`)}     <span className='refund__main-description'>{t(`RefundPolice.description1`)}</span></div>
 
-    <div className='refund__main-title'>Subscription Model: <span className='refund__main-description'>Our classes are offered on a subscription basis, with students paying for a certain number of classes in advance. We offer different subscription options depending on the number of classes a student wishes to purchase.</span></div>
+    <div className='refund__main-title'>{t(`RefundPolice.subTitle2`)} <span className='refund__main-description'>{t(`RefundPolice.description2`)}</span></div>
 
-    <div className='refund__main-title'>Refund Policy: <span className='refund__main-description'>We understand that circumstances can change and sometimes refunds may be necessary. Our refund policy is as follows: </span></div>
+    <div className='refund__main-title'>{t(`RefundPolice.subTitle3`)} <span className='refund__main-description'>{t(`RefundPolice.description3`)}  </span></div>
 
     <p className='terms__main-description terms__main-description2'>
      1.
-     If a student decides to cancel their subscription before taking any classes, a full refund will be issued.</p>
+     {t(`RefundPolice.titleGround1`)}</p>
 
      <p className='terms__main-description terms__main-description2'>
      2.
-     If a student decides to cancel their subscription after taking one or more classes, a pro-rated refund will be issued based on the number of classes remaining in the subscription.</p>
+     {t(`RefundPolice.titleGround2`)}</p>
 
      <p className='terms__main-description terms__main-description2'>
      3.
-     We do not offer refunds for classes that have already been taken.</p>
+     {t(`RefundPolice.titleGround3`)}</p>
 
      <p className='terms__main-description terms__main-description2'>
      4.
-     Refunds will be issued within 10 business days of the cancellation request. </p>
+     {t(`RefundPolice.titleGround4`)}</p>
 
 
-		<p className='refund__main-description'>By default, refund will be issued using the same payment method as original payment, unless client explicitly request another way. We support direct bank account deposits, credit and debit cards, PayPal, Venmo and Zelle. We do not support cash.</p>
+		<p className='refund__main-description'>{t(`RefundPolice.description4`)}</p>
 
-    <p className='refund__main-description'>We hope this refund policy provides clarity and assurance to our students, while also allowing us to operate our online school in a sustainable manner.</p>
+    <p className='refund__main-description'>{t(`RefundPolice.description5`)}</p>
 		
 	  </div>
 

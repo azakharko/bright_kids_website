@@ -155,7 +155,6 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				age: `${t("CoursePage.course14.age")}`,
 				category: `${t("CoursePage.course14.category")}`
 			},
-
 			{
 				id: 14,
 				title: `${t("CoursePage.course15.title")}`,
@@ -163,6 +162,14 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 				age: `${t("CoursePage.course15.age")}`,
 				category: `${t("CoursePage.course15.category")}`
 			},
+			{
+				id: 15,
+				title: `${t("CoursePage.course16.title")}`,
+				subTitle: `${t("CoursePage.course16.subTitle")}`,
+				age: `${t("CoursePage.course16.age")}`,
+				category: `${t("CoursePage.course16.category")}`
+			},
+
 
 			
 

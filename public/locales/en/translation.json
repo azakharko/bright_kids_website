@@ -169,6 +169,24 @@
 			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"
+		},
+		"course16": {
+			"title": "Physics",
+			"subTitle": "Physics",
+			"description": "Learning Physics is important for kids for several reasons. Understanding the Natural World: Physics helps children understand the fundamental principles that govern the natural world. It explains how objects move, why things fall, and the forces at play in everyday situations. Critical Thinking Skills: Physics involves problem-solving and critical thinking. Kids learn to analyze situations, break down complex problems, and apply logical reasoning to find solutions. Foundation for Other Sciences: Physics serves as a foundation for other sciences like chemistry and biology. A solid understanding of physics concepts makes it easier for students to grasp more advanced scientific principles. Problem Solving in Daily Life: Physics principles are often applicable in daily life. Whether it's understanding the motion of objects, the principles behind simple machines, or the behavior of materials, physics provides a practical framework for problem-solving. Encourages Curiosity: Physics encourages curiosity and a desire to explore the unknown. It sparks interest in understanding the 'why' and 'how' of the world around us, fostering a lifelong love of learning. Global Challenges: Many global challenges, such as climate change and energy sustainability, have roots in physics. A deep understanding of physics is essential for addressing and solving these complex issues. xIn summary, learning physics at a young age not only builds a foundation for future scientific studies but also develops critical thinking skills, technological literacy, and a curiosity-driven mindset that can benefit children in various aspects of their lives.",
+			"age": "9+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
+		},
+		"course17": {
+			"title": "Speed reading",
+			"subTitle": "Speed reading",
+			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your head), reduce eye movement, and increase the overall reading pace. Some common speed reading techniques include: Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. Chunking: Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information.At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
+			"age": "9+",
+			"category": "group/individual",
+			"duration": "1 hour",
+			"needs": "What a student needs: pen and paper"
 		}
 	},
 	"FirstLesson": {
@@ -234,6 +252,54 @@
 		"description": "Then call us, and we will arrange everything for you!",
 		"callUsButton": "Call us",
 		"trialLessonButton": "Try a free trial lesson"
+	},
+	"RefundPolice": {
+		"titile": "Refund policy",
+		"subTitle1": "Trial Lesson:",
+		"description1": "We offer a free trial lesson for group classes and a half-price trial lesson for individual classes. This allows prospective students to experience our teaching style and determine if our classes are right for them before committing to a paid subscription.",
+		"subTitle2": "Subscription Model:",
+		"description2": "Our classes are offered on a subscription basis, with students paying for a certain number of classes in advance. We offer different subscription options depending on the number of classes a student wishes to purchase.",
+		"subTitle3": "Refund Policy:",
+		"description3": "We understand that circumstances can change and sometimes refunds may be necessary. Our refund policy is as follows:",
+		"titleGround1": "If a student decides to cancel their subscription before taking any classes, a full refund will be issued.",
+		"titleGround2": "If a student decides to cancel their subscription after taking one or more classes, a pro-rated refund will be issued based on the number of classes remaining in the subscription.",
+		"titleGround3": "We do not offer refunds for classes that have already been taken.",
+		"titleGround4": "Refunds will be issued within 10 business days of the cancellation request.",
+		"description4": "By default, refund will be issued using the same payment method as original payment, unless client explicitly request another way. We support direct bank account deposits, credit and debit cards, PayPal, Venmo and Zelle. We do not support cash.",
+		"description5": "We hope this refund policy provides clarity and assurance to our students, while also allowing us to operate our online school in a sustainable manner."
+	},
+	"Terms": {
+		"titile": "Terms of Use",
+		"subTitle1": "Welcome to our online language school! By accessing and using our website, you agree to be bound by the following terms and conditions ('Terms of Use'). Please read them carefully before using our website.",
+		"titleGround1": "Introduction Our online language school provides courses and other educational services for children and adults. By accessing or using our website, you acknowledge that you have read, understood, and agreed to these Terms of Use, as well as our Privacy Policy.",
+		"titleGround2": "Use of the Website You agree to use our website only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the website. You are responsible for ensuring that all information you provide through the website is true, accurate, and complete.",
+		"titleGround3": "Intellectual Property Rights All intellectual property rights in our website, including but not limited to copyrights, trademarks, trade names, and logos, are owned by our online language school or its licensors. You agree not to reproduce, modify, distribute, or otherwise use any content from our website without our prior written consent.",
+		"titleGround4": "Payment and Refunds Our online language school offers a variety of payment options, including credit cards and online payment systems. You agree to pay all fees and charges associated with your use of our courses and services. We reserve the right to change our prices and payment terms at any time. Refunds are subject to our Refund Policy, which is available on our website.",
+		"titleGround5": "Disclaimer of Warranties Our online language school provides its courses and services 'as is' and without any warranty or condition, express, implied or statutory. We do not warrant that our website will be uninterrupted, error-free, or free from viruses or other harmful components.",
+		"titleGround6": "Limitation of Liability Our online language school shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website, courses, or services. This includes, without limitation, damages for loss of profits, business interruption, or loss of data.",
+		"titleGround7": "Governing Law and Jurisdiction These Terms of Use shall be governed by and construed in accordance with the laws of the jurisdiction in which our online language school is based, without giving effect to any principles of conflicts of law. Any dispute arising out of or in connection with these Terms of Use shall be submitted to the exclusive jurisdiction of the courts of that jurisdiction.",
+		"titleGround8": "Changes to these Terms of Use We reserve the right to modify these Terms of Use at any time. Any changes will be posted on our website and will be effective immediately upon posting.",
+		"titleGround9": "Contact Us If you have any questions or comments about these Terms of Use or our website, please contact us at",
+		"description2": "By using our website, you acknowledge that you have read, understood, and agreed to these Terms of Use, as well as our Privacy Policy."
+	},
+	"Privacy": {
+		"titile": "Privacy Policy",
+		"description": "Our website, BrightKids.online, is committed to protecting the privacy of our users. This privacy policy outlines the types of personal information we collect, how we use it, and the steps we take to ensure it is protected.",
+		"subTitle1": "Information Collection and Use",
+		"titleGround1": "We collect personal information from users when they register for an account on our website, such as their name and email address. We also collect information about users' usage of the website, such as the pages they visit and the features they use.",
+		"titleGround2": "This information is used to personalize the user's experience on our website, such as by providing them with relevant content and recommendations. We may also use this information to improve the website and to contact users with important information or updates.",
+		"titleGround3": "We do not sell or share personal information with third parties, except as required by law or to protect the safety and security of our users.",
+
+		"subTitle2": "Security",
+		"titleGround4": "We take the protection of personal information seriously and have implemented appropriate technical and organizational measures to protect it from unauthorized access, use, disclosure, or destruction.",
+		"titleGround5": "Our website uses Secure Sockets Layer (SSL) technology to encrypt sensitive information such as login credentials and payment information.",
+		"titleGround6": "Users are responsible for maintaining the confidentiality of their login credentials and should not share them with anyone.",
+
+		"subTitle3": "Changes to this Privacy Policy",
+		"titleGround7": "We may update this privacy policy from time to time. If we make any changes, we will post the new policy on our website and update the 'Effective Date' at the top of the policy.",
+		"emailTitle": "Contact Us:",
+		"description2": "If you have any questions about this privacy policy or the collection and use of personal information on our website, please contact us by email.",
+		"description3": "Effective Date: 01/01/2023"
 	},
 	"Footer": {
 		"title": "Bright Kids Ukrainian Online School - A school where your children can learn the language in a fun, fast and high-quality way",

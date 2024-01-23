@@ -47,37 +47,37 @@ const Privacy = ({ setBurgerOpen, burgerOpen }) => {
       />
 
 	  <div className="privacy__main">
-		<p className='privacy__main-title'>Privacy Policy</p>
-		<p className='privacy__main-description'>Our website, BrightKids.online, is committed to protecting the privacy of our users. This privacy policy outlines the types of personal information we collect, how we use it, and the steps we take to ensure it is protected.</p>
+		<p className='privacy__main-title'>{t("Privacy.titile")}</p>
+		<p className='privacy__main-description'>{t("Privacy.description")}</p>
 
-		<p className='privacy__main-title'>Information Collection and Use</p>
-		<div className='privacy__main-description'>We collect personal information from users when they register for an account on our website, such as their name and email address. We also collect information about users' usage of the website, such as the pages they visit and the features they use.
+		<p className='privacy__main-title'>{t("Privacy.subTitle1")}</p>
+		<div className='privacy__main-description'>{t("Privacy.titleGround1")}
 
-		<p className='privacy-margin'>This information is used to personalize the user's experience on our website, such as by providing them with relevant content and recommendations. We may also use this information to improve the website and to contact users with important information or updates.</p>
+		<p className='privacy-margin'>{t("Privacy.titleGround2")}</p>
 
-		<p className='privacy-margin'>We do not sell or share personal information with third parties, except as required by law or to protect the safety and security of our users.</p>
+		<p className='privacy-margin'>{t("Privacy.titleGround3")}</p>
 		</div>
 
-		<p className='privacy__main-title'>Security</p>
-		<div className='privacy__main-description'>We take the protection of personal information seriously and have implemented appropriate technical and organizational measures to protect it from unauthorized access, use, disclosure, or destruction.
+		<p className='privacy__main-title'>{t("Privacy.subTitle2")}</p>
+		<div className='privacy__main-description'>{t("Privacy.titleGround4")}
 
-		<p className='privacy-margin'>Our website uses Secure Sockets Layer (SSL) technology to encrypt sensitive information such as login credentials and payment information.</p>
+		<p className='privacy-margin'>{t("Privacy.titleGround5")}</p>
 
-		<p className='privacy-margin'>Users are responsible for maintaining the confidentiality of their login credentials and should not share them with anyone.</p>
+		<p className='privacy-margin'>{t("Privacy.titleGround6")}</p>
 		</div>
 
-		<p className='privacy__main-title'>Changes to this Privacy Policy</p>
-		<p className='privacy__main-description'>We may update this privacy policy from time to time. If we make any changes, we will post the new policy on our website and update the "Effective Date" at the top of the policy.</p>
+		<p className='privacy__main-title'>{t("Privacy.subTitle3")}</p>
+		<p className='privacy__main-description'>{t("Privacy.titleGround7")}</p>
 
-    <p className='privacy__main-email'>Contact Us: <a className='privacy__main-link' href="mailto:BrightKidsSchool2020@gmail.com">BrightKidsSchool2020@gmail.com</a></p>
+    <p className='privacy__main-email'>{t("Privacy.emailTitle")} <a className='privacy__main-link' href="mailto:BrightKidsSchool2020@gmail.com">BrightKidsSchool2020@gmail.com</a></p>
 
-		<p className='privacy__main-description'>If you have any questions about this privacy policy or the collection and use of personal information on our website, please contact us by email.</p>
+		<p className='privacy__main-description'>{t("Privacy.description2")}</p>
 
-		<p className='privacy__main-description'>Effective Date: 01/01/2023</p>
+		<p className='privacy__main-description'>{t("Privacy.description3")}</p>
 
 	  </div>
-
-      <Footer />
+    
+    <Footer />
     </div>
   );
 }

@@ -121,9 +121,30 @@
 		&-box {
 			height: 100px;
 			@include display-center(space-between, center);
-			p {
+			a {
 				@include font($white, 20px, 600, normal, normal);
+				@include display-center(flex-start, center);
+				span {
+					color: #F9D611;
+					cursor: pointer;
+					margin: 0 10px;
+					@include display-center(flex-start, center);
+					gap: 10px;
+
+				}
 			}
+
+			.logo__yurii {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+
+				background-image: url(../logo.svg);
+				background-size: cover;
+				cursor: pointer;
+			}
+
+		
 
 			.footer__sociable-link {
 				cursor: pointer;
@@ -153,12 +174,30 @@
 
 
 @media screen and (max-width: 1350px) {
+	
+	
 	.footer {
 		padding: 0 60px;
 		padding-top: 30px;
-		&__box {
-			&-title {
-				@include font($white, 28px, 400, normal, normal);
+		&__bottom {
+			width: 100%;
+			margin-top: 120px;
+			&-line {
+				width: 100%;
+				height: 1px;
+				background: $white;
+			}
+
+			&-box {
+				height: 200px;
+				@include display-center(center, center);
+				gap: 30px;
+				flex-direction: column-reverse;
+				a {
+					flex-direction: column;
+					@include display-center(center, center);
+
+				}
 			}
 		}
 	}
@@ -254,10 +293,16 @@
 			}
 
 			&-box {
-				height: 160px;
+				height: 240px;
 				@include display-center(center, center);
 				gap: 30px;
 				flex-direction: column-reverse;
+				a {
+					flex-direction: column;
+					@include display-center(center, center);
+					text-align: center;
+
+				}
 			}
 		}
 	}
@@ -271,6 +316,10 @@
 	.footer__sociable--link a {
 		width: 100%;
 		text-align: center;
+	}
+
+	.footer__bottom-box  {
+		height: 300px;
 	}
 
 	.footer {
@@ -290,7 +339,14 @@
 			height: 80px;
 			
 		}
+
+		#logo {
+			flex-direction: column;
+			margin-top: 10px
+		}
+
 		&__box {
+			height: 350px;
 			&-title {
 				@include font($white, 24px, 400, normal, normal);
 				text-align: center;
