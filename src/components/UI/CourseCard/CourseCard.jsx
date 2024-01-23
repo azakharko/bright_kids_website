@@ -7,8 +7,7 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 	index = index + 1;
 
 	const courseOpen = () => {
-		setCourseIndex(index)
-		console.log(index)
+		setCourseIndex(index);
 	}
 
 	const handleScrollToSection = (sectionId) => {

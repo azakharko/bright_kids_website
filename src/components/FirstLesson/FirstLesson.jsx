@@ -11,10 +11,6 @@ const FirstLesson = () => {
     setThisLanguage(i18n.language)
   }, [t])
 
-
-  console.log(i18n.language);
-  console.log(thisLanguage === 'en');
-
   return (
     <div id='firstLesson' className="first-lesson">
       {thisLanguage === 'en' ? (
