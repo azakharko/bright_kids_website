@@ -12,7 +12,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: storedLanguage || 'en', // Use the stored language or fallback to 'en'
-    debug: true,
+    debug: false,
     detection: {
       order: ['queryString', 'cookie'],
       cache: ['cookie'],
