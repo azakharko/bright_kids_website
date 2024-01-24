@@ -31,7 +31,7 @@ function App() {
         <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/catalog`} element={<Catalog etCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path={`/catalog`} element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/projects`} element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  />} />
         
       </Routes>

@@ -22,6 +22,7 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 		}
 	};
 
+	console.log(index);
 
 	return (
 		<div className="course__box-card" id={index}>
