@@ -19,8 +19,8 @@
 		"card6": "Affordable prices"
 	},
 	"GalleryPage": {
-		"title": "Art projects",
-		"title2": "Python projects"
+		"title": "Students' drawing projects",
+		"title2": "Student projects in Python languages"
 	},
 	"CoursePage": {
 		"title": "Courses",
@@ -144,33 +144,6 @@
 			"needs": "What a student needs: pen and paper"
 		},
 		"course13": {
-			"title": "Web Programming",
-			"subTitle": "Web Programming",
-			"description": "Learn the basics of web programming with our online courses. Our courses are designed for adults who want to learn HTML, CSS, and JavaScript from scratch. You will learn how to create responsive websites that look great on any device. Our courses are taught by experienced instructors who will guide you through the process of building your own website. You will learn how to use HTML to structure your content, CSS to style your website, and JavaScript to add interactivity. Whether you are a complete beginner or have some experience with web development, our courses will help you take your skills to the next level.", 
-			"age": "8+",
-			"category": "group/individual",
-			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
-		},
-		"course14": {
-			"title": "Speaking Club",
-			"subTitle": "Speaking Club",
-			"description": "This course is designed for russian-speaking Ukrainians who would like to switch to the Ukrainian language in everyday communication. These classes are held in small groups and they are based on Improv method with tons of funny conversational games. So here you will have the opportunity not only to improve your Ukrainian language speaking skills but also to have a great time and a good mood",
-			"age": "8+",
-			"category": "group/individual",
-			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
-		},
-		"course15": {
-			"title": "Ukrainian For Adults",
-			"subTitle": "Ukrainian For Adults",
-			"description": "Ukrainian Language Course for adults is designed for those who would like to study from the comfort of their home or office. We have individual classes as well as group classes for students with different levels of Ukrainian, starting from the beginner level. These classes can have any focus – conversation, vocabulary training, grammar, preparation for a special occasion, or additional speaking practice. Instructors also focus on correct pronunciation during real-time online courses with each student.",
-			"age": "18+",
-			"category": "group/individual",
-			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
-		},
-		"course16": {
 			"title": "Physics",
 			"subTitle": "Physics",
 			"description": "Learning Physics is important for kids for several reasons. Understanding the Natural World: Physics helps children understand the fundamental principles that govern the natural world. It explains how objects move, why things fall, and the forces at play in everyday situations. Critical Thinking Skills: Physics involves problem-solving and critical thinking. Kids learn to analyze situations, break down complex problems, and apply logical reasoning to find solutions. Foundation for Other Sciences: Physics serves as a foundation for other sciences like chemistry and biology. A solid understanding of physics concepts makes it easier for students to grasp more advanced scientific principles. Problem Solving in Daily Life: Physics principles are often applicable in daily life. Whether it's understanding the motion of objects, the principles behind simple machines, or the behavior of materials, physics provides a practical framework for problem-solving. Encourages Curiosity: Physics encourages curiosity and a desire to explore the unknown. It sparks interest in understanding the 'why' and 'how' of the world around us, fostering a lifelong love of learning. Global Challenges: Many global challenges, such as climate change and energy sustainability, have roots in physics. A deep understanding of physics is essential for addressing and solving these complex issues. xIn summary, learning physics at a young age not only builds a foundation for future scientific studies but also develops critical thinking skills, technological literacy, and a curiosity-driven mindset that can benefit children in various aspects of their lives.",
@@ -179,7 +152,7 @@
 			"duration": "1 hour",
 			"needs": "What a student needs: pen and paper"
 		},
-		"course17": {
+		"course14": {
 			"title": "Speed reading",
 			"subTitle": "Speed reading",
 			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your head), reduce eye movement, and increase the overall reading pace. Some common speed reading techniques include: Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. Chunking: Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information.At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
