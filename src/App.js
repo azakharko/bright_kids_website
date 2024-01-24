@@ -33,7 +33,6 @@ function App() {
         <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/catalog`} element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path={`/projects`} element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  />} />
-        
       </Routes>
     </Router>
   );
