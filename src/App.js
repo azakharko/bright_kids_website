@@ -9,10 +9,9 @@ import { GA4React } from 'ga-4-react';
 import Catalog from "./components/Catalog/Catalog.jsx";
 import ProjectStudent from "./components/ProjectStudent/ProjectStudent.jsx";
 
-
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
-	const [courseArr, setCourseArr] = useState([]);
+  const [courseArr, setCourseArr] = useState([]);
 
   const [courseIndex, setCourseIndex] = useState(() => {
     const storedIndex = localStorage.getItem('courseIndex');
@@ -26,15 +25,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/catalog`} element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-          <Route path={`/projects`} element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  />} />
-        </Routes>
-      </BrowserRouter>
+        <Route path="/course/*" element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/privacy-policy" element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/terms" element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/refund" element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/catalog" element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/projects/*" element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
