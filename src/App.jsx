@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Page from "./Page.jsx";
 import CoursPage from "./components/CoursPage/CoursPage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
@@ -23,7 +23,7 @@ function App() {
   }, [courseIndex]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/course/*" element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy" element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
@@ -33,7 +33,7 @@ function App() {
         <Route path="/projects/*" element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

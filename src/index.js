@@ -1,6 +1,6 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.js';
+import App from './App.jsx';
 import "./i18n.js";
 import Loading from "./components/UI/Popup/Popup.jsx";
 
