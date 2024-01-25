@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Page from "./Page.jsx";
 import CoursPage from "./components/CoursPage/CoursPage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
@@ -24,17 +24,17 @@ function App() {
   }, [courseIndex]);
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/catalog`} element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path={`/projects`} element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  />} />
-      </Routes>
-    </Router>
+          <Route path="/*" element={<Page setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/course`} element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/privacy-policy`} element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/terms`} element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/refund`} element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/catalog`} element={<Catalog setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+          <Route path={`/projects`} element={<ProjectStudent burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
