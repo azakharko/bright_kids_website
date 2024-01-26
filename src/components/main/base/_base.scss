@@ -13,3 +13,13 @@ body {
 	overflow-x: hidden;
 }
 
+.link__web {
+	@include font($black, 20px, 400, normal, normal);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	
+	&-margin {
+		margin: 0 10px;
+	}
+}

@@ -34,6 +34,7 @@
 		"price2": "Individual classes at time which works best for the student - $20 per 45min class",
 		"button": "View more",
 		"button2": "Apply",
+		"title3": "Catalog",
 
 		
 		"course1": {
@@ -73,6 +74,7 @@
 			"needs": "What students need: laptop with pre-installed Roblox Studio"
 		},
 		"course5": {
+			"title": "Scratch",
 			"subTitle": "Scratch",
 			"description": "Learn to program, create games, and have fun in Scratch! What you'll learn: Create intelligent and fun gamesCreate animations and astonishing visual effects. Code - one of the most essential skills to learn! Understand complex computer science concepts by intuitively applying them in games. Learn text-based programming languages 2x - 10x faster",
 			"age": "6+",

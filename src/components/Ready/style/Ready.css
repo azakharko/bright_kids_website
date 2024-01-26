@@ -37,6 +37,19 @@ body {
   min-height: 100vh;
   overflow-x: hidden; }
 
+.link__web {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+  .link__web span {
+    margin-left: 10px; }
+
 .ready {
   width: 100%;
   height: auto;
