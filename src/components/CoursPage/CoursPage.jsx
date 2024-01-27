@@ -4,10 +4,82 @@ import { useTranslation } from 'react-i18next';
 import "./style/CoursPage.css"
 import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
-const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
+const CoursPage = ({ setBurgerOpen, burgerOpen}) => {
+	const { courseLink } = useParams();
+
+
+	const getCourseIndexByLink = (link) => {
+		const regex = /(\d+)/;
+		const match = link.match(regex);
+		console.log(courseLink);
+
+		let realIndex;
+		if (courseLink == "ukrainian-language") {
+			realIndex = 1;
+		}
+
+		if (courseLink == "chess") {
+			realIndex = 2;
+		}
+
+		if (courseLink == "art") {
+			realIndex = 3;
+		}
+
+		if (courseLink == "roblox") {
+			realIndex = 4;
+		}
+
+		if (courseLink == "scratch") {
+			realIndex = 5;
+		}
+
+		if (courseLink == "python") {
+			realIndex = 6;
+		}
+
+		if (courseLink == "voice") {
+			realIndex = 7;
+		}
+
+		if (courseLink == "piano") {
+			realIndex = 8;
+		}
+
+		if (courseLink == "math") {
+			realIndex = 9;
+		}
+
+		if (courseLink == "logic") {
+			realIndex = 10;
+		}
+
+		if (courseLink == "histor-of-ukraine") {
+			realIndex = 11;
+		}
+
+		if (courseLink == "improv") {
+			realIndex = 12;
+		}
+
+		if (courseLink == "physics") {
+			realIndex = 13;
+		}
+
+		if (courseLink == "speed-reading") {
+			realIndex = 14;
+		}
+
+		return realIndex;
+
+	};
+	
+  
+	const courseIndex = getCourseIndexByLink(courseLink);
+  
 	const { t, i18n } = useTranslation();
 	const [thisLanguage, setThisLanguage] = useState('en');
 	const [imagePath, setImagePath] = useState('');
@@ -15,7 +87,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen, courseIndex }) => {
 
 	useEffect(() => {
 		setThisLanguage(i18n.language)
-	  }, [t])
+	}, [t])
 	
 	
 

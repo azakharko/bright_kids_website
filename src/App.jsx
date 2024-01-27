@@ -22,10 +22,13 @@ function App() {
     localStorage.setItem('courseIndex', courseIndex);
   }, [courseIndex]);
 
+
+
+
   return (
     <HashRouter>
       <Routes>
-        <Route path="/course/*" element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route  path="/course/:courseLink/*" element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy" element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/terms" element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/refund" element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />

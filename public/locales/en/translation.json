@@ -44,7 +44,8 @@
 			"age": "4+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: a notebook and a pencil"
+			"needs": "What a student needs: a notebook and a pencil",
+			"link": "ukrainian-language"
 		},
 		"course2": {
 			"title": "Chess",
@@ -53,7 +54,8 @@
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What students need: laptop"
+			"needs": "What students need: laptop",
+			"link": "chess"
 		},
 		"course3": {
 			"title": "Art",
@@ -62,7 +64,8 @@
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: paint, paper for painting"
+			"needs": "What a student needs: paint, paper for painting",
+			"link": "art"
 		},
 		"course4": {
 			"title": "Roblox",
@@ -71,7 +74,8 @@
 			"age": "10+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What students need: laptop with pre-installed Roblox Studio"
+			"needs": "What students need: laptop with pre-installed Roblox Studio",
+			"link": "roblox"
 		},
 		"course5": {
 			"title": "Scratch",
@@ -80,7 +84,8 @@
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: a laptop with pre-installed Scratch IDE (https://scratch.mit.edu/download)"
+			"needs": "What a student needs: a laptop with pre-installed Scratch IDE (https://scratch.mit.edu/download)",
+			"link": "scratch"
 		},
 		"course6": {
 			"title": "Python",
@@ -89,7 +94,8 @@
 			"age": "8+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: laptop with pre-installed Python3 and Python IDS (PyCharm or VS Code)"
+			"needs": "What a student needs: laptop with pre-installed Python3 and Python IDS (PyCharm or VS Code)",
+			"link": "python"
 		},
 		"course7": {
 			"title": "Voice",
@@ -98,7 +104,8 @@
 			"age": "4+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: good mood"
+			"needs": "What a student needs: good mood",
+			"link": "voice"
 		},
 		"course8": {
 			"title": "Piano",
@@ -107,7 +114,8 @@
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: good mood"
+			"needs": "What a student needs: good mood",
+			"link": "piano"
 		},
 		"course9": {
 			"title": "Math",
@@ -116,7 +124,8 @@
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "math"
 		},
 		"course10": {
 			"title": "Logic",
@@ -125,7 +134,8 @@
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "logic"
 		},
 		"course11": {
 			"title": "History of Ukraine",
@@ -134,7 +144,8 @@
 			"age": "8+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "histor-of-ukraine"
 		},
 		"course12": {
 			"title": "Improv",
@@ -143,7 +154,8 @@
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "improv"
 		},
 		"course13": {
 			"title": "Physics",
@@ -152,7 +164,8 @@
 			"age": "9+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "physics"
 		},
 		"course14": {
 			"title": "Speed reading",
@@ -161,7 +174,8 @@
 			"age": "9+",
 			"category": "group/individual",
 			"duration": "1 hour",
-			"needs": "What a student needs: pen and paper"
+			"needs": "What a student needs: pen and paper",
+			"link": "speed-reading"
 		}
 	},
 	"FirstLesson": {

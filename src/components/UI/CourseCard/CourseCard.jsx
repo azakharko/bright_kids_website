@@ -22,13 +22,12 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 		}
 	};
 
-	console.log(index);
 
 	return (
 		<div className="course__box-card" id={index}>
 			<div className="course-hover">
 				<div className="course-hover__button">
-					<Link onClick={() => handleScrollToSection('top')} to={"/course"}>
+					<Link onClick={() => handleScrollToSection('top')} to={`/course/${courseArr.link}`}>
 						<button onClick={courseOpen}>Details of the course</button>
 					</Link>
 				</div>
