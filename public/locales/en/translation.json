@@ -40,7 +40,7 @@
 		"course1": {
 			"title": "Ukrainian Language",
 			"subTitle": "Ukrainian",
-			"description": "All Ukrainian language classes are designed according to the level of language proficiency and age of the child. There are classes for those who are just beginning to learn Ukrainian, as well as for those who already know a little Ukrainian and want to deepen their knowledge, expand their vocabulary, and learn the basics of grammar. In the classes, you will be able to immerse yourself in the whirlpool of folk traditions and learn more about famous Ukrainians. Each lesson is based on four components of language competence: reading, writing, speaking, and listening. Children will also do various creative projects. For those who are just starting to learn the language, and if it is early school age - we will learn letters and words on various topics, playing and singing. In each lesson we will study a new lexical topic and, of course, read interesting books.",
+			"description": "All Ukrainian language classes are designed according to the level of language proficiency and age of the child. <br/>  There are classes for those who are just beginning to learn Ukrainian, as well as for those who already know a little Ukrainian and want to deepen their knowledge, expand their vocabulary, and learn the basics of grammar. <br/>  <br/>  In the classes, you will be able to immerse yourself in the whirlpool of folk traditions and learn more about famous Ukrainians.  Each lesson is based on four components of language competence: reading, writing, speaking, and listening. <br/>  <br/>  Children will also do various creative projects. For those who are just starting to learn the language, and if it is early school age - we will learn letters and words on various topics, playing and singing. In each lesson we will study a new lexical topic and, of course, read interesting books.",
 			"age": "4+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -50,8 +50,7 @@
 		"course2": {
 			"title": "Chess",
 			"subTitle": "Chess",
-			"description": "Chess is one of the oldest games of human civilization. Despite the common myth that in order to play chess you need to have innate abilities - you can successfully learn to play chess under the guidance of an experienced mentor. Chess develops strategic planning in a given system of rules. At Ukrainian Online School Bright Kids you can join one of the groups and start classes immediately. The initial course contains: • The basics of the game itself, its goals, and logic • How to start a party • How not to start a party • How to put a king mat • Typical mistakes in the debut of the party • A wide range of interesting chess problems and more",
-			"age": "5+",
+			"description": "Chess is one of the oldest games of human civilization. Despite the common myth that in order to play chess you need to have innate abilities - you can successfully learn to play chess under the guidance of an experienced mentor. <br/> <br/>Chess develops strategic planning in a given system of rules. <br/> At Ukrainian Online School Bright Kids you can join one of the groups and start classes immediately. <br/> <br/> The initial course contains:  <br/> • The basics of the game itself, its goals, and logic <br/> • How to start a party <br/> • How not to start a party <br/> • How to put a king mat <br/> • Typical mistakes in the debut of the party <br/> • A wide range of interesting chess problems and more",			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What students need: laptop",
@@ -60,7 +59,7 @@
 		"course3": {
 			"title": "Art",
 			"subTitle": "Art",
-			"description": "Ukrainian-language drawing classes are conducted by experienced art teachers who have their own creative studios. They gently and unobtrusively help children feel the basics of composition, work with colors and, most importantly, help to formulate an idea, reflect on it, and put it into practice. Children will work with different techniques and materials (pencils, markers, watercolors, gouache, plasticine) Each time a specific topic will be asked with examples of works by world-famous artists. Therefore, children will be able to get acquainted with the works of various artists, including Ukrainian ones.",
+			"description": "Ukrainian-language drawing classes are conducted by experienced art teachers who have their own creative studios. <br/> They gently and unobtrusively help children feel the basics of composition, work with colors and, most importantly, help to formulate an idea, reflect on it, and put it into practice.<br/><br/>   Children will work with different techniques and materials (pencils, markers, watercolors, gouache, plasticine) Each time a specific topic will be asked with examples of works by world-famous artists. Therefore, children will be able to get acquainted with the works of various artists, including Ukrainian ones.",
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -70,7 +69,7 @@
 		"course4": {
 			"title": "Roblox",
 			"subTitle": "Roblox",
-			"description": "Roblox Coding Classes for Kids and Teens Game development is easy with Roblox Studio. Launch your own game to share with family, friends, and the world in as little as one class. Students will learn game designing and development on Roblox Studio including a basic introduction to Roblox Studio, building, and Lua code. We offer small group classes as well as individual classes at a time that works best for you. ",
+			"description": "Roblox Coding Classes for Kids and Teens Game development is easy with Roblox Studio. Launch your own game to share with family, friends, and the world in as little as one class. <br/> <br/> Students will learn game designing and development on Roblox Studio including a basic introduction to Roblox Studio, building, and Lua code. We offer small group classes as well as individual classes at a time that works best for you. ",
 			"age": "10+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -80,7 +79,7 @@
 		"course5": {
 			"title": "Scratch",
 			"subTitle": "Scratch",
-			"description": "Learn to program, create games, and have fun in Scratch! What you'll learn: Create intelligent and fun gamesCreate animations and astonishing visual effects. Code - one of the most essential skills to learn! Understand complex computer science concepts by intuitively applying them in games. Learn text-based programming languages 2x - 10x faster",
+			"description": "Learn to program, create games, and have fun in Scratch!<br/> <br/>  What you'll learn: <br/> Create intelligent and fun gamesCreate animations and astonishing visual effects.<br/>  Code - one of the most essential skills to learn! Understand complex computer science concepts by intuitively applying them in games.<br/>  Learn text-based programming languages 2x - 10x faster",
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -90,7 +89,7 @@
 		"course6": {
 			"title": "Python",
 			"subTitle": "Python",
-			"description": "Why should children learn to program? The world is changing. And it is changing at a breakneck pace. And the basic set of skills that are embedded in the school curriculum does not always keep up with these changes. Let's face it - being able to program in the near future stack is as necessary a skill as reading and writing. We teach Python and Scratch in Ukrainian. What will we do on the course? Study the basic elements of the Python language. Get acquainted with computer graphics and additional Turtle and Tkinter modules. Write our own mini-games Have fun and a good time",
+			"description": "Why should children learn to program? The world is changing. And it is changing at a breakneck pace. <br/> And the basic set of skills that are embedded in the school curriculum does not always keep up with these changes. <br/> <br/> Let's face it - being able to program in the near future stack is as necessary a skill as reading and writing. We teach Python and Scratch in Ukrainian.<br/> <br/>  What will we do on the course? Study the basic elements of the Python language. Get acquainted with computer graphics and additional Turtle and Tkinter modules. <br/> Write our own mini-games Have fun and a good time",
 			"age": "8+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -100,7 +99,7 @@
 		"course7": {
 			"title": "Voice",
 			"subTitle": "Voice",
-			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own. Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
+			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. <br/> <br/> For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own. <br/> <br/>  Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. <br/> <br/> In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. <br/> <br/>  Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
 			"age": "4+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -110,7 +109,7 @@
 		"course8": {
 			"title": "Piano",
 			"subTitle": "Piano",
-			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own. Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
+			"description": "It is difficult to describe the feeling when the soul sings. When it's just good and the sounds easily find the right place in the melody. <br/> <br/>  Sometimes you want to close your eyes and just sound like a ringing and joyful string in this world. For some, it takes time to get lost, and for others, it is so easy that he quickly becomes cramped within the framework of famous songs and he begins to create his own.<br/> <br/>  Our vocal teacher draws inspiration from Ukrainian folk songs, children's folklore, and the calendar-ritual cycle, that's why she sings in the Lviv ethno-group 'Zhiva'. But it is also open to other song material, something that will inspire students to come to class. <br/> <br/> In addition to songs, breathing exercises, chants, and musical games, Ms. Marta introduces students to the relativity system of Hungarian teacher Zoltan Kodai, who believed that everyone could sing. <br/> <br/> Although the structure of the lesson is repeated, there is an atmosphere of creativity, you can improvise and cooperate because everyone has the right to sound individually and uniquely.",
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -120,7 +119,7 @@
 		"course9": {
 			"title": "Math",
 			"subTitle": "Math",
-			"description": "Our online math courses are designed to help your child learn math in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our individual lessons per person take 45 min because of the higher intensity. Our experienced instructors have backgrounds in computer science and engineering from top Ukrainian universities. We offer courses that are aligned with the most rigorous standards in order to supplement, reinforce, and prepare for the math skills your child is learning in school. Our courses are taught live online, so your child can learn from the comfort of your own home. We use interactive tools like virtual whiteboards and chat rooms to make sure your child is engaged and learning. We believe that every child can learn math and we’re here to help them do it. Sign up today and give your child the gift of math!",
+			"description": "Our online math courses are designed to help your child learn math in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our individual lessons per person take 45 min because of the higher intensity.<br/> <br/>  Our experienced instructors have backgrounds in computer science and engineering from top Ukrainian universities. We offer courses that are aligned with the most rigorous standards in order to supplement, reinforce, and prepare for the math skills your child is learning in school. <br/> <br/>  Our courses are taught live online, so your child can learn from the comfort of your own home. We use interactive tools like virtual whiteboards and chat rooms to make sure your child is engaged and learning.<br/> <br/>  We believe that every child can learn math and we’re here to help them do it. Sign up today and give your child the gift of math!",
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -130,7 +129,7 @@
 		"course10": {
 			"title": "Logic",
 			"subTitle": "Logic",
-			"description": "Our online logic courses are designed to help your child learn logic in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. Our experienced instructors have exclusive programs created in the best Ukrainian private schools, ready to deliver to bring you the best Our courses teach out-of-the-box thinking and analytical reasoning. We believe that every child can learn logic and we’re here to help them do it. Sign up today and give your child the gift of logic!",
+			"description": "Our online logic courses are designed to help your child learn logic in a fun and engaging way. Our courses are group lessons of 4 to 7 students and the lesson duration is 1 hour. <br/> <br/> Our experienced instructors have exclusive programs created in the best Ukrainian private schools, ready to deliver to bring you the best Our courses teach out-of-the-box thinking and analytical reasoning. <br/> <br/> We believe that every child can learn logic and we’re here to help them do it. Sign up today and give your child the gift of logic!",
 			"age": "6+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -140,7 +139,7 @@
 		"course11": {
 			"title": "History of Ukraine",
 			"subTitle": "History",
-			"description": "Embark on a fascinating journey through the rich tapestry of Ukraine's history. Uncover the stories of ancient civilizations, pivotal moments, and the resilient spirit of its people. This course goes beyond dates and events, weaving a narrative that brings history to life.",
+			"description": "Embark on a fascinating journey through the rich tapestry of Ukraine's history. Uncover the stories of ancient civilizations, pivotal moments, and the resilient spirit of its people. <br/> <br/> This course goes beyond dates and events, weaving a narrative that brings history to life.",
 			"age": "8+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -150,7 +149,7 @@
 		"course12": {
 			"title": "Improv",
 			"subTitle": "Improv",
-			"description": "The Improvisation course is based on the methodology and philosophy of the Improvis Theater. All training takes place in the form of games. You'll be amazed at how easily the tools and rules of the Improvis Theater can help improve and develop soft skills. With the help of impromptu games in ten lessons of the course, children will learn: 1. how interesting it is to tell about yourself and make acquaintances 2. how to develop your creativity or a million ways to invent a bike 3. how to tell the story or art of storytelling 4. how to ingeniously come out of unexpected situations or 'whatever happens, I know what to do' 5. how not just to listen, but also to hear and feel EVERYTHING! 6. how to recognize different emotions and learn about emotional intelligence; 7. how not to be afraid to speak in public and look good in the frame (for youtube) 8. how to be responsible", 
+			"description": "The Improvisation course is based on the methodology and philosophy of the Improvis Theater. All training takes place in the form of games. You'll be amazed at how easily the tools and rules of the Improvis Theater can help improve and develop soft skills. <br/> <br/> With the help of impromptu games in ten lessons of the course, children will learn: <br/> <br/> 1. how interesting it is to tell about yourself and make acquaintances <br/> <br/> 2. how to develop your creativity or a million ways to invent a bike <br/><br/>  3. how to tell the story or art of storytelling <br/> <br/> 4. how to ingeniously come out of unexpected situations or 'whatever happens, I know what to do' <br/> <br/> 5. how not just to listen, but also to hear and feel EVERYTHING! <br/> <br/> 6. how to recognize different emotions and learn about emotional intelligence; <br/> <br/> 7. how not to be afraid to speak in public and look good in the frame (for youtube) <br/> <br/> 8. how to be responsible", 
 			"age": "5+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -160,7 +159,7 @@
 		"course13": {
 			"title": "Physics",
 			"subTitle": "Physics",
-			"description": "Learning Physics is important for kids for several reasons. Understanding the Natural World: Physics helps children understand the fundamental principles that govern the natural world. It explains how objects move, why things fall, and the forces at play in everyday situations. Critical Thinking Skills: Physics involves problem-solving and critical thinking. Kids learn to analyze situations, break down complex problems, and apply logical reasoning to find solutions. Foundation for Other Sciences: Physics serves as a foundation for other sciences like chemistry and biology. A solid understanding of physics concepts makes it easier for students to grasp more advanced scientific principles. Problem Solving in Daily Life: Physics principles are often applicable in daily life. Whether it's understanding the motion of objects, the principles behind simple machines, or the behavior of materials, physics provides a practical framework for problem-solving. Encourages Curiosity: Physics encourages curiosity and a desire to explore the unknown. It sparks interest in understanding the 'why' and 'how' of the world around us, fostering a lifelong love of learning. Global Challenges: Many global challenges, such as climate change and energy sustainability, have roots in physics. A deep understanding of physics is essential for addressing and solving these complex issues. xIn summary, learning physics at a young age not only builds a foundation for future scientific studies but also develops critical thinking skills, technological literacy, and a curiosity-driven mindset that can benefit children in various aspects of their lives.",
+			"description": "Learning Physics is important for kids for several reasons. Understanding the Natural World: Physics helps children understand the fundamental principles that govern the natural world. It explains how objects move, why things fall, and the forces at play in everyday situations.<br/> <br/>  Critical Thinking Skills: <br/> Physics involves problem-solving and critical thinking. <br/> Kids learn to analyze situations, break down complex problems, and apply logical reasoning to find solutions. <br/> <br/> Foundation for Other Sciences: <br/> Physics serves as a foundation for other sciences like chemistry and biology. A solid understanding of physics concepts makes it easier for students to grasp more advanced scientific principles. <br/> <br/> Problem Solving in Daily Life:<br/>  Physics principles are often applicable in daily life. Whether it's understanding the motion of objects, the principles behind simple machines, or the behavior of materials, physics provides a practical framework for problem-solving. <br/> <br/> Encourages Curiosity: <br/> Physics encourages curiosity and a desire to explore the unknown. It sparks interest in understanding the 'why' and 'how' of the world around us, fostering a lifelong love of learning. <br/> <br/> Global Challenges:<br/> Many global challenges, such as climate change and energy sustainability, have roots in physics. <br/> A deep understanding of physics is essential for addressing and solving these complex issues. xIn summary, learning physics at a young age not only builds a foundation for future scientific studies but also develops critical thinking skills, technological literacy, and a curiosity-driven mindset that can benefit children in various aspects of their lives.",
 			"age": "9+",
 			"category": "group/individual",
 			"duration": "1 hour",
@@ -170,7 +169,7 @@
 		"course14": {
 			"title": "Speed reading",
 			"subTitle": "Speed reading",
-			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your head), reduce eye movement, and increase the overall reading pace. Some common speed reading techniques include: Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. Chunking: Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information.At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
+			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your head), reduce eye movement, and increase the overall reading pace. <br/> <br/> Some common speed reading techniques include: <br/> Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. <br/> <br/> Chunking: <br/> Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information. <br/> <br/> At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
 			"age": "9+",
 			"category": "group/individual",
 			"duration": "1 hour",
