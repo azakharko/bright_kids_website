@@ -149,7 +149,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen}) => {
 		document.body.classList.remove("body-hidden", false);
 
 	}
-	const courseDescription = t(`CoursePage.course${courseIndex}.description`);
+	// const courseDescription = t(`CoursePage.course${courseIndex}.description`);
 
 	return (
 	<div className='Course'>
@@ -208,7 +208,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen}) => {
 			<>
 					<div className="CoursePage__left">
 			<p className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</p>
-			<p className='CoursePage__left-description' dangerouslySetInnerHTML={{ __html: courseDescription }}></p>
+			{/* <p className='CoursePage__left-description' dangerouslySetInnerHTML={{ __html: courseDescription }}></p> */}
 
 
 			<div className="CoursePage__left-box">
