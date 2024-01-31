@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /catalog
+Allow: /projects
+Allow: /privacy-policy
+Allow: /terms
+Allow: /refund
+
+Sitemap: https://brightkids.online/sitemap.xml
