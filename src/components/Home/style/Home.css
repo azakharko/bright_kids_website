@@ -134,8 +134,8 @@ body {
       z-index: 11 !important; }
       .home__header-logo .logo {
         width: 80px;
-        height: 80px;
-        background-image: url(../../main/img/logo.png);
+        height: 70px;
+        background-image: url(../../main/img/logo.svg);
         background-size: cover;
         z-index: 11 !important; }
     .home__header-nav ul {
@@ -256,7 +256,8 @@ body {
   .home__header {
     padding: 30px 80px; }
     .home__header-logo {
-      width: 100px; }
+      width: 100px;
+      height: 85px; }
   .home__main-left .home__title {
     font-style: normal;
     font-weight: 700;
@@ -271,10 +272,12 @@ body {
   .home__header {
     padding: 30px 80px; }
     .home__header-logo {
-      width: 100px; }
+      width: 100px;
+      display: flex;
+      align-items: center; }
       .home__header-logo .logo {
         width: 70px;
-        height: 70px; }
+        height: 63px; }
     .home__header-button {
       height: 50px !important;
       font-size: 18px; }
