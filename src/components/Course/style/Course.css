@@ -67,6 +67,15 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #333333; }
+  .course__secondary-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    text-align: center;
+    margin-top: 25px; }
   .course__buttons {
     margin-top: 50px; }
   .course .swiper {
@@ -278,6 +287,13 @@ body {
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .course__secondary-description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
       line-height: normal;
       letter-spacing: normal;
       color: #333333; } }
