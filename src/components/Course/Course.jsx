@@ -35,9 +35,9 @@ const Course = ({ courseArr, setCourseIndex }) => {
     <div id='course' className='course'>
       <p className='course__title'>{t("CoursePage.title")}</p>
 
-      <p className='course__secondary-description'>Для укр біженців у США - 50% знижки на групові якщо 1 дитина бере 3 і більше курсів, 3-тій курс - 10% знижки 2 дитини з однієї сімʼї в одній групі - 10% знижки 15$ бонусу за кожну дитину для тих хто рекомендує і приводить нових учнів</p>
+      <p className='course__secondary-description'>{t("CoursePage.description1")}</p>
 
-      <p className='course__secondary-description'>Уроки ведуть українською мовою професійні вчителі з України, дітям достатньо розуміти українську, можуть відповідати англійською, сам інтерфейс програми теж англійською</p>
+      <p className='course__secondary-description'>{t("CoursePage.description2")}</p>
 
 
       <div className="course__bg"></div>
