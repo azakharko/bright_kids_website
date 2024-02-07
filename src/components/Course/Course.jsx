@@ -35,11 +35,6 @@ const Course = ({ courseArr, setCourseIndex }) => {
     <div id='course' className='course'>
       <p className='course__title'>{t("CoursePage.title")}</p>
 
-      <p className='course__secondary-description'>{t("CoursePage.description1")}</p>
-
-      <p className='course__secondary-description'>{t("CoursePage.description2")}</p>
-
-
       <div className="course__bg"></div>
 
       <div className="course__box">

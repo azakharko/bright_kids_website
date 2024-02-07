@@ -96,6 +96,11 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 
 	const courseDescription = t(`CoursePage.course${courseIndex}.description`);
 
+	const additionalInfo1 = t("CoursePage.description-discount1");
+	const additionalInfo2 = t("CoursePage.description-discount2");
+	const additionalInfo3 = t("CoursePage.description-discount3");
+	const additionalInfo4 = t("CoursePage.description-discount4");
+
 	return (
 		<div className='Course'>
 			<div className={burgerPopup}></div>
@@ -152,8 +157,15 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 						<div className="CoursePage__left">
 							<p className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</p>
 							<p className='CoursePage__left-description' dangerouslySetInnerHTML={{ __html: courseDescription }}></p>
-
-
+							<p className='CoursePage__left-description'>
+								<ul className=''>
+									<li>{additionalInfo1}</li>
+									<li>{additionalInfo2}</li>
+									<li>{additionalInfo3}</li>
+									<li>{additionalInfo4}</li>
+								</ul>
+							</p>
+							
 							<div className="CoursePage__left-box">
 								<div className="CoursePage__item">
 									<div className="CoursePage__item-img">
@@ -221,9 +233,6 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 									</div>
 
 									<p className="CoursePage__item-text">{t(`CoursePage.price2`)}</p>
-
-
-
 								</div>
 
 							</div>

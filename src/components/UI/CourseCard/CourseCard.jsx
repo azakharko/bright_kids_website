@@ -55,7 +55,8 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 						</svg>
 					)}
 
-					<p className='course__description'>{courseArr.category}</p>
+					<p className='course__description'>{t(`CoursePage.course${index}.category`)}</p>
+					
 				</div>
 
 				<div className="course__left-box">
