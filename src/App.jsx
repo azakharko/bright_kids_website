@@ -5,7 +5,7 @@ import CoursPage from "./components/CoursPage/CoursPage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
 import Terms from "./components/Terms/Terms.jsx";
 import Refund from "./components/Refund/Refund.jsx";
-import { GA4React } from 'ga-4-react';
+// import { GA4React } from 'ga-4-react';
 import Catalog from "./components/Catalog/Catalog.jsx";
 import ProjectStudent from "./components/ProjectStudent/ProjectStudent.jsx";
 
@@ -22,9 +22,6 @@ function App() {
     localStorage.setItem('courseIndex', courseIndex);
   }, [courseIndex]);
 
-
-
-
   return (
     <HashRouter>
       <Routes>
@@ -40,7 +37,7 @@ function App() {
   );
 }
 
-const ga4react = new GA4React("G-NYV7WT0BV3");
-ga4react.initialize();
+// const ga4react = new GA4React("G-NYV7WT0BV3");
+// ga4react.initialize();
 
 export default App;
