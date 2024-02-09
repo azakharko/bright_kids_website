@@ -8,16 +8,16 @@ const Footer = () => {
 
 	const handleScrollToSection = (sectionId) => {
 		if (!sectionId || sectionId === 'top') {
-		  window.scrollTo({ top: 0 });
-		  return;
+			window.scrollTo({ top: 0 });
+			return;
 		}
-	  
+
 		const sectionRef = document.getElementById(sectionId);
 		if (sectionRef) {
-		  sectionRef.scrollIntoView();
+			sectionRef.scrollIntoView();
 		}
-	  };
-	  
+	};
+
 
 	return (
 		<div className='footer' id='footer'>
@@ -37,10 +37,10 @@ const Footer = () => {
 						<Link onClick={() => handleScrollToSection('top')} to={"/refund"}>
 							<p>{t("Footer.subTite3")}</p>
 						</Link>
-						
+
 					</div>
 
-	
+
 				</div>
 			</div>
 
@@ -70,7 +70,6 @@ const Footer = () => {
 
 				<div className="footer__bottom-box">
 					<a target='_blank' href='https://yurii-dev.netlify.app/'>© 2023 Bright Kids Ukrainan Online School: <span id='logo'>the web-site was created 	<div className="logo__yurii"></div></span>
-				
 					</a>
 
 					<div className="footer__sociable-link">

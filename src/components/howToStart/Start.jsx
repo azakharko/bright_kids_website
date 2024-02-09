@@ -85,11 +85,11 @@ const Start = () => {
 
 			<div className="start__buttons">
 				<a target='_blank' rel="noreferrer" href="https://calendar.google.com/calendar/u/0/embed?bgcolor=%23B39DDB&color=%23039BE5&ctz=America%2FChicago&height=600&mode=WEEK&src=YnJpZ2h0a2lkc3NjaG9vbDIwMjBAZ21haWwuY29t&wkst=1">
-					<Button text={t('StartPage.button1')} width={300} height={85} className="start__buttons-button" />
+					<Button id="btn-howtostart-schedule" text={t('StartPage.button1')} width={300} height={85} className="start__buttons-button" />
 				</a>
 
 				<div onClick={() => handleScrollToSection('firstLesson')}>
-					<Button text={t('StartPage.button2')} width={300} height={85} className="start__buttons-button" />
+					<Button id="btn-howtostart-signup" text={t('StartPage.button2')} width={300} height={85} className="start__buttons-button" />
 				</div>
 
 			</div>

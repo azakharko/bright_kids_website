@@ -20,17 +20,17 @@ const Course = ({ courseArr, setCourseIndex }) => {
   const { t } = useTranslation();
 
   const handleScrollToSection = (sectionId) => {
-		if (!sectionId || sectionId === 'top') {
-		  window.scrollTo({ top: 0 });
-		  return;
-		}
-	  
-		const sectionRef = document.getElementById(sectionId);
-		if (sectionRef) {
-		  sectionRef.scrollIntoView();
-		}
-	  };
-    
+    if (!sectionId || sectionId === 'top') {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+
+    const sectionRef = document.getElementById(sectionId);
+    if (sectionRef) {
+      sectionRef.scrollIntoView();
+    }
+  };
+
   return (
     <div id='course' className='course'>
       <p className='course__title'>{t("CoursePage.title")}</p>
@@ -38,7 +38,7 @@ const Course = ({ courseArr, setCourseIndex }) => {
       <div className="course__bg"></div>
 
       <div className="course__box">
-      <Swiper
+        <Swiper
           slidesPerView={3}
           keyboard={{
             enabled: true,
@@ -63,21 +63,21 @@ const Course = ({ courseArr, setCourseIndex }) => {
               slidesPerView: 1,
             },
           }}
-          >
+        >
           {courseArr ? (
-          courseArr.map((course, index) => (
-            <SwiperSlide key={index}>
-              <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
-            </SwiperSlide>
-          ))
-           ) : (
+            courseArr.map((course, index) => (
+              <SwiperSlide key={index}>
+                <CourseCard setCourseIndex={setCourseIndex} index={index} courseArr={course} />
+              </SwiperSlide>
+            ))
+          ) : (
             <p>Loading...</p>
           )}
-      </Swiper>
-   
+        </Swiper>
+
       </div>
       <Link onClick={() => handleScrollToSection('top')} to={"catalog"}>
-        <Button width={300} height={70} className="course__buttons" text={t('CoursePage.button')} />
+        <Button id="btn-show-all-courses" width={300} height={70} className="course__buttons" text={t('CoursePage.button')} />
       </Link>
 
     </div>

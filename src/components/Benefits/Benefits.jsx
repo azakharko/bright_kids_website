@@ -5,8 +5,8 @@ import "./style/Benefits.css";
 import Button from '../UI/Button/Button.jsx';
 
 const Benefits = () => {
-	const { t } = useTranslation();
-  
+  const { t } = useTranslation();
+
   const chartAnimationCallback = useCallback((chartId, animatedNumberId, fromValue, toValue, time, data1, data2) => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -87,7 +87,7 @@ const Benefits = () => {
 
     <div className="benefits">
       <h2 className="benefits__title secondary-title">
-        <span className="title-slash"></span>{t('Benefits.title')} 
+        <span className="title-slash"></span>{t('Benefits.title')}
       </h2>
 
       <div className="benefits__box">
@@ -132,7 +132,7 @@ const Benefits = () => {
 
 
         <div onClick={() => handleScrollToSection('firstLesson')}>
-          <Button width={300} height={70} className="benefits__buttons-button" text={t('Benefits.button2')} />
+          <Button id="btn-register-benefits" width={300} height={70} className="benefits__buttons-button" text={t('Benefits.button2')} />
         </div>
       </div>
     </div>

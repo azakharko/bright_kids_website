@@ -13,24 +13,24 @@ import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 
-const Page = ({courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex}) => {
+const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex }) => {
 	const [cards, setCards] = useState([]);
-  return (
-	<div className='App'>
-		<Home setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr}/>
-		<HomeCard />
-		<Course setCourseIndex={setCourseIndex} courseArr={courseArr}/>
-		<FirstLesson />
-		<HowToStart />
-		<About />
-		<Benefits />
-		<Feedback />
-		<FAQ setCards={setCards} cards={cards}/>
-		<Media />
-		<Ready />
-		<Footer />
-	</div>
-  )
+	return (
+		<div className='App'>
+			<Home setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr} />
+			<HomeCard />
+			<Course setCourseIndex={setCourseIndex} courseArr={courseArr} />
+			<FirstLesson />
+			<HowToStart />
+			<About />
+			<Benefits />
+			<Feedback />
+			<FAQ setCards={setCards} cards={cards} />
+			<Media />
+			<Ready />
+			<Footer />
+		</div>
+	)
 }
 
 export default Page;
