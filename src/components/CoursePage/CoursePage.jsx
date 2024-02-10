@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
-import "./style/CoursPage.css"
+import "./style/CoursePage.css"
 import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';
 import { Link, useParams } from 'react-router-dom';
 
 
-const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
+const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 	const { courseLink } = useParams();
 	const getCourseIndexByLink = (link) => {
 		let map = {}
@@ -109,8 +109,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 				burgerOpen={burgerOpen}
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-				nav2={<Link onClick={hadnleBurger} to={"/projects"}>
-					<li>{t("HomePage.gallery")}</li></Link>}
+				nav2={<Link onClick={hadnleBurger} to={"/projects"}><li>{t("HomePage.gallery")}</li></Link>}
 				nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 			/>
 
@@ -165,7 +164,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 									<li>{additionalInfo4}</li>
 								</ul>
 							</p>
-							
+
 							<div className="CoursePage__left-box">
 								<div className="CoursePage__item">
 									<div className="CoursePage__item-img">
@@ -237,7 +236,7 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 
 							</div>
 							<div onClick={hanldeShow} className="CoursePage__buttons">
-								<Button width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
+								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
 							</div>
 
 						</div>
@@ -255,4 +254,4 @@ const CoursPage = ({ setBurgerOpen, burgerOpen }) => {
 	)
 }
 
-export default CoursPage;
+export default CoursePage;

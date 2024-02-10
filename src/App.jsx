@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Page from "./Page.jsx";
-import CoursPage from "./components/CoursPage/CoursPage.jsx";
+import CoursePage from "./components/CoursePage/CoursePage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
 import Terms from "./components/Terms/Terms.jsx";
 import Refund from "./components/Refund/Refund.jsx";
-// import { GA4React } from 'ga-4-react';
 import Catalog from "./components/Catalog/Catalog.jsx";
 import ProjectStudent from "./components/ProjectStudent/ProjectStudent.jsx";
 
@@ -25,7 +24,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route  path="/course/:courseLink/*" element={<CoursPage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route  path="/course/:courseLink/*" element={<CoursePage courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy" element={<Privacy burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/terms" element={<Terms burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/refund" element={<Refund burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
@@ -36,8 +35,5 @@ function App() {
     </HashRouter>
   );
 }
-
-// const ga4react = new GA4React("G-NYV7WT0BV3");
-// ga4react.initialize();
 
 export default App;
