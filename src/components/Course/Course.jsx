@@ -11,6 +11,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
+
+// test comments
+
+
 import { Keyboard, Pagination, Navigation } from 'swiper/modules';
 import Button from '../UI/Button/Button.jsx';
 import { Link } from 'react-router-dom';
