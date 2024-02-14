@@ -13,7 +13,7 @@
 	},
 	"Form": {
 		"title": "Registration Form",
-		"successfully-send": "Registration Form",
+		"successfully-send": "Submit successfully",
 		"input-placeholder": "Your answer",
 		"inputName": {
 			"subTitle": "Full name",

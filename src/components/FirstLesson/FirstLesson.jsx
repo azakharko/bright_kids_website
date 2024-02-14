@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './style/FirstLesson.css';
 import Button from '../UI/Button/Button';
+import FormPopup from '../UI/PopupForm/FormPopup';
 
 
 const FirstLesson = () => {
@@ -28,7 +29,7 @@ const FirstLesson = () => {
   });
 
 	const [errors, setErrors] = useState({});
-    const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
 
 	const handleChange = (e) => {
@@ -70,7 +71,7 @@ const FirstLesson = () => {
 
 	const sendFormData = async (data) => {
         try {
-            const response = await fetch('http://localhost:3000/api/post', {
+            const response = await fetch('http://localhost:3003/api/post', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -103,6 +104,8 @@ const FirstLesson = () => {
 
   return (
     <div id='firstLesson' className="first-lesson">
+      <FormPopup status={formSubmitted}/>
+
       <div className="CoursePage__form">
           <form onSubmit={handleSubmit2} name="main-form">
             <p className='CoursePage__form-title' style={{ color: formSubmitted ? 'green' : 'black' }}>

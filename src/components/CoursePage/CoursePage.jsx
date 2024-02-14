@@ -5,6 +5,7 @@ import "./style/CoursePage.css"
 import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';
 import { Link, useParams } from 'react-router-dom';
+import FormPopup from '../UI/PopupForm/FormPopup';
 
 
 const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
@@ -88,7 +89,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 
 	const sendFormData = async (data) => {
         try {
-            const response = await fetch('http://localhost:3000/api/post', {
+            const response = await fetch('http://localhost:3003/api/post', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -218,6 +219,8 @@ const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 			</div>
 
 			<div className="CoursePage">
+			<FormPopup status={formSubmitted}/>
+
 				{showForm ? (
 						<div className="CoursePage__form">
 							<form onSubmit={handleSubmit} name="course-form">

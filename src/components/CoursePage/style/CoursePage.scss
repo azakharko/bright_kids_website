@@ -10,7 +10,8 @@ a {
 	width: 100%;
 	height: auto;
 	padding: 80px 100px;
-	@include display-center(space-between, center);
+	@include display-center(center, center);
+
 	&__form {
 		width: 100%;
 		@include display-center(flex-start, center);
