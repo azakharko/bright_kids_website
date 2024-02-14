@@ -71,7 +71,7 @@ const FirstLesson = () => {
 
 	const sendFormData = async (data) => {
         try {
-            const response = await fetch('http://localhost:3003/api/post', {
+            const response = await fetch('https://my-node-app-ub6hoxgggq-uc.a.run.app/api/post', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
