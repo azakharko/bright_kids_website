@@ -11,6 +11,24 @@
 		"signUp": "Sign up for a free trial class",
 		"courseHoverText": "Details of the course"
 	},
+	"Form": {
+		"title": "Registration Form",
+		"successfully-send": "Submit successfully",
+		"input-placeholder": "Your answer",
+		"inputName": {
+			"subTitle": "Full name",
+			"error": "Full name is required"
+		},
+		"inputEmail": {
+			"subTitle": "Contact Email",
+			"error": "Invalid email format",
+			"error2": "Email is required"
+		},
+		"inputMessage": {
+			"subTitle": "Message",
+			"error": "Message is required"
+		}
+	},
 	"HomeCardPage": {
 		"card1": "Courses for kids and adults",
 		"card2": "Online learning",
