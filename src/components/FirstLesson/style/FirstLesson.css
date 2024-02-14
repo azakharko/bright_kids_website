@@ -81,14 +81,6 @@ body {
     width: 100% !important;
     height: 800px;
     z-index: 10; }
-  .first-lesson::after {
-    content: "";
-    width: 140%;
-    height: 140%;
-    background-image: url(../img/bg__line.svg);
-    background-size: cover;
-    position: absolute;
-    z-index: 0; }
 
 @media screen and (max-width: 1350px) {
   .first-lesson {
@@ -118,7 +110,7 @@ body {
       margin-top: 15px; } }
 @media screen and (max-width: 700px) {
   .first-lesson {
-    padding: 0 0px; }
+    padding: 0 30px; }
     .first-lesson iframe {
       height: 900px; }
     .first-lesson__title {

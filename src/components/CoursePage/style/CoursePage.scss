@@ -24,6 +24,7 @@ a {
 		&-title {
 			@include font($black, 48px, 600, normal, normal);
 			margin-bottom: 30px;
+			text-align: center;
 		}
 
 		&-input {
@@ -166,9 +167,6 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-#btn-send-form {
-	width: 100% !important;
-}
 
 .CoursePage {
 	padding: 100px 60px;
@@ -182,6 +180,10 @@ a {
 
 		form {
 			width: 100%;
+		}
+
+		button {
+			width: 100% !important;
 		}
 
 		&-input {

@@ -80,7 +80,8 @@ a {
       line-height: normal;
       letter-spacing: normal;
       color: #333333;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      text-align: center; }
     .CoursePage__form-input {
       margin-top: 20px; }
       .CoursePage__form-input p {
@@ -209,9 +210,6 @@ a {
   .CoursePage__rigth-img img {
     width: 300px; } }
 @media screen and (max-width: 1000px) {
-  #btn-send-form {
-    width: 100% !important; }
-
   .CoursePage {
     padding: 100px 60px;
     flex-direction: column-reverse; }
@@ -226,6 +224,8 @@ a {
         color: #333333; }
       .CoursePage__form form {
         width: 100%; }
+      .CoursePage__form button {
+        width: 100% !important; }
       .CoursePage__form-input {
         width: 100%; }
         .CoursePage__form-input input {
