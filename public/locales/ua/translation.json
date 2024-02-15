@@ -11,6 +11,25 @@
 		"signUp": "Записатися на пробний урок",
 		"courseHoverText": "Деталі курсу"
 	},
+	"Form": {
+		"title": "Форма реєстрації",
+		"successfully-send": "Форма успішно відправлена",
+		"input-placeholder": "Ваша відповідь",
+		"inputName": {
+			"subTitle": "Повне ім'я",
+			"error": "Повне ім'я обов'язкове"
+		},
+		"inputEmail": {
+			"subTitle": "Контактний Email",
+			"error": "Невірний формат Email",
+			"error2": "Email обов'язковий"
+		},
+		"inputMessage": {
+			"subTitle": "Повідомлення",
+			"error": "Повідомлення обов'язкове"
+		}
+	},
+	
 	"HomeCardPage": {
 		"card1": "Курси для дітей та дорослих",
 		"card2": "Онлайн навчання",

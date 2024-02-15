@@ -59,16 +59,84 @@ a {
   height: auto;
   padding: 80px 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
-  .CoursePage .reg-form {
-    width: 100% !important;
-    height: auto;
-    z-index: 10;
-    overflow: hidden;
+  .CoursePage__form {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 140px; }
+    .CoursePage__form form {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+    .CoursePage__form-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333;
+      margin-bottom: 30px;
+      text-align: center; }
+    .CoursePage__form-input {
+      margin-top: 20px; }
+      .CoursePage__form-input p {
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333; }
+      .CoursePage__form-input input {
+        width: 700px;
+        height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #B41D8A;
+        padding: 0 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 7px #cdcdcd; }
+        .CoursePage__form-input input::placeholder {
+          color: #B41D8A; }
+      .CoursePage__form-input textarea {
+        width: 700px;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #B41D8A;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 7px #cdcdcd;
+        resize: none; }
+        .CoursePage__form-input textarea::placeholder {
+          color: #B41D8A; }
+      .CoursePage__form-input .form__error {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: red; }
   .CoursePage iframe {
     width: 100% !important;
     height: 1100px;
@@ -144,33 +212,50 @@ a {
 @media screen and (max-width: 1000px) {
   .CoursePage {
     padding: 100px 60px;
-    flex-direction: column-reverse; }
-    .CoursePage__left {
-      width: 100%;
-      padding-right: 0px; }
-      .CoursePage__left-title {
-        font-size: 36px;
-        text-align: center;
-        margin-top: 25px; }
-      .CoursePage__left-description {
-        width: 100%;
-        text-align: center; }
-      .CoursePage__left-box {
-        gap: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; }
-        .CoursePage__left-box .CoursePage__item {
-          gap: 10px; }
-          .CoursePage__left-box .CoursePage__item p {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #B41D8A; }
-    .CoursePage__rigth-img img {
-      width: 250px; } }
+    flex-direction: column-reverse;
+  }
+
+  .CoursePage__left {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .CoursePage__left-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .CoursePage__left-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .CoursePage__left-box {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .CoursePage__left-box .CoursePage__item {
+    gap: 10px;
+  }
+
+  .CoursePage__left-box .CoursePage__item p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #B41D8A;
+  }
+
+  .CoursePage__rigth-img img {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .CoursePage {
     padding: 60px 30px; } }

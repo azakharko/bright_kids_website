@@ -10,17 +10,71 @@ a {
 	width: 100%;
 	height: auto;
 	padding: 80px 100px;
-	@include display-center(space-between, center);
+	@include display-center(center, center);
 
-	.reg-form {
-		width: 100% !important;
-		height: auto;
-		z-index: 10;
-		overflow: hidden;
-		@include display-center(center, center);
+	&__form {
+		width: 100%;
+		@include display-center(flex-start, center);
+		flex-direction: column;
+		margin-bottom: 140px;
+		form {
+			@include display-center(flex-start, center);
+			flex-direction: column
+		}
 
+		&-title {
+			@include font($black, 48px, 600, normal, normal);
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		&-input {
+			margin-top: 20px;
+
+			p {
+				margin-bottom: 10px;
+				@include font($black, 20px, 400, normal, normal);
+
+			}
+
+			input {
+				width: 700px;
+				height: 70px;
+				@include display-center(flex-start, center);
+				@include font($main, 20px, 700, normal, normal);
+	
+				padding: 0 20px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: 0px 4px 7px rgb(205, 205, 205);
+				&::placeholder {
+					color: $main;
+				}
+	
+			}
+
+			textarea {
+				width: 700px;
+				height: 200px;
+				@include display-center(flex-start, center);
+				@include font($main, 20px, 700, normal, normal);
+	
+				padding: 20px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: 0px 4px 7px rgb(205, 205, 205);
+				resize: none; 
+				&::placeholder {
+					color: $main;
+				}
+			}
+
+			.form__error {
+				margin-top: 10px;
+				@include font(red, 18px, 400, normal, normal);
+			}
+		}
 	}
-
 
 	iframe {
 		width: 100% !important;
@@ -114,10 +168,44 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-	
+
 .CoursePage {
 	padding: 100px 60px;
 	flex-direction: column-reverse;
+
+	&__form {
+		width: 100%;
+		&-title {
+			@include font($black, 32px, 600, normal, normal);
+		}
+
+		form {
+			width: 100%;
+		}
+
+		button {
+			width: 100% !important;
+		}
+
+		&-input {
+			width: 100%;
+
+			input {
+				width: 100%;
+				@include font($main, 18px, 700, normal, normal);
+			}
+
+			textarea {
+				width: 100%;
+				@include font($main, 18px, 700, normal, normal);
+			}
+
+			.form__error {
+				@include font(red, 16px, 400, normal, normal);
+			}
+		}
+	}
+
 	&__left {
 		width: 100%;
 		padding-right: 0px;

@@ -1,0 +1,66 @@
+@import "../../../main/style.scss";
+
+
+.form-popup {
+	width: 450px;
+	height: 100px;
+	background-color:$green;
+	border-radius: 10px;
+	border:  1px solid $white;
+	position: fixed;
+	top: -5%;
+	opacity: 0;
+	z-index: 10;
+	@include display-center(center, center);
+
+	p {
+		@include font($white, 20px, 700, normal, normal);	
+	}
+}
+
+.form-popup--active {
+	animation-name: form-popup;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+	opacity: 1;
+	top: 5%;
+
+	@keyframes form-popup {
+		0% {
+			position: fixed;
+			top: -5%;
+			opacity: 0;
+		}
+
+		20% {
+			position: fixed;
+			top: 5%;
+			opacity: 1;
+		}
+
+		80% {
+			position: fixed;
+			top: 5%;
+			opacity: 1;
+		}
+		100% {
+			position: fixed;
+			top: -5%;
+			opacity: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.form-popup {
+		width: 80%;
+		height: 100px;
+		padding: 30px;
+		margin: 30px;
+		p {
+			@include font($white, 18px, 700, normal, normal);	
+			text-align: center;
+		}
+	}
+	
+}
