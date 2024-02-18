@@ -354,7 +354,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 
 							</div>
 							<div onClick={hanldeShow} className="CoursePage__buttons">
-								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
+								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)} />
 							</div>
 
 						</div>
