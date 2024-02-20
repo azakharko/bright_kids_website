@@ -8,11 +8,11 @@ import Refund from "./components/Refund/Refund.jsx";
 import Catalog from "./components/Catalog/Catalog.jsx";
 import ProjectStudent from "./components/ProjectStudent/ProjectStudent.jsx";
 import { useTranslation } from "react-i18next";
+import i18n from './i18n'; // імпортуємо налаштування i18n
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
   const [courseArr, setCourseArr] = useState([]);
-
   const [courseIndex, setCourseIndex] = useState(() => {
     const storedIndex = localStorage.getItem('courseIndex');
     return storedIndex ? parseInt(storedIndex, 10) : null;
@@ -22,24 +22,30 @@ function App() {
     localStorage.setItem('courseIndex', courseIndex);
   }, [courseIndex]);
 
-  // Додайте функцію для обробки зміни мови та оновлення URL
+  // Функція для обробки зміни мови та оновлення URL
   const handleLanguageChange = (language, pathWithoutLanguage) => {
     const currentUrl = new URL(window.location.href);
 
     if (pathWithoutLanguage.length > 0) {
-        pathWithoutLanguage = pathWithoutLanguage.slice(0, -3);
+      pathWithoutLanguage = pathWithoutLanguage.slice(0, -3);
     }
 
     const searchParams = currentUrl.search;
-    console.log(searchParams);
-
     const newUrl = `${window.location.origin}${pathWithoutLanguage}${searchParams}/${language}`;
-    console.log(newUrl);
-
     window.history.pushState({}, '', newUrl);
-};
 
+    // Змінюємо мову в i18n
+    i18n.changeLanguage(language);
+  };
 
+  // Обробник зміни мови з хешу URL
+  useEffect(() => {
+    const hash = window.location.hash.substr(2); // Відкидаємо "#/" з початку хешу
+    if (hash === 'en' || hash === 'uk') {
+      // Якщо мова в хеші URL - 'en' або 'uk', змінюємо мову в i18n
+      i18n.changeLanguage(hash);
+    }
+  }, []);
 
   return (
     <HashRouter>

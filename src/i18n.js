@@ -6,6 +6,7 @@ import { initReactI18next } from 'react-i18next';
 // Retrieve the selected language from Local Storage
 const storedLanguage = localStorage.getItem('selectedLanguage');
 
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
