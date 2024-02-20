@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Page from "./Page.jsx";
 import CoursePage from "./components/CoursePage/CoursePage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";
@@ -42,9 +42,8 @@ function App() {
 
 
   return (
-    <Router>
+    <HashRouter>
       <Routes>
-
         <Route path="/course/:courseLink/*" element={<CoursePage handleLanguageChange={handleLanguageChange} courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/terms/:language" element={<Terms handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
@@ -53,7 +52,7 @@ function App() {
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
