@@ -42,7 +42,7 @@ function App() {
 
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/course/:courseLink/*" element={<CoursePage handleLanguageChange={handleLanguageChange} courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
@@ -52,7 +52,7 @@ function App() {
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
