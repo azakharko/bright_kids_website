@@ -57,7 +57,7 @@ body {
   border-radius: 10px;
   border: 1px solid #fff;
   position: fixed;
-  top: -5%;
+  top: -15%;
   opacity: 0;
   z-index: 10;
   display: flex;

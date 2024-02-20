@@ -8,7 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 import FormPopup from '../UI/PopupForm/FormPopup';
 
 
-const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
+const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 	const { courseLink } = useParams();
 	const getCourseIndexByLink = (link) => {
 		let map = {}
@@ -190,12 +190,14 @@ const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 			<div className={burgerPopup}></div>
 
 			<Header
+				handleLanguageChange={handleLanguageChange}
 				burgerOpen={burgerOpen}
 				setBurgerOpen={setBurgerOpen}
-				nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-				nav2={<Link onClick={hadnleBurger} to={"/projects"}><li>{t("HomePage.gallery")}</li></Link>}
+				nav1={<li><Link to="/">{t("HomePage.home")}</Link></li>}
+				nav2={<li><Link onClick={hadnleBurger} to={`/projects/${i18n.language}`}>{t("HomePage.gallery")}</Link></li>}
 				nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 			/>
+
 
 			<div className="catalog__link">
 				<div className="link__web">
@@ -208,7 +210,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen }) => {
 					<svg className='link__web-margin' xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
 						<path fillRule="evenodd" clipRule="evenodd" d="M0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.03033 4.46967C6.32322 4.76256 6.32322 5.23744 6.03033 5.53033L2.03033 9.53033C1.73744 9.82322 1.26256 9.82322 0.96967 9.53033C0.676777 9.23744 0.676777 8.76256 0.96967 8.46967L4.43934 5L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967Z" fill="black" />
 					</svg>
-					<Link to={"/catalog"}>
+					<Link to={`/catalog/${i18n.language}`}>
 						<span>{t(`CoursePage.title`)}</span>
 					</Link>
 					<svg className='link__web-margin' xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">

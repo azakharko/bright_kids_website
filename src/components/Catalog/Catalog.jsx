@@ -6,7 +6,7 @@ import "./style/Catalog.css";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-const Catalog = ({ courseArr, setCourseIndex, burgerOpen, setBurgerOpen }) => {
+const Catalog = ({ courseArr, setCourseIndex, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
   const { t } = useTranslation();
@@ -31,6 +31,7 @@ const Catalog = ({ courseArr, setCourseIndex, burgerOpen, setBurgerOpen }) => {
       <div className={burgerPopup}></div>
 
       <Header
+        handleLanguageChange={handleLanguageChange}
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}

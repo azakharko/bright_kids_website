@@ -4,14 +4,14 @@ import "./style/Footer.css"
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	const handleScrollToSection = (sectionId) => {
 		if (!sectionId || sectionId === 'top') {
 			window.scrollTo({ top: 0 });
 			return;
 		}
-
+		
 		const sectionRef = document.getElementById(sectionId);
 		if (sectionRef) {
 			sectionRef.scrollIntoView();
@@ -26,21 +26,18 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<Link onClick={() => handleScrollToSection('top')} to={"/privacy-policy"}>
+						<Link onClick={() => handleScrollToSection('top')} to={`/privacy-policy/${i18n.language}`}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={"/terms"}>
+						<Link onClick={() => handleScrollToSection('top')} to={`/terms/${i18n.language}`}>
 							<p>{t("Footer.subTite2")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={"/refund"}>
+						<Link onClick={() => handleScrollToSection('top')} to={`/refund/${i18n.language}`}>
 							<p>{t("Footer.subTite3")}</p>
 						</Link>
-
 					</div>
-
-
 				</div>
 			</div>
 

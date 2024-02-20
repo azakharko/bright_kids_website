@@ -13,11 +13,11 @@ import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 
-const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex }) => {
+const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex, handleLanguageChange }) => {
 	const [cards, setCards] = useState([]);
 	return (
 		<div className='App'>
-			<Home setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr} />
+			<Home handleLanguageChange={handleLanguageChange} setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr} />
 			<HomeCard />
 			<Course setCourseIndex={setCourseIndex} courseArr={courseArr} />
 			<FirstLesson />

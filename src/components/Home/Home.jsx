@@ -6,7 +6,7 @@ import Header from '../UI/Header/Header.jsx';
 import { Link } from 'react-router-dom';
 
 
-const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
+const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
 	const { t, i18n } = useTranslation();
 
 	const myRef = useRef(null);
@@ -38,7 +38,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 		const pathSegments = window.location.pathname.split('/');
 		const languageFromPath = pathSegments[1];
 
-		if (['en', 'ua'].includes(languageFromPath)) {
+		if (['en', 'uk'].includes(languageFromPath)) {
 			i18n.changeLanguage(languageFromPath);
 			localStorage.setItem('selectedLanguage', languageFromPath);
 		}
@@ -179,11 +179,12 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen }) => {
 			<div className={burgerPopup}></div>
 
 			<Header
+				handleLanguageChange={handleLanguageChange}
 				burgerOpen={burgerOpen}
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<Link onClick={hadnleBurger} to={"/projects"}>
+				nav3={<Link onClick={hadnleBurger} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
 			/>
 

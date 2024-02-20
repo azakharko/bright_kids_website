@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const CourseCard = ({ courseArr, index, setCourseIndex }) => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	index = index + 1;
 
 	const courseOpen = () => {
@@ -26,7 +26,7 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 		<div className="course__box-card" id={index}>
 			<div className="course-hover">
 				<div className="course-hover__button">
-					<Link onClick={() => handleScrollToSection('top')} to={`/course/${courseArr.link}`}>
+					<Link onClick={() => handleScrollToSection('top')} to={`/course/${courseArr.link}/${i18n.language}`}>
 						<button onClick={courseOpen}>{t("HomePage.courseHoverText")}</button>
 					</Link>
 				</div>

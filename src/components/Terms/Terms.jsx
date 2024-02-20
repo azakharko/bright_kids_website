@@ -5,8 +5,8 @@ import Footer from '../Footer/Footer';
 import "./style/Terms.css"
 import { Link } from 'react-router-dom';
 
-const Terms = ({ setBurgerOpen, burgerOpen }) => {
-  const { t } = useTranslation();
+const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
+  const { t, i18n } = useTranslation();
 
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
@@ -37,10 +37,11 @@ const Terms = ({ setBurgerOpen, burgerOpen }) => {
 	  <div className={burgerPopup}></div>
 
       <Header 
+        handleLanguageChange={handleLanguageChange}
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link onClick={hadnleBurger} to={"/projects"}>
+        nav2={<Link onClick={hadnleBurger} to={`/projects/${i18n.language}`}>
 				<li>{t("HomePage.gallery")}</li></Link>}   	
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />

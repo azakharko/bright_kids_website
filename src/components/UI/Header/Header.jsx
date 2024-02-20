@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 
-const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
+const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
   let timerId;
   const myRef = useRef(null);
   const { i18n } = useTranslation();
@@ -26,18 +26,31 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
     myRef.current.scrollIntoView();
   }
 
+  
   const handleChangeLanguage = (e) => {
     clearTimeout(timerId);
     setAnimationPopupOpen(true);
-
+  
     timerId = setTimeout(() => {
       setAnimationPopupOpen(false);
     }, 1600);
-
+  
     const thisLanguage = e.target.value;
     i18n.changeLanguage(thisLanguage);
     localStorage.setItem('selectedLanguage', thisLanguage);
-  }
+  
+    // Отримати поточний URL
+    const currentUrl = new URL(window.location.href);
+
+    // Отримати шлях без мовної частини
+    let pathWithoutLanguage = currentUrl.pathname.replace(/^\/[a-z]{2}\//, '/');
+
+    // Оновити URL з вибраною мовою
+    handleLanguageChange(thisLanguage, pathWithoutLanguage);
+};
+
+  
+  
 
   return (
     <header className="home__header" id='header' ref={myRef}>
@@ -61,14 +74,13 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen }) => {
           {nav1}
           {nav2}
           {nav3}
-
         </ul>
       </nav>
 
       <div className="home__header-box">
         <select value={localStorage.getItem('selectedLanguage')} onChange={handleChangeLanguage}>
           <option value="en">English</option>
-          <option value="ua">Українська</option>
+          <option value="uk">Українська</option>
         </select>
 
         <a target='_blank' rel="noreferrer" href="tel:+15127868874">

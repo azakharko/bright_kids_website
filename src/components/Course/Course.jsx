@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 
 
 const Course = ({ courseArr, setCourseIndex }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleScrollToSection = (sectionId) => {
     if (!sectionId || sectionId === 'top') {
@@ -80,7 +80,7 @@ const Course = ({ courseArr, setCourseIndex }) => {
         </Swiper>
 
       </div>
-      <Link onClick={() => handleScrollToSection('top')} to={"catalog"}>
+      <Link onClick={() => handleScrollToSection('top')} to={`catalog/${i18n.language}`}>
         <Button id="btn-show-all-courses" width={300} height={70} className="course__buttons" text={t('CoursePage.button')} />
       </Link>
 

@@ -36,7 +36,7 @@ import Button from '../UI/Button/Button';
 import { Link } from 'react-router-dom';
 
 
-const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
+const ProjectStudent = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
@@ -66,6 +66,7 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen }) => {
 			<div className={burgerPopup}></div>
 
 		  <Header 
+		  	handleLanguageChange={handleLanguageChange}
 			burgerOpen={burgerOpen}
 			setBurgerOpen={setBurgerOpen}
 			nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
