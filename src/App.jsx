@@ -40,12 +40,13 @@ function App() {
 
   // Обробник зміни мови з хешу URL
   useEffect(() => {
-    const hash = window.location.hash.substr(2); // Відкидаємо "#/" з початку хешу
-    if (hash === 'en' || hash === 'uk') {
-      // Якщо мова в хеші URL - 'en' або 'uk', змінюємо мову в i18n
-      i18n.changeLanguage(hash);
+    const href = window.location.href;
+    if (href.includes("uk")) {
+      i18n.changeLanguage("uk");
+    } else if (href.includes("en")) {
+      i18n.changeLanguage("en");
     }
-  }, []);
+}, []);
 
   return (
     <HashRouter>
