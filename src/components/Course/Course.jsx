@@ -80,7 +80,7 @@ const Course = ({ courseArr, setCourseIndex }) => {
         </Swiper>
 
       </div>
-      <Link onClick={() => handleScrollToSection('top')} to={`catalog/${i18n.language}`}>
+      <Link onClick={() => handleScrollToSection('top')} to={`courses/${i18n.language}`}>
         <Button id="btn-show-all-courses" width={300} height={70} className="course__buttons" text={t('CoursePage.button')} />
       </Link>
 

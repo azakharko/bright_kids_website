@@ -6,31 +6,42 @@ import "./style/Privacy.css"
 import { Link } from 'react-router-dom';
 
 const Privacy = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
-  const { t, i18n } = useTranslation();
+  	const { t, i18n } = useTranslation();
 
-  const handleScrollToSection = (sectionId) => {
-    setBurgerOpen(false);
-    document.body.classList.remove("body-hidden", false);
-
-    if (!sectionId || sectionId === 'top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-
-    const sectionRef = document.getElementById(sectionId);
-    if (sectionRef) {
-      sectionRef.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
-
-
-  const hadnleBurger = () => {
+	const handleScrollToSection = (sectionId) => {
 		setBurgerOpen(false);
 		document.body.classList.remove("body-hidden", false);
 
+		if (!sectionId || sectionId === 'top') {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		return;
+		}
+
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+		sectionRef.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
+  	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
+
+
+	const hadnleBurger = () => {
+			setBurgerOpen(false);
+			document.body.classList.remove("body-hidden", false);
+
 	}
+
+	const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+	};
+
+	const handleBurgerAndLinkClick = () => {
+		hadnleBurger();
+		handleLinkClick();
+	};
+
 
   return (
     <div className='privacy'>
@@ -41,7 +52,7 @@ const Privacy = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link onClick={hadnleBurger}to={`/projects/${i18n.language}`}>
+        nav2={<Link onClick={handleBurgerAndLinkClick}to={`/projects/${i18n.language}`}>
 				<li>{t("HomePage.gallery")}</li></Link>}
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />

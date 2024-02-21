@@ -18,6 +18,11 @@ const Footer = () => {
 		}
 	};
 
+	const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+	};
+
 
 	return (
 		<div className='footer' id='footer'>
@@ -26,15 +31,15 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-						<Link onClick={() => handleScrollToSection('top')} to={`/privacy-policy/${i18n.language}`}>
+					<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/privacy-policy/${i18n.language}`}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={`/terms/${i18n.language}`}>
+						<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/terms/${i18n.language}`}>
 							<p>{t("Footer.subTite2")}</p>
 						</Link>
 
-						<Link onClick={() => handleScrollToSection('top')} to={`/refund/${i18n.language}`}>
+						<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/refund/${i18n.language}`}>
 							<p>{t("Footer.subTite3")}</p>
 						</Link>
 					</div>

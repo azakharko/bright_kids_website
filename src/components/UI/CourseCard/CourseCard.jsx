@@ -22,11 +22,17 @@ const CourseCard = ({ courseArr, index, setCourseIndex }) => {
 		}
 	};
 
+	const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+	};
+
+
 	return (
 		<div className="course__box-card" id={index}>
 			<div className="course-hover">
 				<div className="course-hover__button">
-					<Link onClick={() => handleScrollToSection('top')} to={`/course/${courseArr.link}/${i18n.language}`}>
+					<Link onClick={() => { handleLinkClick(); handleScrollToSection('top')}} to={`/course/${courseArr.link}/${i18n.language}`}>
 						<button onClick={courseOpen}>{t("HomePage.courseHoverText")}</button>
 					</Link>
 				</div>

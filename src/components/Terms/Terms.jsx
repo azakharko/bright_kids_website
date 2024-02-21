@@ -32,6 +32,16 @@ const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 	}
 
+  const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+	};
+
+  const handleBurgerAndLinkClick = () => {
+    hadnleBurger();
+    handleLinkClick();
+  };
+
   return (
     <div className='terms'>
 	  <div className={burgerPopup}></div>
@@ -41,7 +51,7 @@ const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link onClick={hadnleBurger} to={`/projects/${i18n.language}`}>
+        nav2={<Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>
 				<li>{t("HomePage.gallery")}</li></Link>}   	
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
       />

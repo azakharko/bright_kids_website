@@ -15,78 +15,78 @@ function App() {
   const { t } = useTranslation();
 
   const [courseArr, setCourseArr] = useState([
-    {
-      id: 0,
-      title: `${t("CoursePage.course1.title")}`,
-      subTitle: `${t("CoursePage.course1.subTitle")}`,
-      age: `${t("CoursePage.course1.age")}`,
-      category: `${t("CoursePage.course1.category")}`,
-      link: `${t("CoursePage.course1.link")}`
-    },
-    {
-      id: 1,
-      title: `${t("CoursePage.course2.title")}`,
-      subTitle: `${t("CoursePage.course2.subTitle")}`,
-      age: `${t("CoursePage.course2.age")}`,
-      category: `${t("CoursePage.course2.category")}`,
-      link: `${t("CoursePage.course2.link")}`
-    },
-    {
-      id: 2,
-      title: `${t("CoursePage.course3.title")}`,
-      subTitle: `${t("CoursePage.course3.subTitle")}`,
-      age: `${t("CoursePage.course3.age")}`,
-      category: `${t("CoursePage.course3.category")}`,
-      link: `${t("CoursePage.course3.link")}`
-    },
-    {
-      id: 3,
-      title: `${t("CoursePage.course4.title")}`,
-      subTitle: `${t("CoursePage.course4.subTitle")}`,
-      age: `${t("CoursePage.course4.age")}`,
-      category: `${t("CoursePage.course4.category")}`,
-      link: `${t("CoursePage.course4.link")}`
-    },
-    {
-      id: 4,
-      title: `${t("CoursePage.course5.title")}`,
-      subTitle: `${t("CoursePage.course5.subTitle")}`,
-      age: `${t("CoursePage.course5.age")}`,
-      category: `${t("CoursePage.course5.category")}`,
-      link: `${t("CoursePage.course5.link")}`
-    },
-    {
-      id: 5,
-      title: `${t("CoursePage.course6.title")}`,
-      subTitle: `${t("CoursePage.course6.subTitle")}`,
-      age: `${t("CoursePage.course6.age")}`,
-      category: `${t("CoursePage.course6.category")}`,
-      link: `${t("CoursePage.course6.link")}`
-    },
-    {
-      id: 6,
-      title: `${t("CoursePage.course7.title")}`,
-      subTitle: `${t("CoursePage.course7.subTitle")}`,
-      age: `${t("CoursePage.course7.age")}`,
-      category: `${t("CoursePage.course7.category")}`,
-      link: `${t("CoursePage.course7.link")}`
+      {
+        id: 0,
+        title: `${t("CoursePage.course1.title")}`,
+        subTitle: `${t("CoursePage.course1.subTitle")}`,
+        age: `${t("CoursePage.course1.age")}`,
+        category: `${t("CoursePage.course1.category")}`,
+        link: `${t("CoursePage.course1.link")}`
+      },
+      {
+        id: 1,
+        title: `${t("CoursePage.course2.title")}`,
+        subTitle: `${t("CoursePage.course2.subTitle")}`,
+        age: `${t("CoursePage.course2.age")}`,
+        category: `${t("CoursePage.course2.category")}`,
+        link: `${t("CoursePage.course2.link")}`
+      },
+      {
+        id: 2,
+        title: `${t("CoursePage.course3.title")}`,
+        subTitle: `${t("CoursePage.course3.subTitle")}`,
+        age: `${t("CoursePage.course3.age")}`,
+        category: `${t("CoursePage.course3.category")}`,
+        link: `${t("CoursePage.course3.link")}`
+      },
+      {
+        id: 3,
+        title: `${t("CoursePage.course4.title")}`,
+        subTitle: `${t("CoursePage.course4.subTitle")}`,
+        age: `${t("CoursePage.course4.age")}`,
+        category: `${t("CoursePage.course4.category")}`,
+        link: `${t("CoursePage.course4.link")}`
+      },
+      {
+        id: 4,
+        title: `${t("CoursePage.course5.title")}`,
+        subTitle: `${t("CoursePage.course5.subTitle")}`,
+        age: `${t("CoursePage.course5.age")}`,
+        category: `${t("CoursePage.course5.category")}`,
+        link: `${t("CoursePage.course5.link")}`
+      },
+      {
+        id: 5,
+        title: `${t("CoursePage.course6.title")}`,
+        subTitle: `${t("CoursePage.course6.subTitle")}`,
+        age: `${t("CoursePage.course6.age")}`,
+        category: `${t("CoursePage.course6.category")}`,
+        link: `${t("CoursePage.course6.link")}`
+      },
+      {
+        id: 6,
+        title: `${t("CoursePage.course7.title")}`,
+        subTitle: `${t("CoursePage.course7.subTitle")}`,
+        age: `${t("CoursePage.course7.age")}`,
+        category: `${t("CoursePage.course7.category")}`,
+        link: `${t("CoursePage.course7.link")}`
 
-    },
-    {
-      id: 7,
-      title: `${t("CoursePage.course8.title")}`,
-      subTitle: `${t("CoursePage.course8.subTitle")}`,
-      age: `${t("CoursePage.course8.age")}`,
-      category: `${t("CoursePage.course8.category")}`,
-      link: `${t("CoursePage.course8.link")}`
-    },
-    {
-      id: 8,
-      title: `${t("CoursePage.course9.title")}`,
-      subTitle: `${t("CoursePage.course9.subTitle")}`,
-      age: `${t("CoursePage.course9.age")}`,
-      category: `${t("CoursePage.course9.category")}`,
-      link: `${t("CoursePage.course9.link")}`
+      },
+      {
+        id: 7,
+        title: `${t("CoursePage.course8.title")}`,
+        subTitle: `${t("CoursePage.course8.subTitle")}`,
+        age: `${t("CoursePage.course8.age")}`,
+        category: `${t("CoursePage.course8.category")}`,
+        link: `${t("CoursePage.course8.link")}`
+      },
+      {
+        id: 8,
+        title: `${t("CoursePage.course9.title")}`,
+        subTitle: `${t("CoursePage.course9.subTitle")}`,
+        age: `${t("CoursePage.course9.age")}`,
+        category: `${t("CoursePage.course9.category")}`,
+        link: `${t("CoursePage.course9.link")}`
     },
     {
       id: 9,
@@ -141,8 +141,6 @@ function App() {
   }, [courseIndex]);
 
 
-
-
   // Функція для обробки зміни мови та оновлення URL
   const handleLanguageChange = (language, pathWithoutLanguage) => {
     const currentUrl = new URL(window.location.href);
@@ -151,27 +149,22 @@ function App() {
       pathWithoutLanguage = pathWithoutLanguage.slice(0, -3);
     }
 
-    console.log(currentUrl);
-    console.log(pathWithoutLanguage);
-
     const searchParams = currentUrl.search;
     const newUrl = `${window.location.origin}${pathWithoutLanguage}${searchParams}/${language}`;
-    console.log(newUrl);
 
     window.history.pushState({}, '', newUrl);
-    // Змінюємо мову в i18n
     i18n.changeLanguage(language);
   };
 
   // Обробник зміни мови з хешу URL
   useEffect(() => {
-    const href = window.location.href;
-    if (href.includes("uk")) {
+    const { hash } = window.location;
+    if (hash.includes("uk")) {
       i18n.changeLanguage("uk");
-    } else if (href.includes("en")) {
+    } else if (hash.includes("en")) {
       i18n.changeLanguage("en");
     }
-}, []);
+  }, []);
 
   return (
     <HashRouter>
@@ -180,7 +173,7 @@ function App() {
         <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/terms/:language" element={<Terms handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/refund/:language" element={<Refund handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/catalog/:language" element={<Catalog handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/courses/:language" element={<Catalog setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
       </Routes>

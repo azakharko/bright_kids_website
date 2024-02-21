@@ -46,6 +46,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 
 
 	useEffect(() => {
+		console.log(true);
+
 		setCards([
 			{ question: `${t("FAQ.faqTitle1")}`, answer: `${t("FAQ.faqDescirption1")}`, isOpen: true },
 			{ question: `${t("FAQ.faqTitle2")}`, answer: `${t("FAQ.faqDescirption2")}`, isOpen: true },
@@ -56,6 +58,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 			{ question: `${t("FAQ.faqTitle7")}`, answer: `${t("FAQ.faqDescirption7")}`, isOpen: true },
 
 		]);
+
 		setCourseArr([
 			{
 				id: 0,
@@ -171,7 +174,12 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				link: `${t("CoursePage.course14.link")}`
 			},
 		])
-	}, [t])
+	}, [t]);
+
+	const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+	};
 
 	return (
 		<div ref={myRef} className='home' id='home'>
@@ -184,7 +192,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<Link onClick={hadnleBurger} to={`/projects/${i18n.language}`}>
+				nav3={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
 			/>
 

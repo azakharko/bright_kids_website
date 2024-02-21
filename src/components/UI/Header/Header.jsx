@@ -42,15 +42,22 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen, handleLanguageCha
     // Отримати поточний URL
     const currentUrl = new URL(window.location.href);
 
+    console.log(currentUrl)
+
     // Отримати шлях без мовної частини
-    let pathWithoutLanguage = currentUrl.pathname.replace(/^\/[a-z]{2}\//, '/');
+    let pathWithoutLanguage = currentUrl.pathname;
+
+    // Обрізати origin з href
+    let pathLink = currentUrl.href.replace(currentUrl.origin, '');
+
+    // Construct the desired path format
+    pathWithoutLanguage = `${pathLink}`;
 
     // Оновити URL з вибраною мовою
     handleLanguageChange(thisLanguage, pathWithoutLanguage);
 };
 
-  
-  
+
 
   return (
     <header className="home__header" id='header' ref={myRef}>
