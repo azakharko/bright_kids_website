@@ -7,12 +7,19 @@
   <url>
     <loc>https://brightkids.online</loc>
     <lastmod>2024-02-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://brightkids.online/#/catalog</loc>
+    <loc>https://brightkids.online/#/catalog/en</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://brightkids.online/#/catalog/uk</loc>
     <lastmod>2024-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,11 +33,19 @@
   </url>
 
   <url>
-    <loc>https://brightkids.online/#/privacy-policy</loc>
+    <loc>https://brightkids.online/#/privacy-policy/en</loc>
     <lastmod>2023-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://brightkids.online/#/privacy-policy/uk</loc>
+    <lastmod>2023-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <url>
     <loc>https://brightkids.online/#/terms</loc>
     <lastmod>2023-12-26</lastmod>

@@ -1,9 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /#/catalog
-Allow: /#/projects
-Allow: /#/privacy-policy
-Allow: /#/terms
-Allow: /#/refund
+Allow: /#/courses/uk
+Allow: /#/courses/en
+Allow: /#/projects/uk
+Allow: /#/projects/en
+Allow: /#/privacy-pol/uk
+Allow: /#/privacy-pol/en
+Allow: /#/terms/uk
+Allow: /#/terms/en
+Allow: /#/refund/uk
+Allow: /#/refund/en
 
 Sitemap: https://brightkids.online/sitemap.xml

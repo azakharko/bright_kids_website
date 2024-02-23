@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Page from "./Page.jsx";
 import CoursePage from "./components/CoursePage/CoursePage.jsx";
 import Privacy from "./components/Privacy/Privacy.jsx";

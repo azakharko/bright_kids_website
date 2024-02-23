@@ -26,43 +26,31 @@ const Header = ({ nav1, nav2, nav3, burgerOpen, setBurgerOpen, handleLanguageCha
     myRef.current.scrollIntoView();
   }
 
-  
+
   const handleChangeLanguage = (e) => {
     clearTimeout(timerId);
     setAnimationPopupOpen(true);
-  
+
     timerId = setTimeout(() => {
       setAnimationPopupOpen(false);
     }, 1600);
-  
+
     const thisLanguage = e.target.value;
     i18n.changeLanguage(thisLanguage);
     localStorage.setItem('selectedLanguage', thisLanguage);
-  
-    // Отримати поточний URL
     const currentUrl = new URL(window.location.href);
-
-    console.log(currentUrl)
-
-    // Отримати шлях без мовної частини
     let pathWithoutLanguage = currentUrl.pathname;
-
-    // Обрізати origin з href
     let pathLink = currentUrl.href.replace(currentUrl.origin, '');
-
-    // Construct the desired path format
     pathWithoutLanguage = `${pathLink}`;
-
-    // Оновити URL з вибраною мовою
     handleLanguageChange(thisLanguage, pathWithoutLanguage);
-};
+  };
 
 
 
   return (
     <header className="home__header" id='header' ref={myRef}>
       <noscript>
-        <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-KMWP45N2' height='0' width='0' style='display:none;visibility:hidden'></iframe>
+        <iframe title="gtm_frame" src='https://www.googletagmanager.com/ns.html?id=GTM-KMWP45N2' height='0' width='0' style='display:none;visibility:hidden'></iframe>
       </noscript>
 
       <div className={animationPopup}>

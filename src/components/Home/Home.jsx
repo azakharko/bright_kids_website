@@ -27,13 +27,6 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 		}
 	};
 
-	const hadnleBurger = () => {
-		setBurgerOpen(false);
-		document.body.classList.remove("body-hidden", false);
-
-	}
-
-
 	useEffect(() => {
 		const pathSegments = window.location.pathname.split('/');
 		const languageFromPath = pathSegments[1];

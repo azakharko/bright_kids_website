@@ -11,7 +11,7 @@ const Footer = () => {
 			window.scrollTo({ top: 0 });
 			return;
 		}
-		
+
 		const sectionRef = document.getElementById(sectionId);
 		if (sectionRef) {
 			sectionRef.scrollIntoView();
@@ -20,7 +20,7 @@ const Footer = () => {
 
 	const handleLinkClick = () => {
 		const currentUrl = new URL(window.location.origin);
-		window.history.pushState({}, '', currentUrl);	
+		window.history.pushState({}, '', currentUrl);
 	};
 
 
@@ -31,15 +31,15 @@ const Footer = () => {
 
 				<div className="footer__box-container">
 					<div className="footer__text">
-					<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/privacy-policy/${i18n.language}`}>
+						<Link onClick={() => { handleLinkClick(); handleScrollToSection('top') }} to={`/privacy-policy/${i18n.language}`}>
 							<p>{t("Footer.subTite1")}</p>
 						</Link>
 
-						<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/terms/${i18n.language}`}>
+						<Link onClick={() => { handleLinkClick(); handleScrollToSection('top') }} to={`/terms/${i18n.language}`}>
 							<p>{t("Footer.subTite2")}</p>
 						</Link>
 
-						<Link onClick={() => {handleLinkClick(); handleScrollToSection('top')}} to={`/refund/${i18n.language}`}>
+						<Link onClick={() => { handleLinkClick(); handleScrollToSection('top') }} to={`/refund/${i18n.language}`}>
 							<p>{t("Footer.subTite3")}</p>
 						</Link>
 					</div>
@@ -71,7 +71,9 @@ const Footer = () => {
 				<div className="footer__bottom-line"></div>
 
 				<div className="footer__bottom-box">
-					<a target='_blank' href='https://yurii-dev.netlify.app/'>© 2023 Bright Kids Ukrainan Online School: <span id='logo'>the web-site was created 	<div className="logo__yurii"></div></span>
+					<a target='_blank' rel="noreferrer" href='https://yurii-dev.netlify.app/'>
+						© 2023 Bright Kids Ukrainian Online School
+						<span id='logo'>the web-site was created 	<div className="logo__yurii"></div></span>
 					</a>
 
 					<div className="footer__sociable-link">
