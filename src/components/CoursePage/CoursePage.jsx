@@ -286,7 +286,7 @@
 								<p className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</p>
 								<p className='CoursePage__left-description' dangerouslySetInnerHTML={{ __html: courseDescription }}></p>
 								<p className='CoursePage__left-description'>
-									<ul className=''>
+									<ul className='CoursePage__left-discount'>
 										<li>{additionalInfo1}</li>
 										<li>{additionalInfo2}</li>
 										<li>{additionalInfo3}</li>
