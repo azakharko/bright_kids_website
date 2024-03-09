@@ -224,6 +224,10 @@ a {
   margin-top: 25px;
 }
 
+.CoursePage__left-description li {
+  list-style: inside;
+}
+
 .CoursePage__left-box {
   width: 100%;
   display: flex;
