@@ -188,7 +188,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 	const handleLinkClick = () => {
 		const currentUrl = new URL(window.location.origin);
-		window.history.pushState({}, '', currentUrl);	
+		window.history.pushState({}, '', currentUrl);
 	};
 
 	const handleBurgerAndLinkClick = () => {
@@ -201,14 +201,14 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 	const keywordsUkrainian = "курси української мови онлайн, уроки української мови для іноземців, навчання української мови онлайн, українська мова онлайн, українська мова для дітей, українська для початківців";
 
 	const [keywords, setKeywords] = useState('');
-	const [description, setDescription] = useState('');	
+	const [description, setDescription] = useState('');
 
 	useEffect(() => {
 		setKeywords(i18n.language === 'en' ? keywordsEnglish : keywordsUkrainian);
 		setDescription(i18n.language === 'en' ? "Study Ukrainian language with teachers from Ukraine. Effective language lessons for beginners, kids, adults. Courses for all levels. Learn Ukrainian Online" : "Уроки української мови онлайн з викладачами з України. Ефективне навчання для початківців, іноземців, дітей та дорослих. Курси для всіх рівнів. Перше заняття безкоштовне");
 	}, [i18n.language]);
 
-	
+
 	return (
 		<div className='Course'>
 			<div className={burgerPopup}></div>
@@ -257,56 +257,56 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 			</div>
 
 			<div className="CoursePage">
-			<FormPopup status={formSubmitted}/>
+				<FormPopup status={formSubmitted} />
 
 				{showForm ? (
-						<div className="CoursePage__form">
-							<form onSubmit={handleSubmit} name="course-form">
+					<div className="CoursePage__form">
+						<form onSubmit={handleSubmit} name="course-form">
 							<p className='CoursePage__form-title' style={{ color: formSubmitted ? 'green' : 'black' }}>
-								{formSubmitted ? 
+								{formSubmitted ?
 									t(`Form.successfully-send`)
-								: 								
+									:
 									t(`Form.title`)
 								}
 							</p>
-								<div className="CoursePage__form-input">
-									<p>{t(`Form.inputName.subTitle`)}</p>
-									<input
-										type="text"
-										name='name'
-										value={formData.name}
-										onChange={handleChange}
-										placeholder={t(`Form.input-placeholder`)}
-									/>
-									{errors.name && <p className='form__error'>{errors.name}</p>}
-								</div>
+							<div className="CoursePage__form-input">
+								<p>{t(`Form.inputName.subTitle`)}</p>
+								<input
+									type="text"
+									name='name'
+									value={formData.name}
+									onChange={handleChange}
+									placeholder={t(`Form.input-placeholder`)}
+								/>
+								{errors.name && <p className='form__error'>{errors.name}</p>}
+							</div>
 
-								<div className="CoursePage__form-input">
-									<p>{t(`Form.inputEmail.subTitle`)}</p>
-									<input
-										type="text"
-										name='email'
-										value={formData.email}
-										onChange={handleChange}
-										placeholder={t(`Form.input-placeholder`)}
-									/>
-									{errors.email && <p className='form__error'>{errors.email}</p>}
-								</div>
+							<div className="CoursePage__form-input">
+								<p>{t(`Form.inputEmail.subTitle`)}</p>
+								<input
+									type="text"
+									name='email'
+									value={formData.email}
+									onChange={handleChange}
+									placeholder={t(`Form.input-placeholder`)}
+								/>
+								{errors.email && <p className='form__error'>{errors.email}</p>}
+							</div>
 
-								<div className="CoursePage__form-input">
-									<p>{t(`Form.inputMessage.subTitle`)}</p>
-									<textarea
-										name='message'
-										value={formData.message}
-										onChange={handleChange}
-										placeholder={t(`Form.input-placeholder`)}
-									/>
-									{errors.message && <p className='form__error'>{errors.message}</p>}
-								</div>
+							<div className="CoursePage__form-input">
+								<p>{t(`Form.inputMessage.subTitle`)}</p>
+								<textarea
+									name='message'
+									value={formData.message}
+									onChange={handleChange}
+									placeholder={t(`Form.input-placeholder`)}
+								/>
+								{errors.message && <p className='form__error'>{errors.message}</p>}
+							</div>
 
-								<Button type="submit" id="btn-send-form" width={700} height={70} className="course__buttons" text={t("ReadyPage.trialLessonButton")} />
-							</form>
-						</div>
+							<Button type="submit" id="btn-send-form" width={700} height={70} className="course__buttons" text={t("ReadyPage.trialLessonButton")} />
+						</form>
+					</div>
 				) : (
 					<>
 						<div className="CoursePage__left">
