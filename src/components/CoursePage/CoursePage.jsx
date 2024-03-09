@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import { render, screen } from '@testing-library/react';
 import "./style/CoursePage.css"
 import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';

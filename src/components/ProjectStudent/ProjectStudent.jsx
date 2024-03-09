@@ -3,6 +3,7 @@ import './style/ProjectStudent.css'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import Footer from '../Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 import img1 from "./img/img1.png";
 import img2 from "./img/img2.png";
@@ -64,7 +65,10 @@ const ProjectStudent = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => 
   return (
 	<div id="gallery" className='gallery'>
 			<div className={burgerPopup}></div>
-
+			<Helmet>
+				<title>Bright Kids Ukrainian Online School</title>
+			</Helmet>
+			
 		  <Header 
 		  	handleLanguageChange={handleLanguageChange}
 			burgerOpen={burgerOpen}

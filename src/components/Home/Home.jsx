@@ -4,6 +4,7 @@ import "./style/Home.css"
 import Button from '../UI/Button/Button.jsx';
 import Header from '../UI/Header/Header.jsx';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
@@ -188,6 +189,10 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				nav3={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
 			/>
+
+			<Helmet>
+				<title>Bright Kids Ukrainian Online School</title>
+			</Helmet>
 
 			<main className="home__main">
 				<div className="home__main-left">

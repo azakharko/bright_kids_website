@@ -4,6 +4,7 @@ import Header from '../UI/Header/Header';
 import Footer from '../Footer/Footer';
 import "./style/Terms.css"
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   const { t, i18n } = useTranslation();
@@ -45,6 +46,9 @@ const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   return (
     <div className='terms'>
 	  <div className={burgerPopup}></div>
+      <Helmet>
+				<title>Bright Kids Ukrainian Online School</title>
+			</Helmet>
 
       <Header 
         handleLanguageChange={handleLanguageChange}

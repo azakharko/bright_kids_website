@@ -4,6 +4,7 @@ import Header from '../UI/Header/Header';
 import Footer from '../Footer/Footer';
 import "./style/Refund.css"
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   const { t, i18n } = useTranslation();
@@ -44,6 +45,9 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   return (
     <div className='refund'>
       <div className={burgerPopup}></div>
+      <Helmet>
+				<title>Bright Kids Ukrainian Online School</title>
+			</Helmet>
       
       <Header 
         handleLanguageChange={handleLanguageChange}
