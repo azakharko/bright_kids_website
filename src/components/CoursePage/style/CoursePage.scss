@@ -6,10 +6,13 @@ a {
 	color: $black;
 }
 
+
+
 .CoursePage {
 	width: 100%;
 	height: auto;
 	padding: 80px 100px;
+	padding-top: 20px;
 	@include display-center(center, center);
 
 	&__form {
@@ -130,15 +133,154 @@ a {
 
 		&-img {
 			img {
-				width: 400px;
+				width: 250px;
 			}
 		}
 	}
 
 }
+
+	
+
+.CoursePage__specific {
+	flex-direction: column-reverse;
+
+	.CoursePage__left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.CoursePage__left-subTitle2 {
+			text-align: center !important;
+		}
+
+		.CoursePage__left-discount {
+			li {
+				list-style: inside;
+				text-align: center;
+			}
+		}
+
+		.CoursePage__left-title {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+
+		.CoursePage__left-description {
+			width: 100%;
+
+			p {
+				font-weight: 600;
+				text-align: center;
+			}
+
+			h1 {
+				font-weight: 600;
+				text-align: center;
+				font-size: 24px;
+			}
+
+			h2 {
+				color: $main;
+				font-size: 24px;
+				font-weight: 600;
+
+			}
+
+
+			div {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				padding-left: 0px;
+				padding-right: 0px;
+				margin-left: 0px;
+				margin-right: 0px;
+				gap: 20px;
+
+				
+				ul {
+					margin-top: 10px;
+					
+
+					p {
+						text-align: start;
+						font-weight: 600;
+						color: $main;
+					}
+					li {
+						margin-top: 5px;
+						margin-bottom: 10px;
+						list-style: inside;
+						
+					}
+				}
+			}
+		}
+		
+		.CoursePage__left-discount {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.CoursePage__left-box {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			p {
+				text-align: center;
+			}
+		}
+
+		.CoursePage__buttons {
+			display: flex;
+			justify-content: center;
+		}
+
+
+	
+
+		&-containers {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include font($main, 20px, 500, normal, normal);
+
+			ul {
+				display: flex;
+				gap: 50px;
+
+				li {
+				list-style: circle;
+				text-align: center;
+
+				}
+			}
+
+		}
+	}
+
+	.CoursePage__right {
+		width: 100%;
+		padding-right: 0px;
+	}
+}
+
+
+
+
+
 @media screen and (max-width: 1350px) {
 	.CoursePage {
 		padding: 100px 80px;
+		padding-top: 20px;
+
 	}
 }
 
@@ -171,6 +313,7 @@ a {
 
 .CoursePage {
 	padding: 100px 60px;
+	padding-top: 20px;
 	flex-direction: column-reverse;
 
 	&__form {
@@ -244,11 +387,82 @@ a {
 
 }
 
+
+.CoursePage__specific {
+	.CoursePage__left {
+		.CoursePage__left-description {
+
+			h2 {
+				text-align: start;
+			}
+			div {
+				ul {
+					li {
+						text-align: start;
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
 }
 
 @media screen and (max-width: 700px) {
 	.CoursePage {
 		padding: 60px 30px;
+		padding-top: 20px;
+	}
+
+	.CoursePage__specific {
+		.CoursePage__left {
+
+			.CoursePage__left-title {
+				font-size: 28px;
+			}
+
+			&-containers {
+				width: 80%;
+				margin-top: 20px;
+				ul {
+					flex-direction: column;
+					gap: 20px;
+				}
+			}
+			.CoursePage__left-description {
+				h2 {
+					text-align: center;
+				}
+				div {
+					flex-direction: column;
+					ul {
+						p {
+							text-align: center;
+						}
+						li {
+							text-align: center;
+							
+						}
+					}
+				}
+			}
+
+			
+		.CoursePage__left-box {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			p {
+				text-align: center;
+				width: 100% !important;
+			}
+		}
+		}
 	}
 
 }

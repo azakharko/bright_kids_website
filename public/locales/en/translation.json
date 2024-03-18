@@ -55,7 +55,7 @@
 		"price1": "Classes in small groups- $13 per 1 hour class",
 		"price2": "Individual classes at time which works best for the student - $20 per 45min class",
 		"button": "View more",
-		"button2": "Apply",
+		"button2": "Apply now",
 		"title3": "Courses",
 		"description-discount1": "for Ukrainian refugees in the USA - 50% discount for group classes",
 		"description-discount2": "if 1 child takes 3 or more courses - 10% discount for the 3rd course ",
@@ -65,12 +65,16 @@
 		"course1": {
 			"title": "Ukrainian Language Course",
 			"subTitle": "Ukrainian",
-			"description": "Study ukrainian language with teachers from Ukraine. We offer effective language lessons for beginners, kids and adults. Learn Ukrainian Online with us from the comfort of your home. <br/> <br/> Ready to dive into the fascinating world of Ukrainian language learning? Look no further Our comprehensive online Ukrainian courses are designed for all levels <br/> <br/> 📚 Here's what we offer: <br/> <br/><ul><li> <b style='font-weight: 600;'> Study Ukrainian Language:</b> We help you study Ukrainian language effectively, covering essential vocabulary, grammar, and conversation skills.</li> <li> <b style='font-weight: 600;'>Learn Ukrainian Online:</b> Access our user-friendly online platform from anywhere in the world and learn at your own pace, with flexible scheduling to fit your busy lifestyle.</li> <li> <b style='font-weight: 600;'>Expert Ukrainian Teachers:</b> Learn from native-speaking Ukrainian teachers who are passionate about sharing their language and culture with learners like you.</li> <li> <b style='font-weight: 600;'>Ukrainian Language Classes:</b> Join our interactive classes specifically designed for for all levels starting from begginer’s level.</li> <li> <b style='font-weight: 600;'>Online Ukrainian Course:</b> Our online Ukrainian course provides a structured learning experience, guiding you through all the fundamentals of the language in a fun and engaging way starting from basic Ukrainian language level to advanced level of comprehension.</li></ul> <br/> Don't miss the opportunity to learn to speak Ukrainian. Enroll now and embark on your journey to mastering Ukrainian!",
+		 	"description": "<p className='CoursePage__left-subTitle' >Study ukrainian language with teachers from Ukraine. We offer effective language lessons for beginners, kids and adults. Learn Ukrainian Online with us from the comfort of your home.</p> <br/>          <div>    <ul>    <h2>Why you need to choose our Ukrainian language online classes</h2> <li>We offer engaging, fun, interactive online classes</li><li>Children attend our classes with high iterest and motivation</li><li>We offer group and individual classes</li><li>We have the best teachers</li><li>Our schedule is flexible</li></ul>      <ul>    <h2>How the enrolment looks like</h2> <li>Submit the form</li><li>Tell us your level of Ukrainian Language and your time zone</li><li>Attend free trial class in a group or individual class</li><li>Prepay 10 classes</li><li>Enjoy learning Ukrainian language</li></ul>            </div>             <br/>  <br/>    <div style='flex-direction: column;' className='text-box'>  <h2 style='color: #B41D8A; text-align: center;' className='CoursePage__left-subTitle22'> 📚 Here's what we offer: </h2>  <ul><li> <b style='font-weight: 600;'> Study Ukrainian Language:</b> We help you study Ukrainian language effectively, covering essential vocabulary, grammar, and conversation skills.</li> <li> <b style='font-weight: 600;'>Learn Ukrainian Online:</b> Access our user-friendly online platform from anywhere in the world and learn at your own pace, with flexible scheduling to fit your busy lifestyle.</li> <li> <b style='font-weight: 600;'>Expert Ukrainian Teachers:</b> Learn from native-speaking Ukrainian teachers who are passionate about sharing their language and culture with learners like you.</li> <li> <b style='font-weight: 600;'>Ukrainian Language Classes:</b> Join our interactive classes specifically designed for for all levels starting from begginer’s level.</li> <li> <b style='font-weight: 600;'>Online Ukrainian Course:</b> Our online Ukrainian course provides a structured learning experience, guiding you through all the fundamentals of the language in a fun and engaging way starting from basic Ukrainian language level to advanced level of comprehension.</li></ul> </div> <br/> ",
+			"subTitle2": "Our discounts",
+			"subTitle3": "Free trial classes in a group * all levels of comprehension",
+			"subTitle4": "30 lessons per each level, transalte to ukraine",
 			"age": "4+",
 			"category": "group/individual",
 			"duration": "1 hour",
 			"needs": "What a student needs: a notebook and a pencil",
 			"link": "ukrainian-language"
+
 		},
 		"course2": {
 			"title": "Chess",

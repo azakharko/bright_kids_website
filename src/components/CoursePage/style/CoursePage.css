@@ -1,57 +1,41 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-:focus,
-:active {
-  outline: none;
-}
+:focus, :active {
+  outline: none; }
 
-a:focus,
-a:active {
-  outline: none;
-}
+a:focus, a:active {
+  outline: none; }
 
-input,
-button,
-textarea {
-  font-family: inherit;
-}
+input, button, textarea {
+  font-family: inherit; }
 
 button {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 button::-moz-focus-inner {
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
-a,
-a:visited {
-  text-decoration: none;
-}
+a, a:visited {
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul li {
-  list-style: none;
-}
+  list-style: none; }
 
 .body-hidden {
   max-height: 100vh;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 body {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 .link__web {
   font-style: normal;
@@ -62,383 +46,375 @@ body {
   color: #333333;
   cursor: pointer;
   display: flex;
-  align-items: center;
-}
-
-.link__web-margin {
-  margin: 0 10px;
-}
+  align-items: center; }
+  .link__web-margin {
+    margin: 0 10px; }
 
 a {
   text-decoration: none;
-  color: #333333;
-}
+  color: #333333; }
 
 .CoursePage {
   width: 100%;
   height: auto;
   padding: 80px 100px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+  .CoursePage__form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 140px; }
+    .CoursePage__form form {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+    .CoursePage__form-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333;
+      margin-bottom: 30px;
+      text-align: center; }
+    .CoursePage__form-input {
+      margin-top: 20px; }
+      .CoursePage__form-input p {
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333; }
+      .CoursePage__form-input input {
+        width: 700px;
+        height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #B41D8A;
+        padding: 0 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 7px #cdcdcd; }
+        .CoursePage__form-input input::placeholder {
+          color: #B41D8A; }
+      .CoursePage__form-input textarea {
+        width: 700px;
+        height: 200px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #B41D8A;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 7px #cdcdcd;
+        resize: none; }
+        .CoursePage__form-input textarea::placeholder {
+          color: #B41D8A; }
+      .CoursePage__form-input .form__error {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: red; }
+  .CoursePage iframe {
+    width: 100% !important;
+    height: 1100px;
+    z-index: 10; }
+  .CoursePage__buttons {
+    width: 100%; }
+  .CoursePage__left {
+    width: 60%;
+    padding-right: 35px; }
+    .CoursePage__left-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: calc(10px + 2vw);
+      line-height: normal;
+      letter-spacing: normal;
+      color: #B41D8A; }
+    .CoursePage__left-description {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333;
+      margin-top: 25px; }
+    .CoursePage__left-box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      gap: 30px; }
+      .CoursePage__left-box .CoursePage__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px; }
+        .CoursePage__left-box .CoursePage__item svg {
+          position: relative;
+          top: 3px; }
+        .CoursePage__left-box .CoursePage__item p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #B41D8A; }
+  .CoursePage__rigth {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .CoursePage__rigth-img img {
+      width: 250px; }
 
-.CoursePage__form {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 140px;
-}
-
-.CoursePage__form form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-
-.CoursePage__form-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #333333;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.CoursePage__form-input {
-  margin-top: 20px;
-}
-
-.CoursePage__form-input p {
-  margin-bottom: 10px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #333333;
-}
-
-.CoursePage__left-discount {
-  border: 1px solid green;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: lightcyan;
-}
-
-.CoursePage__left-discount li {
-  list-style: inside;
-}
-
-.CoursePage__form-input input {
-  width: 700px;
-  height: 70px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #B41D8A;
-  padding: 0 20px;
-  border: none;
-  border-radius: 7px;
-  box-shadow: 0px 0px 4px #cdcdcd;
-}
-
-.CoursePage__form-input input::placeholder {
-  color: #B41D8A;
-}
-
-.CoursePage__form-input textarea {
-  width: 700px;
-  height: 200px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #B41D8A;
-  padding: 20px;
-  border: none;
-  border-radius: 7px;
-  box-shadow: 0px 0px 4px #cdcdcd;
-  resize: none;
-}
-
-.CoursePage__form-input textarea::placeholder {
-  color: #B41D8A;
-}
-
-.CoursePage__form-input .form__error {
-  margin-top: 10px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: red;
-}
-
-.CoursePage iframe {
-  width: 100% !important;
-  height: 1100px;
-  z-index: 10;
-}
-
-.CoursePage__buttons {
-  width: 100%;
-}
-
-.CoursePage__left {
-  width: 60%;
-  padding-right: 35px;
-}
-
-.CoursePage__left-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: calc(10px + 2vw);
-  line-height: normal;
-  letter-spacing: normal;
-  color: #B41D8A;
-}
-
-.CoursePage__left-description {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #333333;
-  margin-top: 25px;
-}
-
-.CoursePage__left-description li {
-  list-style: inside;
-}
-
-.CoursePage__left-box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 30px;
-}
-
-.CoursePage__left-box .CoursePage__item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-}
-
-.CoursePage__left-box .CoursePage__item svg {
-  position: relative;
-  top: 3px;
-}
-
-.CoursePage__left-box .CoursePage__item p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #B41D8A;
-}
-
-.CoursePage__rigth {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.CoursePage__rigth-img img {
-  width: 400px;
-}
+.CoursePage__specific {
+  flex-direction: column-reverse; }
+  .CoursePage__specific .CoursePage__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-subTitle2 {
+      text-align: center !important; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-discount li {
+      list-style: inside;
+      text-align: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-title {
+      text-align: center;
+      margin-top: 50px; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-description {
+      width: 100%; }
+      .CoursePage__specific .CoursePage__left .CoursePage__left-description p {
+        font-weight: 600;
+        text-align: center; }
+      .CoursePage__specific .CoursePage__left .CoursePage__left-description h1 {
+        font-weight: 600;
+        text-align: center;
+        font-size: 24px; }
+      .CoursePage__specific .CoursePage__left .CoursePage__left-description h2 {
+        color: #B41D8A;
+        font-size: 24px;
+        font-weight: 600; }
+      .CoursePage__specific .CoursePage__left .CoursePage__left-description div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 20px; }
+        .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul {
+          margin-top: 10px; }
+          .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul p {
+            text-align: start;
+            font-weight: 600;
+            color: #B41D8A; }
+          .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul li {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            list-style: inside; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-discount {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      .CoursePage__specific .CoursePage__left .CoursePage__left-box p {
+        text-align: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__buttons {
+      display: flex;
+      justify-content: center; }
+    .CoursePage__specific .CoursePage__left-containers {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #B41D8A; }
+      .CoursePage__specific .CoursePage__left-containers ul {
+        display: flex;
+        gap: 50px; }
+        .CoursePage__specific .CoursePage__left-containers ul li {
+          list-style: circle;
+          text-align: center; }
+  .CoursePage__specific .CoursePage__right {
+    width: 100%;
+    padding-right: 0px; }
 
 @media screen and (max-width: 1350px) {
   .CoursePage {
     padding: 100px 80px;
-  }
-}
-
+    padding-top: 20px; } }
 @media screen and (max-width: 1250px) {
   .CoursePage__left {
     width: 60%;
-    padding-right: 35px;
-  }
-
-  .CoursePage__left-description {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #333333;
-  }
-
-  .CoursePage__left-box {
-    gap: 20px;
-  }
-
+    padding-right: 35px; }
+    .CoursePage__left-description {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333; }
+    .CoursePage__left-box {
+      gap: 20px; }
   .CoursePage__rigth-img img {
-    width: 300px;
-  }
-}
-
+    width: 300px; } }
 @media screen and (max-width: 1000px) {
   .CoursePage {
     padding: 100px 60px;
-    flex-direction: column-reverse;
-  }
+    padding-top: 20px;
+    flex-direction: column-reverse; }
+    .CoursePage__form {
+      width: 100%; }
+      .CoursePage__form-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333; }
+      .CoursePage__form form {
+        width: 100%; }
+      .CoursePage__form button {
+        width: 100% !important; }
+      .CoursePage__form-input {
+        width: 100%; }
+        .CoursePage__form-input input {
+          width: 100%;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #B41D8A; }
+        .CoursePage__form-input textarea {
+          width: 100%;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #B41D8A; }
+        .CoursePage__form-input .form__error {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: normal;
+          letter-spacing: normal;
+          color: red; }
+    .CoursePage__left {
+      width: 100%;
+      padding-right: 0px; }
+      .CoursePage__left-title {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 25px; }
+      .CoursePage__left-description {
+        width: 100%;
+        text-align: center; }
+      .CoursePage__left-box {
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+        .CoursePage__left-box .CoursePage__item {
+          gap: 10px; }
+          .CoursePage__left-box .CoursePage__item p {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #B41D8A; }
+    .CoursePage__rigth-img img {
+      width: 250px; }
 
-  .CoursePage__form {
-    width: 100%;
-  }
-
-  .CoursePage__form-title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #333333;
-  }
-
-  .CoursePage__form form {
-    width: 100%;
-  }
-
-  .CoursePage__form button {
-    width: 100% !important;
-  }
-
-  .CoursePage__form-input {
-    width: 100%;
-  }
-
-  .CoursePage__form-input input {
-    width: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #B41D8A;
-  }
-
-  .CoursePage__form-input textarea {
-    width: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #B41D8A;
-  }
-
-  .CoursePage__form-input .form__error {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: red;
-  }
-
-  .CoursePage__left {
-    width: 100%;
-    padding-right: 0px;
-  }
-
-  .CoursePage__left-title {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 25px;
-  }
-
-  .CoursePage__left-description {
-    width: 100%;
-    text-align: center;
-  }
-
-  .CoursePage__left-box {
-    gap: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .CoursePage__left-box .CoursePage__item {
-    gap: 10px;
-  }
-
-  .CoursePage__left-box .CoursePage__item p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #B41D8A;
-  }
-
-  .CoursePage__rigth-img img {
-    width: 250px;
-  }
-}
-
+  .CoursePage__specific .CoursePage__left .CoursePage__left-description h2 {
+    text-align: start; }
+  .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul li {
+    text-align: start; } }
 @media screen and (max-width: 700px) {
   .CoursePage {
     padding: 60px 30px;
-  }
-}
+    padding-top: 20px; }
 
+  .CoursePage__specific .CoursePage__left .CoursePage__left-title {
+    font-size: 28px; }
+  .CoursePage__specific .CoursePage__left-containers {
+    width: 80%;
+    margin-top: 20px; }
+    .CoursePage__specific .CoursePage__left-containers ul {
+      flex-direction: column;
+      gap: 20px; }
+  .CoursePage__specific .CoursePage__left .CoursePage__left-description h2 {
+    text-align: center; }
+  .CoursePage__specific .CoursePage__left .CoursePage__left-description div {
+    flex-direction: column; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul p {
+      text-align: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-description div ul li {
+      text-align: center; }
+  .CoursePage__specific .CoursePage__left .CoursePage__left-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__left-box p {
+      text-align: center;
+      width: 100% !important; } }
 @media screen and (max-width: 530px) {
   .CoursePage__left-title {
-    font-size: 32px;
-  }
-
+    font-size: 32px; }
   .CoursePage__left-description {
-    font-size: 18px;
-  }
-
+    font-size: 18px; }
   .CoursePage__left-box .CoursePage__item {
-    flex-direction: column;
-  }
-
-  .CoursePage__left-box .CoursePage__item p {
-    width: 80%;
-    font-size: 16px;
-    text-align: center;
-  }
-
+    flex-direction: column; }
+    .CoursePage__left-box .CoursePage__item p {
+      width: 80%;
+      font-size: 16px;
+      text-align: center; }
   .CoursePage__left .CoursePage__buttons {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-
-  .CoursePage__left .CoursePage__buttons .course__buttons {
-    width: 100%;
-  }
-
+    align-items: center; }
+    .CoursePage__left .CoursePage__buttons .course__buttons {
+      width: 100%; }
   .CoursePage__rigth-img img {
-    width: 200px;
-  }
-}
+    width: 200px; } }
 
 /*# sourceMappingURL=CoursePage.css.map */
