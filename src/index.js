@@ -21,8 +21,13 @@ const LoadingDelay = ({ delay, children }) => {
   return showContent ? children : <Loading />;
 };
 
-const onAcceptHandler = () => {
-  console.log("cookies has been accepted");
+const allConsentGranted = () => {
+  console.log('consent', 'update', {
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'ad_storage': 'granted',
+    'analytics_storage': 'granted'
+  });
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,7 +39,7 @@ root.render(
         <CookieConsent
           location="bottom"
           buttonText="Accept"
-          onAccept={onAcceptHandler}
+          onAccept={allConsentGranted}
           style={{ 'background': "rgb(6 0 80 / 60%)", 'width': "99%", 'left': "6px", 'bottom': "5px", 'border-radius': "5px" }}
           expires={150}>This website uses cookies to enhance the user experience.</CookieConsent>
       </LoadingDelay>
