@@ -251,10 +251,15 @@ a {
 			justify-content: center;
 			align-items: center;
 			@include font($main, 20px, 500, normal, normal);
+			flex-wrap: wrap;
 
 			ul {
 				display: flex;
 				gap: 50px;
+				flex-wrap: wrap;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
 				li {
 				list-style: inside;

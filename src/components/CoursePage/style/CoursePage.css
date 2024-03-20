@@ -263,10 +263,15 @@ a {
       font-size: 20px;
       line-height: normal;
       letter-spacing: normal;
-      color: #B41D8A; }
+      color: #B41D8A;
+      flex-wrap: wrap; }
       .CoursePage__specific .CoursePage__left-containers ul {
         display: flex;
-        gap: 50px; }
+        gap: 50px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .CoursePage__specific .CoursePage__left-containers ul li {
           list-style: inside;
           text-align: center; }

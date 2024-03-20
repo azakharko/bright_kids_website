@@ -318,6 +318,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 							<ul>
 								<li>{t(`CoursePage.course${courseIndex}.subTitle3`)}</li>
 								<li>{t(`CoursePage.course${courseIndex}.subTitle4`)}</li>
+								<li>{t(`CoursePage.course${courseIndex}.subTitle5`)}</li>
 							</ul>
 						</div>
 
