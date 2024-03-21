@@ -323,7 +323,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 						</div>
 
 						<div onClick={hanldeShow} className="CoursePage__buttons">
-							<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
+							<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)}/>
 						</div>
 
 						<h1 className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</h1>
@@ -411,7 +411,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 						</div>
 						<div onClick={hanldeShow} className="CoursePage__buttons">
-							<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2')} />
+							<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons"  text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)} />
 						</div>
 
 					</div>
