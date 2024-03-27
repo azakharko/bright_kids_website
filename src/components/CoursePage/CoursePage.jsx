@@ -7,7 +7,7 @@ import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';
 import { Link, useParams } from 'react-router-dom';
 import FormPopup from '../UI/PopupForm/FormPopup';
-
+import flashCard from "../CoursePage/flash-card.pdf"
 
 const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 	const { courseLink } = useParams();
@@ -322,9 +322,20 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 							</ul>
 						</div>
 
-						<div onClick={hanldeShow} className="CoursePage__buttons">
-							<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)}/>
+
+						<div className="CoursePage__buttons-box">
+							<div onClick={hanldeShow} className="CoursePage__buttons">
+								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)}/>
+							</div>
+
+							<a href={flashCard} download="Флеш-карти-українською.pdf">
+								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button3')} />
+
+							</a>
+
+
 						</div>
+
 
 						<h1 className='CoursePage__left-title'>{t(`CoursePage.course${courseIndex}.title`)}</h1>
 						<p className='CoursePage__left-description' dangerouslySetInnerHTML={{ __html: courseDescription }}></p>

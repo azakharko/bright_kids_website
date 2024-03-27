@@ -251,8 +251,15 @@ a {
       .CoursePage__specific .CoursePage__left .CoursePage__left-box p {
         text-align: center; }
     .CoursePage__specific .CoursePage__left .CoursePage__buttons {
+      width: auto !important;
       display: flex;
       justify-content: center; }
+    .CoursePage__specific .CoursePage__left .CoursePage__buttons-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
     .CoursePage__specific .CoursePage__left-containers {
       width: 100%;
       display: flex;
@@ -385,6 +392,12 @@ a {
     .CoursePage__specific .CoursePage__left-containers ul {
       flex-direction: column;
       gap: 20px; }
+  .CoursePage__specific .CoursePage__left .CoursePage__buttons-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; }
+    .CoursePage__specific .CoursePage__left .CoursePage__buttons-box .course__buttons {
+      margin-top: 30px !important; }
   .CoursePage__specific .CoursePage__left .CoursePage__left-description h2 {
     text-align: center; }
   .CoursePage__specific .CoursePage__left .CoursePage__left-description div {
@@ -416,7 +429,8 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     .CoursePage__left .CoursePage__buttons .course__buttons {
       width: 100%; }
   .CoursePage__rigth-img img {

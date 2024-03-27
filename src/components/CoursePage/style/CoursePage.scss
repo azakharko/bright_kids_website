@@ -238,8 +238,17 @@ a {
 		}
 
 		.CoursePage__buttons {
+			width: auto !important;
 			display: flex;
 			justify-content: center;
+		}
+
+		.CoursePage__buttons-box {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
 		}
 
 
@@ -437,6 +446,16 @@ a {
 					gap: 20px;
 				}
 			}
+
+			.CoursePage__buttons-box {
+				display: flex;
+				flex-direction: column;
+				gap: 0px;
+				.course__buttons {
+					margin-top: 30px !important;
+				}
+			}
+
 			.CoursePage__left-description {
 				h2 {
 					text-align: center;
@@ -496,6 +515,7 @@ a {
 			.CoursePage__buttons {
 				width: 100%;
 				@include display-center(center, center);
+				flex-direction: column;
 				.course__buttons {
 					width: 100%;
 				}
