@@ -325,11 +325,11 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 						<div className="CoursePage__buttons-box">
 							<div onClick={hanldeShow} className="CoursePage__buttons">
-								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)}/>
+								<Button id="btn-apply-to-course" width={330} height={70} className="course__buttons" text={t('CoursePage.button2') + ': ' + t(`CoursePage.course${courseIndex}.title`)}/>
 							</div>
 
 							<a href={flashCard} download="Флеш-карти-українською.pdf">
-								<Button id="btn-apply-to-course" width={300} height={70} className="course__buttons" text={t('CoursePage.button3')} />
+								<Button id="btn-apply-to-course" width={330} height={70} className="course__buttons" text={t('CoursePage.button3')} />
 
 							</a>
 
