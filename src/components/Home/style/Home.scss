@@ -6,6 +6,7 @@
 	height: auto;
 	position: relative;
 	margin-bottom: 100px;
+	flex-direction: column;
 
 	&__crossing {
 		width: 100%;
@@ -108,14 +109,14 @@
 
 		&-logo {
 			width: 300px;
-			z-index: 11 !important;
+			z-index: 5;
 
 			.logo {
 				width: 80px;
 				height: 70px;
 				background-image: url(../../main/img/logo.svg);
 				background-size: cover;
-				z-index: 11 !important;
+				z-index: 5;
 			}
 		}
 
@@ -155,7 +156,7 @@
 
 		.box__burger {
 			display: none;
-			z-index: 11;
+			z-index: 5;
 
 		}
 	}
@@ -355,7 +356,7 @@
 				left: 0%;
 				top: 0%;
 				display: block !important;
-				z-index: 10 !important;
+				z-index: 5 !important;
 				@include display-center(center, center);
 				ul {
 					width: 100%;

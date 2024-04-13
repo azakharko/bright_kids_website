@@ -1,14 +1,18 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Home.css"
 import Button from '../UI/Button/Button.jsx';
 import Header from '../UI/Header/Header.jsx';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Gif from '../UI/Gif/Gift.jsx';
+import GiftPopup from '../UI/GiftPopup/GiftPopup.jsx';
 
 
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
 	const { t, i18n } = useTranslation();
+
+	const [openGiftPopup, setOpenGiftPopup] = useState(false);
 
 	const myRef = useRef(null);
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
@@ -179,6 +183,9 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 		<div ref={myRef} className='home' id='home'>
 
 			<div className={burgerPopup}></div>
+
+			<Gif setOpenGiftPopup={setOpenGiftPopup} />
+			<GiftPopup setOpenGiftPopup={setOpenGiftPopup} openGiftPopup={openGiftPopup}/>
 
 			<Header
 				handleLanguageChange={handleLanguageChange}

@@ -47,8 +47,8 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center; }
-  .link__web span {
-    margin-left: 10px; }
+  .link__web-margin {
+    margin: 0 10px; }
 
 .ready {
   width: 100%;

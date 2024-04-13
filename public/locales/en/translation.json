@@ -14,6 +14,20 @@
 	"SEO": {
 		"title": "Bright Kids Ukrainian Online School"
 	},
+	
+	"Gift": {
+		"title": "Gift!",
+		"description": "Fill out the form now and get 3 free lessons on any course at the school!",
+		"sub-description": "The promotion is valid until the end of 2024",
+		"seletText": "Choose a course",
+		"selectTitle": "Courses",
+		"nameText": "Write your full name",
+		"nameInput": "Name and Surname",
+		"emailText": "Write your email address",
+		"emailInput": "Email",
+		"button": "Submit"
+	},
+
 	"Form": {
 		"title": "Registration Form",
 		"successfully-send": "Submit successfully",

@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.body-hidden {
+  max-height: 100vh;
+  overflow: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+.link__web {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+  .link__web-margin {
+    margin: 0 10px; }
+
+.gift-popup {
+  width: 600px;
+  height: 650px;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  padding: 20px;
+  flex-direction: column;
+  z-index: 6;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: #B41D8A;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.6s; }
+  .gift-popup__close {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/close.svg);
+    background-size: cover;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer; }
+  .gift-popup__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff; }
+  .gift-popup__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .gift-popup__description span {
+      font-weight: 500;
+      color: #6ECFA0; }
+  .gift-popup form {
+    width: 100%; }
+  .gift-popup__button {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-top: 40px;
+    transition: 0.5s; }
+    .gift-popup__button:hover {
+      background-color: #fff;
+      color: #B41D8A;
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+      transition: 0.5s; }
+  .gift-popup__box {
+    width: 100%;
+    margin-top: 20px; }
+    .gift-popup__box-subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__box input {
+      width: 100%;
+      height: 70px;
+      border: none;
+      padding: 0 20px;
+      background-color: #fff;
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      outline: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #B41D8A;
+      margin-top: 10px; }
+      .gift-popup__box input::placeholder {
+        color: #B41D8A; }
+    .gift-popup__box select {
+      width: 100%;
+      height: 70px;
+      border: none;
+      padding: 0 20px;
+      background-color: #fff;
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      outline: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #B41D8A;
+      margin-top: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center right 20px;
+      background-size: 35px; }
+
+.gift-popup--open {
+  position: fixed;
+  top: 50%; }
+
+@media screen and (max-height: 650px) {
+  .gift-popup {
+    width: 700px;
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__description {
+      width: 70%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 20px; }
+    .gift-popup__button {
+      height: 70px;
+      margin-top: 25px; }
+    .gift-popup__box2 {
+      display: flex;
+      gap: 10px; } }
+@media screen and (max-width: 750px) {
+  .gift-popup {
+    width: 95%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__description {
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px; }
+    .gift-popup__button {
+      height: 55px !important;
+      margin-top: 15px; }
+    .gift-popup__box {
+      margin-top: 10px; }
+      .gift-popup__box input {
+        height: 55px !important; }
+      .gift-popup__box select {
+        height: 55px !important; }
+    .gift-popup__box2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0px; } }
+@media screen and (max-width: 400px) {
+  .gift-popup {
+    padding: 10px; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__close {
+      width: 30px;
+      height: 30px; }
+    .gift-popup__description {
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 10px; }
+    .gift-popup__box-subtitle {
+      font-size: 14px; } }
+@media screen and (max-width: 500px) and (max-height: 900px) {
+  .gift-popup {
+    height: 80%;
+    padding: 20px; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__close {
+      width: 30px;
+      height: 30px; }
+    .gift-popup__description {
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 30px; }
+    .gift-popup__box {
+      margin-top: 20px; }
+      .gift-popup__box-subtitle {
+        font-size: 14px; }
+    .gift-popup__button {
+      margin-top: 50px; } }
+@media screen and (max-width: 430px) and (max-height: 800px) {
+  .gift-popup {
+    height: 95%;
+    padding: 10px; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__close {
+      width: 30px;
+      height: 30px; }
+    .gift-popup__description {
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      margin-bottom: 15px; }
+    .gift-popup__box {
+      margin-top: 10px; }
+      .gift-popup__box-subtitle {
+        font-size: 14px; }
+    .gift-popup__button {
+      margin-top: 25px; } }
+@media screen and (max-height: 650px) {
+  .gift-popup {
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .gift-popup__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff; }
+    .gift-popup__description {
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fff;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 20px; }
+    .gift-popup__button {
+      height: 70px;
+      margin-top: 25px; }
+    .gift-popup__box2 {
+      display: flex;
+      gap: 10px; } }
+
+/*# sourceMappingURL=GiftPopup.css.map */
