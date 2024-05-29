@@ -4,7 +4,7 @@ import './style/About.css';
 import LazyLoad from 'react-lazy-load';
 
 const About = () => {
-  const { t } = useTranslation(); // useTranslation hook
+	const { t } = useTranslation();
 
   return (
     <div className='about-us' id='about-us'>

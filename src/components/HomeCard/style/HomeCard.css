@@ -91,9 +91,12 @@ body {
       width: calc(50% - 20px); } }
 @media screen and (max-width: 700px) {
   .home-cards {
-    padding: 0 30px; }
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column; }
     .home-cards__card {
-      width: calc(100% - 20px);
+      width: 100%;
       margin-bottom: 0px;
       padding: 20px;
       background-color: #B41D8A;
@@ -109,6 +112,8 @@ body {
       box-sizing: border-box;
       text-align: center;
       border-radius: 0px; }
+      .home-cards__card div {
+        width: 100%; }
     .home-cards__first {
       border-radius: 10px 10px 0 0; }
     .home-cards__last {

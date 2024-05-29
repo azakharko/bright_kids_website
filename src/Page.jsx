@@ -11,7 +11,7 @@ import FAQ from './components/FAQ/FAQ.jsx';
 import Media from './components/Media/Media.jsx';
 import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
-
+import VideoHome from './components/VideoSection/Video.jsx';
 
 const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex, handleLanguageChange }) => {
 	const [cards, setCards] = useState([]);
@@ -19,6 +19,7 @@ const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseInd
 		<div className='App'>
 			<Home handleLanguageChange={handleLanguageChange} setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr} />
 			<HomeCard />
+			<VideoHome />
 			<Course setCourseIndex={setCourseIndex} courseArr={courseArr} />
 			<FirstLesson />
 			<HowToStart />
