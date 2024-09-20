@@ -5,8 +5,6 @@ import Button from '../UI/Button/Button.jsx';
 import Header from '../UI/Header/Header.jsx';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Gif from '../UI/Gif/Gift.jsx';
-import GiftPopup from '../UI/GiftPopup/GiftPopup.jsx';
 
 
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
@@ -183,9 +181,6 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 		<div ref={myRef} className='home' id='home'>
 
 			<div className={burgerPopup}></div>
-
-			<Gif setOpenGiftPopup={setOpenGiftPopup} />
-			<GiftPopup setOpenGiftPopup={setOpenGiftPopup} openGiftPopup={openGiftPopup}/>
 
 			<Header
 				handleLanguageChange={handleLanguageChange}
