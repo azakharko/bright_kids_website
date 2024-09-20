@@ -10,8 +10,6 @@ import { Helmet } from 'react-helmet';
 const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
 	const { t, i18n } = useTranslation();
 
-	const [openGiftPopup, setOpenGiftPopup] = useState(false);
-
 	const myRef = useRef(null);
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
@@ -42,8 +40,6 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 
 
 	useEffect(() => {
-		console.log(true);
-
 		setCards([
 			{ question: `${t("FAQ.faqTitle1")}`, answer: `${t("FAQ.faqDescirption1")}`, isOpen: true },
 			{ question: `${t("FAQ.faqTitle2")}`, answer: `${t("FAQ.faqDescirption2")}`, isOpen: true },

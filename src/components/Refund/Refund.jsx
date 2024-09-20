@@ -29,7 +29,6 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   const hadnleBurger = () => {
 		setBurgerOpen(false);
 		document.body.classList.remove("body-hidden", false);
-
 	}
 
   const handleLinkClick = () => {

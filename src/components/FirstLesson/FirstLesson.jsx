@@ -7,7 +7,7 @@ import FormPopup from '../UI/PopupForm/FormPopup';
 
 const FirstLesson = () => {
   const { t, i18n } = useTranslation();
-  const [thisLanguage, setThisLanguage] = useState('en')
+  const [, setThisLanguage] = useState('en')
 
   useEffect(() => {
     setThisLanguage(i18n.language)
@@ -18,9 +18,6 @@ const FirstLesson = () => {
 	const [emailError] = [t(`Form.inputEmail.error`)];
 	const [emailError2] = [t(`Form.inputEmail.error2`)];
 	const [emailMessage] = [t(`Form.inputMessage.error`)];
-
-	const [imagePath, setImagePath] = useState('');
-	const [showForm, setShowForm] = useState(false);
 
 	const [formData, setFormData] = useState({
         name: '',
