@@ -171,6 +171,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 	const handleLinkClick = () => {
 		const currentUrl = new URL(window.location.origin);
 		window.history.pushState({}, '', currentUrl);	
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
 	};
 
 	return (
@@ -186,6 +188,9 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
 				nav3={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
+				nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
+					<li>{t("HomePage.team")}</li></Link>}
+
 			/>
 
 			<Helmet>

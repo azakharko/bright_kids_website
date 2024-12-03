@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	const { t, i18n } = useTranslation();
+	const currentYear = new Date().getFullYear();
+
 
 	const handleScrollToSection = (sectionId) => {
 		if (!sectionId || sectionId === 'top') {
@@ -72,7 +74,7 @@ const Footer = () => {
 
 				<div className="footer__bottom-box">
 					<a target='_blank' rel="noreferrer" href='https://yurii-dev.netlify.app/'>
-						© 2023 Bright Kids Ukrainian Online School
+						© {currentYear} Bright Kids Ukrainian Online School
 						<span id='logo'>the web-site was created 	<div className="logo__yurii"></div></span>
 					</a>
 

@@ -122,7 +122,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 	};
 
 	useEffect(() => {
-		setThisLanguage(i18n.language)
+		setThisLanguage(i18n.language);
 	}, [t])
 
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";

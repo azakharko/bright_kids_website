@@ -34,8 +34,10 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   const handleLinkClick = () => {
 		const currentUrl = new URL(window.location.origin);
 		window.history.pushState({}, '', currentUrl);	
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
 	};
-
+  
   const handleBurgerAndLinkClick = () => {
     hadnleBurger();
     handleLinkClick();
@@ -56,6 +58,8 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         nav2={<Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>
 				<li>{t("HomePage.gallery")}</li></Link>}
 	    	nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
+        nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
+					<li>{t("HomePage.team")}</li></Link>}
       />
 
 <div className="catalog__link">

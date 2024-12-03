@@ -9,6 +9,8 @@ import Catalog from "./components/Catalog/Catalog.jsx";
 import ProjectStudent from "./components/ProjectStudent/ProjectStudent.jsx";
 import { useTranslation } from "react-i18next";
 import i18n from './i18n'; // імпортуємо налаштування i18n
+import Team from "./components/Team/Team.jsx";
+import TeamDetails from "./components/TeamDetails/TeamDetails.jsx";
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -175,6 +177,9 @@ function App() {
         <Route path="/refund/:language" element={<Refund handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/courses/:language" element={<Catalog setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/team/:language" element={<Team handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/team/details/:id/:language" element={<TeamDetails handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+
         <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
       </Routes>
     </HashRouter>

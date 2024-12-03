@@ -42,7 +42,7 @@ const ProjectStudent = ({
 }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
-  const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
   const handleScrollToSection = (sectionId) => {
     setBurgerOpen(false);
@@ -62,6 +62,14 @@ const ProjectStudent = ({
   const handleButton = () => {
     window.open("https://www.youtube.com/@BrightKidsUkrainianSchool", "_blank");
   };
+
+  
+	const handleLinkClick = () => {
+		const currentUrl = new URL(window.location.origin);
+		window.history.pushState({}, '', currentUrl);	
+		setBurgerOpen(false);
+		document.body.classList.remove("body-hidden", false);
+	};
 
   return (
     <div id="gallery" className="gallery">
@@ -84,6 +92,8 @@ const ProjectStudent = ({
             {t("HomePage.contact")}
           </li>
         }
+        nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
+					<li>{t("HomePage.team")}</li></Link>}
       />
 
       <div className="gallery__box">

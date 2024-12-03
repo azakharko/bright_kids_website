@@ -323,7 +323,7 @@ body {
     .home__main-right .home__elipes {
       width: 412px;
       height: 470px; } }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .home {
     height: auto; }
     .home__header {

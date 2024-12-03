@@ -6,6 +6,7 @@
 		"home": "Home",
 		"contact": "Contacts",
 		"gallery": "Students Projects",
+		"team": "Team",
 		"title": "The best online courses for children and adults with teachers from Ukraine",
 		"description": "Preserve national identity with courses for children and adults",
 		"signUp": "Sign up for a free trial class",
@@ -57,6 +58,126 @@
 	"GalleryPage": {
 		"title": "Students' drawing projects",
 		"title2": "Student projects in Python languages"
+	},
+	"Team": {
+		"title": "Our team",
+		"button": "More details",
+		"subTitle1": "Education",
+		"subTitle2": "Hobbies",
+		"subTitle3": "What I love about my work",
+		"subTitle4": "Favorite quote",
+		"teacher1": {
+			"name": "Nadiya Zhurba",
+			"position": "Founder and Head of the School",
+			"education": "Lviv National University named after Ivan Franko. Specialization: English Language and Literature.",
+			"hobby": "I love traveling the most and reading fiction books.",
+			"work": "What I like most in my work as the head of the school is helping parents and children maintain their Ukrainian identity abroad through learning the Ukrainian language and culture.",
+			"quotes": "Learn, read, learn from others, and do not shy away from your own."
+		},
+		"teacher2": {
+			"name": "Halyna Shpunyar",
+			"position": "Teacher of Ukrainian as a Foreign Language, English Language Teacher, School Methodologist",
+			"education": "Ivano-Frankivsk National University of the Vasyl Stefanyk. Pedagogical Institute. Specialization: Teacher of Primary Classes and English Language.",
+			"hobby": "Teaching is my passion, I am also addicted to music, movies, traveling, and teaching languages. I also love painting. I believe that we are not just here in this world; each of us is special and has a purpose, and that's why I am here to help others learn and be a part of their journey.",
+			"work": "What I can leave behind as a memory is to teach and improve someone. Also, the happy eyes of my students and their successes.",
+			"quotes": "He who does not look ahead ends up behind."
+		},
+		"teacher3": {
+			"name": "Anna Tikhonova",
+			"position": "Teacher of Ukrainian Language and Literature. Montessori Educator",
+			"education": "LNU named after I. Franko, Lecturer in Ukrainian Language and Literature. Completed various training programs in the Montessori method, sensory integration, and others.",
+			"hobby": "I try to test myself in different areas of creativity: I embroider, play the piano, study foreign languages, and sew. I am working on my acting skills in the Improv Workshop.",
+			"work": "I enjoy the moment when a teacher leads a child to an independent conclusion, and when the child gains that knowledge on their own. Also, I believe that the teacher is a guide, assistant, and ‘signpost’ for the child. Our main task is to make them interested :)",
+			"quotes": "Learn to prioritize, or someone else will do it for you."
+		},
+		"teacher4": {
+			"name": "Tetiana Andrusiv",
+			"position": "Teacher of Ukrainian Language and Theatrical Improvisation",
+			"education": "Ivano-Frankivsk National University of the Vasyl Stefanyk. Pedagogical Institute. Specialization: Primary School Teacher. Practical Psychologist.",
+			"hobby": "Teaching is the ikigai that makes me wake up every morning. Every hour on this earth is a gift, so every day I practice karate and improve my language skills in English and Japanese.",
+			"work": "It’s the meeting with children, providing them with a sense of support.",
+			"quotes": "A person does well what they love."
+		},
+		"teacher5": {
+			"name": "Anna Tsymbalista",
+			"position": "Teacher of Ukrainian as a Foreign Language. SMM Specialist",
+			"education": "Lviv National University named after Ivan Franko. Specialization: Ukrainian Language and Literature.",
+			"hobby": "I love embroidery. I have a large collection of towels and embroidered shirts created by my hands, and I am currently working on a wedding towel :) I also enjoy reading and doing gardening.",
+			"work": "I enjoy working in various fields: programming, logic, Ukrainian language, and with different age groups of children. Every child, through their effort, inspires me to work even harder for them. Children often push me to come up with lesson ideas and games. Every child is a vast galaxy, and every day they are different, more interesting. Children help me maintain my 'inner child' and see the world less 'adult-like'."
+		},
+		"teacher6": {
+			"name": "Nazariy Tymchuk",
+			"position": "Teacher of Mathematics and Chess",
+			"education": "Ukrainian Academy of Printing. Specialization: Computer Science.",
+			"hobby": "In my free time, I play the guitar, play football or volleyball, and read books.",
+			"work": "What I enjoy most are the moments when, after a lesson, both the student and I have more energy, enthusiasm, and desire than before the lesson.",
+			"quotes": "I never accepted defeat. I just found 10,000 ways that don’t work."
+		},
+		"teacher7": {
+			"name": "Yuliia Spivak",
+			"position": "Ukrainian Language Teacher",
+			"education": "Lviv National University named after Ivan Franko. Specialization: Applied Linguistics.",
+			"hobby": "In my free time, I love traveling :) The last time I was abroad was in Spain, and I really enjoyed it. I also enjoy traveling within Ukraine. After the victory, I dream of visiting all the major cities in Ukraine that I haven't been to yet. Recently, I also enjoy doing crafts, making small bead decorations, and embroidery.",
+			"work": "My favorite moment is seeing the joy in a child's eyes when they realize they've learned something, and I helped them with that. I also love when young Ukrainians around the world want to learn the Ukrainian language and traditions, and together we strengthen Ukraine. Additionally, I cherish when my students and I become friends. They often want to share stories or even secrets, and this trust is very touching.",
+			"quotes": "Fight and you will win! ©️ Kobzar"
+		},
+		"teacher8": {
+			"name": "Natalia Znetinyak",
+			"position": "Mathematics and Python & Scratch Programming Teacher",
+			"education": "Lviv National University named after Ivan Franko, Faculty of Applied Mathematics and Informatics, Specialization: Mathematician.",
+			"hobby": "In my free time, I love cooking. I also enjoy traveling, singing, and dancing.",
+			"work": "I am most happy when children enthusiastically write their programs and present their work. I rejoice when I manage to pass on the excitement of programming to them.",
+			"quotes": "The only way to do something really well is to love what you do."
+		},
+		"teacher9": {
+			"name": "Olha Klybanik",
+			"position": "Ukrainian as a Foreign Language Teacher, School Administrator",
+			"education": "Drohobych State Pedagogical University named after Ivan Franko (Teacher of English and Foreign Literature).",
+			"hobby": "In my free time, I enjoy spending time with close people and friends, traveling.",
+			"work": "I love working with younger children because they are sincere, open, kind, and cheerful. The most valuable thing for me is the ability to captivate children, to inspire them to learn.",
+			"quotes": "Everything great begins with small steps; never stop at what has been achieved."
+		},
+		"teacher10": {
+			"name": "Svitlana Ulychna",
+			"position": "Piano Teacher",
+			"education": "Lviv Music Academy named after M.V. Lysenko. Piano Teacher, Accompanist, Soloist of a Chamber Ensemble.",
+			"hobby": "Caring for plants.",
+			"work": "When a connection with the child is established."
+		},
+		"teacher11": {
+			"name": "Olha Tykhonka",
+			"position": "Ukrainian Language Teacher",
+			"education": "Lviv National University named after Ivan Franko. Master's Degree in Philology, Teacher of Ukrainian Language and Literature (with honors).",
+			"hobby": "Favorite activities: reading, writing poetry.",
+			"work": "What I love most about the calling of Teacher is working with children. They are like quality clay from which we, adults, create a unique masterpiece every time. Children are also fertile ground where I have the honor and opportunity to sow the seeds of Knowledge, Politeness, and Humanity.",
+			"quotes": "Don't say 'I can't,' say 'I'll learn!'"
+		},
+		"teacher12": {
+			"name": "Vira Pavliuk",
+			"position": "Drawing Teacher",
+			"education": "Lviv National Academy of Arts.",
+			"hobby": "I love driving, taking short solo trips with carefully selected music.",
+			"work": "What I love most is 'multicreation.' First, many different creative processes happen simultaneously, and many great ideas can be realized at once. One person can't do this, but in a creative group of talented students, you will have as many results as there are participants in the process. Second, many new ideas emerge during the lesson itself, they change and evolve, as children inspire each other with their thoughts.",
+			"quotes": "No matter what tools you have for creativity, the real tool is yourself. It is through you that the surrounding world takes shape."
+		},
+		"teacher13": {
+			"name": "Natalia Tovarnytska",
+			"position": "Ukrainian Language Teacher",
+			"education": "Drohobych State Pedagogical University named after Ivan Franko (Teacher of Ukrainian Language and Literature, Foreign Literature).",
+			"hobby": "In my free time, I study languages (Czech, English). These languages open up new possibilities for communication and discovering the world.",
+			"work": "What inspires me the most in teaching is the opportunity to pass on knowledge and see how students open up new horizons for themselves. It is incredibly valuable to observe their development, support their achievements, and unlock each individual's potential.",
+			"quotes": "Every child has a talent. Find it."
+		},
+		"teacher14": {
+			"name": "Anton",
+			"position": "Chess Teacher",
+			"education": "Lviv State University of Physical Culture, Faculty of Sports, Specialization: Olympic and Professional Sports, Coach-Teacher, Master of Olympic and Professional Sports.",
+			"hobby": "I love spending time with my family.",
+			"work": "I enjoy sharing knowledge with students and learning from them.",
+			"quotes": "Those who want, find opportunities; those who don't, find reasons."
+		}
+		
+		
 	},
 	"CoursePage": {
 		"title": "Courses",
@@ -214,7 +335,7 @@
 		"course14": {
 			"title": "Speed reading",
 			"subTitle": "Speed reading",
-			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your head), reduce eye movement, and increase the overall reading pace. <br/> <br/> Some common speed reading techniques include: <br/> Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. <br/> <br/> Chunking: <br/> Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information. <br/> <br/> At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
+			"description": "Speed reading is a technique that aims to increase the reading speed of an individual without significantly sacrificing comprehension. The practice involves various strategies and methods to minimize subvocalization (pronouncing words in your HomePage), reduce eye movement, and increase the overall reading pace. <br/> <br/> Some common speed reading techniques include: <br/> Subvocalization Reduction: Minimizing or eliminating the habit of pronouncing each word mentally while reading. Peripheral Vision Expansion: Training the eyes to capture more words in each glance by widening the field of vision. <br/> <br/> Chunking: <br/> Grouping words together and reading them as a single unit rather than individual words. Previewing and Scanning: Quickly reviewing the content before reading to get an overview and identifying key information. <br/> <br/> At our classes there are a lot of fun games which not only increase speed of reading but also create friendly environment of peers. ",
 			"age": "9+",
 			"category": "group/individual",
 			"duration": "1 hour",
