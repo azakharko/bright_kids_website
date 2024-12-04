@@ -37,6 +37,7 @@ const TeamDetails = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         education: t("Team.teacher2.education"),
         hobby: t("Team.teacher2.hobby"),
         work: t("Team.teacher2.work"),
+        quotes: t("Team.teacher2.quotes"),
       },
       {
         id: 2,
@@ -45,6 +46,7 @@ const TeamDetails = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         education: t("Team.teacher3.education"),
         hobby: t("Team.teacher3.hobby"),
         work: t("Team.teacher3.work"),
+        quotes: t("Team.teacher3.quotes"),
       },
       {
         id: 3,
