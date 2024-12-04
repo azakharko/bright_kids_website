@@ -8,7 +8,7 @@
 		"gallery": "Students Projects",
 		"team": "Team",
 		"title": "The best online courses for children and adults with teachers from Ukraine",
-		"description": "Preserve national identity with courses for children and adults",
+		"description": "Preserve national identity with live online classes for children and adults.",
 		"signUp": "Sign up for a free trial class",
 		"courseHoverText": "Details of the course"
 	},
@@ -83,7 +83,7 @@
 			"quotes": "He who does not look ahead ends up behind."
 		},
 		"teacher3": {
-			"name": "Anna Tikhonova",
+			"name": "Anna Tykhonova",
 			"position": "Teacher of Ukrainian Language and Literature. Montessori Educator",
 			"education": "LNU named after I. Franko, Lecturer in Ukrainian Language and Literature. Completed various training programs in the Montessori method, sensory integration, and others.",
 			"hobby": "I try to test myself in different areas of creativity: I embroider, play the piano, study foreign languages, and sew. I am working on my acting skills in the Improv Workshop.",
@@ -122,7 +122,7 @@
 			"quotes": "Fight and you will win! ©️ Kobzar"
 		},
 		"teacher8": {
-			"name": "Natalia Znetinyak",
+			"name": "Natalia Znetynyak",
 			"position": "Mathematics and Python & Scratch Programming Teacher",
 			"education": "Lviv National University named after Ivan Franko, Faculty of Applied Mathematics and Informatics, Specialization: Mathematician.",
 			"hobby": "In my free time, I love cooking. I also enjoy traveling, singing, and dancing.",
@@ -130,7 +130,7 @@
 			"quotes": "The only way to do something really well is to love what you do."
 		},
 		"teacher9": {
-			"name": "Olha Klybanik",
+			"name": "Olha Klybanyk",
 			"position": "Ukrainian as a Foreign Language Teacher, School Administrator",
 			"education": "Drohobych State Pedagogical University named after Ivan Franko (Teacher of English and Foreign Literature).",
 			"hobby": "In my free time, I enjoy spending time with close people and friends, traveling.",
@@ -169,13 +169,22 @@
 			"quotes": "Every child has a talent. Find it."
 		},
 		"teacher14": {
-			"name": "Anton",
+			"name": "Anton Romashov",
 			"position": "Chess Teacher",
 			"education": "Lviv State University of Physical Culture, Faculty of Sports, Specialization: Olympic and Professional Sports, Coach-Teacher, Master of Olympic and Professional Sports.",
 			"hobby": "I love spending time with my family.",
 			"work": "I enjoy sharing knowledge with students and learning from them.",
 			"quotes": "Those who want, find opportunities; those who don't, find reasons."
+		},
+		"teacher15": {
+			"name": "Yurii Tovarnytskyi",
+			"position": "Programmer",
+			"hobby": "I love creating unique posters in Photoshop, I enjoy dancing, and I have a deep interest in world history.",
+			"work": "What I love most about programming is the ability to create something new, something that can change the world. And the best part of it is when your product helps people.",
+			"quotes": "Remember that you will die – it’s the best way to avoid the thought that you have something to lose."
 		}
+
+
 	},
 	"CoursePage": {
 		"title": "Courses",

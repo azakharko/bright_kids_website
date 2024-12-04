@@ -21,6 +21,7 @@ import teacher11 from "./img/teacher11.png";
 import teacher12 from "./img/teacher12.png";
 import teacher13 from "./img/teacher13.png";
 import teacher14 from "./img/teacher14.png";
+import teacher15 from "./img/teacher15.png";
 
 
 
@@ -197,6 +198,16 @@ const Team = ({
       hobby: t("Team.teacher14.hobby"),
       work: t("Team.teacher14.work"),
       quotes: t("Team.teacher14.quotes"),
+    },
+    {
+      id: 14,
+      img: teacher15,
+      name: t("Team.teacher15.name"),
+      position: t("Team.teacher15.position"),
+      education: t("Team.teacher15.education"),
+      hobby: t("Team.teacher15.hobby"),
+      work: t("Team.teacher15.work"),
+      quotes: t("Team.teacher15.quotes"),
     }
   ];
 

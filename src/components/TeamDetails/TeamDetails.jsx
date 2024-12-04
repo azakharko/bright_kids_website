@@ -145,6 +145,14 @@ const TeamDetails = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         work: t("Team.teacher14.work"),
         quotes: t("Team.teacher14.quotes"),
       },
+      {
+        id: 14,
+        name: t("Team.teacher15.name"),
+        position: t("Team.teacher15.position"),
+        hobby: t("Team.teacher15.hobby"),
+        work: t("Team.teacher15.work"),
+        quotes: t("Team.teacher15.quotes"),
+      },
     ],
     [t]
   );
