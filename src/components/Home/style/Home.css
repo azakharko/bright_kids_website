@@ -145,12 +145,14 @@ body {
       align-items: center;
       font-style: normal;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
       line-height: normal;
       letter-spacing: normal;
       color: #333333;
-      gap: 40px;
-      cursor: pointer; }
+      gap: 30px;
+      cursor: pointer;
+      position: relative;
+      right: 100px; }
     .home__header-box {
       width: 300px;
       display: flex;
@@ -259,6 +261,20 @@ body {
     .home__header-logo {
       width: 100px;
       height: 85px; }
+    .home__header-nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333333;
+      gap: 20px;
+      cursor: pointer;
+      position: relative;
+      right: 10px; }
   .home__main-left .home__title {
     font-style: normal;
     font-weight: 700;

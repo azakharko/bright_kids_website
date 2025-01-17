@@ -11,6 +11,7 @@ import FAQ from './components/FAQ/FAQ.jsx';
 import Media from './components/Media/Media.jsx';
 import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import Store from './components/Store/Store.jsx';
 
 const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex, handleLanguageChange }) => {
 	const [cards, setCards] = useState([]);
@@ -20,6 +21,7 @@ const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseInd
 			<HomeCard />
 			<Course setCourseIndex={setCourseIndex} courseArr={courseArr} />
 			<FirstLesson />
+			<Store />
 			<HowToStart />
 			<About />
 			<Benefits />

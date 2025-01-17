@@ -62,6 +62,8 @@ const Privacy = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 		nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
+							nav5={<Link to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+										<li>{t("HomePage.store")}</li></Link>}
       />
 
   <div className="catalog__link">

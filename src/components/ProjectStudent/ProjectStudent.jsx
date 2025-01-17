@@ -94,6 +94,8 @@ const ProjectStudent = ({
         }
         nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
+              nav5={<Link to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+                    <li>{t("HomePage.store")}</li></Link>}
       />
 
       <div className="gallery__box">

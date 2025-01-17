@@ -7,6 +7,7 @@
 		"contact": "Contacts",
 		"gallery": "Students Projects",
 		"team": "Team",
+		"store": "Store",
 		"title": "The best online courses for children and adults with teachers from Ukraine",
 		"description": "Preserve national identity with live online classes for children and adults.",
 		"signUp": "Sign up for a free trial class",
@@ -58,6 +59,10 @@
 	"GalleryPage": {
 		"title": "Students' drawing projects",
 		"title2": "Student projects in Python languages"
+	},
+	"StorePage": {
+		"title": "Top Ukrainian Books & PDFs",
+		"buttonName": "Our store"
 	},
 	"Team": {
 		"title": "Our team",

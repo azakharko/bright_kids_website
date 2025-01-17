@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 
-const Header = ({ nav1, nav2, nav3, nav4, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
+const Header = ({ nav1, nav2, nav3, nav4, nav5, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
   let timerId;
   const myRef = useRef(null);
   const { i18n } = useTranslation();
@@ -70,6 +70,7 @@ const Header = ({ nav1, nav2, nav3, nav4, burgerOpen, setBurgerOpen, handleLangu
           {nav2}
           {nav3}
           {nav4}
+          {nav5}
         </ul>
       </nav>
 

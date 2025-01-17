@@ -121,12 +121,14 @@
 		}
 
 		&-nav {
+			// background-color: red;
 			ul {
 				@include display-center(center, center);
-				@include font($black, 20px, 600, normal, normal);
-				gap: 40px;
+				@include font($black, 18px, 600, normal, normal);
+				gap: 30px;
 				cursor: pointer;
-
+				position: relative;
+				right: 100px;
 			}
 		}
 
@@ -242,6 +244,16 @@
 		&-logo {
 			width: 100px;
 			height: 85px
+		}
+		&-nav {
+			ul {
+				@include display-center(center, center);
+				@include font($black, 18px, 600, normal, normal);
+				gap: 20px;
+				cursor: pointer;
+				position: relative;
+				right: 10px;
+			}
 		}
 	}
 	&__main {
