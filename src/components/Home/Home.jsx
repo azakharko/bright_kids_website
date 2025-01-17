@@ -190,7 +190,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 					<li>{t("HomePage.gallery")}</li></Link>}
 				nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
-				nav5={<Link to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+				nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
 					<li>{t("HomePage.store")}</li></Link>}
 			/>
 

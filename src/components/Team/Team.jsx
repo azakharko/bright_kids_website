@@ -242,7 +242,7 @@ const Team = ({
         }
         nav4={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
-              nav5={<Link to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+              nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
                     <li>{t("HomePage.store")}</li></Link>}
       />
 

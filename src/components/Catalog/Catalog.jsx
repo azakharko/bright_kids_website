@@ -158,6 +158,8 @@ const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurge
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
+				nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+									<li>{t("HomePage.store")}</li></Link>}
       />
 
       <div className="catalog__link">

@@ -232,6 +232,8 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 				nav1={<li><Link to="/">{t("HomePage.home")}</Link></li>}
 				nav2={<li><Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>{t("HomePage.gallery")}</Link></li>}
 				nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
+				nav4={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
+									<li>{t("HomePage.store")}</li></Link>}
 			/>
 
 
