@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import i18n from './i18n'; // імпортуємо налаштування i18n
 import Team from "./components/Team/Team.jsx";
 import TeamDetails from "./components/TeamDetails/TeamDetails.jsx";
+import ThanksPage from "./components/ThanksPage/ThanksPage.jsx"
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -176,6 +177,9 @@ function App() {
         <Route path="/terms/:language" element={<Terms handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/refund/:language" element={<Refund handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/courses/:language" element={<Catalog setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+
+        <Route path="/thanks/:language" element={<ThanksPage setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/team/:language" element={<Team handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/team/details/:id/:language" element={<TeamDetails handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />

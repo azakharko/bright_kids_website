@@ -5,12 +5,14 @@ import { Helmet } from 'react-helmet';
 import "./style/CoursePage.css"
 import Footer from '../Footer/Footer';
 import Button from '../UI/Button/Button';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import FormPopup from '../UI/PopupForm/FormPopup';
 import flashCard from "../CoursePage/flash-card.pdf"
 
 const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 	const { courseLink } = useParams();
+	const navigate = useNavigate();
+
 	const getCourseIndexByLink = (link) => {
 		let map = {}
 		map["ukrainian-language"] = 1;
@@ -88,6 +90,8 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 		return Object.keys(errors).length === 0;
 	};
 
+
+
 	const sendFormData = async (data) => {
 		try {
 			const response = await fetch('https://my-node-app-ub6hoxgggq-uc.a.run.app/api/post', {
@@ -105,6 +109,11 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 			const responseData = await response.json();
 			console.log('Form data sent successfully:', responseData);
 			setFormSubmitted(true);
+
+			
+			window.scrollTo({ top: 0 });
+			navigate(`/thanks/${i18n.language}`);
+			window.scrollTo({ top: 0 });
 
 			setFormData({
 				name: '',

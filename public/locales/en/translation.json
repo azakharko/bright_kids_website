@@ -8,6 +8,7 @@
 		"gallery": "Students Projects",
 		"team": "Team",
 		"store": "Store",
+		"faq": "FAQ",
 		"title": "The best online courses for children and adults with teachers from Ukraine",
 		"description": "Preserve national identity with live online classes for children and adults.",
 		"signUp": "Sign up for a free trial class",
@@ -15,6 +16,10 @@
 	},
 	"SEO": {
 		"title": "Bright Kids Ukrainian Online School"
+	},
+	"Thanks": {
+		"title": "Thank you for your application. We will respond to it as soon as possible.",
+		"button": "Back home"
 	},
 	
 	"Gift": {

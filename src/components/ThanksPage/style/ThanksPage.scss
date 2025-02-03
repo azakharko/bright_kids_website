@@ -1,0 +1,91 @@
+@import "../../main/style.scss";
+
+
+a {
+	text-decoration: none;
+	color: $black;
+}
+
+
+
+.ThanksPage {
+	width: 100%;
+	height: 100vh;
+	padding: 80px 100px;
+	@include display-center(center, center);
+	text-align: center;
+	gap: 50px;
+	flex-direction: column;
+
+	h4 {
+		@include font($main, 64px, 700, normal, normal);
+	}
+}
+
+
+
+
+@media screen and (max-width: 1350px) {
+	.ThanksPage {
+		padding: 100px 80px;
+		gap: 50px;
+	
+		h4 {
+			@include font($main, 64px, 700, normal, normal);
+		}
+	}
+}
+
+@media screen and(max-width: 1250px) {
+	.ThanksPage {
+		padding: 100px 80px;
+		gap: 50px;
+	
+		h4 {
+			@include font($main, 48px, 700, normal, normal);
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.ThanksPage {
+		padding: 100px 60px;
+		height: 60vh;
+		gap: 40px;
+	
+		h4 {
+			@include font($main, 42px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.ThanksPage {
+		padding: 100px 60px;
+		gap: 40px;
+	
+		h4 {
+			@include font($main, 36px, 700, normal, normal);
+		}
+	}
+
+}
+
+@media screen and (max-width: 530px) {
+	.ThanksPage {
+		padding: 100px 60px;
+		gap: 40px;
+	
+		h4 {
+			@include font($main, 36px, 700, normal, normal);
+		}
+
+		a {
+			width: 100%;
+			background-color: red;
+		}
+	}
+
+}

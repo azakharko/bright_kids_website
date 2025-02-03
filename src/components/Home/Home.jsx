@@ -192,6 +192,8 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 					<li>{t("HomePage.team")}</li></Link>}
 				nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
 					<li>{t("HomePage.store")}</li></Link>}
+					nav6={<Link onClick={() => handleScrollToSection('faq')}>
+					<li>{t("HomePage.faq")}</li></Link>}
 			/>
 
 			<Helmet>

@@ -124,7 +124,7 @@
 			// background-color: red;
 			ul {
 				@include display-center(center, center);
-				@include font($black, 18px, 600, normal, normal);
+				@include font($black, 16px, 600, normal, normal);
 				gap: 30px;
 				cursor: pointer;
 				position: relative;
@@ -248,7 +248,7 @@
 		&-nav {
 			ul {
 				@include display-center(center, center);
-				@include font($black, 18px, 600, normal, normal);
+				@include font($black, 16px, 600, normal, normal);
 				gap: 20px;
 				cursor: pointer;
 				position: relative;
@@ -298,7 +298,7 @@
 
 			&-nav {
 				ul {
-					@include font($black, 18px, 600, normal, normal);
+					@include font($black, 14px, 600, normal, normal);
 					gap: 25px;
 				}
 			}
