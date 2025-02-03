@@ -47,7 +47,7 @@ const Benefits = () => {
   }, []);
 
   useEffect(() => {
-    chartAnimationCallback('myChart1', 'animatedNumber', 450, 600, 1000, 70, 30);
+    chartAnimationCallback('myChart1', 'animatedNumber', 650, 800, 1000, 80, 20);
     chartAnimationCallback('myChart2', 'animatedNumber2', 0, 20, 1000, 90, 10);
     chartAnimationCallback('myChart3', 'animatedNumber3', 0, 22, 1000, 80, 20);
     chartAnimationCallback('myChart4', 'animatedNumber4', 0, 10, 1000, 65, 35);
