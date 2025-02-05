@@ -12,6 +12,7 @@ import i18n from './i18n'; // імпортуємо налаштування i18n
 import Team from "./components/Team/Team.jsx";
 import TeamDetails from "./components/TeamDetails/TeamDetails.jsx";
 import ThanksPage from "./components/ThanksPage/ThanksPage.jsx"
+import MetaPixel from "./MetaPixel.jsx";
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -171,6 +172,8 @@ function App() {
 
   return (
     <HashRouter>
+      <MetaPixel /> 
+
       <Routes>
         <Route path="/course/:courseLink/*" element={<CoursePage handleLanguageChange={handleLanguageChange} courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
         <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />

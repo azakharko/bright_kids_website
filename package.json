@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bright_kids_website": "file:",
     "chart.js": "^4.4.1",
+    "fbq": "^0.1.4",
     "ga-4-react": "^0.1.281",
     "i18next": "^23.7.15",
     "i18next-browser-languagedetector": "^7.2.0",
