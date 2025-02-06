@@ -82,10 +82,6 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 			errors.email = emailError;
 		}
 
-		if (!message.trim()) {
-			errors.message = emailMessage;
-		}
-
 		setErrors(errors);
 		return Object.keys(errors).length === 0;
 	};
