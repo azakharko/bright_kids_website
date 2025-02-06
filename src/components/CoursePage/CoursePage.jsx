@@ -306,7 +306,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 									name='message'
 									value={formData.message}
 									onChange={handleChange}
-									placeholder={t(`Form.input-placeholder`)}
+									placeholder={t(`Form.text-area-placeholder`)}
 								/>
 								{errors.message && <p className='form__error'>{errors.message}</p>}
 							</div>
