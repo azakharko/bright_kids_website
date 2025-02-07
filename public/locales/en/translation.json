@@ -39,7 +39,7 @@
 		"title": "Registration Form",
 		"successfully-send": "Submit successfully",
 		"input-placeholder": "Your answer",
-		"text-area-placeholder": "- child's age \n- level of Ukrainian language \n- which specific course interests you",
+		"text-area-placeholder": "- child's age \n- level of Ukrainian language \n- which specific course you are interested in",
 		"inputName": {
 			"subTitle": "Full name",
 			"error": "Full name is required"
