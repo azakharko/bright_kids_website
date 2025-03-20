@@ -12,16 +12,22 @@ import Media from './components/Media/Media.jsx';
 import Ready from './components/Ready/Ready.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Store from './components/Store/Store.jsx';
+import StorePopup from './components/StorePopup/StorePopup.jsx';
 
 const Page = ({ courseArr, setCourseArr, burgerOpen, setBurgerOpen, setCourseIndex, handleLanguageChange }) => {
 	const [cards, setCards] = useState([]);
+
+	const [openPopup, setOpenPopup] = useState(false);
 	return (
 		<div className='App'>
+			{openPopup && (
+				<StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+			)}
 			<Home handleLanguageChange={handleLanguageChange} setBurgerOpen={setBurgerOpen} burgerOpen={burgerOpen} setCards={setCards} setCourseArr={setCourseArr} />
 			<HomeCard />
 			<Course setCourseIndex={setCourseIndex} courseArr={courseArr} />
 			<FirstLesson />
-			<Store />
+			<Store setOpenPopup={setOpenPopup}/>
 			<HowToStart />
 			<About />
 			<Benefits />

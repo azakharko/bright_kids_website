@@ -4,7 +4,7 @@ import "./style/Store.css"
 import Button from '../UI/Button/Button';
 import { Link } from 'react-router-dom';
 
-const Store = () => {
+const Store = ({setOpenPopup}) => {
 	const { t } = useTranslation(); // useTranslation hook
 
 	const handleScrollToSection = (sectionId) => {
@@ -36,9 +36,10 @@ const Store = () => {
         </div>
         
       </div>
-      <Link target='_blank' to="https://payhip.com/BrightKidsUkrainianOnlineSchool">
-        <Button id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
-      </Link>
+      <div onClick={() => setOpenPopup(true)}>
+      <Button  id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
+      </div>
+      
 
     </div>
 	)

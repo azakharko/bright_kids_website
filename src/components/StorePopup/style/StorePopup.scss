@@ -1,0 +1,258 @@
+@import "../../main/style.scss";
+
+
+.storePopup {
+	width: 100%;
+	height: 100vh;
+	background: rgba($color: #000000, $alpha: 0.35);
+	position: fixed;
+	@include display-center(center, center);
+	z-index: 100;
+	backdrop-filter: blur(5px);
+
+	&__container {
+		width: 80%;
+		height: 80vh;
+		border-radius: 20px;
+		background-color: $main;
+		@include display-center(space-between, center);
+		flex-direction: column;
+		padding: 20px 50px;
+		position: relative;
+		
+
+		&-close {
+			position: absolute;
+			cursor: pointer;
+			left: 100%;
+			top: 0%;
+
+			transform: translate(-150%, 25%);
+		}
+
+
+		h5 {
+			width: 80%;
+			@include font($white, calc(1vw + 20px), 700, normal, normal);
+			text-align: center;
+		}
+
+		&-description {
+			width: 100%;
+			height: 100%;
+			overflow-y: auto;
+			margin: 20px 0;
+			padding-right: 10px;
+
+			&::-webkit-scrollbar {
+				width: 10px;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: $green;
+				border-radius: 20px;
+			}
+
+		
+			p {
+				@include font($white, calc(0.2vw + 16px),4700, normal, normal);
+			}
+		}
+
+		&-buttons {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+
+			.storePopup__button {
+				background-color:$green;
+
+				&:hover {
+					opacity: 0.8;
+					transition: 0.5s;
+				}
+			}
+		}
+
+		&-input {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 5px;
+			margin-top: 10px;
+
+			input {
+				width: 20px;
+				height: 20px
+			}
+
+			label {
+			@include font($white, 14px, 300, normal, normal);
+
+			}
+		}
+		
+		
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.storePopup {
+		&__container {
+			border-radius: 10px;
+			padding: 20px;
+			height: 90vh;
+			h5 {
+				width: 80%;
+			}
+	
+			&-description {
+				margin: 15px 0;
+	
+				&::-webkit-scrollbar {
+					width: 8px;
+				}
+			}
+
+			&-container {
+				width: 100%;
+			}
+
+			a {
+				width: 100%;
+			}
+	
+			&-buttons {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				gap: 10px;
+	
+				.storePopup__button {
+					width: 100% !important;
+					height: 50px !important;
+					font-size: 18px;
+				}
+			}
+	
+			&-input {
+				gap: 10px;
+	
+			}
+			
+			
+		}
+	}
+	
+
+}
+
+
+@media screen and (max-width: 600px) {
+	.storePopup {
+		&__container {
+			border-radius: 10px;
+			padding: 20px;
+			height: 90vh;
+
+			&-close {
+				width: 30px;
+				height: 30px;
+			}
+			h5 {
+				width: 95%;
+			}
+	
+			&-description {
+				margin: 15px 0;
+
+				p {
+					word-wrap: break-word;
+					text-align: center;
+				}
+	
+			}
+
+			&-container {
+				width: 100%;
+			}
+	
+			&-buttons {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				gap: 10px;
+	
+				.storePopup__button {
+					font-size: 16px;
+					font-weight: 600;
+				}
+			}
+	
+			&-input {
+				gap: 10px;
+	
+			}
+		}
+	}
+	
+
+}
+
+@media screen and (min-height: 850px) {
+	.storePopup {
+		&__container {
+			border-radius: 10px;
+			padding: 20px;
+			height: 60vh;
+
+			&-close {
+				width: 30px;
+				height: 30px;
+			}
+			h5 {
+				width: 95%;
+			}
+	
+			&-description {
+				margin: 15px 0;
+
+				p {
+					word-wrap: break-word;
+					text-align: center;
+				}
+	
+			}
+
+			&-container {
+				width: 100%;
+			}
+	
+			&-buttons {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				gap: 10px;
+	
+				.storePopup__button {
+					font-size: 16px;
+					font-weight: 600;
+				}
+			}
+	
+			&-input {
+				gap: 10px;
+	
+			}
+		}
+	}
+	
+
+}
