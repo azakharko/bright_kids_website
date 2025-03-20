@@ -75,13 +75,13 @@ export default function StorePopup({setOpenPopup}) {
 						<br />
 						Bright Kids Ukrainian Online
 						<br />
-						SchoolBrightKidsSchool2020@gmail.com
+						BrightKidsSchool2020@gmail.com
 					</p>
 				</div>
 				<div className='storePopup__container-container'>
 				
 					<div className='storePopup__container-buttons'>
-						<a href="mailto:schoolbrightkidsschool2020@gmail.com?subject=Запит на ліцензію&body=Доброго дня! Підкажіть, будь ласка, де можна переглянути умови ліцензії? Нас цікавить інформація для школи, яка називається [назва школи] і знаходиться [місто/місце розташування].">
+						<a href="mailto:BrightKidsSchool2020@gmail.com?subject=Запит на ліцензію&body=Доброго дня! Підкажіть, будь ласка, де можна переглянути умови ліцензії? Нас цікавить інформація для школи, яка називається [назва школи] і знаходиться [місто/місце розташування].">
 						<Button
 							width='300'
 							height='60'
