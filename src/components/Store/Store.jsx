@@ -2,7 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Store.css"
 import Button from '../UI/Button/Button';
-import { Link } from 'react-router-dom';
 
 const Store = ({setOpenPopup}) => {
 	const { t } = useTranslation(); // useTranslation hook

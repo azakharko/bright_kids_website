@@ -54,6 +54,19 @@
 			"error": "Message is required"
 		}
 	},
+
+	"StorePopup": {
+		"title": "Usage Rules for Digital Textbooks",
+		"description1": "We appreciate your interest in our textbooks and your support for quality education. Please note that, in accordance with copyright regulations, purchasing a single digital copy of a textbook does not grant the right to reproduce or print it in large quantities for multiple students.",
+		"description2": "If you are buying a textbook for more than two children, you must purchase as many digital copies as there are students using it.",
+		"description3": "However, if the textbook is needed for use across an entire school, you can obtain a license for unlimited printing by contacting us via email. The cost of this license is nominal and allows you to legally print the textbooks in the necessary quantity for your institution.",
+		"description4": "Thank you for respecting copyright and for your honest approach to education!",
+		"description5": "Sincerely,",
+		"button1": "Get License",
+		"button2": "Proceed",
+		"inputCheckBox": "I agree to the terms and have read the text"
+	},
+
 	"HomeCardPage": {
 		"card1": "Courses for kids and adults",
 		"card2": "Online learning",

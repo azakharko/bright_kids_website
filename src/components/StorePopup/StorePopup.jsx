@@ -2,7 +2,12 @@ import React from 'react'
 import './style/StorePopup.css'
 import Button from '../UI/Button/Button'
 
+import { useTranslation } from 'react-i18next';
+
+
 export default function StorePopup({setOpenPopup}) {
+		const { t } = useTranslation();
+	
   const [isChecked, setIsChecked] = React.useState(false);
   const [isError, setIsError] = React.useState(false); 
 
@@ -44,41 +49,29 @@ export default function StorePopup({setOpenPopup}) {
 					/>
 				</svg>
 
-				<h5>Правила використання електронних підручників</h5>
+				<h5>{t("StorePopup.title")}</h5>
 				<div className='storePopup__container-description'>
 					<p>
-						Ми вдячні вам за інтерес до наших підручників і підтримку якісної
-						освіти. Нагадуємо, що відповідно до правил авторського права,
-						придбання одного електронного примірника підручника не дає права на
-						його розмноження та роздрукування у великій кількості для кількох
-						учнів.
+						{t("StorePopup.description1")}
 
 						<br />
 						<br />
 
 						
-						Якщо ви купуєте підручник для навчання більше ніж двох дітей,
-						ви повинні придбати стільки електронних копій, скільки учнів ним
-						користуватиметься.
+						{t("StorePopup.description2")}
 						<br />
 						<br />
 
 						
-						Якщо ж підручник необхідний для використання в
-						межах цілої школи, ви можете оформити ліцензію на право друку
-						підручника в необмеженій кількості, звернувшись із запитом на нашу
-						електронну адресу. Вартість такої ліцензії є символічною і дозволяє
-						вам легально друкувати підручники в необхідній кількості для вашого
-						закладу. 
+						{t("StorePopup.description3")}
 						<br />
 						<br />
 						
-						Дякуємо за дотримання авторських прав та чесний підхід до
-						освіти! 
+						{t("StorePopup.description4")}
 						<br />
 						<br />
 						
-						З повагою,
+						{t("StorePopup.description5")}
 						<br />
 						Bright Kids Ukrainian Online
 						<br />
@@ -93,7 +86,7 @@ export default function StorePopup({setOpenPopup}) {
 							width='300'
 							height='60'
 							className='storePopup__button'
-							text='Отримати Ліцензуію'
+							text={t("StorePopup.button1")}
 							id='accept'
 						/>
 						</a>
@@ -109,7 +102,7 @@ export default function StorePopup({setOpenPopup}) {
                 width="300"
                 height="60"
                 className="storePopup__button"
-                text="Продовжити"
+                text={t("StorePopup.button2")}
                 id="accept"
                 disabled={!isChecked} 
        
@@ -127,7 +120,7 @@ export default function StorePopup({setOpenPopup}) {
 							if (e.target.checked) setIsError(false); 
 						}} 
 						/>
-						<label htmlFor="agreeCheckbox"    style={{ color: isError ? "black" : "white" }}>Погоджуюсь з умовами та ознайомлений(на) з текстом</label>
+						<label htmlFor="agreeCheckbox"    style={{ color: isError ? "black" : "white" }}>{t("StorePopup.inputCheckBox")}</label>
 					</div>
 				</div>
 			</div>
