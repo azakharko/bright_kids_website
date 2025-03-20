@@ -5,8 +5,9 @@ import Footer from '../Footer/Footer';
 import "./style/Terms.css"
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import StorePopup from '../StorePopup/StorePopup';
 
-const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
+const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange,  setOpenPopup, openPopup }) => {
   const { t, i18n } = useTranslation();
 
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
@@ -47,6 +48,9 @@ const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
   return (
     <div className='terms'>
+  {openPopup && (
+        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+      )}
 	  <div className={burgerPopup}></div>
       <Helmet>
 				<title>Bright Kids Ukrainian Online School</title>
@@ -62,8 +66,8 @@ const Terms = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
         nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
-              nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-                    <li>{t("HomePage.store")}</li></Link>}
+           	nav5={
+					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
       />
 
   <div className="catalog__link">

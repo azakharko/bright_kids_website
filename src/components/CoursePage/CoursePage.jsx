@@ -8,8 +8,9 @@ import Button from '../UI/Button/Button';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import FormPopup from '../UI/PopupForm/FormPopup';
 import flashCard from "../CoursePage/flash-card.pdf"
+import StorePopup from '../StorePopup/StorePopup';
 
-const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
+const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup, openPopup }) => {
 	const { courseLink } = useParams();
 	const navigate = useNavigate();
 
@@ -216,6 +217,9 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 
 	return (
 		<div className='Course'>
+			{openPopup && (
+				<StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+			)}
 			<div className={burgerPopup}></div>
 
 			<Helmet>
@@ -237,8 +241,8 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 				nav1={<li><Link to="/">{t("HomePage.home")}</Link></li>}
 				nav2={<li><Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>{t("HomePage.gallery")}</Link></li>}
 				nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
-				nav4={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-									<li>{t("HomePage.store")}</li></Link>}
+				nav4={
+					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
 			/>
 
 

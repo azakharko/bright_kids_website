@@ -170,24 +170,28 @@ function App() {
     }
   }, []);
 
+	const [openPopup, setOpenPopup] = useState(false);
+
+
   return (
     <HashRouter>
       <MetaPixel /> 
 
       <Routes>
-        <Route path="/course/:courseLink/*" element={<CoursePage handleLanguageChange={handleLanguageChange} courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/terms/:language" element={<Terms handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/refund/:language" element={<Refund handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/courses/:language" element={<Catalog setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/course/:courseLink/*" element={<CoursePage handleLanguageChange={handleLanguageChange} courseIndex={courseIndex} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
+        <Route path="/privacy-policy/:language" element={<Privacy handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
+        <Route path="/terms/:language" element={<Terms handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen}  setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
+        <Route path="/refund/:language" element={<Refund handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup}  />} />
+        <Route path="/courses/:language" element={<Catalog setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
 
         <Route path="/thanks/:language" element={<ThanksPage setCourseArr={setCourseArr} handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
 
-        <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
-        <Route path="/team/:language" element={<Team handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
+        <Route path="/team/:language" element={<Team handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
         <Route path="/team/details/:id/:language" element={<TeamDetails handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
 
-        <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup}/>} />
+        
       </Routes>
     </HashRouter>
   );

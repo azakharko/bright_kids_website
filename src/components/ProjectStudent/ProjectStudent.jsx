@@ -34,11 +34,14 @@ import python13 from "./img/python/python13.png";
 import python14 from "./img/python/python14.png";
 import Button from "../UI/Button/Button";
 import { Link } from "react-router-dom";
+import StorePopup from "../StorePopup/StorePopup";
 
 const ProjectStudent = ({
   setBurgerOpen,
   burgerOpen,
   handleLanguageChange,
+  setOpenPopup, 
+  openPopup
 }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
@@ -73,6 +76,9 @@ const ProjectStudent = ({
 
   return (
     <div id="gallery" className="gallery">
+      {openPopup && (
+        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+      )}
       <div className={burgerPopup}></div>
       <Helmet>
         <title>Bright Kids Ukrainian Online School</title>
@@ -94,8 +100,8 @@ const ProjectStudent = ({
         }
         nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
-              nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-                    <li>{t("HomePage.store")}</li></Link>}
+             	nav5={
+                <li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
       />
 
       <div className="gallery__box">

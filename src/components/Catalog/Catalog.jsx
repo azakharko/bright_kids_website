@@ -5,8 +5,9 @@ import Footer from '../Footer/Footer';
 import "./style/Catalog.css";
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import StorePopup from '../StorePopup/StorePopup';
 
-const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
+const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurgerOpen, handleLanguageChange, setOpenPopup, openPopup }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
   const { t } = useTranslation();
@@ -150,6 +151,9 @@ const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurge
 
   return (
     <div className='catalog'>
+					{openPopup && (
+							<StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+						)}
       <div className={burgerPopup}></div>
 
       <Header
@@ -158,8 +162,8 @@ const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurge
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
-				nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-									<li>{t("HomePage.store")}</li></Link>}
+				nav5={
+					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
       />
 
       <div className="catalog__link">

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 
-const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange }) => {
+const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguageChange, setOpenPopup }) => {
 	const { t, i18n } = useTranslation();
 
 	const myRef = useRef(null);
@@ -190,8 +190,9 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 					<li>{t("HomePage.gallery")}</li></Link>}
 				nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
 					<li>{t("HomePage.team")}</li></Link>}
-				nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-					<li>{t("HomePage.store")}</li></Link>}
+
+				nav5={
+					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
 					nav6={<Link onClick={() => handleScrollToSection('faq')}>
 					<li>{t("HomePage.faq")}</li></Link>}
 			/>

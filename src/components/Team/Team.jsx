@@ -22,6 +22,7 @@ import teacher12 from "./img/teacher12.png";
 import teacher13 from "./img/teacher13.png";
 import teacher14 from "./img/teacher14.png";
 import teacher15 from "./img/teacher15.png";
+import StorePopup from "../StorePopup/StorePopup";
 
 
 
@@ -29,6 +30,8 @@ const Team = ({
   setBurgerOpen,
   burgerOpen,
   handleLanguageChange,
+  setOpenPopup,
+  openPopup
 }) => {
   let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";
 
@@ -221,6 +224,9 @@ const Team = ({
 
   return (
     <div id="team" className="team">
+  {openPopup && (
+        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+      )}
       <div className={burgerPopup}></div>
       <Helmet>
         <title>Bright Kids Ukrainian Online School</title>
@@ -242,8 +248,8 @@ const Team = ({
         }
         nav4={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
 					<li>{t("HomePage.gallery")}</li></Link>}
-              nav5={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-                    <li>{t("HomePage.store")}</li></Link>}
+            nav5={
+					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
       />
 
       <div className="team__box">
