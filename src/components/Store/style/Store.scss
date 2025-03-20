@@ -79,7 +79,10 @@
 }
 
 @media screen and (max-width: 700px) {
-	
+	.store-div {
+		width: 100%;
+		padding: 0 30px;
+	}
 	.store {
 		&__title {
 			width: 100%;
@@ -92,10 +95,12 @@
 			flex-direction: column;
 			margin-bottom: 50px;
 
+
 			&-cardHidden {
 				display: none;
 			}
 		}
+
 
 		&__button {
 			width: 100% !important;

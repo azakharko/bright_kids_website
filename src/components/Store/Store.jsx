@@ -35,7 +35,7 @@ const Store = ({setOpenPopup}) => {
         </div>
         
       </div>
-      <div onClick={() => setOpenPopup(true)}>
+      <div className='store-div' onClick={() => setOpenPopup(true)}>
       <Button  id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
       </div>
       
