@@ -188,8 +188,7 @@ body {
 @media screen and (min-height: 850px) {
   .storePopup__container {
     border-radius: 10px;
-    padding: 20px;
-    height: 60vh; }
+    padding: 20px; }
     .storePopup__container-close {
       width: 30px;
       height: 30px; }
