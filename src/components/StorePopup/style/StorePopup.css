@@ -135,8 +135,7 @@ body {
 @media screen and (max-width: 1000px) {
   .storePopup__container {
     border-radius: 10px;
-    padding: 20px;
-    height: 90vh; }
+    padding: 20px; }
     .storePopup__container h5 {
       width: 80%; }
     .storePopup__container-description {
@@ -162,8 +161,7 @@ body {
 @media screen and (max-width: 600px) {
   .storePopup__container {
     border-radius: 10px;
-    padding: 20px;
-    height: 90vh; }
+    padding: 20px; }
     .storePopup__container-close {
       width: 30px;
       height: 30px; }
