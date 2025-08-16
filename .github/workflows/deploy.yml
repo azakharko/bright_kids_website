@@ -1,0 +1,83 @@
+name: Build & Deploy SPA to GCE VM
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}        # /var/www/spa
+      GCE_VM_HOST: ${{ secrets.GCE_VM_HOST }}        # IP або домен
+      GCE_VM_USER: ${{ secrets.GCE_VM_USER }}        # github-actions-deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests (optional)
+        run: |
+          if npm run test -- --watch=false; then
+            echo "Tests passed"
+          else
+            echo "Tests failed"; exit 1
+          fi
+
+      - name: Build
+        run: npm run build
+
+      - name: Archive build
+        run: tar -czf build.tar.gz -C build .
+
+      - name: Prepare SSH key
+        run: |
+          mkdir -p ~/.ssh
+          printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+
+      - name: Add host to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H "${{ env.GCE_VM_HOST }}" >> ~/.ssh/known_hosts || true
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Create release dir on VM and upload build
+        run: |
+          TIMESTAMP=$(date +%Y%m%d%H%M%S)
+          SHORT_SHA=${GITHUB_SHA::7}
+          RELEASE_DIR="${DEPLOY_PATH}/releases/${TIMESTAMP}-${SHORT_SHA}"
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes ${GCE_VM_USER}@${GCE_VM_HOST} "mkdir -p ${RELEASE_DIR}"
+          scp -i ~/.ssh/id_deploy build.tar.gz ${GCE_VM_USER}@${GCE_VM_HOST}:${RELEASE_DIR}/
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes ${GCE_VM_USER}@${GCE_VM_HOST} "cd ${RELEASE_DIR} && tar -xzf build.tar.gz && rm build.tar.gz"
+
+      - name: Fix permissions & activate release
+        run: |
+          # Find the latest release dir created above
+          RELEASE_DIR=$(ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes ${GCE_VM_USER}@${GCE_VM_HOST} "ls -dt ${DEPLOY_PATH}/releases/* | head -n1")
+          echo "Activating: $RELEASE_DIR"
+          # Ensure correct ownership and perms, then activate (spa-deploy-activate uses sudo)
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes ${GCE_VM_USER}@${GCE_VM_HOST} "sudo chown -R www-data:www-data \"${RELEASE_DIR}\" && sudo find \"${RELEASE_DIR}\" -type d -exec chmod 755 {} \\; && sudo find \"${RELEASE_DIR}\" -type f -exec chmod 644 {} \\; && sudo /usr/local/bin/spa-deploy-activate \"${RELEASE_DIR}\""
+
+      - name: Cleanup old releases (keep 5)
+        if: always()
+        run: |
+          ssh -i ~/.ssh/id_deploy -o StrictHostKeyChecking=yes ${GCE_VM_USER}@${GCE_VM_HOST} "ls -dt ${DEPLOY_PATH}/releases/* | tail -n +6 | xargs -r sudo rm -rf"
+
+      - name: Smoke test (curl main page)
+        run: |
+          echo "Waiting 2s for nginx reload..."
+          sleep 2
+          curl -I --max-time 10 http://${{ env.GCE_VM_HOST }} || (echo "Smoke test failed" && exit 1)
