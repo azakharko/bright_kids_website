@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Home.css"
 import Button from '../UI/Button/Button.jsx';

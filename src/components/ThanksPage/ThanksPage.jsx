@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import Header from '../UI/Header/Header';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
