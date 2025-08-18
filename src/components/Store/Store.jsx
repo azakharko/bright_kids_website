@@ -6,17 +6,17 @@ import Button from '../UI/Button/Button';
 const Store = ({setOpenPopup}) => {
 	const { t } = useTranslation(); // useTranslation hook
 
-	// const handleScrollToSection = (sectionId) => {
-	// 	if (!sectionId || sectionId === 'top') {
-	// 		window.scrollTo({ top: 0, behavior: 'smooth' });
-	// 		return;
-	// 	}
+	const handleScrollToSection = (sectionId) => {
+		if (!sectionId || sectionId === 'top') {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			return;
+		}
 
-	// 	const sectionRef = document.getElementById(sectionId);
-	// 	if (sectionRef) {
-	// 		sectionRef.scrollIntoView({ behavior: 'smooth' });
-	// 	}
-	// };
+		const sectionRef = document.getElementById(sectionId);
+		if (sectionRef) {
+			sectionRef.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 	return (
 		<div className='store'>
       <h3 className='store__title'>{t('StorePage.title')}</h3>

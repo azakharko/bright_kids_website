@@ -39,7 +39,9 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 	const [nameError] = [t(`Form.inputName.error`)];
 	const [emailError] = [t(`Form.inputEmail.error`)];
 	const [emailError2] = [t(`Form.inputEmail.error2`)];
-	const [setThisLanguage] = useState('en');
+	const [emailMessage] = [t(`Form.inputMessage.error`)];
+
+	const [thisLanguage, setThisLanguage] = useState('en');
 	const [imagePath, setImagePath] = useState('');
 	const [showForm, setShowForm] = useState(false);
 
@@ -68,7 +70,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 	};
 
 	const validateForm = () => {
-		const { name, email } = formData;
+		const { name, email, message } = formData;
 		const errors = {};
 
 		if (!name.trim()) {
