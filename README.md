@@ -120,7 +120,7 @@ React-based Single Page Application (SPA) for **Bright Kids Online School**.
 
 ## 👤 Contacts
 - **Owner:** Andriy Zakharko (<azakharko@gmail.com>)  
-- **Support:** N/A  
+- **Support:** Yurii Tovarnytskyi aka dizer2 (https://yurii-dev.netlify.app/)
 
 ---
 
