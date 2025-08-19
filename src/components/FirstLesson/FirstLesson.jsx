@@ -74,7 +74,7 @@ const FirstLesson = () => {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: new URLSearchParams({
-          apikey: 'F8E3ED66834C08B9489FC160D0B8E747DF40642B8DC9BBD731BBFB7ACAD884AE21D8F9B784CB0E88D7767F9A0B56DD6B',
+          apikey: process.env.REACT_APP_API_KEY,
           from: 'contact@brightkids.online',
           fromName: 'BrightKids',
           to: 'azakharko@gmail.com',
