@@ -15,148 +15,149 @@ const FirstLesson = () => {
 
 
   const [nameError] = [t(`Form.inputName.error`)];
-	const [emailError] = [t(`Form.inputEmail.error`)];
-	const [emailError2] = [t(`Form.inputEmail.error2`)];
-	const [emailMessage] = [t(`Form.inputMessage.error`)];
+  const [emailError] = [t(`Form.inputEmail.error`)];
+  const [emailError2] = [t(`Form.inputEmail.error2`)];
+  const [emailMessage] = [t(`Form.inputMessage.error`)];
 
-	const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
   });
 
-	const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
 
 
-	const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
 
-	const handleSubmit2 = (e) => {
-        e.preventDefault();
-        if (validateForm()) {
-            sendFormData(formData);
-        }
-    };
+  const handleSubmit2 = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      sendFormData(formData);
+    }
+  };
 
-	const validateForm = () => {
-        const { name, email, message } = formData;
-        const errors = {};
+  const validateForm = () => {
+    const { name, email, message } = formData;
+    const errors = {};
 
-        if (!name.trim()) {
-            errors.name = nameError;
-        }
+    if (!name.trim()) {
+      errors.name = nameError;
+    }
 
-        if (!email.trim()) {
-            errors.email = emailError2;
-        } else if (!/\S+@\S+\.\S+/.test(email)) {
-            errors.email = emailError;
-        }
+    if (!email.trim()) {
+      errors.email = emailError2;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = emailError;
+    }
 
-        if (!message.trim()) {
-            errors.message = emailMessage;
-        }
+    if (!message.trim()) {
+      errors.message = emailMessage;
+    }
 
-        setErrors(errors);
-        return Object.keys(errors).length === 0;
-    };
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
-	const sendFormData = async (data) => {
-        const response = await fetch('https://api.elasticemail.com/v2/email/send', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded'
-				},
-				body: new URLSearchParams({
-					apikey: process.env.API_KEY,
-					from: 'contact@brightkids.online',
-					fromName: 'BrightKids',
-					to: 'azakharko@gmail.com',
-					subject: 'New Contact Form Submission',
-					bodyText: `From: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
-					bodyHtml: `<p><b>From:</b> ${data.name}<br/><b>Email:</b> ${data.email}</p><p>${data.message}</p>`,
-					isTransactional: true
-				})
-			});
+  const sendFormData = async (data) => {
+    try {
+      const response = await fetch('https://api.elasticemail.com/v2/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+          apikey: process.env.API_KEY,
+          from: 'contact@brightkids.online',
+          fromName: 'BrightKids',
+          to: 'azakharko@gmail.com',
+          subject: 'New Contact Form Submission',
+          bodyText: `From: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
+          bodyHtml: `<p><b>From:</b> ${data.name}<br/><b>Email:</b> ${data.email}</p><p>${data.message}</p>`,
+          isTransactional: true
+        })
+      });
 
-			const result = await response.json();
-			console.log('Form data sent successfully:', result);
-			setFormSubmitted(true);
+      const result = await response.json();
+      console.log('Form data sent successfully:', result);
+      setFormSubmitted(true);
 
-			setFormData({
-				name: '',
-				email: '',
-				message: ''
-			});
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
 
-			setTimeout(() => {
-				setFormSubmitted(false);
-			}, 4000);
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 4000);
 
-        } catch (error) {
-            console.error('Error sending form data:', error);
-        }
-    };
+    } catch (error) {
+      console.error('Error sending form data:', error);
+    }
+  };
 
   return (
     <div id='firstLesson' className="first-lesson">
-      <FormPopup status={formSubmitted}/>
+      <FormPopup status={formSubmitted} />
 
       <div className="CoursePage__form">
-          <form onSubmit={handleSubmit2} name="main-form">
-            <p className='CoursePage__form-title' style={{ color: formSubmitted ? 'green' : 'black' }}>
-              {formSubmitted ? 
-                t(`Form.successfully-send`)
-              : 								
-                t(`Form.title`)
-              }
-            </p>
+        <form onSubmit={handleSubmit2} name="main-form">
+          <p className='CoursePage__form-title' style={{ color: formSubmitted ? 'green' : 'black' }}>
+            {formSubmitted ?
+              t(`Form.successfully-send`)
+              :
+              t(`Form.title`)
+            }
+          </p>
 
-            <div className="CoursePage__form-input">
-              <p>{t(`Form.inputName.subTitle`)}</p>
-              <input
-                type="text"
-                name='name'
-                value={formData.name}
-                onChange={handleChange}
-                placeholder={t(`Form.input-placeholder`)}
-              />
-              {errors.name && <p className='form__error'>{errors.name}</p>}
-            </div>
+          <div className="CoursePage__form-input">
+            <p>{t(`Form.inputName.subTitle`)}</p>
+            <input
+              type="text"
+              name='name'
+              value={formData.name}
+              onChange={handleChange}
+              placeholder={t(`Form.input-placeholder`)}
+            />
+            {errors.name && <p className='form__error'>{errors.name}</p>}
+          </div>
 
-            <div className="CoursePage__form-input">
-              <p>{t(`Form.inputEmail.subTitle`)}</p>
-              <input
-                type="text"
-                name='email'
-                value={formData.email}
-                onChange={handleChange}
-                placeholder={t(`Form.input-placeholder`)}
-              />
-              {errors.email && <p className='form__error'>{errors.email}</p>}
-            </div>
+          <div className="CoursePage__form-input">
+            <p>{t(`Form.inputEmail.subTitle`)}</p>
+            <input
+              type="text"
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
+              placeholder={t(`Form.input-placeholder`)}
+            />
+            {errors.email && <p className='form__error'>{errors.email}</p>}
+          </div>
 
-            <div className="CoursePage__form-input">
-              <p>{t(`Form.inputMessage.subTitle`)}</p>
-              <textarea
-                name='message'
-                value={formData.message}
-                onChange={handleChange}
-                placeholder={t(`Form.input-placeholder`)}
-              />
-              {errors.message && <p className='form__error'>{errors.message}</p>}
-            </div>
+          <div className="CoursePage__form-input">
+            <p>{t(`Form.inputMessage.subTitle`)}</p>
+            <textarea
+              name='message'
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={t(`Form.input-placeholder`)}
+            />
+            {errors.message && <p className='form__error'>{errors.message}</p>}
+          </div>
 
-            <Button type="submit" id="btn-main-send-form" width={700} height={70} className="course__buttons" text={t("ReadyPage.trialLessonButton")} />
-          </form>
-			</div>
+          <Button type="submit" id="btn-main-send-form" width={700} height={70} className="course__buttons" text={t("ReadyPage.trialLessonButton")} />
+        </form>
+      </div>
     </div>
- 
+
   );
 };
 
