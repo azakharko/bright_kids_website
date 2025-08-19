@@ -91,6 +91,8 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 
 	const sendFormData = async (data) => {
 		try {
+			console.log('Sending form data:', process.env.API_KEY);
+			
 			const response = await fetch('https://api.elasticemail.com/v2/email/send', {
 				method: 'POST',
 				headers: {
