@@ -91,20 +91,25 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 
 	const sendFormData = async (data) => {
 		try {
-			const response = await fetch('https://my-node-app-ub6hoxgggq-uc.a.run.app/api/post', {
+			const response = await fetch('https://api.elasticemail.com/v2/email/send', {
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/json',
-					'x-secret': '6a408858320f411eb8e55c806b3a545d'
+					'Content-Type': 'application/x-www-form-urlencoded'
 				},
-				body: JSON.stringify({
-					full_name: data.name,
-					contact_email: data.email,
-					message: data.message
+				body: new URLSearchParams({
+					apikey: process.env.API_KEY,
+					from: 'contact@brightkids.online',
+					fromName: 'BrightKids',
+					to: 'azakharko@gmail.com',
+					subject: 'New Contact Form Submission',
+					bodyText: `From: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
+					bodyHtml: `<p><b>From:</b> ${data.name}<br/><b>Email:</b> ${data.email}</p><p>${data.message}</p>`,
+					isTransactional: true
 				})
 			});
-			const responseData = await response.json();
-			console.log('Form data sent successfully:', responseData);
+
+			const result = await response.json();
+			console.log('Form data sent successfully:', result);
 			setFormSubmitted(true);
 
 			
