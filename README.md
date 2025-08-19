@@ -73,6 +73,10 @@ React-based Single Page Application (SPA) for **Bright Kids Online School**.
 - **Error Tracking:** N/A  
 - **Logging:** N/A  
 - **Auth:** N/A  
+- **E-Commerce:** 
+  - `admin` → [payhip admin dashboard](https://payhip.com/dashboard)
+  - `dashboard` → [payhip store dashboard](https://payhip.com/BrightKidsUkrainianOnlineSchool)
+- **Payment Providers:** [PayPal, Stripe]
 
 ---
 
