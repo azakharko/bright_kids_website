@@ -1,74 +1,129 @@
-# Build Status
+# Bright Kids Online School Web Site
+
+React-based Single Page Application (SPA) for **Bright Kids Online School**.
+
+## 📌 Project Overview
+- **Name:** Bright Kids Online School Web Site  
+- **Description:** React-based SPA  
+- **Status:** Production  
+- **License:** Proprietary  
+- **Tech Stack:**  
+  - Frontend: React  
+  - Backend: N/A  
+  - Database: N/A  
+
+---
+
+## Build Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/efdce2ac-6c06-4201-abab-4fd406b1e308/deploy-status)](https://app.netlify.com/projects/bright-kids-online/deploys)
 
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📂 Repository
+- **Host:** GitHub  
+- **Repo:** [azakharko/bright_kids_website](https://github.com/azakharko/bright_kids_website)  
+- **Default Branch:** `main`  
+- **Strategy:** Trunk-based development  
+- **Checks:** lint  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Environments
+- **Environments:** Production only  
+- **URLs:**  
+  - **Prod:** [https://brightkids.online/](https://brightkids.online/)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ CI/CD Pipeline
+- **Platform:** [Netlify](https://app.netlify.com/projects/bright-kids-online)  
+- **Auth:** Google OAuth (connected account)  
+- **Triggers:** Push to `main`  
+- **Deploy Type:** Static site  
+- **Rollback:** Built-in rollback + code revert  
+- **Dashboards:**  
+  - [Builds](https://app.netlify.com/teams/azakharko/builds)  
+  - [Deployments](https://app.netlify.com/projects/bright-kids-online/deploys)  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ☁️ Hosting
+- **Provider:** [Netlify](https://app.netlify.com/projects/bright-kids-online/configuration/general#project-details)  
+- **Plan:** Pro ($19/month)  
+- **Auth:** Google OAuth (connected account)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌍 Domain & DNS
+- **Registrar:** [Network Solutions](https://www.networksolutions.com)  
+- **Auth:** Google OAuth (2FA enabled)  
+- **DNS Servers:** DNS105.REGISTER.COM, DNS106.REGISTER.COM  
+- **Primary Domain:** `brightkids.online`  
+- **Records:**  
+  - `www` → `brightkids.online`  
+- **TLS/SSL:** Let’s Encrypt  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔗 Integrations
+- **Email:** [Elastic Email](https://app.elasticemail.com/) (configured for SPF/DKIM/DMARC)  
+- **Domain:** brightkids.online  
+- **Analytics:** Facebook Pixel, Google Analytics 4  
+- **Error Tracking:** N/A  
+- **Logging:** N/A  
+- **Auth:** N/A  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔑 Configuration & Secrets
+- **Env Vars (dev):** `CI`, `NETLIFY_EMAILS_DIRECTORY`, `REACT_APP_API_KEY`  
+- **Env Vars (prod):** `CI`, `NETLIFY_EMAILS_DIRECTORY`, `REACT_APP_API_KEY`  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔍 Observability
+- **Uptime:** TBD  
+- **Alerting:** TBD  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 💾 Backup & DR
+- **Database Backups:** N/A  
+- **RTO/RPO:** TBD  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔒 Security
+- **MFA:** Enabled  
+- **Security Headers:** TBD  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 💰 Costs
+- **Hosting & Deployment Pipeline:** $19/month  
+- **Email:** $0/month  
+- **Domain Name:** $69/year  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛠 Maintenance
+- **Tasks:** Deploy, maintain  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📦 Releases
+- **Versioning:** Semantic Versioning (SemVer)  
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 👤 Contacts
+- **Owner:** Andriy Zakharko (<azakharko@gmail.com>)  
+- **Support:** N/A  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📖 Notes
+This project is actively maintained and running in production on Netlify under the Bright Kids Online School brand.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
