@@ -1,3 +1,7 @@
+# Build Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/efdce2ac-6c06-4201-abab-4fd406b1e308/deploy-status)](https://app.netlify.com/projects/bright-kids-online/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
