@@ -92,14 +92,14 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 	const sendFormData = async (data) => {
 		try {
 			console.log('Sending form data:', process.env.API_KEY);
-			
+
 			const response = await fetch('https://api.elasticemail.com/v2/email/send', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded'
 				},
 				body: new URLSearchParams({
-					apikey: process.env.API_KEY,
+					apikey: 'F8E3ED66834C08B9489FC160D0B8E747DF40642B8DC9BBD731BBFB7ACAD884AE21D8F9B784CB0E88D7767F9A0B56DD6B',
 					from: 'contact@brightkids.online',
 					fromName: 'BrightKids',
 					to: 'azakharko@gmail.com',
