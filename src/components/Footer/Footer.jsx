@@ -74,7 +74,7 @@ const Footer = () => {
 
 				<div className="footer__bottom-box">
 					<a target='_blank' rel="noreferrer" href='https://yurii-dev.netlify.app/'>
-						© {currentYear} Bright Kids Ukrainian Online School
+						© 2021 - {currentYear} Bright Kids Ukrainian Online School
 						<span id='logo'>the web-site was created 	<div className="logo__yurii"></div></span>
 					</a>
 
