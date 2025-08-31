@@ -16,7 +16,6 @@ const Media = () => {
 					<div className="media__box-img media__box-img2"></div>
 				</a>
 			</div>
-
 		</div>
 	)
 }

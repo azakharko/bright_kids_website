@@ -162,7 +162,7 @@ const TeamDetails = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
   const teacher = teamArr.find((item) => item.id === parseInt(id));
 
   if (teacher.name.length > 14) {
-    teacher.name = teacher.name.substring(0, 14) + '...'; 
+    teacher.name = teacher.name.substring(0, 14) + '...';
   }
 
   console.log(teacher);

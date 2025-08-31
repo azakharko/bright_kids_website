@@ -55,7 +55,7 @@ const ThanksPage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 				<title>{t(`Thanks.title`)} | {t(`SEO.title`)}</title>
 			</Helmet>
 
-		
+
 
 
 			<Header
@@ -66,16 +66,16 @@ const ThanksPage = ({ setBurgerOpen, burgerOpen, handleLanguageChange }) => {
 				nav2={<li><Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>{t("HomePage.gallery")}</Link></li>}
 				nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
 				nav4={<Link target='_blank' to={`https://payhip.com/BrightKidsUkrainianOnlineSchool`}>
-									<li>{t("HomePage.store")}</li></Link>}
+					<li>{t("HomePage.store")}</li></Link>}
 			/>
 
 			<div className='ThanksPage'>
-					<h4>{t('Thanks.title')}</h4>
+				<h4>{t('Thanks.title')}</h4>
 
-					<a rel="noreferrer" href="/">
+				<a rel="noreferrer" href="/">
 					<Button id="btn-thanks" text={t('Thanks.button')} width={300} height={85} className="start__buttons-button" />
-					</a>
-					
+				</a>
+
 			</div>
 			<Footer />
 		</div>

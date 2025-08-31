@@ -5,11 +5,11 @@ import Button from '../UI/Button/Button'
 import { useTranslation } from 'react-i18next';
 
 
-export default function StorePopup({setOpenPopup}) {
-		const { t } = useTranslation();
-	
-  const [isChecked, setIsChecked] = React.useState(false);
-  const [isError, setIsError] = React.useState(false); 
+export default function StorePopup({ setOpenPopup }) {
+	const { t } = useTranslation();
+
+	const [isChecked, setIsChecked] = React.useState(false);
+	const [isError, setIsError] = React.useState(false);
 
 	React.useEffect(() => {
 		document.body.style.overflow = 'hidden'
@@ -21,11 +21,11 @@ export default function StorePopup({setOpenPopup}) {
 	}
 
 	const handleProceedClick = (e) => {
-    if (!isChecked) {
-      e.preventDefault(); 
-      setIsError(true); 
-    }
-  };
+		if (!isChecked) {
+			e.preventDefault();
+			setIsError(true);
+		}
+	};
 
 	return (
 		<div className='storePopup'>
@@ -57,20 +57,20 @@ export default function StorePopup({setOpenPopup}) {
 						<br />
 						<br />
 
-						
+
 						{t("StorePopup.description2")}
 						<br />
 						<br />
 
-						
+
 						{t("StorePopup.description3")}
 						<br />
 						<br />
-						
+
 						{t("StorePopup.description4")}
 						<br />
 						<br />
-						
+
 						{t("StorePopup.description5")}
 						<br />
 						Bright Kids Ukrainian Online
@@ -79,48 +79,48 @@ export default function StorePopup({setOpenPopup}) {
 					</p>
 				</div>
 				<div className='storePopup__container-container'>
-				
+
 					<div className='storePopup__container-buttons'>
 						<a href="mailto:BrightKidsSchool2020@gmail.com?subject=Запит на ліцензію&body=Доброго дня! Підкажіть, будь ласка, де можна переглянути умови ліцензії? Нас цікавить інформація для школи, яка називається [назва школи] і знаходиться [місто/місце розташування].">
-						<Button
-							width='300'
-							height='60'
-							className='storePopup__button'
-							text={t("StorePopup.button1")}
-							id='accept'
-						/>
+							<Button
+								width='300'
+								height='60'
+								className='storePopup__button'
+								text={t("StorePopup.button1")}
+								id='accept'
+							/>
 						</a>
 
-						<a 
-              href={isChecked ? "https://payhip.com/BrightKidsUkrainianOnlineSchool" : "#"}
-              target={isChecked ? "_blank" : ""}
-              rel={isChecked ? "noopener noreferrer" : ""}
-              onClick={handleProceedClick}
+						<a
+							href={isChecked ? "https://payhip.com/BrightKidsUkrainianOnlineSchool" : "#"}
+							target={isChecked ? "_blank" : ""}
+							rel={isChecked ? "noopener noreferrer" : ""}
+							onClick={handleProceedClick}
 							style={{ opacity: isChecked ? 1 : 0.5, cursor: isChecked ? "pointer" : "not-allowed" }}
-            >
-              <Button
-                width="300"
-                height="60"
-                className="storePopup__button"
-                text={t("StorePopup.button2")}
-                id="accept"
-                disabled={!isChecked} 
-       
-              />
-            </a>
+						>
+							<Button
+								width="300"
+								height="60"
+								className="storePopup__button"
+								text={t("StorePopup.button2")}
+								id="accept"
+								disabled={!isChecked}
+
+							/>
+						</a>
 					</div>
 
 					<div className='storePopup__container-input'>
-						<input 
-						type='checkbox' 
-						id="agreeCheckbox"
-						checked={isChecked} 
-						onChange={(e) => {
-							setIsChecked(e.target.checked);
-							if (e.target.checked) setIsError(false); 
-						}} 
+						<input
+							type='checkbox'
+							id="agreeCheckbox"
+							checked={isChecked}
+							onChange={(e) => {
+								setIsChecked(e.target.checked);
+								if (e.target.checked) setIsError(false);
+							}}
 						/>
-						<label htmlFor="agreeCheckbox"    style={{ color: isError ? "black" : "white" }}>{t("StorePopup.inputCheckBox")}</label>
+						<label htmlFor="agreeCheckbox" style={{ color: isError ? "black" : "white" }}>{t("StorePopup.inputCheckBox")}</label>
 					</div>
 				</div>
 			</div>

@@ -170,14 +170,13 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 
 	const handleLinkClick = () => {
 		const currentUrl = new URL(window.location.origin);
-		window.history.pushState({}, '', currentUrl);	
+		window.history.pushState({}, '', currentUrl);
 		setBurgerOpen(false);
 		document.body.classList.remove("body-hidden", false);
 	};
 
 	return (
 		<div ref={myRef} className='home' id='home'>
-
 			<div className={burgerPopup}></div>
 
 			<Header
@@ -186,15 +185,10 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				setBurgerOpen={setBurgerOpen}
 				nav1={<li onClick={() => handleScrollToSection('about-us')}>{t("HomePage.aboutUs")}</li>}
 				nav2={<li onClick={() => handleScrollToSection('course')}>{t("HomePage.courses")}</li>}
-				nav3={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
-					<li>{t("HomePage.gallery")}</li></Link>}
-				nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
-					<li>{t("HomePage.team")}</li></Link>}
-
-				nav5={
-					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
-					nav6={<Link onClick={() => handleScrollToSection('faq')}>
-					<li>{t("HomePage.faq")}</li></Link>}
+				nav3={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}><li>{t("HomePage.gallery")}</li></Link>}
+				nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}><li>{t("HomePage.team")}</li></Link>}
+				nav5={<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
+				nav6={<Link onClick={() => handleScrollToSection('faq')}><li>{t("HomePage.faq")}</li></Link>}
 			/>
 
 			<Helmet>
@@ -213,14 +207,12 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 					<svg className='home__star' xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
 						<path d="M0.375085 27.0968C0.275078 27.071 0.275079 26.929 0.375085 26.9032L18.6056 22.1971C20.367 21.7424 21.7424 20.3669 22.1971 18.6055L26.9032 0.375059C26.929 0.275052 27.071 0.275053 27.0969 0.375059L31.8029 18.6055C32.2576 20.3669 33.6331 21.7424 35.3945 22.1971L53.625 26.9032C53.725 26.929 53.725 27.071 53.625 27.0968L35.3945 31.8029C33.6331 32.2576 32.2576 33.6331 31.8029 35.3944L27.0969 53.6249C27.071 53.7249 26.929 53.7249 26.9032 53.6249L22.1971 35.3945C21.7424 33.6331 20.367 32.2576 18.6056 31.8029L0.375085 27.0968Z" fill="#B41D8A" />
 					</svg>
-
 				</div>
 
 				<div className="home__main-right">
 					<div className="home__elipes"></div>
 				</div>
 			</main>
-
 		</div>
 	)
 }

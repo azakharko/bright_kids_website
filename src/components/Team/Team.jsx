@@ -55,11 +55,11 @@ const Team = ({
   };
 
   const handleLinkClick = () => {
-		const currentUrl = new URL(window.location.origin);
-		window.history.pushState({}, '', currentUrl);	
-		setBurgerOpen(false);
-		document.body.classList.remove("body-hidden", false);
-	};
+    const currentUrl = new URL(window.location.origin);
+    window.history.pushState({}, '', currentUrl);
+    setBurgerOpen(false);
+    document.body.classList.remove("body-hidden", false);
+  };
 
   const generateTeamArr = () => [
     {
@@ -224,8 +224,8 @@ const Team = ({
 
   return (
     <div id="team" className="team">
-  {openPopup && (
-        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup}/>
+      {openPopup && (
+        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup} />
       )}
       <div className={burgerPopup}></div>
       <Helmet>
@@ -247,9 +247,9 @@ const Team = ({
           </li>
         }
         nav4={<Link onClick={handleLinkClick} to={`/projects/${i18n.language}`}>
-					<li>{t("HomePage.gallery")}</li></Link>}
-            nav5={
-					<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
+          <li>{t("HomePage.gallery")}</li></Link>}
+        nav5={
+          <li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
       />
 
       <div className="team__box">
@@ -287,28 +287,28 @@ const Team = ({
             />
           </svg>
           <span>{t(`Team.title`)}</span>
-      
+
         </div>
 
         <div className="team__box--container">
 
-        {teamArr.map((item) => (
-          <div key={item.id} className="team__card">
-          <div>
-            <img className="team__card--img" src={item.img} alt="name" />
-            <div className="team__card--box"> 
-              <h4 className="team__card--title">{item.name}</h4>
-              <p className="team__card--description">{item.position}</p>
-            </div>
-          </div>
+          {teamArr.map((item) => (
+            <div key={item.id} className="team__card">
+              <div>
+                <img className="team__card--img" src={item.img} alt="name" />
+                <div className="team__card--box">
+                  <h4 className="team__card--title">{item.name}</h4>
+                  <p className="team__card--description">{item.position}</p>
+                </div>
+              </div>
 
-          <div className="team__card--bottom">
-            <Link onClick={() => handleScrollToSection('top')} to={`/team/details/${item.id}/${i18n.language}`}>
-              <button>{t('Team.button')}</button>
-            </Link>
-          </div>
-        </div>
-        ))}
+              <div className="team__card--bottom">
+                <Link onClick={() => handleScrollToSection('top')} to={`/team/details/${item.id}/${i18n.language}`}>
+                  <button>{t('Team.button')}</button>
+                </Link>
+              </div>
+            </div>
+          ))}
 
         </div>
 
