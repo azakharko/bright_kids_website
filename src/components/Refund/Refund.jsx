@@ -115,6 +115,44 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
 
       </div>
 
+      {/* New PaymentRules section */}
+      <div className="refund__main">
+        <p className='refund__main-title'>{t(`PaymentRules.title`)}</p>
+
+        <div className='refund__main-title'>{t(`PaymentRules.section1Title`)}
+          <span className='refund__main-description'>
+            {t(`PaymentRules.section1a`)}<br />
+            {t(`PaymentRules.section1b`)}<br />
+            {t(`PaymentRules.section1c`)}<br />
+            {t(`PaymentRules.section1d`)}
+          </span>
+        </div>
+
+        <div className='refund__main-title'>{t(`PaymentRules.section2Title`)}
+          <span className='refund__main-description'>
+            {t(`PaymentRules.section2a`)}<br />
+            {t(`PaymentRules.section2b`)}<br />
+            {t(`PaymentRules.section2c`)}
+          </span>
+        </div>
+
+        <div className='refund__main-title'>{t(`PaymentRules.section3Title`)}
+          <span className='refund__main-description'>
+            {t(`PaymentRules.section3a`)}<br />
+            {t(`PaymentRules.section3b`)}
+          </span>
+        </div>
+
+        <div className='refund__main-title'>{t(`PaymentRules.section4Title`)}
+          <span className='refund__main-description'>
+            {t(`PaymentRules.section4a`)}<br />
+            {t(`PaymentRules.section4b`)}<br />
+            {t(`PaymentRules.section4c`)}<br />
+            {t(`PaymentRules.section4d`)}
+          </span>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

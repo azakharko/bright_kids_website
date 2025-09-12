@@ -441,6 +441,30 @@
 		"callUsButton": "Call us",
 		"trialLessonButton": "Try a free trial lesson"
 	},
+	"PaymentRules": {
+		"title": "Payment and Attendance Rules at Bright Kids",
+
+		"section1Title": "1. Individual Lessons",
+		"section1a": "Payment is made in advance each time for 10 lessons.",
+		"section1b": "If parents do not notify the teacher about canceling a lesson at least 3 hours before it starts, the lesson is considered held and the payment is not refundable.",
+		"section1c": "If parents notify in advance (at least 3 hours before), the payment is transferred to the next lesson.",
+		"section1d": "If parents prefer to pay per lesson, this is also possible, but in that case the price per lesson increases by 25%.",
+
+		"section2Title": "2. Group Lessons",
+		"section2a": "Payment is made in a subscription format: either immediately for 10 lessons, or for 2 months of study.",
+		"section2b": "If parents prefer to pay per lesson, this is also possible, but in that case the price per lesson increases by 25%.",
+		"section2c": "If a child misses a lesson, we offer a recording of the class for parents. This allows the child not to lose the material and to master the topic.",
+
+		"section3Title": "3. Suspension of Lessons",
+		"section3a": "If parents, for any reason, want to take a break from studying, we can freeze the funds for up to six months and wait for the child to resume attendance.",
+		"section3b": "Parents can inform either the teacher or the school administration about their decision.",
+
+		"section4Title": "4. Refunds",
+		"section4a": "If parents request a refund after the lessons have started, 50% of the prepaid amount is returned.",
+		"section4b": "If lessons have not yet started, the payment is fully refundable.",
+		"section4c": "We do not refund payments for lessons that have already been held.",
+		"section4d": "Refunds are processed within 10 days from the cancellation request."
+	},
 	"RefundPolice": {
 		"titile": "Refund policy",
 		"subTitle1": "Trial Lesson:",
@@ -463,7 +487,7 @@
 		"titleGround2": "Use of the Website You agree to use our website only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the website. You are responsible for ensuring that all information you provide through the website is true, accurate, and complete.",
 		"titleGround3": "Intellectual Property Rights All intellectual property rights in our website, including but not limited to copyrights, trademarks, trade names, and logos, are owned by our online language school or its licensors. You agree not to reproduce, modify, distribute, or otherwise use any content from our website without our prior written consent.",
 		"titleGround4": "Payment and Refunds Our online language school offers a variety of payment options, including credit cards and online payment systems. You agree to pay all fees and charges associated with your use of our courses and services. We reserve the right to change our prices and payment terms at any time. Refunds are subject to our Refund Policy, which is available on our website.",
-		"titleGround5": "Disclaimer of Warranties Our online language school provides its courses and services 'as is' and without any warranty or condition, express, implied or statutory. We do not warrant that our website will be uninterrupted, error-free, or free from viruses or other harmful components.",
+		"titleGround5": "Disclaimer of Warranties Our online language school provides its courses and services 'as is' and without any warranty or condition, express, implied or statutory.",
 		"titleGround6": "Limitation of Liability Our online language school shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of our website, courses, or services. This includes, without limitation, damages for loss of profits, business interruption, or loss of data.",
 		"titleGround7": "Governing Law and Jurisdiction These Terms of Use shall be governed by and construed in accordance with the laws of the jurisdiction in which our online language school is based, without giving effect to any principles of conflicts of law. Any dispute arising out of or in connection with these Terms of Use shall be submitted to the exclusive jurisdiction of the courts of that jurisdiction.",
 		"titleGround8": "Changes to these Terms of Use We reserve the right to modify these Terms of Use at any time. Any changes will be posted on our website and will be effective immediately upon posting.",
