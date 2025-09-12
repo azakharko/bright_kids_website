@@ -46,9 +46,7 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
 
   return (
     <div className='refund'>
-      {openPopup && (
-        <StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup} />
-      )}
+      {openPopup && (<StorePopup openPopup={openPopup} setOpenPopup={setOpenPopup} />)}
       <div className={burgerPopup}></div>
       <Helmet>
         <title>Bright Kids Ukrainian Online School</title>
@@ -59,13 +57,10 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
         burgerOpen={burgerOpen}
         setBurgerOpen={setBurgerOpen}
         nav1={<li><a href="/">{t("HomePage.home")}</a></li>}
-        nav2={<Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}>
-          <li>{t("HomePage.gallery")}</li></Link>}
+        nav2={<Link onClick={handleBurgerAndLinkClick} to={`/projects/${i18n.language}`}><li>{t("HomePage.gallery")}</li></Link>}
         nav3={<li onClick={() => handleScrollToSection('footer')}>{t("HomePage.contact")}</li>}
-        nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}>
-          <li>{t("HomePage.team")}</li></Link>}
-        nav5={
-          <li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>}
+        nav4={<Link onClick={handleLinkClick} to={`/team/${i18n.language}`}><li>{t("HomePage.team")}</li></Link>}
+        nav5={<li onClick={() => setOpenPopup(true)}>{t("HomePage.store")}</li>} 
       />
 
       <div className="catalog__link">
@@ -85,34 +80,15 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
 
       <div className="refund__main">
         <p className='refund__main-title'>{t(`RefundPolice.titile`)}</p>
-
-        <div className='refund__main-title'>{t(`RefundPolice.subTitle1`)}     <span className='refund__main-description'>{t(`RefundPolice.description1`)}</span></div>
-
+        <div className='refund__main-title'>{t(`RefundPolice.subTitle1`)} <span className='refund__main-description'>{t(`RefundPolice.description1`)}</span></div>
         <div className='refund__main-title'>{t(`RefundPolice.subTitle2`)} <span className='refund__main-description'>{t(`RefundPolice.description2`)}</span></div>
-
-        <div className='refund__main-title'>{t(`RefundPolice.subTitle3`)} <span className='refund__main-description'>{t(`RefundPolice.description3`)}  </span></div>
-
-        <p className='terms__main-description terms__main-description2'>
-          1.
-          {t(`RefundPolice.titleGround1`)}</p>
-
-        <p className='terms__main-description terms__main-description2'>
-          2.
-          {t(`RefundPolice.titleGround2`)}</p>
-
-        <p className='terms__main-description terms__main-description2'>
-          3.
-          {t(`RefundPolice.titleGround3`)}</p>
-
-        <p className='terms__main-description terms__main-description2'>
-          4.
-          {t(`RefundPolice.titleGround4`)}</p>
-
-
+        <div className='refund__main-title'>{t(`RefundPolice.subTitle3`)} <span className='refund__main-description'>{t(`RefundPolice.description3`)}</span></div>
+        <p className='terms__main-description terms__main-description2'>1. {t(`RefundPolice.titleGround1`)}</p>
+        <p className='terms__main-description terms__main-description2'>2. {t(`RefundPolice.titleGround2`)}</p>
+        <p className='terms__main-description terms__main-description2'>3. {t(`RefundPolice.titleGround3`)}</p>
+        <p className='terms__main-description terms__main-description2'>4. {t(`RefundPolice.titleGround4`)}</p>
         <p className='refund__main-description'>{t(`RefundPolice.description4`)}</p>
-
         <p className='refund__main-description'>{t(`RefundPolice.description5`)}</p>
-
       </div>
 
       {/* New PaymentRules section */}
@@ -120,6 +96,7 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
         <p className='refund__main-title'>{t(`PaymentRules.title`)}</p>
 
         <div className='refund__main-title'>{t(`PaymentRules.section1Title`)}
+          <br />
           <span className='refund__main-description'>
             {t(`PaymentRules.section1a`)}<br />
             {t(`PaymentRules.section1b`)}<br />
@@ -129,6 +106,7 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
         </div>
 
         <div className='refund__main-title'>{t(`PaymentRules.section2Title`)}
+          <br />
           <span className='refund__main-description'>
             {t(`PaymentRules.section2a`)}<br />
             {t(`PaymentRules.section2b`)}<br />
@@ -137,6 +115,7 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
         </div>
 
         <div className='refund__main-title'>{t(`PaymentRules.section3Title`)}
+          <br />
           <span className='refund__main-description'>
             {t(`PaymentRules.section3a`)}<br />
             {t(`PaymentRules.section3b`)}
@@ -144,6 +123,7 @@ const Refund = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPopup,
         </div>
 
         <div className='refund__main-title'>{t(`PaymentRules.section4Title`)}
+          <br />
           <span className='refund__main-description'>
             {t(`PaymentRules.section4a`)}<br />
             {t(`PaymentRules.section4b`)}<br />
