@@ -154,6 +154,7 @@
 
 @media screen and (max-width: 600px) {
 	.storePopup {
+		overflow-y: auto;
 		&__container {
 			border-radius: 10px;
 			padding: 20px;

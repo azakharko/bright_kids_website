@@ -1,36 +1,58 @@
 import React from 'react'
-import './style/StorePopup.css'
 import Button from '../UI/Button/Button'
+import './style/StorePopup.css'
 
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from 'react-i18next'
 
 export default function StorePopup({ setOpenPopup }) {
-	const { t } = useTranslation();
+	const { t } = useTranslation()
 
-	const [isChecked, setIsChecked] = React.useState(false);
-	const [isError, setIsError] = React.useState(false);
+	const [isChecked, setIsChecked] = React.useState(false)
+	const [isError, setIsError] = React.useState(false)
 
 	React.useEffect(() => {
+		// set CSS --vh for mobile browsers to avoid 100vh issues
+		const setVh = () => {
+			document.documentElement.style.setProperty(
+				'--vh',
+				`${window.innerHeight * 0.01}px`
+			)
+		}
+
+		setVh()
+		window.addEventListener('resize', setVh)
+		window.addEventListener('orientationchange', setVh)
+
+		// lock body scroll while popup is open
+		const previousOverflow = document.body.style.overflow
 		document.body.style.overflow = 'hidden'
-	}, [setOpenPopup])
+
+		return () => {
+			window.removeEventListener('resize', setVh)
+			window.removeEventListener('orientationchange', setVh)
+			// restore body overflow when popup unmounts
+			document.body.style.overflow = previousOverflow || 'auto'
+		}
+	}, [])
 
 	const handleClose = () => {
 		setOpenPopup(false)
+		// body overflow will be restored by cleanup effect, but restore here too for immediate effect
 		document.body.style.overflow = 'auto'
 	}
 
 	const handleProceedClick = (e) => {
 		if (!isChecked) {
-			e.preventDefault();
-			setIsError(true);
+			e.preventDefault()
+			setIsError(true)
 		}
-	};
+	}
 
 	return (
 		<div className='storePopup'>
 			<div className='storePopup__container'>
-				<svg onClick={handleClose}
+				<svg
+					onClick={handleClose}
 					className='storePopup__container-close'
 					width='36'
 					height='36'
@@ -49,29 +71,22 @@ export default function StorePopup({ setOpenPopup }) {
 					/>
 				</svg>
 
-				<h5>{t("StorePopup.title")}</h5>
+				<h5>{t('StorePopup.title')}</h5>
 				<div className='storePopup__container-description'>
 					<p>
-						{t("StorePopup.description1")}
-
+						{t('StorePopup.description1')}
 						<br />
 						<br />
-
-
-						{t("StorePopup.description2")}
+						{t('StorePopup.description2')}
 						<br />
 						<br />
-
-
-						{t("StorePopup.description3")}
+						{t('StorePopup.description3')}
 						<br />
 						<br />
-
-						{t("StorePopup.description4")}
+						{t('StorePopup.description4')}
 						<br />
 						<br />
-
-						{t("StorePopup.description5")}
+						{t('StorePopup.description5')}
 						<br />
 						Bright Kids Ukrainian Online
 						<br />
@@ -79,33 +94,38 @@ export default function StorePopup({ setOpenPopup }) {
 					</p>
 				</div>
 				<div className='storePopup__container-container'>
-
 					<div className='storePopup__container-buttons'>
-						<a href="mailto:BrightKidsSchool2020@gmail.com?subject=Запит на ліцензію&body=Доброго дня! Підкажіть, будь ласка, де можна переглянути умови ліцензії? Нас цікавить інформація для школи, яка називається [назва школи] і знаходиться [місто/місце розташування].">
+						<a href='mailto:BrightKidsSchool2020@gmail.com?subject=Запит на ліцензію&body=Доброго дня! Підкажіть, будь ласка, де можна переглянути умови ліцензії? Нас цікавить інформація для школи, яка називається [назва школи] і знаходиться [місто/місце розташування].'>
 							<Button
 								width='300'
 								height='60'
 								className='storePopup__button'
-								text={t("StorePopup.button1")}
+								text={t('StorePopup.button1')}
 								id='accept'
 							/>
 						</a>
 
 						<a
-							href={isChecked ? "https://payhip.com/BrightKidsUkrainianOnlineSchool" : "#"}
-							target={isChecked ? "_blank" : ""}
-							rel={isChecked ? "noopener noreferrer" : ""}
+							href={
+								isChecked
+									? 'https://payhip.com/BrightKidsUkrainianOnlineSchool'
+									: '#'
+							}
+							target={isChecked ? '_blank' : ''}
+							rel={isChecked ? 'noopener noreferrer' : ''}
 							onClick={handleProceedClick}
-							style={{ opacity: isChecked ? 1 : 0.5, cursor: isChecked ? "pointer" : "not-allowed" }}
+							style={{
+								opacity: isChecked ? 1 : 0.5,
+								cursor: isChecked ? 'pointer' : 'not-allowed',
+							}}
 						>
 							<Button
-								width="300"
-								height="60"
-								className="storePopup__button"
-								text={t("StorePopup.button2")}
-								id="accept"
+								width='300'
+								height='60'
+								className='storePopup__button'
+								text={t('StorePopup.button2')}
+								id='accept'
 								disabled={!isChecked}
-
 							/>
 						</a>
 					</div>
@@ -113,14 +133,19 @@ export default function StorePopup({ setOpenPopup }) {
 					<div className='storePopup__container-input'>
 						<input
 							type='checkbox'
-							id="agreeCheckbox"
+							id='agreeCheckbox'
 							checked={isChecked}
 							onChange={(e) => {
-								setIsChecked(e.target.checked);
-								if (e.target.checked) setIsError(false);
+								setIsChecked(e.target.checked)
+								if (e.target.checked) setIsError(false)
 							}}
 						/>
-						<label htmlFor="agreeCheckbox" style={{ color: isError ? "black" : "white" }}>{t("StorePopup.inputCheckBox")}</label>
+						<label
+							htmlFor='agreeCheckbox'
+							style={{ color: isError ? 'black' : 'white' }}
+						>
+							{t('StorePopup.inputCheckBox')}
+						</label>
 					</div>
 				</div>
 			</div>
