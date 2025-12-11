@@ -88,7 +88,7 @@ body {
 	width: 80%;
 	max-width: 800px;
 	/* use --vh to avoid mobile browser toolbar/URL bar issues */
-	max-height: calc(var(--vh, 1vh) * 100 - 40px);
+	max-height: calc(var(--vh, 1vh) * 100 - 80px);
 	border-radius: 20px;
 	background-color: #b41d8a;
 	display: flex;
@@ -96,7 +96,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 20px 50px;
-	padding-bottom: calc(20px + env(safe-area-inset-bottom));
+	padding-bottom: calc(30px + env(safe-area-inset-bottom));
 	position: relative;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -229,10 +229,10 @@ body {
 	}
 	.storePopup__container {
 		width: calc(100% - 20px);
-		max-height: calc(100vh - 20px);
+		max-height: calc(var(--vh, 1vh) * 100 - 40px);
 		border-radius: 10px;
 		padding: 20px;
-		padding-bottom: max(20px, env(safe-area-inset-bottom));
+		padding-bottom: calc(30px + env(safe-area-inset-bottom));
 	}
 	.storePopup__container-close {
 		width: 30px;
@@ -274,7 +274,7 @@ body {
 	}
 	.storePopup__container-input {
 		gap: 10px;
-		margin-bottom: env(safe-area-inset-bottom);
+		margin-bottom: calc(10px + env(safe-area-inset-bottom));
 	}
 }
 
@@ -286,8 +286,9 @@ body {
 	}
 
 	.storePopup__container {
-		/* Prevent zoom on input focus */
-		max-height: calc(-webkit-fill-available - 40px);
+		/* Prevent zoom on input focus and ensure proper height */
+		max-height: calc(-webkit-fill-available - 80px);
+		padding-bottom: calc(40px + env(safe-area-inset-bottom));
 	}
 }
 
@@ -295,8 +296,9 @@ body {
 @media screen and (max-height: 500px) and (orientation: landscape) {
 	.storePopup__container {
 		width: 90%;
-		max-height: calc(100vh - 20px);
+		max-height: calc(var(--vh, 1vh) * 100 - 40px);
 		padding: 15px;
+		padding-bottom: calc(20px + env(safe-area-inset-bottom));
 	}
 
 	.storePopup__container h5 {
