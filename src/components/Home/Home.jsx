@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style/Home.css"
 import Button from '../UI/Button/Button.jsx';
@@ -166,6 +166,7 @@ const Home = ({ setCourseArr, setCards, burgerOpen, setBurgerOpen, handleLanguag
 				link: `${t("CoursePage.course14.link")}`
 			},
 		])
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [t]);
 
 	const handleLinkClick = () => {

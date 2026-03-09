@@ -41,7 +41,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 	const [emailError2] = [t(`Form.inputEmail.error2`)];
 	const [emailMessage] = [t(`Form.inputMessage.error`)];
 
-	const [thisLanguage, setThisLanguage] = useState('en');
+	const [, setThisLanguage] = useState('en');
 	const [imagePath, setImagePath] = useState('');
 	const [showForm, setShowForm] = useState(false);
 
@@ -81,6 +81,10 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 			errors.email = emailError2;
 		} else if (!/\S+@\S+\.\S+/.test(email)) {
 			errors.email = emailError;
+		}
+
+		if (!message.trim()) {
+			errors.message = emailMessage;
 		}
 
 		setErrors(errors);
@@ -136,6 +140,7 @@ const CoursePage = ({ setBurgerOpen, burgerOpen, handleLanguageChange, setOpenPo
 
 	useEffect(() => {
 		setThisLanguage(i18n.language);
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [t])
 
 	let burgerPopup = burgerOpen ? "home__popup home__popup-open" : "home__popup";

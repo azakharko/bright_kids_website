@@ -11,6 +11,7 @@ const FirstLesson = () => {
 
   useEffect(() => {
     setThisLanguage(i18n.language)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [t])
 
 

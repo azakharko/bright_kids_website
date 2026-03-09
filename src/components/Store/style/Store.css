@@ -96,8 +96,22 @@ body {
         background-image: url(../img/book1.png); }
       .store__container-card--book3 {
         background-image: url(../img/book2.png); }
-      .store__container-card--book4 {
-        background-image: url(../img/book4.png); }
+  .store__container-card--book4 {
+    background-image: url(../img/book4.png); }
+
+.store-div--buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; }
+
+.store-div--buttons a {
+  display: block; }
+
+.store__button--secondary {
+  background-color: #fff !important;
+  color: #B41D8A !important;
+  border: 2px solid #B41D8A !important; }
 
 @media screen and (max-width: 1350px) {
   .store__title {

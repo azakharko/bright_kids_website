@@ -1,0 +1,144 @@
+.store-cart {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-cart__link {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.store-cart__link a {
+  color: #B41D8A;
+  text-decoration: none;
+}
+
+.store-cart__sep {
+  margin: 0 0.25rem;
+}
+
+.store-cart__main {
+  flex: 1;
+  padding: 1rem 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.store-cart__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.store-cart__empty {
+  text-align: center;
+  padding: 3rem;
+}
+
+.store-cart__empty p {
+  margin-bottom: 1rem;
+}
+
+.store-cart__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.store-cart__row {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px 40px;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.store-cart__row:last-child {
+  border-bottom: none;
+}
+
+.store-cart__row-image img,
+.store-cart__row-placeholder {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #f0f0f0;
+}
+
+.store-cart__row-placeholder {
+  background: #e0e0e0;
+}
+
+.store-cart__row-title {
+  font-weight: 500;
+}
+
+.store-cart__row-price {
+  color: #B41D8A;
+  font-weight: 600;
+}
+
+.store-cart__row-qty input {
+  width: 100%;
+  padding: 0.35rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.store-cart__row-remove {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #666;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.store-cart__row-remove:hover {
+  background: #f5f5f5;
+  color: #c00;
+}
+
+.store-cart__summary {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.store-cart__summary p {
+  margin: 0 0 1rem;
+}
+
+.store-cart__btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #B41D8A;
+  background: transparent;
+  border: 2px solid #B41D8A;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.store-cart__btn--primary {
+  color: #fff;
+  background: #B41D8A;
+  border-color: #B41D8A;
+}
+
+.store-cart__btn:hover {
+  opacity: 0.9;
+}
