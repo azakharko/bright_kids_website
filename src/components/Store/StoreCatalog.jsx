@@ -56,7 +56,7 @@ export default function StoreCatalog({
         if (!cancelled) setData(res);
       })
       .catch((err) => {
-        if (!cancelled) setError(err.message);
+        if (!cancelled) setError(typeof err.message === 'string' ? err.message : 'Failed to load products.');
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -97,7 +97,7 @@ export default function StoreCatalog({
       <main className="store-catalog__main">
         <h1 className="store-catalog__title">{t('StorePage.title')}</h1>
         {loading && <p className="store-catalog__loading">{t('StorePage.loading')}</p>}
-        {error && <p className="store-catalog__error">{error}</p>}
+        {error && <p className="store-catalog__error" role="alert">{typeof error === 'string' ? error : 'Failed to load products.'}</p>}
         {!loading && !error && data.data?.length === 0 && (
           <p className="store-catalog__empty">No products yet.</p>
         )}

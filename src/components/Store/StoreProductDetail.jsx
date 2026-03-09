@@ -36,7 +36,7 @@ export default function StoreProductDetail({
         }
       })
       .catch((err) => {
-        if (!cancelled) setError(err.message);
+        if (!cancelled) setError(typeof err.message === 'string' ? err.message : 'Failed to load product.');
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -99,7 +99,7 @@ export default function StoreProductDetail({
           nav3={<li onClick={() => handleScrollToSection('footer')}>{t('HomePage.contact')}</li>}
           nav5={<li><a href="/#/store/cart">{t('StorePage.cart')}</a></li>}
         />
-        <p className="store-pdp__error">{error || 'Product not found'}</p>
+        <p className="store-pdp__error" role="alert">{typeof error === 'string' ? error : 'Product not found'}</p>
         <button type="button" onClick={() => navigate('/store')}>{t('StorePage.backToStore')}</button>
       </div>
     );

@@ -1,14 +1,25 @@
 const API = '/api';
 
+async function getErrorMessage(res) {
+  const text = await res.text();
+  if (!text) return res.status === 404 ? 'Not found.' : 'Something went wrong. Please try again.';
+  try {
+    const data = JSON.parse(text);
+    if (data && typeof data.error === 'string') return data.error;
+  } catch (_) {}
+  if (text.length > 200) return res.status === 404 ? 'Not found.' : 'Something went wrong. Please try again.';
+  return text;
+}
+
 export async function fetchProducts(limit = 20, page = 1) {
   const res = await fetch(`${API}/products?limit=${limit}&page=${page}`);
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }
 
 export async function fetchProduct(id) {
   const res = await fetch(`${API}/products/${id}`);
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }
 
@@ -18,7 +29,7 @@ export async function calculateShipping(body) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }
 
@@ -28,7 +39,7 @@ export async function createCheckoutSession(body) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }
 
@@ -38,7 +49,7 @@ export async function createPayPalOrder(body) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }
 
@@ -48,6 +59,6 @@ export async function capturePayPalOrder(body) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(await res.text());
+  if (!res.ok) throw new Error(await getErrorMessage(res));
   return res.json();
 }

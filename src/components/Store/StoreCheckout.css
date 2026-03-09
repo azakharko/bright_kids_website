@@ -97,6 +97,11 @@
 }
 
 .store-checkout__error {
-  color: #c00;
-  margin-top: 0.5rem;
+  color: #b00;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #fff0f0;
+  border-radius: 6px;
+  border-left: 4px solid #c00;
+  font-size: 0.95rem;
 }

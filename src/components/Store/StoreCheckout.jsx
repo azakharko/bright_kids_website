@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '../UI/Header/Header';
 import Footer from '../Footer/Footer';
 import { useCart } from '../../context/CartContext';
-import { calculateShipping, createCheckoutSession, createPayPalOrder } from '../../api/storeApi';
+import { calculateShipping, createCheckoutSession } from '../../api/storeApi';
 import './StoreCheckout.css';
 
 const SHIPPING_KEYS = [
@@ -39,7 +39,6 @@ export default function StoreCheckout({
   const [selectedShipping, setSelectedShipping] = useState(null);
   const [loadingShipping, setLoadingShipping] = useState(false);
   const [loadingPay, setLoadingPay] = useState(false);
-  const [loadingPayPal, setLoadingPayPal] = useState(false);
   const [error, setError] = useState(null);
 
   const lineItems = items.map((i) => ({
@@ -69,7 +68,7 @@ export default function StoreCheckout({
       });
       setShippingCosts(res);
     } catch (err) {
-      setError(err.message || 'Failed to get shipping options');
+      setError(typeof err.message === 'string' ? err.message : 'Failed to get shipping options.');
     } finally {
       setLoadingShipping(false);
     }
@@ -102,46 +101,9 @@ export default function StoreCheckout({
       }
       setError('No checkout URL returned');
     } catch (err) {
-      setError(err.message || 'Failed to start checkout');
+      setError(typeof err.message === 'string' ? err.message : 'Failed to start checkout.');
     } finally {
       setLoadingPay(false);
-    }
-  };
-
-  const handlePayPal = async () => {
-    if (!selectedShipping || !shippingCosts) {
-      setError('Please select a shipping option.');
-      return;
-    }
-    setError(null);
-    setLoadingPayPal(true);
-    const base = window.location.origin + (window.location.pathname || '/') + (window.location.search || '');
-    const successUrl = base + (base.endsWith('#') ? '' : '#') + '/store/checkout/success';
-    const cancelUrl = base + (base.endsWith('#') ? '' : '#') + '/store/checkout/cancel';
-    try {
-      const shippingCostCents = shippingCosts[selectedShipping] ?? 0;
-      const shippingMethodNum = selectedShipping === 'standard' ? 1 : selectedShipping === 'economy' ? 4 : selectedShipping === 'express' ? 2 : selectedShipping === 'priority' ? 3 : selectedShipping === 'printify_express' ? 5 : 1;
-      const res = await createPayPalOrder({
-        line_items: lineItems,
-        address_to: address,
-        shipping_method: shippingMethodNum,
-        shipping_cost_cents: shippingCostCents,
-        subtotal_cents: subtotalCents,
-        success_url: successUrl,
-        cancel_url: cancelUrl,
-      });
-      if (res.approvalUrl && res.orderId) {
-        const orderPayload = { li: lineItems, a: address, s: shippingMethodNum };
-        sessionStorage.setItem('paypal_order_payload', JSON.stringify(orderPayload));
-        sessionStorage.setItem('paypal_order_id', res.orderId);
-        window.location.href = res.approvalUrl;
-        return;
-      }
-      setError('No PayPal approval URL returned');
-    } catch (err) {
-      setError(err.message || 'Failed to start PayPal checkout');
-    } finally {
-      setLoadingPayPal(false);
     }
   };
 
@@ -244,23 +206,18 @@ export default function StoreCheckout({
             <p>{t('StorePage.shipping')}: ${(shippingCostCents / 100).toFixed(2)}</p>
           )}
           <p><strong>{t('StorePage.total')}: ${(totalCents / 100).toFixed(2)}</strong></p>
-          {error && <p className="store-checkout__error">{error}</p>}
+          {error && (
+            <p className="store-checkout__error" role="alert">
+              {typeof error === 'string' ? error : 'Something went wrong. Please try again.'}
+            </p>
+          )}
           <button
             type="button"
             onClick={handlePay}
-            disabled={loadingPay || loadingPayPal || !selectedShipping}
+            disabled={loadingPay || !selectedShipping}
             className="store-checkout__btn store-checkout__btn--primary"
           >
             {loadingPay ? t('StorePage.loading') : t('StorePage.payWithStripe')}
-          </button>
-          <button
-            type="button"
-            onClick={handlePayPal}
-            disabled={loadingPay || loadingPayPal || !selectedShipping}
-            className="store-checkout__btn store-checkout__btn--paypal"
-            style={{ marginLeft: '0.5rem' }}
-          >
-            {loadingPayPal ? t('StorePage.loading') : t('StorePage.payWithPayPal')}
           </button>
         </section>
       </main>

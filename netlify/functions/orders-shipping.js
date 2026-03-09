@@ -29,10 +29,12 @@ exports.handler = async (event) => {
       body: JSON.stringify(data),
     };
   } catch (err) {
+    const status = err.statusCode >= 400 && err.statusCode < 600 ? err.statusCode : 500;
+    const message = err.message || 'Failed to calculate shipping';
     return {
-      statusCode: 500,
+      statusCode: status,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ error: err.message || 'Failed to calculate shipping' }),
+      body: JSON.stringify({ error: message }),
     };
   }
 };
