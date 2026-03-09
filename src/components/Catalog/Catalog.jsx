@@ -146,6 +146,7 @@ const Catalog = ({ setCourseArr, courseArr, setCourseIndex, burgerOpen, setBurge
 				link: `${t("CoursePage.course14.link")}`
 			},
 		])
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [t]);
 
 

@@ -1,0 +1,22 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
+# Rewrite /api/* to Netlify Functions (200 = proxy, not redirect)
+[[redirects]]
+  from = "/api/products/:id"
+  to = "/.netlify/functions/product?id=:id"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+# SPA fallback: serve index.html for client-side routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

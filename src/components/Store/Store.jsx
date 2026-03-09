@@ -1,22 +1,12 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import "./style/Store.css"
 import Button from '../UI/Button/Button';
 
-const Store = ({ setOpenPopup }) => {
+const Store = () => {
   const { t } = useTranslation(); // useTranslation hook
 
-  const handleScrollToSection = (sectionId) => {
-    if (!sectionId || sectionId === 'top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-
-    const sectionRef = document.getElementById(sectionId);
-    if (sectionRef) {
-      sectionRef.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   return (
     <div className='store'>
       <h3 className='store__title'>{t('StorePage.title')}</h3>
@@ -35,8 +25,13 @@ const Store = ({ setOpenPopup }) => {
         </div>
 
       </div>
-      <div className='store-div' onClick={() => setOpenPopup(true)}>
-        <Button id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
+      <div className='store-div store-div--buttons'>
+        <Link to="/store">
+          <Button id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
+        </Link>
+        <Link to="/store">
+          <Button id="btn-order-tshirt" text={t('StorePage.orderTshirt')} width={300} height={85} className="store__button store__button--secondary" />
+        </Link>
       </div>
 
 

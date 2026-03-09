@@ -50,7 +50,7 @@ const Header = ({ nav1, nav2, nav3, nav4, nav5, nav6, burgerOpen, setBurgerOpen,
   return (
     <header className="home__header" id='header' ref={myRef}>
       <noscript>
-        <iframe title="gtm_frame" src='https://www.googletagmanager.com/ns.html?id=GTM-KMWP45N2' height='0' width='0' style='display:none;visibility:hidden'></iframe>
+        <iframe title="gtm_frame" src='https://www.googletagmanager.com/ns.html?id=GTM-KMWP45N2' height='0' width='0' style={{ display: 'none', visibility: 'hidden' }}></iframe>
       </noscript>
 
       <div className={animationPopup}>
