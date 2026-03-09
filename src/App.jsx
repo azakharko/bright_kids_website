@@ -13,6 +13,12 @@ import Team from "./components/Team/Team.jsx";
 import TeamDetails from "./components/TeamDetails/TeamDetails.jsx";
 import ThanksPage from "./components/ThanksPage/ThanksPage.jsx"
 import MetaPixel from "./MetaPixel.jsx";
+import StoreCatalog from "./components/Store/StoreCatalog.jsx";
+import StoreProductDetail from "./components/Store/StoreProductDetail.jsx";
+import StoreCart from "./components/Store/StoreCart.jsx";
+import StoreCheckout from "./components/Store/StoreCheckout.jsx";
+import StoreCheckoutSuccess from "./components/Store/StoreCheckoutSuccess.jsx";
+import StoreCheckoutCancel from "./components/Store/StoreCheckoutCancel.jsx";
 
 function App() {
   const [burgerOpen, setBurgerOpen] = useState(false);
@@ -189,6 +195,13 @@ function App() {
         <Route path="/projects/*" element={<ProjectStudent handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
         <Route path="/team/:language" element={<Team handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
         <Route path="/team/details/:id/:language" element={<TeamDetails handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+
+        <Route path="/store" element={<StoreCatalog handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup} />} />
+        <Route path="/store/product/:id" element={<StoreProductDetail handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/store/cart" element={<StoreCart handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/store/checkout" element={<StoreCheckout handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/store/checkout/success" element={<StoreCheckoutSuccess handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
+        <Route path="/store/checkout/cancel" element={<StoreCheckoutCancel handleLanguageChange={handleLanguageChange} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} />} />
 
         <Route path="/*" element={<Page handleLanguageChange={handleLanguageChange} setCourseIndex={setCourseIndex} courseArr={courseArr} setCourseArr={setCourseArr} burgerOpen={burgerOpen} setBurgerOpen={setBurgerOpen} setOpenPopup={setOpenPopup} openPopup={openPopup}/>} />
         

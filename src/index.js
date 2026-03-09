@@ -1,6 +1,7 @@
 import React, { Suspense, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
+import { CartProvider } from './context/CartContext.jsx';
 import "./i18n.js";
 import Loading from "./components/UI/Popup/Popup.jsx";
 import CookieConsent from "react-cookie-consent";
@@ -35,7 +36,9 @@ root.render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
       <LoadingDelay delay={1000}>
-        <App />
+        <CartProvider>
+          <App />
+        </CartProvider>
         <CookieConsent
           location="bottom"
           buttonText="Accept"

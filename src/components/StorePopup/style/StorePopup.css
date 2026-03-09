@@ -287,7 +287,7 @@ body {
 
 	.storePopup__container {
 		/* Prevent zoom on input focus */
-		max-height: calc(-webkit-fill-available - 40px);
+		max-height: calc(100vh - 40px);
 	}
 }
 

@@ -216,6 +216,7 @@ const Team = ({
 
   useEffect(() => {
     setTeamArr(generateTeamArr());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [i18n.language]);
 
 
