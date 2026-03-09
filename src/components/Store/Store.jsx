@@ -25,9 +25,12 @@ const Store = () => {
         </div>
 
       </div>
-      <div className='store-div'>
+      <div className='store-div store-div--buttons'>
         <Link to="/store">
           <Button id="btn-store" text={t('StorePage.buttonName')} width={300} height={85} className="store__button" />
+        </Link>
+        <Link to="/store">
+          <Button id="btn-order-tshirt" text={t('StorePage.orderTshirt')} width={300} height={85} className="store__button store__button--secondary" />
         </Link>
       </div>
 
