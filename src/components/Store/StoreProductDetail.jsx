@@ -31,8 +31,11 @@ export default function StoreProductDetail({
       .then((p) => {
         if (!cancelled) {
           setProduct(p);
-          const first = p.variants?.find((v) => v.is_enabled !== false) || p.variants?.[0];
-          if (first) setSelectedVariantId(first.id);
+          // Use default variant so PDP matches store listing and checkout
+          const defaultVariant = p.variants?.find((v) => v.is_default === true);
+          const fallback = p.variants?.find((v) => v.is_enabled !== false) || p.variants?.[0];
+          const initial = defaultVariant || fallback;
+          if (initial) setSelectedVariantId(initial.id);
         }
       })
       .catch((err) => {

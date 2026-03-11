@@ -10,8 +10,14 @@ import './StoreCatalog.css';
 function ProductCard({ product }) {
   const { t } = useTranslation();
   const image = product.images?.[0]?.src || product.variants?.[0]?.image || null;
-  const minPrice = product.variants?.length
-    ? Math.min(...product.variants.map((v) => v.price ?? v.cost ?? 0))
+  // Use default variant price so store listing matches product detail and checkout
+  const displayPrice = product.variants?.length
+    ? (() => {
+        const defaultVariant = product.variants.find((v) => v.is_default === true);
+        const fallback = product.variants.find((v) => v.is_enabled !== false) || product.variants[0];
+        const variant = defaultVariant || fallback;
+        return variant ? (variant.price ?? variant.cost ?? 0) : 0;
+      })()
     : 0;
 
   return (
@@ -26,7 +32,7 @@ function ProductCard({ product }) {
         </div>
         <h3 className="store-catalog__card-title">{product.title}</h3>
         <p className="store-catalog__card-price">
-          {minPrice > 0 ? `$${(minPrice / 100).toFixed(2)}` : '—'}
+          {displayPrice > 0 ? `$${(displayPrice / 100).toFixed(2)}` : '—'}
         </p>
         <span className="store-catalog__card-cta">{t('StorePage.viewProduct')}</span>
       </Link>
