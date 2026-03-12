@@ -15,6 +15,58 @@ const SHIPPING_KEYS = [
   { key: 'printify_express', labelKey: 'express' },
 ];
 
+const US_STATES = [
+  { value: 'AL', label: 'Alabama' },
+  { value: 'AK', label: 'Alaska' },
+  { value: 'AZ', label: 'Arizona' },
+  { value: 'AR', label: 'Arkansas' },
+  { value: 'CA', label: 'California' },
+  { value: 'CO', label: 'Colorado' },
+  { value: 'CT', label: 'Connecticut' },
+  { value: 'DE', label: 'Delaware' },
+  { value: 'FL', label: 'Florida' },
+  { value: 'GA', label: 'Georgia' },
+  { value: 'ID', label: 'Idaho' },
+  { value: 'IL', label: 'Illinois' },
+  { value: 'IN', label: 'Indiana' },
+  { value: 'IA', label: 'Iowa' },
+  { value: 'KS', label: 'Kansas' },
+  { value: 'KY', label: 'Kentucky' },
+  { value: 'LA', label: 'Louisiana' },
+  { value: 'ME', label: 'Maine' },
+  { value: 'MD', label: 'Maryland' },
+  { value: 'MA', label: 'Massachusetts' },
+  { value: 'MI', label: 'Michigan' },
+  { value: 'MN', label: 'Minnesota' },
+  { value: 'MS', label: 'Mississippi' },
+  { value: 'MO', label: 'Missouri' },
+  { value: 'MT', label: 'Montana' },
+  { value: 'NE', label: 'Nebraska' },
+  { value: 'NV', label: 'Nevada' },
+  { value: 'NH', label: 'New Hampshire' },
+  { value: 'NJ', label: 'New Jersey' },
+  { value: 'NM', label: 'New Mexico' },
+  { value: 'NY', label: 'New York' },
+  { value: 'NC', label: 'North Carolina' },
+  { value: 'ND', label: 'North Dakota' },
+  { value: 'OH', label: 'Ohio' },
+  { value: 'OK', label: 'Oklahoma' },
+  { value: 'OR', label: 'Oregon' },
+  { value: 'PA', label: 'Pennsylvania' },
+  { value: 'RI', label: 'Rhode Island' },
+  { value: 'SC', label: 'South Carolina' },
+  { value: 'SD', label: 'South Dakota' },
+  { value: 'TN', label: 'Tennessee' },
+  { value: 'TX', label: 'Texas' },
+  { value: 'UT', label: 'Utah' },
+  { value: 'VT', label: 'Vermont' },
+  { value: 'VA', label: 'Virginia' },
+  { value: 'WA', label: 'Washington' },
+  { value: 'WV', label: 'West Virginia' },
+  { value: 'WI', label: 'Wisconsin' },
+  { value: 'WY', label: 'Wyoming' },
+];
+
 export default function StoreCheckout({
   burgerOpen,
   setBurgerOpen,
@@ -28,7 +80,7 @@ export default function StoreCheckout({
     last_name: '',
     email: '',
     phone: '',
-    country: '',
+    country: 'US',
     region: '',
     address1: '',
     address2: '',
@@ -167,8 +219,13 @@ export default function StoreCheckout({
             <input type="text" name="last_name" placeholder={t('StorePage.lastName')} value={address.last_name} onChange={handleAddressChange} required />
             <input type="email" name="email" placeholder={t('StorePage.email')} value={address.email} onChange={handleAddressChange} required />
             <input type="tel" name="phone" placeholder={t('StorePage.phone')} value={address.phone} onChange={handleAddressChange} />
-            <input type="text" name="country" placeholder={t('StorePage.country')} value={address.country} onChange={handleAddressChange} required />
-            <input type="text" name="region" placeholder={t('StorePage.region')} value={address.region} onChange={handleAddressChange} />
+            <input type="text" name="country" placeholder={t('StorePage.country')} value={address.country} disabled aria-label={t('StorePage.country')} />
+            <select name="region" value={address.region} onChange={handleAddressChange} aria-label={t('StorePage.region')}>
+              <option value="">{t('StorePage.region')}</option>
+              {US_STATES.map(({ value, label }) => (
+                <option key={value} value={value}>{label}</option>
+              ))}
+            </select>
             <input type="text" name="address1" placeholder={t('StorePage.address1')} value={address.address1} onChange={handleAddressChange} required />
             <input type="text" name="address2" placeholder={t('StorePage.address2')} value={address.address2} onChange={handleAddressChange} />
             <input type="text" name="city" placeholder={t('StorePage.city')} value={address.city} onChange={handleAddressChange} required />
