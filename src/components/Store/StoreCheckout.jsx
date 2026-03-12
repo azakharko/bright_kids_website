@@ -67,6 +67,46 @@ const US_STATES = [
   { value: 'WY', label: 'Wyoming' },
 ];
 
+const ZIP_REGEX = /^\d{5}(-\d{4})?$/;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_MASKED_REGEX = /^\d{3}-\d{4}-\d{3}$/;
+
+function formatPhoneInput(value) {
+  const digits = value.replace(/\D/g, '').slice(0, 10);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 7) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+  return `${digits.slice(0, 3)}-${digits.slice(3, 7)}-${digits.slice(7)}`;
+}
+
+function validateAddress(address) {
+  const required = [
+    ['first_name', 'First name'],
+    ['last_name', 'Last name'],
+    ['email', 'Email'],
+    ['phone', 'Phone'],
+    ['region', 'State'],
+    ['address1', 'Address'],
+    ['address2', 'Address line 2'],
+    ['city', 'City'],
+    ['zip', 'ZIP code'],
+  ];
+  for (const [key, label] of required) {
+    if (!address[key] || !String(address[key]).trim()) {
+      return `${label} is required.`;
+    }
+  }
+  if (!EMAIL_REGEX.test(address.email.trim())) {
+    return 'Please enter a valid email address.';
+  }
+  if (!ZIP_REGEX.test(address.zip.trim())) {
+    return 'ZIP must be XXXXX or XXXXX-XXXX (numbers only).';
+  }
+  if (!PHONE_MASKED_REGEX.test(address.phone.trim())) {
+    return 'Phone must be in format XXX-XXXX-XXX.';
+  }
+  return null;
+}
+
 export default function StoreCheckout({
   burgerOpen,
   setBurgerOpen,
@@ -101,14 +141,19 @@ export default function StoreCheckout({
 
   const handleAddressChange = (e) => {
     const { name, value } = e.target;
-    setAddress((prev) => ({ ...prev, [name]: value }));
+    let nextValue = value;
+    if (name === 'phone') {
+      nextValue = formatPhoneInput(value);
+    }
+    setAddress((prev) => ({ ...prev, [name]: nextValue }));
     setShippingCosts(null);
     setSelectedShipping(null);
   };
 
   const fetchShipping = async () => {
-    if (!address.first_name || !address.last_name || !address.email || !address.country || !address.address1 || !address.city || !address.zip) {
-      setError('Please fill required address fields.');
+    const validationError = validateAddress(address);
+    if (validationError) {
+      setError(validationError);
       return;
     }
     setError(null);
@@ -218,19 +263,19 @@ export default function StoreCheckout({
             <input type="text" name="first_name" placeholder={t('StorePage.firstName')} value={address.first_name} onChange={handleAddressChange} required />
             <input type="text" name="last_name" placeholder={t('StorePage.lastName')} value={address.last_name} onChange={handleAddressChange} required />
             <input type="email" name="email" placeholder={t('StorePage.email')} value={address.email} onChange={handleAddressChange} required />
-            <input type="tel" name="phone" placeholder={t('StorePage.phone')} value={address.phone} onChange={handleAddressChange} />
+            <input type="tel" name="phone" placeholder="XXX-XXXX-XXX" value={address.phone} onChange={handleAddressChange} required maxLength={12} />
             <hr />
             <input type="text" name="country" placeholder={t('StorePage.country')} value={address.country} disabled aria-label={t('StorePage.country')} />
-            <select name="region" value={address.region} onChange={handleAddressChange} aria-label={t('StorePage.region')}>
+            <select name="region" value={address.region} onChange={handleAddressChange} aria-label={t('StorePage.region')} required>
               <option value="">{t('StorePage.region')}</option>
               {US_STATES.map(({ value, label }) => (
                 <option key={value} value={value}>{label}</option>
               ))}
             </select>
             <input type="text" name="address1" placeholder={t('StorePage.address1')} value={address.address1} onChange={handleAddressChange} required />
-            <input type="text" name="address2" placeholder={t('StorePage.address2')} value={address.address2} onChange={handleAddressChange} />
+            <input type="text" name="address2" placeholder={t('StorePage.address2')} value={address.address2} onChange={handleAddressChange} required />
             <input type="text" name="city" placeholder={t('StorePage.city')} value={address.city} onChange={handleAddressChange} required />
-            <input type="text" name="zip" placeholder={t('StorePage.zip')} value={address.zip} onChange={handleAddressChange} required />
+            <input type="text" name="zip" placeholder={t('StorePage.zip')} value={address.zip} onChange={handleAddressChange} required pattern="\d{5}(-\d{4})?" title="XXXXX or XXXXX-XXXX" />
           </div>
           <button type="button" onClick={fetchShipping} disabled={loadingShipping} className="store-checkout__btn">
             {loadingShipping ? t('StorePage.loading') : t('StorePage.selectShipping')}
