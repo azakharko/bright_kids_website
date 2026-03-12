@@ -219,6 +219,7 @@ export default function StoreCheckout({
             <input type="text" name="last_name" placeholder={t('StorePage.lastName')} value={address.last_name} onChange={handleAddressChange} required />
             <input type="email" name="email" placeholder={t('StorePage.email')} value={address.email} onChange={handleAddressChange} required />
             <input type="tel" name="phone" placeholder={t('StorePage.phone')} value={address.phone} onChange={handleAddressChange} />
+            <hr />
             <input type="text" name="country" placeholder={t('StorePage.country')} value={address.country} disabled aria-label={t('StorePage.country')} />
             <select name="region" value={address.region} onChange={handleAddressChange} aria-label={t('StorePage.region')}>
               <option value="">{t('StorePage.region')}</option>

@@ -50,7 +50,8 @@
   margin-bottom: 1rem;
 }
 
-.store-checkout__form input {
+.store-checkout__form input,
+.store-checkout__form select {
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
