@@ -307,7 +307,7 @@ export default function StoreCheckout({
         )}
 
         <section className="store-checkout__section">
-          <h2>{t('StorePage.total')}</h2>
+          <h2><strong>{t('StorePage.total')}</strong></h2>
           <p>{t('StorePage.subtotal')}: ${(subtotalCents / 100).toFixed(2)}</p>
           {selectedShipping && shippingCostCents > 0 && (
             <p>{t('StorePage.shipping')}: ${(shippingCostCents / 100).toFixed(2)}</p>
