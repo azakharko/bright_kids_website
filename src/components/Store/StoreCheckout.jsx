@@ -86,7 +86,6 @@ function validateAddress(address) {
     ['phone', 'Phone'],
     ['region', 'State'],
     ['address1', 'Address'],
-    ['address2', 'Address line 2'],
     ['city', 'City'],
     ['zip', 'ZIP code'],
   ];
@@ -259,6 +258,11 @@ export default function StoreCheckout({
 
         <section className="store-checkout__section">
           <h2>{t('StorePage.address')}</h2>
+          {error && (
+            <p className="store-checkout__error" role="alert">
+              {typeof error === 'string' ? error : 'Something went wrong. Please try again.'}
+            </p>
+          )}
           <div className="store-checkout__form">
             <input type="text" name="first_name" placeholder={t('StorePage.firstName')} value={address.first_name} onChange={handleAddressChange} required />
             <input type="text" name="last_name" placeholder={t('StorePage.lastName')} value={address.last_name} onChange={handleAddressChange} required />
@@ -273,7 +277,7 @@ export default function StoreCheckout({
               ))}
             </select>
             <input type="text" name="address1" placeholder={t('StorePage.address1')} value={address.address1} onChange={handleAddressChange} required />
-            <input type="text" name="address2" placeholder={t('StorePage.address2')} value={address.address2} onChange={handleAddressChange} required />
+            <input type="text" name="address2" placeholder={t('StorePage.address2')} value={address.address2} onChange={handleAddressChange} />
             <input type="text" name="city" placeholder={t('StorePage.city')} value={address.city} onChange={handleAddressChange} required />
             <input type="text" name="zip" placeholder={t('StorePage.zip')} value={address.zip} onChange={handleAddressChange} required pattern="\d{5}(-\d{4})?" title="XXXXX or XXXXX-XXXX" />
           </div>
@@ -309,11 +313,6 @@ export default function StoreCheckout({
             <p>{t('StorePage.shipping')}: ${(shippingCostCents / 100).toFixed(2)}</p>
           )}
           <p><strong>{t('StorePage.total')}: ${(totalCents / 100).toFixed(2)}</strong></p>
-          {error && (
-            <p className="store-checkout__error" role="alert">
-              {typeof error === 'string' ? error : 'Something went wrong. Please try again.'}
-            </p>
-          )}
           <button
             type="button"
             onClick={handlePay}
